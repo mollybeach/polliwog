@@ -432,6 +432,23 @@
                   }
               }
               return false;
+## 📘 Trie Pattern 📘 ->
+      ❓ FIND ALL WORDS WITH GIVEN PREFIX
+      🐣 Word Search, Word Break Problem, etc.
+
+      🎭 PsuendoCode 📘 Trie Pattern 📘
+        ⏰: O(n) 🪐: O(n)
+              TrieNode root = new TrieNode();
+              for (String word : words) {
+                  TrieNode node = root;
+                  for (char letter : word.toCharArray()) {
+                      if (node.children[letter - 'a'] == null)
+                          node.children[letter - 'a'] = new TrieNode();
+                      node = node.children[letter - 'a'];
+                  }
+                  node.word = word;
+              }
+              return root;
 
 
 ## Array
@@ -1503,7 +1520,7 @@
 
 ## Matrix
 
-## [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) #73
+## [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) #73  📐
         ❓: Given an m x n matrix. If an element is 0, set its entire row & column to 0. Do it in-place.
         🐣: 1️⃣ Input: matrix = [[1,1,1],[1,0,1],[1,1,1]] Output: [[1,0,1],[0,0,0],[1,0,1]] 2️⃣ Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]] Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
@@ -1529,8 +1546,7 @@
                 }
               }
             };
-## [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) #54
-
+## [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) #54  📐
         Pattern Used:  📐 Matrix Pattern
         ❓: Given an m x n matrix, return all elements of the matrix in spiral order.
         🐣: 1️⃣ Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] 2️⃣ Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] Output: [1,2,3,4,8,12,11,10,9,5,6,7]
@@ -1568,8 +1584,7 @@
               }
               return result;
             };
-## [Rotate Image](https://leetcode.com/problems/rotate-image/) #48
-
+## [Rotate Image](https://leetcode.com/problems/rotate-image/) #48  📐
         Pattern Used:  📐 Matrix Pattern
         ❓: You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
         🐣: 1️⃣ Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],[8,5,2],[9,6,3]] 2️⃣ Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]] Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
@@ -1589,8 +1604,7 @@
                 }
               }
             };
-## [Word Search](https://leetcode.com/problems/word-search/) #79
-
+## [Word Search](https://leetcode.com/problems/word-search/) #79  📐
         Pattern Used: Backtracking  📐 Matrix Pattern
         ❓: Given an m x n grid of characters board & a string word, return true if word exists in the grid.
         🐣: 1️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED" Output: true 2️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE" Output: true 3️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB" Output: false
@@ -1635,14 +1649,12 @@
 
 ## String
 
-## [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 3️⃣
-        
-        Pattern Used: 🪟 Sliding Window Pattern
+## [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) #3 🪟 
         ❓: Given a string s, find the length of the longest substring without repeating characters.
         🐣: 1️⃣ Input: s = "abcabcbb" Output: 3 Explain: The answer is "abc", with the length of 3. 2️⃣ Input: s = "bbbbb" Output: 1 Explain: The answer is "b", with the length of 1. 3️⃣ Input: s = "pwwkew" Output: 3 Explain: The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence & not a substring. #4 Input: s = "" Output: 0
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(min(m, n))  
-        🐇 Solution:  🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
             var lengthOfLongestSubstring = function (s) {
               let result = 0;
@@ -1661,9 +1673,7 @@
               }
               return result;
             };
-## [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) #424
-
-        Pattern Used: 🪟 Sliding Window Pattern
+## [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) #424 🪟 
         ❓: You are given a string s & an integer k. You can choose any character of the string & change it to any other uppercase English character. You can perform this operation at most k times.
         Return the length of the longest substring containing the same letter you can get after performing the above operations.
         🐣: 1️⃣ Input: s = "ABAB", k = 2 Output: 4 Explain: Replace the two 'A's with two 'B's or vice versa. 2️⃣ Input: s = "AABABBA", k = 1 Output: 4 Explain: Replace the one 'A' in the middle with 'B' & form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
@@ -1687,9 +1697,7 @@
               }
               return right - left;
             };
-## [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) #76
-
-        Pattern Used: 🪟 Sliding Window Pattern
+## [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) #76 🪟 
         ❓: Given two strings s & t of lengths m & n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
         The testcases will be generated such that the answer is unique.
         A substring is a contiguous sequence of characters within the string.
@@ -1734,9 +1742,7 @@
               }
               return result;
             };
-## [Valid Anagram](https://leetcode.com/problems/valid-anagram/) #242
-
-        Pattern Used: Hash Table
+## [Valid Anagram](https://leetcode.com/problems/valid-anagram/) #242 
         ❓: Given two strings s & t , write a function to determine if t is an anagram of s.
         🐣: 1️⃣ Input: s = "anagram", t = "nagaram" Output: true 2️⃣ Input: s = "rat", t = "car" Output: false
 
@@ -1763,8 +1769,6 @@
               return true;
             };
 ## [Group Anagrams](https://leetcode.com/problems/group-anagrams/) #49
-
-        Pattern Used: Hash Table
         ❓: Given an array of strings strs, group the anagrams together. You can return the answer in any order.
         An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
         🐣: 1️⃣ Input: strs = ["eat","tea","tan","ate","nat","bat"] Output: [["bat"],["nat","tan"],["ate","eat","tea"]] 2️⃣ Input: strs = [""] Output: [[""]] 3️⃣ Input: strs = ["a"] Output: [["a"]]
@@ -1784,7 +1788,6 @@
               return [...map.values()];
             };
 ## [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) #20
-
         Pattern Used: Stack
         ❓: Given a string s containing just the characters '(', ')', '{', '}', '[' & ']', determine if the input string is valid.
         An input string is valid if:
@@ -1812,14 +1815,12 @@
               }
               return stack.length === 0;
             };
-## [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) #125
-
-        Pattern Used: Two Pointers
+## [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) #125 👯
         ❓: Given a string s, determine if it is a palindrome, considering only alphanumeric characters & ignoring cases.
         🐣: 1️⃣ Input: s = "A man, a plan, a canal: Panama" Output: true Explain: "amanaplanacanalpanama" is a palindrome.
         
         🐢 Solution: 🔨 Brute Force ⏰: 
-        🐇 Solution: Two Pointers ⏰: 
+        🐇 Solution: 👯 Two Pointers ⏰: 
 
         var isPalindrome = function(s) {
             let cursor1 = 0;
@@ -1846,8 +1847,7 @@
         };
             
         }
-## [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) #5
-        Pattern Used: 📈 Dynamic Programming
+## [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) #5 📈
         ❓: Given a string s, return the longest palindromic substring in s.
         🐣: 1️⃣ Input: s = "babad" Output: "bab" Note: "aba" is also a valid answer. 2️⃣ Input: s = "cbbd" Output: "bb" 3️⃣ Input: s = "a" Output: "a" #4 Input: s = "ac" Output: "a"
 
@@ -1873,9 +1873,7 @@
               }
               return s.substring(left + 1, right);
             }
-## [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) #647
-
-        Pattern Used: 📈 Dynamic Programming
+## [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) #647  📈 
         ❓: Given a string s, return the number of palindromic substrings in it.
         A string is a palindrome when it reads the same backward as forward.
         A substring is a contiguous sequence of characters within the string.
@@ -1992,9 +1990,7 @@
               🌲 DFS(root, 0);
               return result;
             };
-## [Serialize & Deserialize Binary Tree](https://leetcode.com/problems/serialize-&-deserialize-binary-tree/) #297
-
-        Pattern Used: 🌳 BFS
+## [Serialize & Deserialize Binary Tree](https://leetcode.com/problems/serialize-&-deserialize-binary-tree/) #297 🌳 
         ❓: Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
         Design an algorithm to serialize & deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string & this string can be deserialized to the original tree structure.
         🐣: 1️⃣ Input: root = [1,2,3,null,null,4,5] Output: [1,2,3,null,null,4,5]
@@ -2083,12 +2079,12 @@
               }
               return 🌲 DFS(root, -Infinity, Infinity);
             };
-## [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) #230
-        Pattern Used: 🌲 DFS
-        ❓: Given the root of a 🏁🔚  Modified Binary Search tree, & an integer k, return the kth (1-indexed) smallest element in the tree.
+## [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) #230 🌲 
+        ❓: Given the root of a  Binary Search tree, & an integer k, return the kth (1-indexed) smallest element in the tree.
         🐣: 1️⃣ Input: root = [3,1,4,null,2], k = 1 Output: 1 2️⃣ Input: root = [5,3,6,2,4,null,null,1], k = 3 Output: 3
-        
-         🌲 DFS ⏰: O(n) 🪐: O(n)
+
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var kthSmallest = function (root, k) {
               let result = [];
@@ -2114,24 +2110,24 @@
               if (root.val < p.val && root.val < q.val) return lowestCommonAncestor(root.right, p, q);
               return root;
             };
-## [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) #208
+## [Implement 📘 Trie (Prefix Tree)](https://leetcode.com/problems/implement-📘 Trie-prefix-tree/) #208
 
-        Pattern Used: Trie
-        ❓: Implement a trie with insert, search, & startsWith methods. 
-        A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store & retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete & spellchecker. 
-        Implement the Trie class: Trie() Initializes the trie object.
-        void insert(String word) Inserts the string word into the trie.
-        boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), & false otherwise.
+        Pattern Used: 📘 Trie
+        ❓: Implement a 📘 Trie with insert, search, & startsWith methods. 
+        A 📘 Trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store & re📘 Trieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete & spellchecker. 
+        Implement the 📘 Trie class: 📘 Trie() Initializes the 📘 Trie object.
+        void insert(String word) Inserts the string word into the 📘 Trie.
+        boolean search(String word) Returns true if the string word is in the 📘 Trie (i.e., was inserted before), & false otherwise.
         boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, & false otherwise
-        🐣: 1️⃣ Input: ["Trie","insert","search","search","startsWith","insert","search"] Output: [null,null,true,false,true,null,true] Explain: Trie trie = new Trie(); trie.insert("apple"); trie.search("apple"); // return True trie.search("app"); // return False trie.startsWith("app"); // return True trie.insert("app"); trie.search("app"); // return True
+        🐣: 1️⃣ Input: ["📘 Trie","insert","search","search","startsWith","insert","search"] Output: [null,null,true,false,true,null,true] Explain: 📘 Trie 📘 Trie = new 📘 Trie(); 📘 Trie.insert("apple"); 📘 Trie.search("apple"); // return True 📘 Trie.search("app"); // return False 📘 Trie.startsWith("app"); // return True 📘 Trie.insert("app"); 📘 Trie.search("app"); // return True
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 📘 Trie ⏰: O(n) 🪐: O(n)
 
-            var Trie = function () {
+            var 📘 Trie = function () {
               this.root = {};
             };
-            Trie.prototype.insert = function (word) {
+            📘 Trie.prototype.insert = function (word) {
               let node = this.root;
               for (let i = 0; i < word.length; i++) {
                 if (!node[word[i]]) node[word[i]] = {};
@@ -2139,7 +2135,7 @@
               }
               node.isEnd = true;
             };
-            Trie.prototype.search = function (word) {
+            📘 Trie.prototype.search = function (word) {
               let node = this.root;
               for (let i = 0; i < word.length; i++) {
                 if (!node[word[i]]) return false;
@@ -2147,7 +2143,7 @@
               }
               return node.isEnd === true;
             };
-            Trie.prototype.startsWith = function (prefix) {
+            📘 Trie.prototype.startsWith = function (prefix) {
               let node = this.root;
               for (let i = 0; i < prefix.length; i++) {
                 if (!node[prefix[i]]) return false;
@@ -2155,9 +2151,7 @@
               }
               return true;
             };
-## [Add & Search Word](https://leetcode.com/problems/add-&-search-word-data-structure-design/) #211
-
-        Pattern Used: Trie
+## [Add & Search Word](https://leetcode.com/problems/add-&-search-word-data-structure-design/) #211 📘 
         ❓: Design a data structure that supports adding new words & finding if a string matches any previously added string.
         Implement the WordDictionary class:
         WordDictionary() Initializes the object.
@@ -2166,7 +2160,7 @@
         🐣: 1️⃣ Input: ["WordDictionary","addWord","addWord","addWord","search","search","search","search"] Output: [null,null,null,null,false,true,true,true] Explain: WordDictionary wordDictionary = new WordDictionary(); wordDictionary.addWord("bad"); wordDictionary.addWord("dad"); wordDictionary.addWord("mad"); wordDictionary.search("pad"); // return False wordDictionary.search("bad"); // return True wordDictionary.search(".ad"); // return True wordDictionary.search("b.."); // return True
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 📘 Trie ⏰: O(n) 🪐: O(n)
 
             var WordDictionary = function () {
               this.root = {};
@@ -2195,14 +2189,12 @@
               return 🌲 DFS(node, 0);
             };
 
-## [Word Search II](https://leetcode.com/problems/word-search-ii/) #212
-
-        Pattern Used: Trie
+## [Word Search II](https://leetcode.com/problems/word-search-ii/) #212 📘 
         ❓: Given an m x n board of characters & a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
         🐣: 1️⃣ Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"] Output: ["eat","oath"] 2️⃣ Input: board = [["a","b"],["c","d"]], words = ["abcb"] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 📘 Trie ⏰: O(n) 🪐: O(n)
 
             var findWords = function (board, words) {
               let result = [];
@@ -2336,7 +2328,7 @@
                 }
             }
 
-## [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) #
+## [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) #347
 
         Pattern Used: Heap
         ❓: Given an integer array nums & an integer k, return the k most frequent elements. You may return the answer in any order.
@@ -2643,7 +2635,7 @@
     6. Binary Tree
     7. 🏁🔚  Modified Binary Search Tree
     8. Heap
-    9. Trie
+    9. 📘 Trie
     10. Graph
     11. Matrix
     12. Set
