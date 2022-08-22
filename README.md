@@ -279,11 +279,11 @@
                       }
                   }
 
-## 14. Topological Sort Pattern ->
+## 14. Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
     🥚 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
 
-      🎭 PsuendoCode Topological Sort Pattern 
+      🎭 PsuendoCode Topological Sort Pattern  📅
         ⏰: O(V + E) 🪐: O(V + E)
 
           PriorityQueue<Integer> sources = new PriorityQu
@@ -354,8 +354,20 @@
                       // backtrack
                       Collections.swap(nums, first, i);
                   }
-              }
 
+## Dynamic Programming Pattern 📈 ->
+      ❓ FIND OPTIMAL SOLUTION TO COMPLEX PROBLEMS MIN MAX OR COUNT OF GIVEN CONSTRAINTS
+      🥚 Fibonacci Numbers, House Thief, Minimum Coin Change, House Painters, Palindromic Subsequence, Longest Common Subsequence, Longest Increasing Subsequence, Longest Common Substring, Edit Distance, 0/1 Knapsack Problem, Subset Sum Problem, Unbounded Knapsack Problem, Rod Cutting, Word Break Problem, etc.
+
+      🎭 PsuendoCode Dynamic Programming Pattern 📈
+        ⏰: O(n) 🪐: O(n)
+  
+              int[] dp = new int[n + 1];
+              dp[0] = 1;
+              dp[1] = 1;
+              for (i = 2; i <= n; i++)
+                  dp[i] = dp[i - 1] + dp[i - 2];
+              return dp[n];
 
 ## Array
 ## [Two Sum](https://leetcode.com/problems/two-sum/) #1 
@@ -707,7 +719,7 @@
               }
               return quotient
           };
-## [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/)
+## [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) #191
 
         Pattern Used: Bit Manipulation
         Problem: Write a function that takes an unsigned integer and returns the number of '1' bits it has (aka Hamming weight).
@@ -725,13 +737,23 @@
                 return count
             };
 
-## [Counting Bits](https://leetcode.com/problems/counting-bits/)
+## [Counting Bits](https://leetcode.com/problems/counting-bits/) #338
 
-      Pattern Used: Bit Manipulation 
-      Problem: Given an integer n, return an array ans of length n + 1, ans[i] is the number of 1's in the binary representation of i.
-      🥚: #1 Input: Input: n = 2 Output: [0,1,1] Explain: 0 --> 0 1 --> 1 2 --> 10
-      #2 Input: Input: n = 5 Output: [0,1,1,2,1,2]
+        Pattern Used: Bit Manipulation
+        Problem: Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+        🥚: #1 Input: n = 2 Output: [0,1,1]  Explain: 0 --> 0 1 --> 1 2 --> 10 #2 Input: n = 5 Output: [0,1,1,2,1,2]
 
+            🐢 Solution: Brute Force ⏰: O(N) 🪐: O(1)
+            🐇 Solution: Bit Manipulation ⏰: O(N) 🪐: O(1)
+
+            var countBits = function(n) {
+                let result = [0];
+                for(let i = 1; i <= n; i++){
+                    result.push(result[i>>1] + (i&1));
+                }
+                return result;
+            };
+            
             🐢 Solution: Brute Force ⏰: O(N) 🪐: O(N)
             🐇 Solution: Bit Manipulation  ⏰: O(n)  🪐: O(n)
 
@@ -2885,6 +2907,7 @@
         6. [Find the Corrupt Pair](https://leetcode.com/problems/set-mismatch/)
         7. [Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/)
         8. [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)
+
 
 
 
