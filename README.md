@@ -265,7 +265,7 @@
                       result.add(new Interval(start, end));
                       return result;
 
-
+![alt text](https://cdn.emre.me/2019-10-27-merge-intervals.png)
  ## 5. 🌀 Cyclic Sort Pattern 🌀 ->
     ❓ FIND MISSING # OR  SORT #s IN PLACE 
     🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
@@ -311,7 +311,7 @@
                   if (currentNode.left != null) queue.offer(currentNode.left);
                   if (currentNode.right != null) queue.offer(currentNode.right);
               }
-
+![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
 ## 8. Tree Depth First Search Pattern 🌲 ->
     ❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE
     🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.
@@ -328,6 +328,7 @@
                 if (currentNode.right != null) stack.push(currentNode.right);
             }
 
+![alt text](https://cdn.emre.me/2019-11-04-tree-dfs.gif);
 ## 9. Two Heaps Pattern 📦📦 ->
     ❓  MEDIAN OF # STREAM FIND K SMALLEST #
     🐣  Sliding Window Median, Find the Median of a Number Stream, etc.
@@ -352,7 +353,7 @@
                         maxHeap.add(minHeap.poll());
                     }
                 }
-
+![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png);
 ## 10. Subsets Pattern 🐛 ->
     ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #
     🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
