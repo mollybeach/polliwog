@@ -366,9 +366,7 @@
               return dp[n];
 
 ## Array
-## [Two Sum](https://leetcode.com/problems/two-sum/) #1 
-
-        Pattern: 👯 Two Pointers
+## [Two Sum](https://leetcode.com/problems/two-sum/) #1 👯 
         Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
         Example: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
         
@@ -392,9 +390,8 @@
             return checkSum
         };
 
-## [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) #121
+## [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) #121 
 
-        Pattern: Dynamic Programming Pattern Kadane's Algorithm
         Problem: You are given an array prices where prices[i] is the price of a given stock on the ith day.
         You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
         Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
@@ -416,9 +413,7 @@
             return max;
         };
 
-## [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
-
-        Pattern: 👯 Two Pointers 
+## [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) 👯 
         Problem : Given Arr [] of int. Return true if has duplicates  : 
         Parameters: Ex 1: Input: nums = [1,2,3,1] Output: true. Ex 2: Input: nums = [1,2,3,4] Output: false. 
          
@@ -441,8 +436,7 @@
             return [...new Set(nums)].length !== nums.length;
         };  
 
-## [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) #238
-        Pattern: 👯 Two Pointers 
+## [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) #238 👯 
         Problem: Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
         The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
         You must write an algorithm that runs in O(n) time and without using the division operation.
