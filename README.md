@@ -192,7 +192,7 @@
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
-      ![alt text](https://miro.medium.com/max/872/0*o-PhzdP_jd_5L2iq.jpg)
+![alt text](https://miro.medium.com/max/872/0*o-PhzdP_jd_5L2iq.jpg)
             🎭 PsuendoCode 🪟 Sliding Window Pattern 🪟
               ⏰: O(n) 🪐: O(n)
                             start = 0;
