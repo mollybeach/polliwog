@@ -548,13 +548,16 @@
        🎭 PsuendoCode Bitwise OR Pattern 🧩
         ⏰: O(1) 🪐: O(1)
               return (n > 0) && ((n & (n - 1)) == 0) && ((n & 0xAAAAAAAA) == 0);
+
 ![alt text](https://miro.medium.com/max/620/1*CxPeaIX4QxILRzucksVCsw.png);
+
     4️⃣ Bitwise Left Shift
       ❓ FIND IF NUMBER IS POWER OF 2
       🐣 Power of 2, etc.
         🎭 PsuendoCode Bitwise Left Shift Pattern 🧩
           ⏰: O(1) 🪐: O(1)
                 return (n > 0) && ((n & (n - 1)) == 0);
+
 ![alt text](https://cdn.educba.com/academy/wp-content/uploads/2020/05/Left-Shift-Operator-in-C-01.png);
         
     5️⃣ Bitwise Right Shift
