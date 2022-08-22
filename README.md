@@ -34,7 +34,7 @@
 
 ## 1. Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
-    🥚 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
+    🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
       
             🎭 PsuendoCode Sliding Window Pattern 🪟
               ⏰: O(n) 🪐: O(n)
@@ -52,9 +52,8 @@
                             }
 
 ## 2. Two Pointers  👯 -> 
-    
     ❓ FIND A PAIR, TRIPLET or a SUBARRAY
-    🥚 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
+    🐣 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
       
         🎭 PsuendoCode Two Pointers  👯
           ⏰: O(n) 🪐: O(n)
@@ -69,11 +68,11 @@
                                 }
                             }
 
-## 3. Fast and Slow Pointers Pattern 🐰&🐢 ->
+## 3. Fast & Slow Pointers Pattern 🐰&🐢 ->
     ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
-    🥚 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
+    🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
         
-        🎭 PsuendoCode Fast and Slow Pointers Pattern 🐰&🐢
+        🎭 PsuendoCode Fast & Slow Pointers Pattern 🐰&🐢
          ⏰: O(n) 🪐: O(n)
                             slow = 0;
                             fast = 0;
@@ -90,7 +89,7 @@
 
 ## 4. Merge Intervals Pattern 🚗🚙 ->
     ❓  MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
-    🥚 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
+    🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
           🎭 PsuendoCode Merge Intervals Pattern 🚗🚙
             ⏰: O(n) 🪐: O(n)
                       sort the intervals by start time
@@ -100,7 +99,7 @@
                           interval = intervals[i];
                           if (interval.start <= end) { // overlapping intervals, adjust the 'end'
                               end = Math.max(interval.end, end);
-                          } else { // non-overlapping interval, add the previous interval and reset
+                          } else { // non-overlapping interval, add the previous interval & reset
                               result.add(new Interval(start, end));
                               start = interval.start;
                               end = interval.end;
@@ -113,7 +112,7 @@
 
  ## 5. Cyclic Sort Pattern 🌀 ->
     ❓ FIND MISSING # OR  SORT #s IN PLACE 
-    🥚 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
+    🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
         
          🎭 PsuendoCode Cyclic Sort Pattern 🌀
             ⏰: O(n) 🪐: O(1)
@@ -128,7 +127,7 @@
 
  ## 6. In-place Reversal of a LinkedList Pattern 🔄 ->
     ❓ REVERSE A SUBLIST, REVERSE EVERY K-ELEMENT IN SUBLIST
-    🥚 Reverse a Sub-list, Reverse every K-element Sub-list, etc.
+    🐣 Reverse a Sub-list, Reverse every K-element Sub-list, etc.
         
         🎭 PsuendoCode In-place Reversal of a LinkedList Pattern 🔄
           ⏰: O(n) 🪐: O(1)
@@ -143,7 +142,7 @@
 
 ## 7. Tree Breadth First Search Pattern 🌳 ->
     ❓  FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE
-    🥚 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?
+    🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?
 
         🎭 PsuendoCode Tree Breadth First Search Pattern
           ⏰: O(n) 🪐: O(n)
@@ -158,7 +157,7 @@
 
 ## 8. Tree Depth First Search Pattern 🌲 ->
     ❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE
-    🥚 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.
+    🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.
         
        🎭 PsuendoCode Tree Depth First Search Pattern
         ⏰: O(n) 🪐: O(n)  
@@ -174,7 +173,7 @@
 
 ## 9. Two Heaps Pattern 📦📦 ->
     ❓  MEDIAN OF # STREAM FIND K SMALLEST #
-    🥚  Sliding Window Median, Find the Median of a Number Stream, etc.
+    🐣  Sliding Window Median, Find the Median of a Number Stream, etc.
         
          🎭 PsuendoCode Two Heaps Pattern 📦📦
             ⏰: O(n) 🪐: O(n)
@@ -199,17 +198,17 @@
 
 ## 10. Subsets Pattern 🐛 ->
     ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #
-    🥚 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
+    🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
         
         🎭 PsuendoCode Subsets Pattern 🐛
             ⏰: O(n) 🪐: O(n)
                 List<List<Integer>> subsets = new ArrayList<>();
                 subsets.add(new ArrayList<>());
                 for (int currentNumber : nums) {
-                    // we will take all existing subsets and insert the current number in them to create new subsets
+                    // we will take all existing subsets & insert the current number in them to create new subsets
                     int n = subsets.size();
                     for (int i = 0; i < n; i++) {
-                        // create a new subset from the existing subset and insert the current element to it
+                        // create a new subset from the existing subset & insert the current element to it
                         List<Integer> set = new ArrayList<>(subsets.get(i));
                         set.add(currentNumber);
                         subsets.add(set);
@@ -217,7 +216,7 @@
                 }
 ## 11. Modified Binary Search Pattern 🏁🔚 ->
     ❓  MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY
-    🥚 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.
+    🐣 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.
 
         🎭 PsuendoCode Modified Binary Search Pattern 🏁🔚
           ⏰: O(logn) 🪐: O(1)
@@ -240,7 +239,7 @@
 
  ## 12. Top 'K' Elements Pattern 🔝->
     ❓ TOP K #s OR FREQUENCY OF TOP K #s
-    🥚 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
+    🐣 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
         
         🎭 PsuendoCode Top 'K' Elements 
           ⏰: O(nlogk) 🪐: O(k)
@@ -258,7 +257,7 @@
 ## 13. K-way Merge Pattern 🔝🚗🚙 ->
 
     ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
-    🥚 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.
+    🐣 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.
         🔝
         🎭 PsuendoCode K-way Merge Pattern
           ⏰: O(nlogk) 🪐: O(k)
@@ -277,7 +276,7 @@
 
 ## 14. Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
-    🥚 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
+    🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
 
       🎭 PsuendoCode Topological Sort Pattern  📅
         ⏰: O(V + E) 🪐: O(V + E)
@@ -300,7 +299,7 @@
 
 ## Union Find Algorithm Pattern ♾ ->
     ❓ # OF CONNECTED COMPONENETS IN UNDIRECTED GRAPH, FIND IF 2 NODES CONNECTED
-    🥚 Number of Connected Components in an Undirected Graph, Find whether two nodes are connected in an undirected graph, etc.
+    🐣 Number of Connected Components in an Undirected Graph, Find whether two nodes are connected in an undirected graph, etc.
 
       🎭 PsuendoCode Union Find Algorithm Pattern ♾
           ⏰: O(V * logV) 🪐: O
@@ -315,7 +314,7 @@
                   }
 ## Greedy Pattern 💰 ->
       ❓ MINIMUM # OF MEETINGS MAX OF INTERVALS NOT OVERLAPPING
-      🥚 Activity Selection Problem, Coin Change, Fractional Knapsack Problem, Job Sequencing Problem, Huffman Coding, Prim's Minimum Spanning Tree, Kruskal's Minimum Spanning Tree, Dijkstra's Shortest Path Algorithm, Bellman-Ford Algorithm, Floyd-Warshall Algorithm, Travelling Salesman Problem
+      🐣 Activity Selection Problem, Coin Change, Fractional Knapsack Problem, Job Sequencing Problem, Huffman Coding, Prim's Minimum Spanning Tree, Kruskal's Minimum Spanning Tree, Dijkstra's Shortest Path Algorithm, Bellman-Ford Algorithm, Floyd-Warshall Algorithm, Travelling Salesman Problem
 
       🎭 PsuendoCode Greedy Pattern 💰
         ⏰: O(nlogn) 🪐: O(1)
@@ -332,7 +331,7 @@
 
 ## Backtracking Pattern 🎲 ->
       ❓ FIND ALL PERMUTATIONS COMBINATIONS SUBSETS PARTIONING 
-      🥚 N-Queens Problem, Sudoku Solver, Rat in a Maze, Knight's Tour Problem, Hamiltonian Cycle, Subset Sum Problem, Permutations, Combination Sum, Palindrome Partitioning, Word Break Problem, etc.
+      🐣 N-Queens Problem, Sudoku Solver, Rat in a Maze, Knight's Tour Problem, Hamiltonian Cycle, Subset Sum Problem, Permutations, Combination Sum, Palindrome Partitioning, Word Break Problem, etc.
 
       🎭 PsuendoCode Backtracking Pattern 🎲
         ⏰: O(n!) 🪐: O(n)
@@ -353,7 +352,7 @@
 
 ## Dynamic Programming Pattern 📈 ->
       ❓ FIND OPTIMAL SOLUTION TO COMPLEX PROBLEMS MIN MAX OR COUNT OF GIVEN CONSTRAINTS
-      🥚 Fibonacci Numbers, House Thief, Minimum Coin Change, House Painters, Palindromic Subsequence, Longest Common Subsequence, Longest Increasing Subsequence, Longest Common Substring, Edit Distance, 0/1 Knapsack Problem, Subset Sum Problem, Unbounded Knapsack Problem, Rod Cutting, Word Break Problem, etc.
+      🐣 Fibonacci Numbers, House Thief, Minimum Coin Change, House Painters, Palindromic Subsequence, Longest Common Subsequence, Longest Increasing Subsequence, Longest Common Substring, Edit Distance, 0/1 Knapsack Problem, Subset Sum Problem, Unbounded Knapsack Problem, Rod Cutting, Word Break Problem, etc.
 
       🎭 PsuendoCode Dynamic Programming Pattern 📈
         ⏰: O(n) 🪐: O(n)
@@ -364,11 +363,52 @@
               for (i = 2; i <= n; i++)
                   dp[i] = dp[i - 1] + dp[i - 2];
               return dp[n];
+      
+## 🧩 Bit Manipulation Pattern 🧩 ->
+    1️⃣ Bitwise XOR
+      ❓ FIND IF NUMBER IS POWER OF 2
+      🐣 Power of 2, Bitwise AND of Numbers Range, etc.
+
+      🎭 PsuendoCode 🧩 Bit Manipulation Pattern 🧩
+        ⏰: O(1) 🪐: O(1)
+              return (n & (n - 1)) == 0;
+
+      ❓ FIND UNIQUE NUMBER IN ARRAY OF PAIRS
+      🐣 Single Number, Find the Missing Number, Find the Duplicate Number, Find the Corrupt Pair, etc.
+    2️⃣ Bitwise AND
+      🎭 PsuendoCode Bitwise XOR Pattern 🧩
+        ⏰: O(n) 🪐: O(1)
+              int n = nums.length;
+              for (i = 0; i < n; i++)
+                  x1 = x1 ^ nums[i];
+              for (i = 1; i <= n + 1; i++)
+                  x2 = x2 ^ i;
+              return x1 ^ x2;
+    3️⃣ Bitwise OR
+      ❓ FIND IF NUMBER IS POWER OF 4
+      🐣 Power of 4, etc.
+       🎭 PsuendoCode Bitwise OR Pattern 🧩
+        ⏰: O(1) 🪐: O(1)
+              return (n > 0) && ((n & (n - 1)) == 0) && ((n & 0xAAAAAAAA) == 0);
+
+    4️⃣ Bitwise Left Shift
+      ❓ FIND IF NUMBER IS POWER OF 2
+      🐣 Power of 2, etc.
+        🎭 PsuendoCode Bitwise Left Shift Pattern 🧩
+          ⏰: O(1) 🪐: O(1)
+                return (n > 0) && ((n & (n - 1)) == 0);
+        
+    5️⃣ Bitwise Right Shift
+      ❓ FIND IF NUMBER IS POWER OF 2
+      🐣 Power of 2, etc.
+        🎭 PsuendoCode Bitwise Right Shift Pattern 🧩
+          ⏰: O(1) 🪐: O(1)
+                return (n > 0) && ((n & (n - 1)) == 0);
 
 ## Array
-## [Two Sum](https://leetcode.com/problems/two-sum/) #1 👯 
-        Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-        Example: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
+## [Two Sum](https://leetcode.com/problems/two-sum/) 1️⃣ 👯 
+        ❓: Given an array of integers nums & an integer target, return indices of the two numbers such that they add up to target.
+        🐣: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
         
         🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
         🐇 Solution: 👯 Two Pointers  ⏰: O(NlogN) 🪐: O(1)
@@ -390,15 +430,14 @@
             return checkSum
         };
 
-## [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) #121 
-
-        Problem: You are given an array prices where prices[i] is the price of a given stock on the ith day.
-        You want to maximize your profit by choosing a single day to buy one stock and choosing a different day in the future to sell that stock.
+## [Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-&-sell-stock/) #121 📈
+        ❓: You are given an array prices where prices[i] is the price of a given stock on the ith day.
+        You want to maximize your profit by choosing a single day to buy one stock & choosing a different day in the future to sell that stock.
         Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
-        Example: Input: prices = [7,1,5,3,6,4], Output: 5, Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Not 7-1 = 6, as selling price needs to be larger than buying price.
+        🐣: Input: prices = [7,1,5,3,6,4], Output: 5, Explain: Buy on day 2 (price = 1) & sell on day 5 (price = 6), profit = 6-1 = 5. Not 7-1 = 6, as selling price needs to be larger than buying price.
  
         🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
-        🐇 Solution:  Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
+        🐇 Solution:  📈 Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
 
         var maxProfit = function(prices) {
             let min = prices[0];
@@ -437,10 +476,10 @@
         };  
 
 ## [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) #238 👯 
-        Problem: Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
+        ❓: Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
         The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
-        You must write an algorithm that runs in O(n) time and without using the division operation.
-        Example: Input: nums = [1,2,3,4], Output: [24,12,8,6]
+        You must write an algorithm that runs in O(n) time & without using the division operation.
+        🐣: Input: nums = [1,2,3,4], Output: [24,12,8,6]
         
         🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
         🐇 Solution:  👯 Two Pointers  ⏰: O(N) 🪐: O(1)
@@ -460,11 +499,9 @@
             return result;
         };
 
-## [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) #53
-
-        Pattern: Dynamic Programming Pattern Kadane's Algorithm
-        Problem: Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
-        Example: Input: nums = [-2,1,-3,4,-1,2,1,-5,4], Output: 6, Explanation: [4,-1,2,1] has the largest sum = 6.
+## [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) #53 📈
+        ❓: Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum & return its sum.
+        🐣: Input: nums = [-2,1,-3,4,-1,2,1,-5,4], Output: 6, Explain: [4,-1,2,1] has the largest sum = 6.
         
         🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
         🐇 Solution: 📈 Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
@@ -479,16 +516,14 @@
             return max;
         };
 
-## [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) #152
-
-        Pattern: Dynamic Programming Pattern Kadane's Algorithm
-        Problem: Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
+## [Maximum Product Subarray](https://leetcode.com/problems/maximum-product-subarray/) #152  📈
+        ❓: Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, & return the product.
         It is guaranteed that the answer will fit in a 32-bit integer.
         A subarray is a contiguous subsequence of the array.
-        Example: Input: nums = [2,3,-2,4], Output: 6, Explanation: [2,3] has the largest product 6.
+        🐣: Input: nums = [2,3,-2,4], Output: 6, Explain: [2,3] has the largest product 6.
        
        🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
-       🐇 Solution: Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
+       🐇 Solution: 📈 Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
 
         var maxProduct = function(nums) {
             let max = nums[0];
@@ -505,12 +540,12 @@
 ## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153
 
         Pattern: Binary Search Pattern
-        Problem: Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+        ❓: Suppose an array of length n sorted in ascending order is rotated between 1 & n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
         [4,5,6,7,0,1,2] if it was rotated 4 times.
         [0,1,2,4,5,6,7] if it was rotated 7 times.
         Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
         Given the sorted rotated array nums of unique elements, return the minimum element of this array.
-        Example: Input: nums = [3,4,5,1,2], Output: 1
+        🐣: Input: nums = [3,4,5,1,2], Output: 1
 
         🐢 Solution: 🔨 Brute Force  ⏰: O(N) 🪐: O(1)
         🐇 Solution:  Binary Search Pattern ⏰: O(logN) 🪐: O(1)
@@ -532,12 +567,12 @@
 ## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153
 
         Pattern: Binary Search
-        Problem: Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
+        ❓: Suppose an array of length n sorted in ascending order is rotated between 1 & n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
         [4,5,6,7,0,1,2] if it was rotated 4 times.
         [0,1,2,4,5,6,7] if it was rotated 7 times.
         Notice that rotating an array [a[0], a[1], a[2], ..., a[n-1]] 1 time results in the array [a[n-1], a[0], a[1], a[2], ..., a[n-2]].
         Given the sorted rotated array nums of unique elements, return the minimum element of this array.
-        Example: Input: nums = [3,4,5,1,2], Output: 1
+        🐣: Input: nums = [3,4,5,1,2], Output: 1
 
         🐢 Solution: 🔨 Brute Force  ⏰: O(N) 🪐: O(1)
         🐇 Solution:  Binary Search ⏰: O(logN) 🪐: O(1)
@@ -558,10 +593,10 @@
 ## [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) #33
 
         Pattern: Binary Search
-        Problem: You are given an integer array nums sorted in ascending order, and an integer target.
-        Suppose that nums is rotated at some pivot unknown to you beforehand (i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]).
+        ❓: You are given an integer array nums sorted in ascending order, & an integer target.
+        Suppose that nums is rotated at some pivot unknown to you beforeh& (i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]).
         If target is found in the array return its index, otherwise, return -1.
-        Example: Input: nums = [4,5,6,7,0,1,2], target = 0, Output: 4
+        🐣: Input: nums = [4,5,6,7,0,1,2], target = 0, Output: 4
 
           🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
           🐇 Solution: Binary Search ⏰: O(logn) 🪐: O(1)   
@@ -592,9 +627,9 @@
 ## [3Sum](https://leetcode.com/problems/3sum/) #15
 
         Pattern: Two Pointers
-        Problem: Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
+        ❓: Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, & j != k, & nums[i] + nums[j] + nums[k] == 0.
         Notice that the solution set must not contain duplicate triplets.
-        Example: Input: nums = [-1,0,1,2,-1,-4], Output: [[-1,-1,2],[-1,0,1]]
+        🐣: Input: nums = [-1,0,1,2,-1,-4], Output: [[-1,-1,2],[-1,0,1]]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(N^3)   🪐: O(1)
         🐇 Solution:  Two Pointers  ⏰: O(N^2)   🪐: O(N)
@@ -623,15 +658,13 @@
             }
             return result;
         };
-## [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) #11
-
-        Pattern: 👯 Two Pointers 
-        Problem: Given n non-negative integers a1, a2, ..., an , where each represents a poat coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i is at (i, ai) and (i, 0). Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
+## [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) #11 👯 
+        ❓: Given n non-negative integers a1, a2, ..., an , where each represents a poat coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i is at (i, ai) & (i, 0). Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
         Notice that you may not slant the container.
-        Example: Input: height = [1,8,6,2,5,4,8,3,7], Output: 49
+        🐣: Input: height = [1,8,6,2,5,4,8,3,7], Output: 49
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(1)
-        🐇 Solution:  Two Pointers ⏰: O(n) 🪐: O(1)
+        🐇 Solution:  👯 Two Pointers ⏰: O(n) 🪐: O(1)
 
         var maxArea = function(height) {
             let left = 0;
@@ -651,17 +684,14 @@
 
 ---
 
-## Binary
+## Binary 
 
-## [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/)
-
-      Pattern Used: Bit Manipulation
-      Problem: Given two integers a and b, return the sum of the two integers without using the operators + and -.
-      🥚: #1 Input: a = 1, b = 2. Output: 3 #2 Input: a = 2, b = 3 Output: 5.
+## [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/) 🧩 
+      ❓: Given two integers a & b, return sum of the two integers without using the operators + & -.
+      🐣: 1️⃣ Input: a = 1, b = 2. Output: 3 2️⃣ Input: a = 2, b = 3 Output: 5.
         
-        🐢 Solution: 🔨 Brute Force ⏰:
-        🐇 Solution:  🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
-            🐇 Solution: Bit Manipulation ⏰: O(1)  🪐: O(1)
+          🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
+          🐇 Solution: 🧩 Bit Manipulation ⏰: O(1)  🪐: O(1)
 
             var getSum = function(a, b) {
                 let carry; // store carry 
@@ -672,17 +702,15 @@
                 }
                 return b  
             };
-## [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) #29
-
-      Pattern Used: Bit Manipulation
-      Problem: Given two integers dividend and divisor, divide two integers without using multiplication, division, and mod operator.
+## [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) #29 🧩 
+      ❓: Given two integers dividend & divisor, divide two integers without using multiplication, division, & mod operator.
       Return the quotient after dividing dividend by divisor.
-      The integer division should truncate toward zero, which means losing its fractional part. For example, truncate(8.345) = 8 and truncate(-2.7335) = -2.
+      The integer division should truncate toward zero, which means losing its fractional part. For example, truncate(8.345) = 8 & truncate(-2.7335) = -2.
       Note: Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. For this problem, assume that your function returns 231 − 1 when the division result overflows.
-      Example: Input: dividend = 10, divisor = 3, Output: 3
+      🐣: Input: dividend = 10, divisor = 3, Output: 3
 
           🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
-          🐇 Solution: Bit Manipulation ⏰: O(logn)   🪐: O(logn)
+          🐇 Solution: 🧩 Bit Manipulation ⏰: O(logn)   🪐: O(logn)
 
           var divide = function(dividend, divisor) {
               if (dividend === 0 || divisor === 0) return 0
@@ -707,14 +735,12 @@
               }
               return quotient
           };
-## [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) #191
-
-        Pattern Used: Bit Manipulation
-        Problem: Write a function that takes an unsigned integer and returns the number of '1' bits it has (aka Hamming weight).
-        🥚: #1 Input: n = 00000000000000000000000000001011 Output: 3 . N as a total of three '1' bits.#2 Input: n = 00000000000000000000000010000000 Output: 1 #3 Input: n = 11111111111111111111111111111101 Output: 31
+## [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) #191 🧩 
+        ❓: Write a function that takes an unsigned integer & returns the number of '1' bits it has (aka Hamming weight).
+        🐣: 1️⃣ Input: n = 00000000000000000000000000001011 Output: 3 . N as a total of three '1' bits.2️⃣ Input: n = 00000000000000000000000010000000 Output: 1 3️⃣ Input: n = 11111111111111111111111111111101 Output: 31
 
             🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
-            🐇 Solution: Bit Manipulation ⏰: O(1) 🪐: O(1)
+            🐇 Solution: 🧩 Bit Manipulation ⏰: O(1) 🪐: O(1)
 
             var hammingWeight = function(n) {
                 let count = 0;
@@ -725,14 +751,12 @@
                 return count
             };
 
-## [Counting Bits](https://leetcode.com/problems/counting-bits/) #338
-
-        Pattern Used: Bit Manipulation
-        Problem: Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
-        🥚: #1 Input: n = 2 Output: [0,1,1]  Explain: 0 --> 0 1 --> 1 2 --> 10 #2 Input: n = 5 Output: [0,1,1,2,1,2]
+## [Counting Bits](https://leetcode.com/problems/counting-bits/) #338 🧩 
+        ❓: Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+        🐣: 1️⃣ Input: n = 2 Output: [0,1,1]  Explain: 0 --> 0 1 --> 1 2 --> 10 2️⃣ Input: n = 5 Output: [0,1,1,2,1,2]
 
             🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
-            🐇 Solution: Bit Manipulation ⏰: O(N) 🪐: O(1)
+            🐇 Solution: 🧩 Bit Manipulation ⏰: O(N) 🪐: O(1)
 
             var countBits = function(n) {
                 let result = [0];
@@ -743,7 +767,7 @@
             };
             
             🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(N)
-            🐇 Solution: Bit Manipulation  ⏰: O(n)  🪐: O(n)
+            🐇 Solution: 🧩 Bit Manipulation  ⏰: O(n)  🪐: O(n)
 
             const countBits = (n) => {
                 const res = new Array(n);
@@ -756,13 +780,12 @@
 
                 return res;
             };
-## [Missing Number](https://leetcode.com/problems/missing-number/) #268
-
-        Problem: Given an [] containing n distinct numbers in the range [0, n], return the only num in the range tht missing from the []
-        🥚: #1 Input: nums = [3,0,1] Output: 2 Explain: n = 3 since there are 3 num, so all n are in range [0,3]. 2 is the missing num in the range it does not appear in nums. #2 Input: nums = [0,1] Output: 2 #3 Input: nums = [9,6,4,2,3,5,7,0,1] Output: 8
+## [Missing Number](https://leetcode.com/problems/missing-number/) #268 🧩
+        ❓: Given an [] containing n distinct numbers in the range [0, n], return the only num in the range tht missing from the []
+        🐣: 1️⃣ Input: nums = [3,0,1] Output: 2 Explain: n = 3 since there are 3 num, so all n are in range [0,3]. 2 is the missing num in the range it does not appear in nums. 2️⃣ Input: nums = [0,1] Output: 2 3️⃣ Input: nums = [9,6,4,2,3,5,7,0,1] Output: 8
 
             🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(N)
-            🐇 Solution: Bit Manipulation  ⏰: O(n)  🪐: O(n)
+            🐇 Solution: 🧩 Bit Manipulation  ⏰: O(n)  🪐: O(n)
 
             var missingNumber = function (nums) {
               let i = 0;
@@ -784,16 +807,14 @@
               return nums.length;
             };
 
-## [Reverse Bits](https://leetcode.com/problems/reverse-bits/) #190
-
-        Pattern Used: Bit Manipulation
-        Problem: Reverse bits of a given 32 bits unsigned integer.
-        🥚: #1 Input: n = 00000010100101000001111010011100 Output: 964176192 (00111001011110000010100101000000)
-        Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000. #2 Input: n = 11111111111111111111111111111101
+## [Reverse Bits](https://leetcode.com/problems/reverse-bits/) #190 🧩
+        ❓: Reverse bits of a given 32 bits unsigned integer.
+        🐣: 1️⃣ Input: n = 00000010100101000001111010011100 Output: 964176192 (00111001011110000010100101000000)
+        Explain: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000. 2️⃣ Input: n = 11111111111111111111111111111101
         Output:   3221225471 (10111111111111111111111111111111)
 
             🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
-            🐇 Solution: Bit Manipulation ⏰: O(1)  🪐: O(1)
+            🐇 Solution: 🧩 Bit Manipulation ⏰: O(1)  🪐: O(1)
 
             var reverseBits = function (n) {
               var len = 32;
@@ -808,17 +829,15 @@
               return parseInt(res, 2);
             };
 
-## Dynamic Programming
+## 📈 Dynamic Programming
 
-## [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) #70
-
-        Pattern Used: Dynamic Programming
-        Problem: You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
-        🥚: #1 Input: n = 2 Output: 2. Explanation: There are two ways to climb to the top. 1. 1 step + 1 step 2. 2 steps
-        #2 Input: n = 3 Output: 3. Explanation: There are three ways to climb to the top. 1. 1 step + 1 step + 1 step 2. 1 step + 2 steps 3. 2 steps + 1 step
+## [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) #70  📈
+        ❓: You are climbing a staircase. It takes n steps to reach the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+        🐣: 1️⃣ Input: n = 2 Output: 2. Explain: There are two ways to climb to the top. 1. 1 step + 1 step 2. 2 steps
+        2️⃣ Input: n = 3 Output: 3. Explain: There are three ways to climb to the top. 1. 1 step + 1 step + 1 step 2. 1 step + 2 steps 3. 2 steps + 1 step
 
         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
             var climbStairs = function (n) {
               if (n == 1) return 1;
@@ -826,21 +845,19 @@
               let dp = new Array(n + 1); // ways to climb array
               dp[1] = 1;
               dp[2] = 2;
-              for (let i = 3; i <= n; i++) { //Either climb 1 stair and then climb the rest i-1 stairs X ways.
-                dp[i] = dp[i - 1] + dp[i - 2]; //- Or climb 2 stairs at once and then climb the rest i-2 stairs Y ways.
+              for (let i = 3; i <= n; i++) { //Either climb 1 stair & then climb the rest i-1 stairs X ways.
+                dp[i] = dp[i - 1] + dp[i - 2]; //- Or climb 2 stairs at once & then climb the rest i-2 stairs Y ways.
               }                                  //Total: X + Y ways
               return dp[n]; 
             };
-## [Coin Change](https://leetcode.com/problems/coin-change/) #322
-
-
-        Problem: You are given an integer array coins representing coins of different denominations and an integer amount representing a total amount of money. Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
-        🥚: #1 Input: coins = [1,2,5], amount = 11 Output: 3 Explanation: 11 = 5 + 5 + 1
-        #2 Input: coins = [2], amount = 3 Output: -1
-        #3 Input: coins = [1], amount = 0 Output: 0
+## [Coin Change](https://leetcode.com/problems/coin-change/) #322 📈
+        ❓: You are given an integer array coins representing coins of different denominations & an integer amount representing a total amount of money. Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+        🐣: 1️⃣ Input: coins = [1,2,5], amount = 11 Output: 3 Explain: 11 = 5 + 5 + 1
+        2️⃣ Input: coins = [2], amount = 3 Output: -1
+        3️⃣ Input: coins = [1], amount = 0 Output: 0
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^amount) 🪐: O(amount)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n^amount) 🪐: O(n^amount)   
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n^amount) 🪐: O(n^amount)   
 
             var coinChange = function (coins, amount) {
               let dp = new Array(amount + 1).fill(amount + 1);
@@ -854,13 +871,12 @@
               }
               return dp[amount] > amount ? -1 : dp[amount];
             };
-## [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) #300
-
-        Problem: Given an integer array nums, return the length of the longest strictly increasing subsequence.
-        🥚: #1 Input: nums = [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. #2 Input: nums = [0,1,0,3,2,3] Output: 4 #3 Input: nums = [7,7,7,7,7,7,7] Output: 1
+## [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/) #300  📈
+        ❓: Given an integer array nums, return the length of the longest strictly increasing subsequence.
+        🐣: 1️⃣ Input: nums = [10,9,2,5,3,7,101,18] Output: 4 Explain: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. 2️⃣ Input: nums = [0,1,0,3,2,3] Output: 4 3️⃣ Input: nums = [7,7,7,7,7,7,7] Output: 1
 
         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n^2) 🪐: O(n^2)        
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n^2) 🪐: O(n^2)        
 
             var lengthOfLIS = function (nums) {
               let dp = new Array(nums.length).fill(1);
@@ -876,16 +892,12 @@
               return max;
             };
 
-## [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) #1143
-       
-        Pattern Used: Dynamic Programming
-        Problem: Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0. A subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, "ace" is a subsequence of "abcde" while "aec" is not). A common subsequence of two strings is a subsequence that is common to both strings.
-        🥚: #1 Input: text1 = "abcde", text2 = "ace" Output: 3 Explanation: The longest common subsequence is "ace" and its length is 3. #2 Input: text1 = "abc", text2 = "abc" Output: 3 #3 Input: text1 = "abc", text2 = "def" Output: 0
+## [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) #1143  📈
+        ❓: Given two strings text1 & text2, return the length of their longest common subsequence. If there is no common subsequence, return 0. A subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, "ace" is a subsequence of "abcde" while "aec" is not). A common subsequence of two strings is a subsequence that is common to both strings.
+        🐣: 1️⃣ Input: text1 = "abcde", text2 = "ace" Output: 3 Explain: The longest common subsequence is "ace" & its length is 3. 2️⃣ Input: text1 = "abc", text2 = "abc" Output: 3 3️⃣ Input: text1 = "abc", text2 = "def" Output: 0
 
         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(m*n) 🪐: O(m*n)
-
-        Pattern Used: Memoization
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(m*n) 🪐: O(m*n)
 
             var longestCommonSubsequence = function (text1, text2) {
               let dp = new Array(text1.length + 1)
@@ -902,13 +914,12 @@
               }
               return dp[text1.length][text2.length];
             };
-## [Word Break Problem](https://leetcode.com/problems/word-break/)
-
-        Problem: Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. Note that the same word in the dictionary may be reused multiple times in the segmentation.
-        🥚: #1 Input: s = "leetcode", wordDict = ["leet","code"] Output: true Explanation: Return true because "leetcode" can be segmented as "leet code". #2 Input: s = "applepenapple", wordDict = ["apple","pen"] Output: true Explanation: Return true because "applepenapple" can be segmented as "apple pen apple". Note that you are allowed to reuse a dictionary word. #3 Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"] Output: false
+## [Word Break Problem](https://leetcode.com/problems/word-break/)📈
+        ❓: Given a string s & a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. Note that the same word in the dictionary may be reused multiple times in the segmentation.
+        🐣: 1️⃣ Input: s = "leetcode", wordDict = ["leet","code"] Output: true Explain: Return true because "leetcode" can be segmented as "leet code". 2️⃣ Input: s = "applepenapple", wordDict = ["apple","pen"] Output: true Explain: Return true because "applepenapple" can be segmented as "apple pen apple". Note that you are allowed to reuse a dictionary word. 3️⃣ Input: s = "cats&og", wordDict = ["cats","dog","s&","&","cat"] Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n^2) 🪐: O(n^2)
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n^2) 🪐: O(n^2)
 
             var wordBreak = function (s, wordDict) {
               let dp = new Array(s.length + 1).fill(false);
@@ -923,13 +934,12 @@
               }
               return dp[s.length];
             };
-## [Combination Sum](https://leetcode.com/problems/combination-sum-iv/) #377
-
-        Problem: Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target. Example: Input: nums = [1, 2, 3] target = 4 Output: 7 Explanation: The possible combination ways are: (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) Note that different sequences are counted as different combinations. Therefore the output is 7.
-        
-        🐢 Solution: 🔨 Brute Force ⏰:
-        🐇 Solution: 🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n*target) 🪐:  O(n*target)
+## [Combination Sum](https://leetcode.com/problems/combination-sum-iv/) #377 📈
+        ❓: Given an integer array with all positive numbers & no duplicates, find the number of possible combinations that add up to a positive integer target. 
+        🐣: Input: nums = [1, 2, 3] target = 4 Output: 7 Explain: The possible combination ways are: (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) Note that different sequences are counted as different combinations. Therefore the output is 7.
+      
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n*target) 🪐:  O(n*target)
 
             var combinationSum4 = function (nums, target) {
               let dp = new Array(target + 1).fill(0);
@@ -943,16 +953,12 @@
               }
               return dp[target];
             };
-
-            
 ## [House Robber](https://leetcode.com/problems/house-robber/) #198
-
-        Problem: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constrastopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night. Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
-        🥚: #1 Input: nums = [1,2,3,1] Output: 4 Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4. #2 Input: nums = [2,7,9,3,1] Output: 12 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.
+        ❓: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constrastopping you from robbing each of them is that adjacent houses have security system connected & it will automatically contact the police if two adjacent houses were broken into on the same night. Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
+        🐣: 1️⃣ Input: nums = [1,2,3,1] Output: 4 Explain: Rob house 1 (money = 1) & then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4. 2️⃣ Input: nums = [2,7,9,3,1] Output: 12 Explain: Rob house 1 (money = 2), rob house 3 (money = 9) & rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.
         
-        🐢 Solution: 🔨 Brute Force ⏰:
-        🐇 Solution: 🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
             var rob = function (nums) {
               let dp = new Array(nums.length + 1).fill(0);
@@ -965,13 +971,11 @@
             };
 ## [House Robber II](https://leetcode.com/problems/house-robber-ii/) #213
 
-        Problem: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night. Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
-        🥚: #1 Input: nums = [2,3,2] Output: 3 Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses. #2 Input: nums = [1,2,3,1] Output: 4 Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4. #3 Input: nums = [0] Output: 0
+        ❓: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected & it will automatically contact the police if two adjacent houses were broken into on the same night. Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
+        🐣: 1️⃣ Input: nums = [2,3,2] Output: 3 Explain: You cannot rob house 1 (money = 2) & then rob house 3 (money = 2), because they are adjacent houses. 2️⃣ Input: nums = [1,2,3,1] Output: 4 Explain: Rob house 1 (money = 1) & then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4. 3️⃣ Input: nums = [0] Output: 0
 
         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
-
-        Pattern Used: Memoization
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
             var rob = function (nums) {
               if (nums.length == 1) return nums[0];
@@ -989,13 +993,12 @@
               }
               return dp[end];
             };
-## [Decode Ways](https://leetcode.com/problems/decode-ways/) #91
-
-        Problem: A message containing letters from A-Z is being encoded to numbers using the following mapping: 'A' -> 1 'B' -> 2 ... 'Z' -> 26 Given a non-empty string s containing only digits, determine the total number of ways to decode it. The answer is guaranteed to fit in a 32-bit integer.
-        🥚: #1 Input: s = "12" Output: 2 Explanation: It could be decoded as "AB" (1 2) or "L" (12). #2 Input: s = "226" Output: 3 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6). #3 Input: s = "0" Output: 0 Explanation: There is no character that is mapped to a number starting with 0. The only valid mappings with 0 are 'J' -> "10" and 'T' -> "20", neither of which start with 0. Hence, there are no valid ways to decode this since all digits need to be mapped. #4 Input: s = "1" Output: 1
+## [Decode Ways](https://leetcode.com/problems/decode-ways/) #91 📈
+        ❓: A message containing letters from A-Z is being encoded to numbers using the following mapping: 'A' -> 1 'B' -> 2 ... 'Z' -> 26 Given a non-empty string s containing only digits, determine the total number of ways to decode it. The answer is guaranteed to fit in a 32-bit integer.
+        🐣: 1️⃣ Input: s = "12" Output: 2 Explain: It could be decoded as "AB" (1 2) or "L" (12). 2️⃣ Input: s = "226" Output: 3 Explain: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6). 3️⃣ Input: s = "0" Output: 0 Explain: There is no character that is mapped to a number starting with 0. The only valid mappings with 0 are 'J' -> "10" & 'T' -> "20", neither of which start with 0. Hence, there are no valid ways to decode this since all digits need to be mapped. #4 Input: s = "1" Output: 1
 
         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
+        🐇 Solution:  📈 Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
             var numDecodings = function (s) {
               if (s[0] == "0") return 0;
@@ -1014,13 +1017,13 @@
               }
               return dp[s.length];
             };
-## [Unique Paths](https://leetcode.com/problems/unique-paths/) #62
+## [Unique Paths](https://leetcode.com/problems/unique-paths/) #62 📈
 
-        Problem: A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any poin time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there?
-        🥚: #1 Input: m = 3, n = 7 Output: 28 #2 Input: m = 3, n = 2 Output: 3 Explanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner: 1. Right -> Down -> Down 2. Down -> Down -> Right 3. Down -> Right -> Down #3 Input: m = 7, n = 3 Output: 28 #4 Input: m = 3, n = 3 Output: 6
+        ❓: A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any poin time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there?
+        🐣: 1️⃣ Input: m = 3, n = 7 Output: 28 2️⃣ Input: m = 3, n = 2 Output: 3 Explain: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner: 1. Right -> Down -> Down 2. Down -> Down -> Right 3. Down -> Right -> Down 3️⃣ Input: m = 7, n = 3 Output: 28 #4 Input: m = 3, n = 3 Output: 6
 
         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Memoization ⏰: O(n) 🪐: O(n)
+        🐇 Solution:  📈 Dynamic Programming Memoization ⏰: O(n) 🪐: O(n)
 
             var uniquePaths = function (m, n) {
               let dp = new Array(m).fill(0).map(() => new Array(n).fill(0));
@@ -1037,14 +1040,13 @@
               }
               return dp[m - 1][n - 1];
             };
-## [Jump Game](https://leetcode.com/problems/jump-game/) #55
+## [Jump Game](https://leetcode.com/problems/jump-game/) #55 📈
 
-        Problem: Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index.
-        🥚: #1 Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. #2 Input: nums = [3,2,1,0,4] Output: false Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
+        ❓: Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index.
+        🐣: 1️⃣ Input: nums = [2,3,1,1,4] Output: true Explain: Jump 1 step from index 0 to 1, then 3 steps to the last index. 2️⃣ Input: nums = [3,2,1,0,4] Output: false Explain: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
         
-        🐢 Solution: 🔨 Brute Force ⏰:
-        🐇 Solution: 🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
-        🐇 Solution:  Dynamic Programming Tabulation ⏰: O(n) 🪐: O(n)
+         🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐇 Solution:  📈 Dynamic Programming Tabulation ⏰: O(n) 🪐: O(n)
 
             var canJump = function (nums) {
               let dp = new Array(nums.length).fill(false);
@@ -1061,17 +1063,14 @@
             };
 
 ---
-
 ## Graph
 
-## [Clone Graph](https://leetcode.com/problems/clone-graph/) #133
-
-       Pattern Used: BFS Pattern:
-       Problem: Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Each node in the graph contains a val (int) and a list (List[Node]) of its neighbors.
-       🥚: #1 Input: adjList = [[2,4],[1,3],[2,4],[1,3]] Output: [[2,4],[1,3],[2,4],[1,3]] Explanation: There are 4 nodes in the graph. #2 Input: adjList = [[]] Output: [[]] #3 Input: adjList = [] Output: [] #4 Input: adjList = [[2],[1]] Output: [[2],[1]]
+## [Clone Graph](https://leetcode.com/problems/clone-graph/) #133 🌳
+       ❓: Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Each node in the graph contains a val (int) & a list (List[Node]) of its neighbors.
+       🐣: 1️⃣ Input: adjList = [[2,4],[1,3],[2,4],[1,3]] Output: [[2,4],[1,3],[2,4],[1,3]] Explain: There are 4 nodes in the graph. 2️⃣ Input: adjList = [[]] Output: [[]] 3️⃣ Input: adjList = [] Output: [] #4 Input: adjList = [[2],[1]] Output: [[2],[1]]
 
               🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-              🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
+              🐇 Solution: 🌳 BFS ⏰: O(n) 🪐: O(n)
 
               var cloneGraph = function (node) {
                  if (!node) return node;
@@ -1092,11 +1091,9 @@
                  return clone;
               };
 
-## [Course Schedule](https://leetcode.com/problems/course-schedule/) #207
-
-        Pattern Used : Topological Sort
-        Problem: There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai. For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1. Return true if you can finish all courses. Otherwise, return false.
-        🥚: #1 Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible. #2 Input: numCourses = 2, prerequisites = [[1,0],[0,1]] Output: false Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
+## [Course Schedule](https://leetcode.com/problems/course-schedule/) #207  📅
+        ❓: There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai. For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1. Return true if you can finish all courses. Otherwise, return false.
+        🐣: 1️⃣ Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explain: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible. 2️⃣ Input: numCourses = 2, prerequisites = [[1,0],[0,1]] Output: false Explain: There are a total of 2 courses to take. To take course 1 you should have finished course 0, & to take course 0 you should also have finished course 1. So it is impossible.
           
           🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
           🐇 Solution: Topological Sort  ⏰: O(V+E)   🪐: O(V+E) 
@@ -1127,13 +1124,12 @@
               return count == numCourses;
             };
 
-## [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) #417
-        Pattern Used: BFS Pattern
-        Problem: Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the "Pacific ocean" touches the left and top edges of the matrix and the "Atlantic ocean" touches the right and bottom edges. Water can only flow in four directions (up, down, left, or right) from a cell to another one with height equal or lower. Find the list of grid coordinates where water can flow to both the Pacific and Atlantic ocean.
-        🥚: #1 Input: heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]] Output: [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]] Explanation: Pacific ~ ~ ~ ~ ~ 1 2 2 3 (5) ~ 3 2 3 (4) (4) ~ 2 4 (5) 3 1 ~ (6) (7) 1 4 5 ~ (5) 1 1 2 4 ~ ~ ~ ~ ~ Atlantic #2 Input: heights = [[2,1],[1,2]] Output: [[0,0],[0,1],[1,0],[1,1]]
+## [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/) #417 🌳 
+        ❓: Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the "Pacific ocean" touches the left & top edges of the matrix & the "Atlantic ocean" touches the right & bottom edges. Water can only flow in four directions (up, down, left, or right) from a cell to another one with height equal or lower. Find the list of grid coordinates where water can flow to both the Pacific & Atlantic ocean.
+        🐣: 1️⃣ Input: heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]] Output: [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]] Explain: Pacific ~ ~ ~ ~ ~ 1 2 2 3 (5) ~ 3 2 3 (4) (4) ~ 2 4 (5) 3 1 ~ (6) (7) 1 4 5 ~ (5) 1 1 2 4 ~ ~ ~ ~ ~ Atlantic 2️⃣ Input: heights = [[2,1],[1,2]] Output: [[0,0],[0,1],[1,0],[1,1]]
 
             🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-            🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
+            🐇 Solution: 🌳 BFS ⏰: O(n) 🪐: O(n)
 
             var pacificAtlantic = function (heights) {
               let m = heights.length;
@@ -1149,7 +1145,7 @@
                 queue.push([0, i]);
                 pacific[0][i] = true;
               }
-              bfs(heights, pacific, queue);
+              🌳 BFS(heights, pacific, queue);
               queue = [];
               for (let i = 0; i < m; i++) {
                 queue.push([i, n - 1]);
@@ -1159,7 +1155,7 @@
                 queue.push([m - 1, i]);
                 atlantic[m - 1][i] = true;
               }
-              bfs(heights, atlantic, queue);
+              🌳 BFS(heights, atlantic, queue);
               let res = [];
               for (let i = 0; i < m; i++) {
                 for (let j = 0; j < n; j++) {
@@ -1169,7 +1165,7 @@
               return res;
             };
 
-            function bfs(heights, ocean, queue) {
+            function 🌳 BFS(heights, ocean, queue) {
               let dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]];
               while (queue.length) {
                 let [i, j] = queue.shift();
@@ -1194,16 +1190,15 @@
 
 
                 
-## [Number of Islands](https://leetcode.com/problems/number-of-islands/) #200
-
-        Pattern Used: BFS Pattern DFS Pattern Union Find Pattern
-        Problem: Given an m x n 2d grid map of '1's (land) and '0's (water), return the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
-        🥚: #1 Input: grid = [ ["1","1","1","1","0"], ["1","1","0","1","0"], ["1","1","0","0","0"], ["0","0","0","0","0"] ] Output: 1 #2 Input: grid = [ ["1","1","0","0","0"], ["1","1","0","0","0"], ["0","0","1","0","0"], ["0","0","0","1","1"] ] Output: 3
+## [Number of Isl&s](https://leetcode.com/problems/number-of-isl&s/) #200 🌳
+        Pattern Used: 🌳 BFS Pattern DFS Pattern Union Find Pattern
+        ❓: Given an m x n 2d grid map of '1's (l&) & '0's (water), return the number of isl&s. An isl& is surrounded by water & is formed by connecting adjacent l&s horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+        🐣: 1️⃣ Input: grid = [ ["1","1","1","1","0"], ["1","1","0","1","0"], ["1","1","0","0","0"], ["0","0","0","0","0"] ] Output: 1 2️⃣ Input: grid = [ ["1","1","0","0","0"], ["1","1","0","0","0"], ["0","0","1","0","0"], ["0","0","0","1","1"] ] Output: 3
        
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution:  BFS  ⏰: O(mn) 🪐: O(mn)
+        🐇 Solution:  🌳 BFS  ⏰: O(mn) 🪐: O(mn)
 
-            var numIslands = function (grid) {
+            var numIsl&s = function (grid) {
               let m = grid.length;
               let n = grid[0].length;
               let count = 0;
@@ -1236,13 +1231,12 @@
               }
               return count;
             };
-## [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) #128
-        Pattern Used: Union Find Pattern
-        Problem: Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
-        🥚: #1 Input: nums = [100,4,200,1,3,2] Output: 4 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4. #2 Input: nums = [0,3,7,2,5,8,4,6,0,1] Output: 9
+## [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) #128  ♾ 
+        ❓: Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
+        🐣: 1️⃣ Input: nums = [100,4,200,1,3,2] Output: 4 Explain: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4. 2️⃣ Input: nums = [0,3,7,2,5,8,4,6,0,1] Output: 9
 
          🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-         🐇 Solution: Union Find  ⏰: O(n) 🪐: O(n)
+         🐇 Solution:  ♾  Union Find  ⏰: O(n) 🪐: O(n)
 
             var longestConsecutive = function (nums) {
               let set = new Set(nums);
@@ -1263,14 +1257,12 @@
 
 ## Interval
 
-## [Insert Interval](https://leetcode.com/problems/insert-interval/) #57
-
-        Pattern Used: Merge Intervals Pattern
-        Problem: Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times.
-        🥚: #1 Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]] #2 Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8] Output: [[1,2],[3,10],[12,16]] Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+## [Insert Interval](https://leetcode.com/problems/insert-interval/) #57 🚗🚙 
+        ❓: Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times.
+        🐣: 1️⃣ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]] 2️⃣ Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8] Output: [[1,2],[3,10],[12,16]] Explain: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
         
           🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-          🐇 Solution: Merge Intervals  ⏰: O(n) 🪐: O(n)
+          🐇 Solution: 🚗🚙  Merge Intervals  ⏰: O(n) 🪐: O(n)
   
               var insert = function (intervals, newInterval) {
                 let res = [];
@@ -1291,15 +1283,12 @@
                 }
                 return res;
               };
-## [Merge Intervals](https://leetcode.com/problems/merge-intervals/) #56
-
-        Pattern Used: Merge Intervals Pattern Greedy
-        Problem: Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, and return an array of the non-overlapping intervals that cover all the intervals in the input.
-        🥚: #1 Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. #2 Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explanation: Intervals [1,4] and [4,5] are considered overlapping.
+## [Merge Intervals](https://leetcode.com/problems/merge-intervals/) #56 🚗🚙 💰
+        ❓: Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals, & return an array of the non-overlapping intervals that cover all the intervals in the input.
+        🐣: 1️⃣ Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explain: Since intervals [1,3] & [2,6] overlaps, merge them into [1,6]. 2️⃣ Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explain: Intervals [1,4] & [4,5] are considered overlapping.
         
-
           🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-          🐇 Solution: Merge Intervals  ⏰: O(n) 🪐: O(n)
+          🐇 Solution: 🚗🚙  Merge Intervals  ⏰: O(n) 🪐: O(n)
   
               var merge = function (intervals) {
                 if (intervals.length <= 1) return intervals;
@@ -1317,15 +1306,12 @@
                 return res;
               };
 
-## [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) #435
+## [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) #435 🚗🚙
+       ❓: Given an array of intervals intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
+        🐣: 1️⃣ Input: intervals = [[1,2],[2,3],[3,4],[1,3]] Output: 1 Explain: [1,3] can be removed & the rest of the intervals are non-overlapping. 2️⃣ Input: intervals = [[1,2],[1,2],[1,2]] Output: 2 Explain: You need to remove two [1,2] to make the rest of the intervals non-overlapping. 3️⃣ Input: intervals = [[1,2],[2,3]] Output: 0 Explain: You don't need to remove any of the intervals since they're already non-overlapping.
 
-        Pattern Used: Merge Intervals Pattern
-        Problem: Given an array of intervals intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
-        🥚: #1 Input: intervals = [[1,2],[2,3],[3,4],[1,3]] Output: 1 Explanation: [1,3] can be removed and the rest of the intervals are non-overlapping. #2 Input: intervals = [[1,2],[1,2],[1,2]] Output: 2 Explanation: You need to remove two [1,2] to make the rest of the intervals non-overlapping. #3 Input: intervals = [[1,2],[2,3]] Output: 0 Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
-        
-
-        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution:   Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
+          🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
+          🐇 Solution:  🚗🚙  Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
 
             var eraseOverlapIntervals = function (intervals) {
               if (intervals.length <= 1) return 0;
@@ -1346,14 +1332,12 @@
 
 ## Linked List
 
-## [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) #206
-
-        Pattern Used: Fast & Slow Pointers Pattern
-        Problem: Given the head of a singly linked list, reverse the list, and return the reversed list.
-        🥚: #1 Input: head = [1,2,3,4,5] Output: [5,4,3,2,1] #2 Input: head = [1,2] Output: [2,1] #3 Input: head = [] Output: []
+## [Reverse a Linked List](https://leetcode.com/problems/reverse-linked-list/) #206  🐰&🐢 
+        ❓: Given the head of a singly linked list, reverse the list, & return the reversed list.
+        🐣: 1️⃣ Input: head = [1,2,3,4,5] Output: [5,4,3,2,1] 2️⃣ Input: head = [1,2] Output: [2,1] 3️⃣ Input: head = [] Output: []
         
         🐢 Solution: 🔨 Brute Force ⏰: 🔨 Brute Force ⏰:
-        🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
+        🐇 Solution: 🐰&🐢 Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var reverseList = function (head) {
               let prev = null;
@@ -1366,14 +1350,12 @@
               }
               return prev;
             };
-## [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/) #141
-
-        Pattern Used: Fast & Slow Pointers Pattern
-        Problem: Given head, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter. Return true if there is a cycle in the linked list. Otherwise, return false.
-        🥚: #1 Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed). #2 Input: head = [1,2], pos = 0 Output: true Explanation: There is a cycle in the linked list, where the tail connects to the 0th node. #3 Input: head = [1], pos = -1 Output: false Explanation: There is no cycle in the linked list.
+## [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/) #141 🐰&🐢 
+        ❓: Given head, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter. Return true if there is a cycle in the linked list. Otherwise, return false.
+        🐣: 1️⃣ Input: head = [3,2,0,-4], pos = 1 Output: true Explain: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed). 2️⃣ Input: head = [1,2], pos = 0 Output: true Explain: There is a cycle in the linked list, where the tail connects to the 0th node. 3️⃣ Input: head = [1], pos = -1 Output: false Explain: There is no cycle in the linked list.
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
+        🐇 Solution:  🐰&🐢 Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var hasCycle = function (head) {
               let slow = head;
@@ -1385,14 +1367,12 @@
               }
               return false;
             };
-## [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) #21
-
-        Pattern Used: Fast & Slow Pointers Pattern
-        Problem: Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
-        🥚: #1 Input: l1 = [1,2,4], l2 = [1,3,4] Output: [1,1,2,3,4,4] #2 Input: l1 = [], l2 = [] Output: [] #3 Input: l1 = [], l2 = [0] Output: [0]
+## [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) #21 🐰&🐢 
+        ❓: Merge two sorted linked lists & return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
+        🐣: 1️⃣ Input: l1 = [1,2,4], l2 = [1,3,4] Output: [1,1,2,3,4,4] 2️⃣ Input: l1 = [], l2 = [] Output: [] 3️⃣ Input: l1 = [], l2 = [0] Output: [0]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
+        🐇 Solution:  🐰&🐢  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var mergeTwoLists = function (l1, l2) {
               let dummy = new ListNode();
@@ -1411,14 +1391,12 @@
               if (l2) curr.next = l2;
               return dummy.next;
             };
-## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #23
-
-        Pattern Used: Merge Intervals Pattern
-        Problem: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
-        🥚: #1 Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] #2 Input: lists = [] Output: [] #3 Input: lists = [[]] Output: []
+## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #23 🚗🚙
+        ❓: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list & return it.
+        🐣: 1️⃣ Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] 2️⃣ Input: lists = [] Output: [] 3️⃣ Input: lists = [[]] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
+        🐇 Solution: 🚗🚙 Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
         
             var mergeKLists = function (lists) {
               if (lists.length === 0) return null;
@@ -1436,14 +1414,12 @@
               }
               return dummy.next;
             };
-## [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) #19
-
-        Pattern Used: Fast & Slow Pointers Pattern
-        Problem: Given the head of a linked list, remove the nth node from the end of the list and return its head.
-        🥚: #1 Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] #2 Input: head = [1], n = 1 Output: [] #3 Input: head = [1,2], n = 1 Output: [1]
+## [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) #19 🐰&🐢
+        ❓: Given the head of a linked list, remove the nth node from the end of the list & return its head.
+        🐣: 1️⃣ Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] 2️⃣ Input: head = [1], n = 1 Output: [] 3️⃣ Input: head = [1,2], n = 1 Output: [1]
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
+        🐇 Solution: 🐰&🐢 Fast & Slow Pointers Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var removeNthFromEnd = function (head, n) {
               let dummy = new ListNode();
@@ -1460,14 +1436,12 @@
               slow.next = slow.next.next;
               return dummy.next;
             };
-## [Reorder List](https://leetcode.com/problems/reorder-list/) #143
-
-        Pattern Used: Fast & Slow Pointers Pattern
-        Problem: Given the head of a singly linked list, reorder the list to be: head -> node 2 -> node 3 -> node 4 -> ... -> node n -> null. You may not modify the values in the list's nodes. Only nodes themselves may be changed.
-        🥚: #1 Input: head = [1,2,3,4] Output: [1,4,2,3] #2 Input: head = [1,2,3,4,5] Output: [1,5,2,4,3]
+## [Reorder List](https://leetcode.com/problems/reorder-list/) #143 🐰&🐢
+        ❓: Given the head of a singly linked list, reorder the list to be: head -> node 2 -> node 3 -> node 4 -> ... -> node n -> null. You may not modify the values in the list's nodes. Only nodes themselves may be changed.
+        🐣: 1️⃣ Input: head = [1,2,3,4] Output: [1,4,2,3] 2️⃣ Input: head = [1,2,3,4,5] Output: [1,5,2,4,3]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: ⏰: O(n) 🪐: O(1)
+        🐇 Solution: 🐰&🐢 Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var reorderList = function (head) {
               if (!head) return null;
@@ -1501,10 +1475,8 @@
 ## Matrix
 
 ## [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) #73
-
-        Pattern Used: Matrix Pattern 
-        Problem: Given an m x n matrix. If an element is 0, set its entire row and column to 0. Do it in-place.
-        🥚: #1 Input: matrix = [[1,1,1],[1,0,1],[1,1,1]] Output: [[1,0,1],[0,0,0],[1,0,1]] #2 Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]] Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
+        ❓: Given an m x n matrix. If an element is 0, set its entire row & column to 0. Do it in-place.
+        🐣: 1️⃣ Input: matrix = [[1,1,1],[1,0,1],[1,1,1]] Output: [[1,0,1],[0,0,0],[1,0,1]] 2️⃣ Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]] Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(mn) 🪐: O(m+n)
         🐇 Solution: Matrix Pattern  ⏰: O(mn) 🪐: O(1)
@@ -1531,8 +1503,8 @@
 ## [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) #54
 
         Pattern Used: Matrix Pattern
-        Problem: Given an m x n matrix, return all elements of the matrix in spiral order.
-        🥚: #1 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] #2 Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] Output: [1,2,3,4,8,12,11,10,9,5,6,7]
+        ❓: Given an m x n matrix, return all elements of the matrix in spiral order.
+        🐣: 1️⃣ Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] 2️⃣ Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(mn) 🪐: O(mn)
         🐇 Solution:  Matrix Pattern  ⏰: O(mn) 🪐: O(mn)
@@ -1570,8 +1542,8 @@
 ## [Rotate Image](https://leetcode.com/problems/rotate-image/) #48
 
         Pattern Used: Matrix Pattern
-        Problem: You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
-        🥚: #1 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],[8,5,2],[9,6,3]] #2 Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]] Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
+        ❓: You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+        🐣: 1️⃣ Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],[8,5,2],[9,6,3]] 2️⃣ Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]] Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
         
         🐢 Solution: 🔨 Brute Force ⏰: 🔨 Brute Force ⏰:
         🐇 Solution:  MatrixPattern ⏰: O(n) 🪐: O(1)
@@ -1591,8 +1563,8 @@
 ## [Word Search](https://leetcode.com/problems/word-search/) #79
 
         Pattern Used: Backtracking Matrix Pattern
-        Problem: Given an m x n grid of characters board and a string word, return true if word exists in the grid.
-        🥚: #1 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED" Output: true #2 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE" Output: true #3 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB" Output: false
+        ❓: Given an m x n grid of characters board & a string word, return true if word exists in the grid.
+        🐣: 1️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED" Output: true 2️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE" Output: true 3️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB" Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰ O(mn * 4^L) 🪐: O(mn)
         🐇 Solution:  MatrixPattern ⏰: O(n) 🪐: O(n)
@@ -1634,11 +1606,11 @@
 
 ## String
 
-## [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) #3
+## [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 3️⃣
         
         Pattern Used: Sliding Window Pattern
-        Problem: Given a string s, find the length of the longest substring without repeating characters.
-        🥚: #1 Input: s = "abcabcbb" Output: 3 Explanation: The answer is "abc", with the length of 3. #2 Input: s = "bbbbb" Output: 1 Explanation: The answer is "b", with the length of 1. #3 Input: s = "pwwkew" Output: 3 Explanation: The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence and not a substring. #4 Input: s = "" Output: 0
+        ❓: Given a string s, find the length of the longest substring without repeating characters.
+        🐣: 1️⃣ Input: s = "abcabcbb" Output: 3 Explain: The answer is "abc", with the length of 3. 2️⃣ Input: s = "bbbbb" Output: 1 Explain: The answer is "b", with the length of 1. 3️⃣ Input: s = "pwwkew" Output: 3 Explain: The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence & not a substring. #4 Input: s = "" Output: 0
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(min(m, n))  
         🐇 Solution:  Sliding Window Pattern ⏰: O(n) 🪐: O(n)
@@ -1663,9 +1635,9 @@
 ## [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) #424
 
         Pattern Used: Sliding Window Pattern
-        Problem: You are given a string s and an integer k. You can choose any character of the string and change it to any other uppercase English character. You can perform this operation at most k times.
+        ❓: You are given a string s & an integer k. You can choose any character of the string & change it to any other uppercase English character. You can perform this operation at most k times.
         Return the length of the longest substring containing the same letter you can get after performing the above operations.
-        🥚: #1 Input: s = "ABAB", k = 2 Output: 4 Explanation: Replace the two 'A's with two 'B's or vice versa. #2 Input: s = "AABABBA", k = 1 Output: 4 Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
+        🐣: 1️⃣ Input: s = "ABAB", k = 2 Output: 4 Explain: Replace the two 'A's with two 'B's or vice versa. 2️⃣ Input: s = "AABABBA", k = 1 Output: 4 Explain: Replace the one 'A' in the middle with 'B' & form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(1)
         🐇 Solution: Sliding Window Pattern ⏰: O(n) 🪐: O(n)
@@ -1689,10 +1661,10 @@
 ## [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) #76
 
         Pattern Used: Sliding Window Pattern
-        Problem: Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
+        ❓: Given two strings s & t of lengths m & n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
         The testcases will be generated such that the answer is unique.
         A substring is a contiguous sequence of characters within the string.
-        🥚: #1 Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC" Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t. #2 Input: s = "a", t = "a" Output: "a" #3 Input: s = "a", t = "aa" Output: "" Explanation: Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.
+        🐣: 1️⃣ Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC" Explain: The minimum window substring "BANC" includes 'A', 'B', & 'C' from string t. 2️⃣ Input: s = "a", t = "a" Output: "a" 3️⃣ Input: s = "a", t = "aa" Output: "" Explain: Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(n)
         🐇 Solution: Sliding Window Pattern ⏰: O(n) 🪐: O(n)
@@ -1736,8 +1708,8 @@
 ## [Valid Anagram](https://leetcode.com/problems/valid-anagram/) #242
 
         Pattern Used: Hash Table
-        Problem: Given two strings s and t , write a function to determine if t is an anagram of s.
-        🥚: #1 Input: s = "anagram", t = "nagaram" Output: true #2 Input: s = "rat", t = "car" Output: false
+        ❓: Given two strings s & t , write a function to determine if t is an anagram of s.
+        🐣: 1️⃣ Input: s = "anagram", t = "nagaram" Output: true 2️⃣ Input: s = "rat", t = "car" Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(nlogn) 🪐: O(n)
         🐇 Solution:  Hash Table  ⏰: O(n) 🪐: O(n)
@@ -1764,9 +1736,9 @@
 ## [Group Anagrams](https://leetcode.com/problems/group-anagrams/) #49
 
         Pattern Used: Hash Table
-        Problem: Given an array of strings strs, group the anagrams together. You can return the answer in any order.
+        ❓: Given an array of strings strs, group the anagrams together. You can return the answer in any order.
         An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
-        🥚: #1 Input: strs = ["eat","tea","tan","ate","nat","bat"] Output: [["bat"],["nat","tan"],["ate","eat","tea"]] #2 Input: strs = [""] Output: [[""]] #3 Input: strs = ["a"] Output: [["a"]]
+        🐣: 1️⃣ Input: strs = ["eat","tea","tan","ate","nat","bat"] Output: [["bat"],["nat","tan"],["ate","eat","tea"]] 2️⃣ Input: strs = [""] Output: [[""]] 3️⃣ Input: strs = ["a"] Output: [["a"]]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n^2)
         🐇 Solution:  Hash Table  ⏰: O(n) 🪐: O(n)
@@ -1785,11 +1757,11 @@
 ## [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) #20
 
         Pattern Used: Stack
-        Problem: Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+        ❓: Given a string s containing just the characters '(', ')', '{', '}', '[' & ']', determine if the input string is valid.
         An input string is valid if:
         Open brackets must be closed by the same type of brackets.
         Open brackets must be closed in the correct order.
-        🥚: #1 Input: s = "()" Output: true #2 Input: s = "()[]{}" Output: true #3 Input: s = "(]" Output: false #4 Input: s = "([)]" Output: false #5 Input: s = "{[]}" Output: true
+        🐣: 1️⃣ Input: s = "()" Output: true 2️⃣ Input: s = "()[]{}" Output: true 3️⃣ Input: s = "(]" Output: false #4 Input: s = "([)]" Output: false #5 Input: s = "{[]}" Output: true
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(n)
         🐇 Solution: Stack  ⏰: O(n) 🪐: O(n)
@@ -1814,8 +1786,8 @@
 ## [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) #125
 
         Pattern Used: Two Pointers
-        Problem: Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
-        🥚: #1 Input: s = "A man, a plan, a canal: Panama" Output: true Explanation: "amanaplanacanalpanama" is a palindrome.
+        ❓: Given a string s, determine if it is a palindrome, considering only alphanumeric characters & ignoring cases.
+        🐣: 1️⃣ Input: s = "A man, a plan, a canal: Panama" Output: true Explain: "amanaplanacanalpanama" is a palindrome.
         
         🐢 Solution: 🔨 Brute Force ⏰: 
         🐇 Solution: Two Pointers ⏰: 
@@ -1846,18 +1818,18 @@
             
         }
 ## [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) #5
-        Pattern Used: Dynamic Programming
-        Problem: Given a string s, return the longest palindromic substring in s.
-        🥚: #1 Input: s = "babad" Output: "bab" Note: "aba" is also a valid answer. #2 Input: s = "cbbd" Output: "bb" #3 Input: s = "a" Output: "a" #4 Input: s = "ac" Output: "a"
+        Pattern Used: 📈 Dynamic Programming
+        ❓: Given a string s, return the longest palindromic substring in s.
+        🐣: 1️⃣ Input: s = "babad" Output: "bab" Note: "aba" is also a valid answer. 2️⃣ Input: s = "cbbd" Output: "bb" 3️⃣ Input: s = "a" Output: "a" #4 Input: s = "ac" Output: "a"
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(1)
-        🐇 Solution: Dynamic Programming ⏰: O(n^2) 🪐: O(n^2)
+        🐇 Solution: 📈 Dynamic Programming ⏰: O(n^2) 🪐: O(n^2)
 
             var longestPalindrome = function (s) {
               let result = "";
               for (let i = 0; i < s.length; i++) {
-                let odd = expand(s, i, i);
-                let even = expand(s, i, i + 1);
+                let odd = exp&(s, i, i);
+                let even = exp&(s, i, i + 1);
                 let max = odd.length > even.length ? odd : even;
                 if (max.length > result.length) {
                   result = max;
@@ -1865,7 +1837,7 @@
               }
               return result;
             };
-            function expand(s, left, right) {
+            function exp&(s, left, right) {
               while (left >= 0 && right < s.length && s[left] === s[right]) {
                 left--;
                 right++;
@@ -1874,24 +1846,24 @@
             }
 ## [Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/) #647
 
-        Pattern Used: Dynamic Programming
-        Problem: Given a string s, return the number of palindromic substrings in it.
+        Pattern Used: 📈 Dynamic Programming
+        ❓: Given a string s, return the number of palindromic substrings in it.
         A string is a palindrome when it reads the same backward as forward.
         A substring is a contiguous sequence of characters within the string.
-        🥚: #1 Input: s = "abc" Output: 3 Explanation: Three palindromic strings: "a", "b", "c". #2 Input: s = "aaa" Output: 6 Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+        🐣: 1️⃣ Input: s = "abc" Output: 3 Explain: Three palindromic strings: "a", "b", "c". 2️⃣ Input: s = "aaa" Output: 6 Explain: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(1)
-        🐇 Solution:  Dynamic Programming ⏰: O(n^2) 🪐: O(n^2)
+        🐇 Solution:  📈 Dynamic Programming ⏰: O(n^2) 🪐: O(n^2)
 
             var countSubstrings = function (s) {
               let count = 0;
               for (let i = 0; i < s.length; i++) {
-                count += expand(s, i, i);
-                count += expand(s, i, i + 1);
+                count += exp&(s, i, i);
+                count += exp&(s, i, i + 1);
               }
               return count;
             };
-            function expand(s, left, right) {
+            function exp&(s, left, right) {
               let count = 0;
               while (left >= 0 && right < s.length && s[left] === s[right]) {
                 count++;
@@ -1907,9 +1879,9 @@
 ## [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
 
         Pattern Used: DFS
-        Problem: Given the root of a binary tree, return its maximum depth.
+        ❓: Given the root of a binary tree, return its maximum depth.
         A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-        🥚: #1 Input: root = [3,9,20,null,null,15,7] Output: 3 #2 Input: root = [1,null,2] Output: 2 #3 Input: root = [] Output: 0 #4 Input: root = [0] Output: 1
+        🐣: 1️⃣ Input: root = [3,9,20,null,null,15,7] Output: 3 2️⃣ Input: root = [1,null,2] Output: 2 3️⃣ Input: root = [] Output: 0 #4 Input: root = [0] Output: 1
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -1922,9 +1894,9 @@
 ## [Same Tree](https://leetcode.com/problems/same-tree/) #100
 
         Pattern Used: DFS
-        Problem: Given the roots of two binary trees p and q, write a function to check if they are the same or not.
-        Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
-        🥚: #1 Input: p = [1,2,3], q = [1,2,3] Output: true #2 Input: p = [1,2], q = [1,null,2] Output: false #3 Input: p = [1,2,1], q = [1,1,2] Output: false
+        ❓: Given the roots of two binary trees p & q, write a function to check if they are the same or not.
+        Two binary trees are considered the same if they are structurally identical, & the nodes have the same value.
+        🐣: 1️⃣ Input: p = [1,2,3], q = [1,2,3] Output: true 2️⃣ Input: p = [1,2], q = [1,null,2] Output: false 3️⃣ Input: p = [1,2,1], q = [1,1,2] Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -1939,8 +1911,8 @@
 ## [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/) #226
 
         Pattern Used: DFS
-        Problem: Invert a binary tree.
-        🥚: #1 Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] #2 Input: root = [2,1,3] Output: [2,3,1] #3 Input: root = [] Output: []
+        ❓: Invert a binary tree.
+        🐣: 1️⃣ Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] 2️⃣ Input: root = [2,1,3] Output: [2,3,1] 3️⃣ Input: root = [] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -1957,9 +1929,9 @@
 
 ## [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) #124
         Pattern Used: DFS
-        Problem: Given the root of a binary tree, return the maximum path sum of any path.
-        A path is a collection of nodes that are connected by edges, where no node is connected to more than two other nodes. The path must contain at least one node and does not need to go through the root.
-        🥚: #1 Input: root = [1,2,3] Output: 6 #2 Input: root = [-10,9,20,null,null,15,7] Output: 42
+        ❓: Given the root of a binary tree, return the maximum path sum of any path.
+        A path is a collection of nodes that are connected by edges, where no node is connected to more than two other nodes. The path must contain at least one node & does not need to go through the root.
+        🐣: 1️⃣ Input: root = [1,2,3] Output: 6 2️⃣ Input: root = [-10,9,20,null,null,15,7] Output: 42
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -1978,12 +1950,12 @@
             };
 ## [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) #102
 
-        Pattern Used: BFS
-        Problem: Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
-        🥚: #1 Input: root = [3,9,20,null,null,15,7] Output: [[3],[9,20],[15,7]] #2 Input: root = [1] Output: [[1]] #3 Input: root = [] Output: []
+        Pattern Used: 🌳 BFS
+        ❓: Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+        🐣: 1️⃣ Input: root = [3,9,20,null,null,15,7] Output: [[3],[9,20],[15,7]] 2️⃣ Input: root = [1] Output: [[1]] 3️⃣ Input: root = [] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌳 BFS ⏰: O(n) 🪐: O(n)
 
             var levelOrder = function (root) {
               let result = [];
@@ -1997,15 +1969,15 @@
               dfs(root, 0);
               return result;
             };
-## [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) #297
+## [Serialize & Deserialize Binary Tree](https://leetcode.com/problems/serialize-&-deserialize-binary-tree/) #297
 
-        Pattern Used: BFS
-        Problem: Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
-        Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
-        🥚: #1 Input: root = [1,2,3,null,null,4,5] Output: [1,2,3,null,null,4,5]
+        Pattern Used: 🌳 BFS
+        ❓: Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.
+        Design an algorithm to serialize & deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string & this string can be deserialized to the original tree structure.
+        🐣: 1️⃣ Input: root = [1,2,3,null,null,4,5] Output: [1,2,3,null,null,4,5]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌳 BFS ⏰: O(n) 🪐: O(n)
 
             var serialize = function (root) {
               let result = [];
@@ -2039,9 +2011,9 @@
 ## [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) #572
 
         Pattern Used: DFS
-        Problem: Given the roots of two binary trees root and subRoot, return true if there is a subtree of root with the same structure and node values of subRoot and false otherwise.
-        A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
-        🥚: #1 Input: root = [3,4,5,1,2], subRoot = [4,1,2] Output: true #2 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2] Output: false
+        ❓: Given the roots of two binary trees root & subRoot, return true if there is a subtree of root with the same structure & node values of subRoot & false otherwise.
+        A subtree of a binary tree tree is a tree that consists of a node in tree & all of this node's descendants. The tree tree could also be considered as a subtree of itself.
+        🐣: 1️⃣ Input: root = [3,4,5,1,2], subRoot = [4,1,2] Output: true 2️⃣ Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2] Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -2057,10 +2029,10 @@
               if (p.val !== q.val) return false;
               return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
             };
-## [Construct Binary Tree from Preorder & Inorder Traversal](https://leetcode.com/problemsconstruct-binary-tree-from-preorder-and-inorder-traversal/) #105
+## [Construct Binary Tree from Preorder & Inorder Traversal](https://leetcode.com/problemsconstruct-binary-tree-from-preorder-&-inorder-traversal/) #105
 
-        Problem: Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
-        🥚: #1 Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,20,null,null,15,7] #2 Input: preorder = [-1], inorder = [-1] Output: [-1]
+        ❓: Given two integer arrays preorder & inorder where preorder is the preorder traversal of a binary tree & inorder is the inorder traversal of the same tree, construct & return the binary tree.
+        🐣: 1️⃣ Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,20,null,null,15,7] 2️⃣ Input: preorder = [-1], inorder = [-1] Output: [-1]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -2075,12 +2047,12 @@
 ## [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) #98
 
         Pattern Used: DFS
-        Problem: Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+        ❓: Given the root of a binary tree, determine if it is a valid binary search tree (BST).
         A valid BST is defined as follows:
         The left subtree of a node contains only nodes with keys less than the node's key.
         The right subtree of a node contains only nodes with keys greater than the node's key.
-        Both the left and right subtrees must also be binary search trees.
-        🥚: #1 Input: root = [2,1,3] Output: true #2 Input: root = [5,1,4,null,null,3,6] Output: false
+        Both the left & right subtrees must also be binary search trees.
+        🐣: 1️⃣ Input: root = [2,1,3] Output: true 2️⃣ Input: root = [5,1,4,null,null,3,6] Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -2095,11 +2067,10 @@
             };
 ## [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) #230
         Pattern Used: DFS
-        Problem: Given the root of a binary search tree, and an integer k, return the kth (1-indexed) smallest element in the tree.
-        🥚: #1 Input: root = [3,1,4,null,2], k = 1 Output: 1 #2 Input: root = [5,3,6,2,4,null,null,1], k = 3 Output: 3
+        ❓: Given the root of a binary search tree, & an integer k, return the kth (1-indexed) smallest element in the tree.
+        🐣: 1️⃣ Input: root = [3,1,4,null,2], k = 1 Output: 1 2️⃣ Input: root = [5,3,6,2,4,null,null,1], k = 3 Output: 3
         
-        🐢 Solution: 🔨 Brute Force ⏰:
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+         DFS ⏰: O(n) 🪐: O(n)
 
             var kthSmallest = function (root, k) {
               let result = [];
@@ -2115,9 +2086,9 @@
 ## [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) #235
 
         Pattern Used: DFS
-        Problem: Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
-        According to the definition of LCA on Wikipedia: "The lowest common ancestor of two nodes p and q in a binary tree T is the lowest node that has both p and q as descendants (where we allow a node to be a descendant of itself)."
-        🥚: #1 Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8 Output: 6 #2 Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4 Output: 2
+        ❓: Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+        According to the definition of LCA on Wikipedia: "The lowest common ancestor of two nodes p & q in a binary tree T is the lowest node that has both p & q as descendants (where we allow a node to be a descendant of itself)."
+        🐣: 1️⃣ Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8 Output: 6 2️⃣ Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4 Output: 2
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
@@ -2130,13 +2101,13 @@
 ## [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) #208
 
         Pattern Used: Trie
-        Problem: Implement a trie with insert, search, and startsWith methods. 
-        A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store and retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete and spellchecker. 
+        ❓: Implement a trie with insert, search, & startsWith methods. 
+        A trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store & retrieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete & spellchecker. 
         Implement the Trie class: Trie() Initializes the trie object.
         void insert(String word) Inserts the string word into the trie.
-        boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), and false otherwise.
-        boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise
-        🥚: #1 Input: ["Trie","insert","search","search","startsWith","insert","search"] Output: [null,null,true,false,true,null,true] Explanation: Trie trie = new Trie(); trie.insert("apple"); trie.search("apple"); // return True trie.search("app"); // return False trie.startsWith("app"); // return True trie.insert("app"); trie.search("app"); // return True
+        boolean search(String word) Returns true if the string word is in the trie (i.e., was inserted before), & false otherwise.
+        boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, & false otherwise
+        🐣: 1️⃣ Input: ["Trie","insert","search","search","startsWith","insert","search"] Output: [null,null,true,false,true,null,true] Explain: Trie trie = new Trie(); trie.insert("apple"); trie.search("apple"); // return True trie.search("app"); // return False trie.startsWith("app"); // return True trie.insert("app"); trie.search("app"); // return True
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
@@ -2168,15 +2139,15 @@
               }
               return true;
             };
-## [Add and Search Word](https://leetcode.com/problems/add-and-search-word-data-structure-design/) #211
+## [Add & Search Word](https://leetcode.com/problems/add-&-search-word-data-structure-design/) #211
 
         Pattern Used: Trie
-        Problem: Design a data structure that supports adding new words and finding if a string matches any previously added string.
+        ❓: Design a data structure that supports adding new words & finding if a string matches any previously added string.
         Implement the WordDictionary class:
         WordDictionary() Initializes the object.
         void addWord(word) Adds word to the data structure, it can be matched later.
         bool search(word) Returns true if there is any string in the data structure that matches word or false otherwise. word may contain dots '.' where dots can be matched with any letter.
-        🥚: #1 Input: ["WordDictionary","addWord","addWord","addWord","search","search","search","search"] Output: [null,null,null,null,false,true,true,true] Explanation: WordDictionary wordDictionary = new WordDictionary(); wordDictionary.addWord("bad"); wordDictionary.addWord("dad"); wordDictionary.addWord("mad"); wordDictionary.search("pad"); // return False wordDictionary.search("bad"); // return True wordDictionary.search(".ad"); // return True wordDictionary.search("b.."); // return True
+        🐣: 1️⃣ Input: ["WordDictionary","addWord","addWord","addWord","search","search","search","search"] Output: [null,null,null,null,false,true,true,true] Explain: WordDictionary wordDictionary = new WordDictionary(); wordDictionary.addWord("bad"); wordDictionary.addWord("dad"); wordDictionary.addWord("mad"); wordDictionary.search("pad"); // return False wordDictionary.search("bad"); // return True wordDictionary.search(".ad"); // return True wordDictionary.search("b.."); // return True
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
@@ -2211,8 +2182,8 @@
 ## [Word Search II](https://leetcode.com/problems/word-search-ii/) #212
 
         Pattern Used: Trie
-        Problem: Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
-        🥚: #1 Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"] Output: ["eat","oath"] #2 Input: board = [["a","b"],["c","d"]], words = ["abcb"] Output: []
+        ❓: Given an m x n board of characters & a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
+        🐣: 1️⃣ Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"] Output: ["eat","oath"] 2️⃣ Input: board = [["a","b"],["c","d"]], words = ["abcb"] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
@@ -2261,8 +2232,8 @@
 ## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #213
 
         Pattern Used: Heap
-        Problem: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
-        🥚: #1 Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] #2 Input: lists = [] Output: [] #3 Input: lists = [[]] Output: []
+        ❓: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list & return it.
+        🐣: 1️⃣ Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] 2️⃣ Input: lists = [] Output: [] 3️⃣ Input: lists = [[]] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
@@ -2352,8 +2323,8 @@
 ## [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) #
 
         Pattern Used: Heap
-        Problem: Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
-        🥚: #1 Input: nums = [1,1,1,2,2,3], k = 2 Output: [1,2] #2 Input: nums = [1], k = 1 Output: [1]
+        ❓: Given an integer array nums & an integer k, return the k most frequent elements. You may return the answer in any order.
+        🐣: 1️⃣ Input: nums = [1,1,1,2,2,3], k = 2 Output: [1,2] 2️⃣ Input: nums = [1], k = 1 Output: [1]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
@@ -2443,8 +2414,8 @@
 ## [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) #
 
         Pattern Used: Heap
-        Problem: Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value and the median is the mean of the two middle values. For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], the median is (2 + 3) / 2 = 2.5. Implement the MedianFinder class: MedianFinder() initializes the MedianFinder object. void addNum(num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10-5 of the actual answer will be accepted.
-        🥚: #1 Input: ["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"] [[], [1], [2], [], [3], []] Output: [null, null, null, 1.5, null, 2.0] #2 Input: ["MedianFinder", "addNum", "findMedian", "addNum", "findMedian"] [[], [2], [], [3], []] Output: [null, null, 2.0, null, 2.5
+        ❓: Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value & the median is the mean of the two middle values. For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], the median is (2 + 3) / 2 = 2.5. Implement the MedianFinder class: MedianFinder() initializes the MedianFinder object. void addNum(num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10-5 of the actual answer will be accepted.
+        🐣: 1️⃣ Input: ["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"] [[], [1], [2], [], [3], []] Output: [null, null, null, 1.5, null, 2.0] 2️⃣ Input: ["MedianFinder", "addNum", "findMedian", "addNum", "findMedian"] [[], [2], [], [3], []] Output: [null, null, 2.0, null, 2.5
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
@@ -2629,7 +2600,7 @@
         1822. Sign of the Product of an Array
         1828. Queries on Number of Points Inside a Circle
         1832. Check if the Sentence Is Pangram
-        1846. Maximum Element After Decreasing and Rearranging
+        1846. Maximum Element After Decreasing & Rearranging
         1854. Maximum Population Year
         1869. Longer Contiguous Segments of Ones than Zeros
         1877. Minimize Maximum Pair Sum in Array
@@ -2731,7 +2702,7 @@
         20. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
         21. [Partition List](https://leetcode.com/problems/partition-list/)
         22. [Sort List](https://leetcode.com/problems/sort-list/)
-    3. Fast and Slow Pointers Pattern:
+    3. Fast & Slow Pointers Pattern:
         1. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
         2. [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
         3. [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/)
@@ -2763,8 +2734,8 @@
         6. [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
         7. [Range Module](https://leetcode.com/problems/range-module/)
         8. [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)
-        9. [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
-        10. [Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/)
+        9. [Insert Delete GetR&om O(1)](https://leetcode.com/problems/insert-delete-getr&om-o1/)
+        10. [Insert Delete GetR&om O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getr&om-o1-duplicates-allowed/)
         11. [Data Stream as DisjoIntervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)
         12. [Summary Ranges](https://leetcode.com/problems/summary-ranges/)
         13. [Summary Ranges II](https://leetcode.com/problems/summary-ranges-ii/)
@@ -2772,8 +2743,8 @@
         15. [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/)
         16. [Range Module](https://leetcode.com/problems/range-module/)
         17. [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/)
-        18. [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/)
-        19. [Insert Delete GetRandom O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/)
+        18. [Insert Delete GetR&om O(1)](https://leetcode.com/problems/insert-delete-getr&om-o1/)
+        19. [Insert Delete GetR&om O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getr&om-o1-duplicates-allowed/)
         20. [Data Stream as DisjoIntervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)
         21. [Summary Ranges](https://leetcode.com/problems/summary-ranges
     5. Cyclic Sort Pattern:
@@ -2842,14 +2813,14 @@
         1. [Order-agnostic Binary Search](https://leetcode.com/problems/binary-search/)
         2. [Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
         3. [Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
-        4. [Number Range](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+        4. [Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/)
         5. [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/)
         6. [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/)
         7. [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/)
         8. [Order-agnostic Binary Search](https://leetcode.com/problems/binary-search/)
         9. [Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
         10. [Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
-        11. [Number Range](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+        11. [Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/)
         12. [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/)
         13. [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/)
         14. [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/)
@@ -2887,15 +2858,15 @@
         4. [Count of Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
         5. [Minimum Subset Sum Difference](https://leetcode.com/problems/partition-equal-subset-sum/)
         6. [Count of Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/)
-    16. Bit Manipulation Pattern:
+    16. 🧩 Bit Manipulation Pattern:
         1. [Single Number](https://leetcode.com/problems/single-number/)
         2. [Find the Corrupt Pair](https://leetcode.com/problems/set-mismatch/)
         3. [Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/)
-        4. [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)
+        4. [Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/)
         5. [Single Number](https://leetcode.com/problems/single-number/)
         6. [Find the Corrupt Pair](https://leetcode.com/problems/set-mismatch/)
         7. [Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/)
-        8. [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/)
+        8. [Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/)
 
 
 
