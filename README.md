@@ -172,11 +172,11 @@
                 if (currentNode.right != null) stack.push(currentNode.right);
             }
 
-## 9. Two Heaps Pattern ->
+## 9. Two Heaps Pattern 📦📦 ->
     ❓  MEDIAN OF # STREAM FIND K SMALLEST #
     🥚  Sliding Window Median, Find the Median of a Number Stream, etc.
         
-         🎭 PsuendoCode Two Heaps Pattern  
+         🎭 PsuendoCode Two Heaps Pattern 📦📦
             ⏰: O(n) 🪐: O(n)
 
               PriorityQueue<Integer> maxHeap = new PriorityQueue<>((n1, n2) -> n2 - n1);
