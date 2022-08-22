@@ -2705,8 +2705,9 @@
 ## 14 Patterns: 
 
       1. Sliding Window Pattern:
-        1. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
-        2. [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+        [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+        [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
         3. [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
         4. [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
         5. [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
