@@ -32,11 +32,11 @@
 
 ## 14 Patterns Algorithims
 
-## 1. Sliding Window Pattern 🪟 ->
+## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
       
-            🎭 PsuendoCode Sliding Window Pattern 🪟
+            🎭 PsuendoCode 🪟 Sliding Window Pattern 🪟
               ⏰: O(n) 🪐: O(n)
                             start = 0;
                             end = 0;
@@ -51,7 +51,7 @@
                                 max = max(max, end - start + 1);
                             }
 
-## 2. Two Pointers  👯 -> 
+## 2. 👯 Two Pointers  👯 -> 
     ❓ FIND A PAIR, TRIPLET or a SUBARRAY
     🐣 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
       
@@ -68,7 +68,7 @@
                                 }
                             }
 
-## 3. Fast & Slow Pointers Pattern 🐰&🐢 ->
+## 3. 🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 ->
     ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
     🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
         
@@ -87,10 +87,10 @@
                             }
 
 
-## 4. Merge Intervals Pattern 🚗🚙 ->
+## 4. 🚗🚙 Merge Intervals Pattern 🚗🚙 ->
     ❓  MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
     🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
-          🎭 PsuendoCode Merge Intervals Pattern 🚗🚙
+          🎭 PsuendoCode 🚗🚙 Merge Intervals Pattern 🚗🚙
             ⏰: O(n) 🪐: O(n)
                       sort the intervals by start time
                       start = intervals[0].start;
@@ -110,11 +110,11 @@
                       return result;
 
 
- ## 5. Cyclic Sort Pattern 🌀 ->
+ ## 5. 🌀 Cyclic Sort Pattern 🌀 ->
     ❓ FIND MISSING # OR  SORT #s IN PLACE 
     🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
         
-         🎭 PsuendoCode Cyclic Sort Pattern 🌀
+         🎭 PsuendoCode 🌀 Cyclic Sort Pattern 🌀
             ⏰: O(n) 🪐: O(1)
                         i = 0;
                         while (i < nums.length) {
@@ -214,11 +214,11 @@
                         subsets.add(set);
                     }
                 }
-## 11. Modified Binary Search Pattern 🏁🔚 ->
+## 11.🏁🔚  Modified Binary Search Pattern 🏁🔚 ->
     ❓  MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY
     🐣 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.
 
-        🎭 PsuendoCode Modified Binary Search Pattern 🏁🔚
+        🎭 PsuendoCode 🏁🔚  Modified Binary Search Pattern 🏁🔚
           ⏰: O(logn) 🪐: O(1)
 
             start = 0, end = arr.length - 1;
@@ -274,11 +274,11 @@
                       }
                   }
 
-## 14. Topological Sort Pattern 📅 ->
+## 14.  📅  Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
     🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
 
-      🎭 PsuendoCode Topological Sort Pattern  📅
+      🎭 PsuendoCode  📅  Topological Sort Pattern  📅
         ⏰: O(V + E) 🪐: O(V + E)
 
           PriorityQueue<Integer> sources = new PriorityQu
@@ -404,9 +404,38 @@
         🎭 PsuendoCode Bitwise Right Shift Pattern 🧩
           ⏰: O(1) 🪐: O(1)
                 return (n > 0) && ((n & (n - 1)) == 0);
+##  📐 Matrix Pattern 📐 ->
+      ❓ FIND IF MATRIX IS SINGULAR
+      🐣 Matrix Chain Multiplication, etc.
+
+      🎭 PsuendoCode  📐 Matrix Pattern 📐
+        ⏰: O(n^3) 🪐: O(n^2)
+              int n = matrix.length;
+              for (i = 0; i < n; i++) {
+                  if (matrix[i][i] == 0) {
+                      boolean zeroRow = true;
+                      for (j = 0; j < n; j++) {
+                          if (matrix[i][j] != 0) {
+                              zeroRow = false;
+                              break;
+                          }
+                      }
+                      if (zeroRow) return true;
+                      boolean zeroColumn = true;
+                      for (j = 0; j < n; j++) {
+                          if (matrix[j][i] != 0) {
+                              zeroColumn = false;
+                              break;
+                          }
+                      }
+                      if (zeroColumn) return true;
+                  }
+              }
+              return false;
+
 
 ## Array
-## [Two Sum](https://leetcode.com/problems/two-sum/) 1️⃣ 👯 
+## [Two Sum](https://leetcode.com/problems/two-sum/) #1 👯 
         ❓: Given an array of integers nums & an integer target, return indices of the two numbers such that they add up to target.
         🐣: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
         
@@ -539,7 +568,7 @@
         };
 ## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153
 
-        Pattern: Binary Search Pattern
+        Pattern: 🏁🔚  Modified Binary Search Pattern
         ❓: Suppose an array of length n sorted in ascending order is rotated between 1 & n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
         [4,5,6,7,0,1,2] if it was rotated 4 times.
         [0,1,2,4,5,6,7] if it was rotated 7 times.
@@ -548,9 +577,9 @@
         🐣: Input: nums = [3,4,5,1,2], Output: 1
 
         🐢 Solution: 🔨 Brute Force  ⏰: O(N) 🪐: O(1)
-        🐇 Solution:  Binary Search Pattern ⏰: O(logN) 🪐: O(1)
+        🐇 Solution:  🏁🔚  Modified Binary Search Pattern ⏰: O(logN) 🪐: O(1)
 
-        Pattern: Binary Search
+        Pattern: 🏁🔚  Modified Binary Search
         var findMin = function(nums) {
             let left = 0;
             let right = nums.length-1;
@@ -566,7 +595,7 @@
         };
 ## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153
 
-        Pattern: Binary Search
+        Pattern: 🏁🔚  Modified Binary Search
         ❓: Suppose an array of length n sorted in ascending order is rotated between 1 & n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
         [4,5,6,7,0,1,2] if it was rotated 4 times.
         [0,1,2,4,5,6,7] if it was rotated 7 times.
@@ -575,7 +604,7 @@
         🐣: Input: nums = [3,4,5,1,2], Output: 1
 
         🐢 Solution: 🔨 Brute Force  ⏰: O(N) 🪐: O(1)
-        🐇 Solution:  Binary Search ⏰: O(logN) 🪐: O(1)
+        🐇 Solution:  🏁🔚  Modified Binary Search ⏰: O(logN) 🪐: O(1)
 
         var findMin = function(nums) {
             let left = 0;
@@ -592,14 +621,14 @@
         };
 ## [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) #33
 
-        Pattern: Binary Search
+        Pattern: 🏁🔚  Modified Binary Search
         ❓: You are given an integer array nums sorted in ascending order, & an integer target.
         Suppose that nums is rotated at some pivot unknown to you beforeh& (i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]).
         If target is found in the array return its index, otherwise, return -1.
         🐣: Input: nums = [4,5,6,7,0,1,2], target = 0, Output: 4
 
           🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
-          🐇 Solution: Binary Search ⏰: O(logn) 🪐: O(1)   
+          🐇 Solution: 🏁🔚  Modified Binary Search ⏰: O(logn) 🪐: O(1)   
           
         var search = function(nums, target) {
             let left = 0;
@@ -1096,7 +1125,7 @@
         🐣: 1️⃣ Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explain: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible. 2️⃣ Input: numCourses = 2, prerequisites = [[1,0],[0,1]] Output: false Explain: There are a total of 2 courses to take. To take course 1 you should have finished course 0, & to take course 0 you should also have finished course 1. So it is impossible.
           
           🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-          🐇 Solution: Topological Sort  ⏰: O(V+E)   🪐: O(V+E) 
+          🐇 Solution:  📅  Topological Sort  ⏰: O(V+E)   🪐: O(V+E) 
 
             var canFinish = function (numCourses, prerequisites) {
               let graph = new Map();
@@ -1190,15 +1219,15 @@
 
 
                 
-## [Number of Isl&s](https://leetcode.com/problems/number-of-isl&s/) #200 🌳
-        Pattern Used: 🌳 BFS Pattern DFS Pattern Union Find Pattern
-        ❓: Given an m x n 2d grid map of '1's (l&) & '0's (water), return the number of isl&s. An isl& is surrounded by water & is formed by connecting adjacent l&s horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+## [Number of Islands](https://leetcode.com/problems/number-of-islands/) #200 🌳
+        Pattern Used: 🌳 BFS Pattern 🌲 DFS Pattern Union Find Pattern
+        ❓: Given an m x n 2d grid map of '1's (l&) & '0's (water), return the number of islands. An isl& is surrounded by water & is formed by connecting adjacent l&s horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
         🐣: 1️⃣ Input: grid = [ ["1","1","1","1","0"], ["1","1","0","1","0"], ["1","1","0","0","0"], ["0","0","0","0","0"] ] Output: 1 2️⃣ Input: grid = [ ["1","1","0","0","0"], ["1","1","0","0","0"], ["0","0","1","0","0"], ["0","0","0","1","1"] ] Output: 3
        
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution:  🌳 BFS  ⏰: O(mn) 🪐: O(mn)
 
-            var numIsl&s = function (grid) {
+            var numIslands = function (grid) {
               let m = grid.length;
               let n = grid[0].length;
               let count = 0;
@@ -1479,7 +1508,7 @@
         🐣: 1️⃣ Input: matrix = [[1,1,1],[1,0,1],[1,1,1]] Output: [[1,0,1],[0,0,0],[1,0,1]] 2️⃣ Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]] Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(mn) 🪐: O(m+n)
-        🐇 Solution: Matrix Pattern  ⏰: O(mn) 🪐: O(1)
+        🐇 Solution:  📐 Matrix Pattern  ⏰: O(mn) 🪐: O(1)
 
             var setZeroes = function (matrix) {
               let rows = new Set();
@@ -1502,12 +1531,12 @@
             };
 ## [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) #54
 
-        Pattern Used: Matrix Pattern
+        Pattern Used:  📐 Matrix Pattern
         ❓: Given an m x n matrix, return all elements of the matrix in spiral order.
         🐣: 1️⃣ Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] 2️⃣ Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(mn) 🪐: O(mn)
-        🐇 Solution:  Matrix Pattern  ⏰: O(mn) 🪐: O(mn)
+        🐇 Solution:   📐 Matrix Pattern  ⏰: O(mn) 🪐: O(mn)
 
             var spiralOrder = function (matrix) {
               let result = [];
@@ -1541,7 +1570,7 @@
             };
 ## [Rotate Image](https://leetcode.com/problems/rotate-image/) #48
 
-        Pattern Used: Matrix Pattern
+        Pattern Used:  📐 Matrix Pattern
         ❓: You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
         🐣: 1️⃣ Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],[8,5,2],[9,6,3]] 2️⃣ Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]] Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
         
@@ -1562,7 +1591,7 @@
             };
 ## [Word Search](https://leetcode.com/problems/word-search/) #79
 
-        Pattern Used: Backtracking Matrix Pattern
+        Pattern Used: Backtracking  📐 Matrix Pattern
         ❓: Given an m x n grid of characters board & a string word, return true if word exists in the grid.
         🐣: 1️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED" Output: true 2️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE" Output: true 3️⃣ Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB" Output: false
 
@@ -1576,7 +1605,7 @@
               for (let i = 0; i < m; i++) {
                 visited[i] = new Array(n).fill(false);
               }
-              let dfs = (i, j, k) => {
+              let 🌲 DFS = (i, j, k) => {
                 if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j] || board[i][j] !== word[k]) {
                   return false;
                 }
@@ -1585,16 +1614,16 @@
                 }
                 visited[i][j] = true;
                 let result =
-                  dfs(i + 1, j, k + 1) ||
-                  dfs(i - 1, j, k + 1) ||
-                  dfs(i, j + 1, k + 1) ||
-                  dfs(i, j - 1, k + 1);
+                  🌲 DFS(i + 1, j, k + 1) ||
+                  🌲 DFS(i - 1, j, k + 1) ||
+                  🌲 DFS(i, j + 1, k + 1) ||
+                  🌲 DFS(i, j - 1, k + 1);
                 visited[i][j] = false;
                 return result;
               };
               for (let i = 0; i < m; i++) {
                 for (let j = 0; j < n; j++) {
-                  if (dfs(i, j, 0)) {
+                  if (🌲 DFS(i, j, 0)) {
                     return true;
                   }
                 }
@@ -1608,12 +1637,12 @@
 
 ## [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) 3️⃣
         
-        Pattern Used: Sliding Window Pattern
+        Pattern Used: 🪟 Sliding Window Pattern
         ❓: Given a string s, find the length of the longest substring without repeating characters.
         🐣: 1️⃣ Input: s = "abcabcbb" Output: 3 Explain: The answer is "abc", with the length of 3. 2️⃣ Input: s = "bbbbb" Output: 1 Explain: The answer is "b", with the length of 1. 3️⃣ Input: s = "pwwkew" Output: 3 Explain: The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence & not a substring. #4 Input: s = "" Output: 0
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(min(m, n))  
-        🐇 Solution:  Sliding Window Pattern ⏰: O(n) 🪐: O(n)
+        🐇 Solution:  🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
             var lengthOfLongestSubstring = function (s) {
               let result = 0;
@@ -1634,13 +1663,13 @@
             };
 ## [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) #424
 
-        Pattern Used: Sliding Window Pattern
+        Pattern Used: 🪟 Sliding Window Pattern
         ❓: You are given a string s & an integer k. You can choose any character of the string & change it to any other uppercase English character. You can perform this operation at most k times.
         Return the length of the longest substring containing the same letter you can get after performing the above operations.
         🐣: 1️⃣ Input: s = "ABAB", k = 2 Output: 4 Explain: Replace the two 'A's with two 'B's or vice versa. 2️⃣ Input: s = "AABABBA", k = 1 Output: 4 Explain: Replace the one 'A' in the middle with 'B' & form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(1)
-        🐇 Solution: Sliding Window Pattern ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
             var characterReplacement = function (s, k) {
               let left = 0;
@@ -1660,14 +1689,14 @@
             };
 ## [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) #76
 
-        Pattern Used: Sliding Window Pattern
+        Pattern Used: 🪟 Sliding Window Pattern
         ❓: Given two strings s & t of lengths m & n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
         The testcases will be generated such that the answer is unique.
         A substring is a contiguous sequence of characters within the string.
         🐣: 1️⃣ Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC" Explain: The minimum window substring "BANC" includes 'A', 'B', & 'C' from string t. 2️⃣ Input: s = "a", t = "a" Output: "a" 3️⃣ Input: s = "a", t = "aa" Output: "" Explain: Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.
         
         🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(n)
-        🐇 Solution: Sliding Window Pattern ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
             var minWindow = function (s, t) {
               let left = 0;
@@ -1876,30 +1905,26 @@
 ---
 
 ## Tree
-## [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
-
-        Pattern Used: DFS
+## [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)🌲
         ❓: Given the root of a binary tree, return its maximum depth.
         A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
         🐣: 1️⃣ Input: root = [3,9,20,null,null,15,7] Output: 3 2️⃣ Input: root = [1,null,2] Output: 2 3️⃣ Input: root = [] Output: 0 #4 Input: root = [0] Output: 1
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var maxDepth = function (root) {
               if (!root) return 0;
               return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
             };
 
-## [Same Tree](https://leetcode.com/problems/same-tree/) #100
-
-        Pattern Used: DFS
+## [Same Tree](https://leetcode.com/problems/same-tree/) #100🌲
         ❓: Given the roots of two binary trees p & q, write a function to check if they are the same or not.
         Two binary trees are considered the same if they are structurally identical, & the nodes have the same value.
         🐣: 1️⃣ Input: p = [1,2,3], q = [1,2,3] Output: true 2️⃣ Input: p = [1,2], q = [1,null,2] Output: false 3️⃣ Input: p = [1,2,1], q = [1,1,2] Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var isSameTree = function (p, q) {
               if (!p && !q) return true;
@@ -1908,14 +1933,12 @@
               return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
             };
 
-## [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/) #226
-
-        Pattern Used: DFS
+## [Invert/Flip Binary Tree](https://leetcode.com/problems/invert-binary-tree/) #226🌲
         ❓: Invert a binary tree.
         🐣: 1️⃣ Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] 2️⃣ Input: root = [2,1,3] Output: [2,3,1] 3️⃣ Input: root = [] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var invertTree = function (root) {
               if (!root) return null;
@@ -1928,24 +1951,24 @@
             };
 
 ## [Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) #124
-        Pattern Used: DFS
+        Pattern Used: 🌲 DFS
         ❓: Given the root of a binary tree, return the maximum path sum of any path.
         A path is a collection of nodes that are connected by edges, where no node is connected to more than two other nodes. The path must contain at least one node & does not need to go through the root.
         🐣: 1️⃣ Input: root = [1,2,3] Output: 6 2️⃣ Input: root = [-10,9,20,null,null,15,7] Output: 42
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var maxPathSum = function (root) {
               let max = -Infinity;
-              function dfs(node) {
+              function 🌲 DFS(node) {
                 if (!node) return 0;
-                let left = Math.max(dfs(node.left), 0);
-                let right = Math.max(dfs(node.right), 0);
+                let left = Math.max(🌲 DFS(node.left), 0);
+                let right = Math.max(🌲 DFS(node.right), 0);
                 max = Math.max(max, left + right + node.val);
                 return Math.max(left, right) + node.val;
               }
-              dfs(root);
+              🌲 DFS(root);
               return max;
             };
 ## [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) #102
@@ -1959,14 +1982,14 @@
 
             var levelOrder = function (root) {
               let result = [];
-              function dfs(node, level) {
+              function 🌲 DFS(node, level) {
                 if (!node) return;
                 if (!result[level]) result[level] = [];
                 result[level].push(node.val);
-                dfs(node.left, level + 1);
-                dfs(node.right, level + 1);
+                🌲 DFS(node.left, level + 1);
+                🌲 DFS(node.right, level + 1);
               }
-              dfs(root, 0);
+              🌲 DFS(root, 0);
               return result;
             };
 ## [Serialize & Deserialize Binary Tree](https://leetcode.com/problems/serialize-&-deserialize-binary-tree/) #297
@@ -1981,42 +2004,40 @@
 
             var serialize = function (root) {
               let result = [];
-              function dfs(node) {
+              function 🌲 DFS(node) {
                 if (!node) {
                   result.push(null);
                   return;
                 }
                 result.push(node.val);
-                dfs(node.left);
-                dfs(node.right);
+                🌲 DFS(node.left);
+                🌲 DFS(node.right);
               }
-              dfs(root);
+              🌲 DFS(root);
               return result;
             };
             var deserialize = function (data) {
               let index = 0;
-              function dfs() {
+              function 🌲 DFS() {
                 if (index >= data.length || data[index] === null) {
                   index++;
                   return null;
                 }
                 let node = new TreeNode(data[index]);
                 index++;
-                node.left = dfs();
-                node.right = dfs();
+                node.left = 🌲 DFS();
+                node.right = 🌲 DFS();
                 return node;
               }
-              return dfs();
+              return 🌲 DFS();
             };
-## [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) #572
-
-        Pattern Used: DFS
+## [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/) #572🌲
         ❓: Given the roots of two binary trees root & subRoot, return true if there is a subtree of root with the same structure & node values of subRoot & false otherwise.
         A subtree of a binary tree tree is a tree that consists of a node in tree & all of this node's descendants. The tree tree could also be considered as a subtree of itself.
         🐣: 1️⃣ Input: root = [3,4,5,1,2], subRoot = [4,1,2] Output: true 2️⃣ Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2] Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var isSubtree = function (root, subRoot) {
               if (!root) return false;
@@ -2030,12 +2051,11 @@
               return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
             };
 ## [Construct Binary Tree from Preorder & Inorder Traversal](https://leetcode.com/problemsconstruct-binary-tree-from-preorder-&-inorder-traversal/) #105
-
         ❓: Given two integer arrays preorder & inorder where preorder is the preorder traversal of a binary tree & inorder is the inorder traversal of the same tree, construct & return the binary tree.
         🐣: 1️⃣ Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,20,null,null,15,7] 2️⃣ Input: preorder = [-1], inorder = [-1] Output: [-1]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
             var buildTree = function (preorder, inorder) {
               if (!preorder.length || !inorder.length) return null;
               let root = new TreeNode(preorder[0]);
@@ -2044,54 +2064,50 @@
               root.right = buildTree(preorder.slice(index + 1), inorder.slice(index + 1));
               return root;
             };
-## [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) #98
-
-        Pattern Used: DFS
-        ❓: Given the root of a binary tree, determine if it is a valid binary search tree (BST).
+## [Validate 🏁🔚  Modified Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) #98 🌲
+        ❓: Given the root of a binary tree, determine if it is a valid 🏁🔚  Modified Binary Search tree (BST).
         A valid BST is defined as follows:
         The left subtree of a node contains only nodes with keys less than the node's key.
         The right subtree of a node contains only nodes with keys greater than the node's key.
-        Both the left & right subtrees must also be binary search trees.
+        Both the left & right subtrees must also be 🏁🔚  Modified Binary Search trees.
         🐣: 1️⃣ Input: root = [2,1,3] Output: true 2️⃣ Input: root = [5,1,4,null,null,3,6] Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var isValidBST = function (root) {
-              function dfs(node, min, max) {
+              function 🌲 DFS(node, min, max) {
                 if (!node) return true;
                 if (node.val <= min || node.val >= max) return false;
-                return dfs(node.left, min, node.val) && dfs(node.right, node.val, max);
+                return 🌲 DFS(node.left, min, node.val) && 🌲 DFS(node.right, node.val, max);
               }
-              return dfs(root, -Infinity, Infinity);
+              return 🌲 DFS(root, -Infinity, Infinity);
             };
 ## [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) #230
-        Pattern Used: DFS
-        ❓: Given the root of a binary search tree, & an integer k, return the kth (1-indexed) smallest element in the tree.
+        Pattern Used: 🌲 DFS
+        ❓: Given the root of a 🏁🔚  Modified Binary Search tree, & an integer k, return the kth (1-indexed) smallest element in the tree.
         🐣: 1️⃣ Input: root = [3,1,4,null,2], k = 1 Output: 1 2️⃣ Input: root = [5,3,6,2,4,null,null,1], k = 3 Output: 3
         
-         DFS ⏰: O(n) 🪐: O(n)
+         🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var kthSmallest = function (root, k) {
               let result = [];
-              function dfs(node) {
+              function 🌲 DFS(node) {
                 if (!node) return;
-                dfs(node.left);
+                🌲 DFS(node.left);
                 result.push(node.val);
-                dfs(node.right);
+                🌲 DFS(node.right);
               }
-              dfs(root);
+              🌲 DFS(root);
               return result[k - 1];
             };
-## [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) #235
-
-        Pattern Used: DFS
-        ❓: Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+## [Lowest Common Ancestor of BST](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) #235 🌲
+        ❓: Given a 🏁🔚  Modified Binary Search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
         According to the definition of LCA on Wikipedia: "The lowest common ancestor of two nodes p & q in a binary tree T is the lowest node that has both p & q as descendants (where we allow a node to be a descendant of itself)."
         🐣: 1️⃣ Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8 Output: 6 2️⃣ Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4 Output: 2
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
+        🐇 Solution: 🌲 DFS ⏰: O(n) 🪐: O(n)
 
             var lowestCommonAncestor = function (root, p, q) {
               if (root.val > p.val && root.val > q.val) return lowestCommonAncestor(root.left, p, q);
@@ -2165,18 +2181,18 @@
             };
             WordDictionary.prototype.search = function (word) {
               let node = this.root;
-              function dfs(node, i) {
+              function 🌲 DFS(node, i) {
                 if (i === word.length) return node.isEnd === true;
                 if (word[i] === '.') {
                   for (let key in node) {
-                    if (dfs(node[key], i + 1)) return true;
+                    if (🌲 DFS(node[key], i + 1)) return true;
                   }
                 } else {
                   if (!node[word[i]]) return false;
-                  return dfs(node[word[i]], i + 1);
+                  return 🌲 DFS(node[word[i]], i + 1);
                 }
               }
-              return dfs(node, 0);
+              return 🌲 DFS(node, 0);
             };
 
 ## [Word Search II](https://leetcode.com/problems/word-search-ii/) #212
@@ -2202,7 +2218,7 @@
               let m = board.length;
               let n = board[0].length;
               let visited = new Array(m).fill(0).map(() => new Array(n).fill(false));
-              function dfs(node, i, j, str) {
+              function 🌲 DFS(node, i, j, str) {
                 if (node.isEnd) {
                   result.push(str);
                   node.isEnd = false;
@@ -2210,15 +2226,15 @@
                 if (i < 0 || i >= m || j < 0 || j >= n || visited[i][j]) return;
                 if (!node[board[i][j]]) return;
                 visited[i][j] = true;
-                dfs(node[board[i][j]], i + 1, j, str + board[i][j]);
-                dfs(node[board[i][j]], i - 1, j, str + board[i][j]);
-                dfs(node[board[i][j]], i, j + 1, str + board[i][j]);
-                dfs(node[board[i][j]], i, j - 1, str + board[i][j]);
+                🌲 DFS(node[board[i][j]], i + 1, j, str + board[i][j]);
+                🌲 DFS(node[board[i][j]], i - 1, j, str + board[i][j]);
+                🌲 DFS(node[board[i][j]], i, j + 1, str + board[i][j]);
+                🌲 DFS(node[board[i][j]], i, j - 1, str + board[i][j]);
                 visited[i][j] = false;
               }
               for (let i = 0; i < m; i++) {
                 for (let j = 0; j < n; j++) {
-                  if (root[board[i][j]]) dfs(root[board[i][j]], i, j, board[i][j]);
+                  if (root[board[i][j]]) 🌲 DFS(root[board[i][j]], i, j, board[i][j]);
                 }
                 }
                 return result;
@@ -2625,7 +2641,7 @@
     4. Queue
     5. Hash Table
     6. Binary Tree
-    7. Binary Search Tree
+    7. 🏁🔚  Modified Binary Search Tree
     8. Heap
     9. Trie
     10. Graph
@@ -2663,7 +2679,7 @@
 
 ## 14 Patterns: 
 
-      1. Sliding Window Pattern:
+      1. 🪟 Sliding Window Pattern:
 
         [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
         [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
@@ -2747,7 +2763,7 @@
         19. [Insert Delete GetR&om O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getr&om-o1-duplicates-allowed/)
         20. [Data Stream as DisjoIntervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/)
         21. [Summary Ranges](https://leetcode.com/problems/summary-ranges
-    5. Cyclic Sort Pattern:
+    5. 🌀 Cyclic Sort Pattern:
         1. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
         2. [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)
         3. [Find the Missing Number](https://leetcode.com/problems/find-the-missing-number/)
@@ -2809,15 +2825,15 @@
         12. [String Permutations by changing case](https://leetcode.com/problems/letter-case-permutation/)
         13. [Balanced Parentheses](https://leetcode.com/problems/generate-parentheses/)
         14. [Unique Generalized Abbreviations](https://leetcode.com/problems/generalized-abbreviation/)
-    11. Modified Binary Search Pattern:
-        1. [Order-agnostic Binary Search](https://leetcode.com/problems/binary-search/)
+    11. Modified 🏁🔚  Modified Binary Search Pattern:
+        1. [Order-agnostic 🏁🔚  Modified Binary Search](https://leetcode.com/problems/binary-search/)
         2. [Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
         3. [Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
         4. [Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/)
         5. [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/)
         6. [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/)
         7. [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/)
-        8. [Order-agnostic Binary Search](https://leetcode.com/problems/binary-search/)
+        8. [Order-agnostic 🏁🔚  Modified Binary Search](https://leetcode.com/problems/binary-search/)
         9. [Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
         10. [Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
         11. [Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/)
@@ -2844,7 +2860,7 @@
         6. [Kth Smallest Number in M Sorted Lists](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/)
         7. [Kth Smallest Number in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
         8. [Smallest Number Range](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/)
-    14. Topological Sort Pattern:
+    14.  📅  Topological Sort Pattern:
         1. [Tasks Scheduling](https://leetcode.com/problems/course-schedule/)
         2. [Tasks Scheduling Order](https://leetcode.com/problems/course-schedule-ii/)
         3. [All Tasks Scheduling Orders](https://leetcode.com/problems/course-schedule-ii/)
