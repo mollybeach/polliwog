@@ -192,7 +192,7 @@
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
-      
+      ![alt text](https://miro.medium.com/max/872/0*o-PhzdP_jd_5L2iq.jpg)
             🎭 PsuendoCode 🪟 Sliding Window Pattern 🪟
               ⏰: O(n) 🪐: O(n)
                             start = 0;
@@ -460,11 +460,11 @@
 
       🎭 PsuendoCode Union Find Algorithm Pattern ♾
           ⏰: O(V * logV) 🪐: O
-                  public find(int[] parent, i) {
+                  function find(int[] parent, i) {
                       if (parent[i] == -1) return i;
                       return find(parent, parent[i]);
             
-                  public void union(int[] parent, x, y) {
+                  function union(int[] parent, x, y) {
                       xset = find(parent, x);
                       yset = find(parent, y);
                       parent[xset] = yset;
@@ -493,7 +493,7 @@
       🎭 PsuendoCode Backtracking Pattern 🎲
         ⏰: O(n!) 🪐: O(n)
   
-              public void backtrack(n, ArrayList<Integer> nums, List<List<Integer>> output, first) {
+              function backtrack(n, ArrayList<Integer> nums, List<List<Integer>> output, first) {
                   // if all integers are used up
                   if (first == n)
                       output.add(new ArrayList<Integer>(nums));
