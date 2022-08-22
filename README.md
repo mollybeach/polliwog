@@ -740,9 +740,7 @@
             }
             return result;
         };
-## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153
-
-        Pattern: 🏁🔚  Modified Binary Search Pattern
+## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153  🏁🔚
         ❓: Suppose an array of length n sorted in ascending order is rotated between 1 & n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
         [4,5,6,7,0,1,2] if it was rotated 4 times.
         [0,1,2,4,5,6,7] if it was rotated 7 times.
@@ -767,9 +765,7 @@
             }
             return nums[left];
         };
-## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153
-
-        Pattern: 🏁🔚  Modified Binary Search
+## [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) #153 🏁🔚 
         ❓: Suppose an array of length n sorted in ascending order is rotated between 1 & n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
         [4,5,6,7,0,1,2] if it was rotated 4 times.
         [0,1,2,4,5,6,7] if it was rotated 7 times.
@@ -793,9 +789,7 @@
             }
             return nums[left];
         };
-## [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) #33
-
-        Pattern: 🏁🔚  Modified Binary Search
+## [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) #33  🏁🔚
         ❓: You are given an integer array nums sorted in ascending order, & an integer target.
         Suppose that nums is rotated at some pivot unknown to you beforeh& (i.e., [0,1,2,4,5,6,7] might become [4,5,6,7,0,1,2]).
         If target is found in the array return its index, otherwise, return -1.
@@ -827,15 +821,13 @@
             }
             return -1;
         };
-## [3Sum](https://leetcode.com/problems/3sum/) #15
-
-        Pattern: Two Pointers
+## [3Sum](https://leetcode.com/problems/3sum/) #15 👯
         ❓: Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, & j != k, & nums[i] + nums[j] + nums[k] == 0.
         Notice that the solution set must not contain duplicate triplets.
         🐣: Input: nums = [-1,0,1,2,-1,-4], Output: [[-1,-1,2],[-1,0,1]]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(N^3)   🪐: O(1)
-        🐇 Solution:  Two Pointers  ⏰: O(N^2)   🪐: O(N)
+        🐇 Solution: 👯 Two Pointers  ⏰: O(N^2)   🪐: O(N)
 
         var threeSum = function(nums) {
             let result = [];
