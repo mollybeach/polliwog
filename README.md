@@ -51,12 +51,12 @@
                                 max = max(max, end - start + 1);
                             }
 
-## 2. Two Pointers Pattern 👯 -> 
+## 2. Two Pointers  👯 -> 
     
     ❓ FIND A PAIR, TRIPLET or a SUBARRAY
     🥚 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
       
-        🎭 PsuendoCode Two Pointers Pattern 👯
+        🎭 PsuendoCode Two Pointers  👯
           ⏰: O(n) 🪐: O(n)
                             left = 0;
                             right = 0;
@@ -201,24 +201,20 @@
     ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #
     🥚 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
         
-        🐢 Solution: Brute Force ⏰:
-        🐇 Solution:  🎭 PsuendoCode Subsets Pattern 🐛
-
-          List<List<Integer>> subsets = new ArrayList<>();
-          subsets.add(new ArrayList<>());
-          for (currentNumber : nums) {
-              // we will take all existing subsets
-              // and insert the current number in them to create new subsets
-              n = subsets.size();
-              for (i = 0; i < n; i++) {
-                  // create a new subset from the existing subset 
-                  // and insert the current element to it
-                  List<Integer> set = new ArrayList<>(subsets.get(i));
-                  set.add(currentNumber);
-                  subsets.add(set);
-              }
-          }
-
+        🎭 PsuendoCode Subsets Pattern 🐛
+            ⏰: O(n) 🪐: O(n)
+                List<List<Integer>> subsets = new ArrayList<>();
+                subsets.add(new ArrayList<>());
+                for (int currentNumber : nums) {
+                    // we will take all existing subsets and insert the current number in them to create new subsets
+                    int n = subsets.size();
+                    for (int i = 0; i < n; i++) {
+                        // create a new subset from the existing subset and insert the current element to it
+                        List<Integer> set = new ArrayList<>(subsets.get(i));
+                        set.add(currentNumber);
+                        subsets.add(set);
+                    }
+                }
 ## 11. Modified Binary Search Pattern 🏁🔚 ->
     ❓  MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY
     🥚 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.
@@ -372,12 +368,12 @@
 ## Array
 ## [Two Sum](https://leetcode.com/problems/two-sum/) #1 
 
-        Pattern: Two Pointers Pattern.
+        Pattern: 👯 Two Pointers
         Problem: Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
         Example: Given nums = [2, 7, 11, 15], target = 9, Because nums[0] + nums[1] = 2 + 7 = 9, return [0, 1].
         
-        🐢 Solution: Brute Force ⏰: O(N^2) 🪐: O(1)
-        🐇 Solution:  Two Pointers Pattern ⏰: O(NlogN) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
+        🐇 Solution: 👯 Two Pointers  ⏰: O(NlogN) 🪐: O(1)
 
         var twoSum = function(nums, target) {
             var twoSum = function(nums, target) {
@@ -404,7 +400,7 @@
         Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
         Example: Input: prices = [7,1,5,3,6,4], Output: 5, Explanation: Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5. Not 7-1 = 6, as selling price needs to be larger than buying price.
  
-        🐢 Solution: Brute Force ⏰: O(N^2) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
         🐇 Solution:  Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
 
         var maxProfit = function(prices) {
@@ -422,13 +418,12 @@
 
 ## [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/)
 
-        Pattern: Two Pointers Pattern
+        Pattern: 👯 Two Pointers 
         Problem : Given Arr [] of int. Return true if has duplicates  : 
         Parameters: Ex 1: Input: nums = [1,2,3,1] Output: true. Ex 2: Input: nums = [1,2,3,4] Output: false. 
          
-        🐢 Solution: Brute Force ⏰: O(N^2) 🪐: O(1)
-        🐇 Solution:  Two Pointers Pattern  ⏰: O(N) 🪐: O(1)
-
+        🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
+        🐇 Solution:  👯 Two Pointers   ⏰: O(N) 🪐: O(1)
 
         var containsDuplicate = function(nums) {
             let checkSum = new Map();
@@ -447,14 +442,14 @@
         };  
 
 ## [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) #238
-        Pattern: Two Pointers Pattern
+        Pattern: 👯 Two Pointers 
         Problem: Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
         The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
         You must write an algorithm that runs in O(n) time and without using the division operation.
         Example: Input: nums = [1,2,3,4], Output: [24,12,8,6]
         
-        🐢 Solution: Brute Force ⏰: O(N^2) 🪐: O(1)
-        🐇 Solution:  Two Pointers Pattern ⏰: O(N) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
+        🐇 Solution:  👯 Two Pointers  ⏰: O(N) 🪐: O(1)
         
         var productExceptSelf = function(nums) {
             let result = [];
@@ -477,9 +472,8 @@
         Problem: Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
         Example: Input: nums = [-2,1,-3,4,-1,2,1,-5,4], Output: 6, Explanation: [4,-1,2,1] has the largest sum = 6.
         
-        🐢 Solution: Brute Force ⏰:
-        🐇 Solution: 🐢 Solution: Brute Force ⏰: O(N^2) 🪐: O(1)
-        🐇 Solution:  Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
+        🐇 Solution: 📈 Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
 
         var maxSubArray = function(nums) {
             let max = nums[0];
@@ -499,7 +493,7 @@
         A subarray is a contiguous subsequence of the array.
         Example: Input: nums = [2,3,-2,4], Output: 6, Explanation: [2,3] has the largest product 6.
        
-       🐢 Solution: Brute Force ⏰: O(N^2) 🪐: O(1)
+       🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
        🐇 Solution: Dynamic Programming Pattern Kadane's Algorithm ⏰: O(N) 🪐: O(1)
 
         var maxProduct = function(nums) {
@@ -524,7 +518,7 @@
         Given the sorted rotated array nums of unique elements, return the minimum element of this array.
         Example: Input: nums = [3,4,5,1,2], Output: 1
 
-        🐢 Solution: Brute Force  ⏰: O(N) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force  ⏰: O(N) 🪐: O(1)
         🐇 Solution:  Binary Search Pattern ⏰: O(logN) 🪐: O(1)
 
         Pattern: Binary Search
@@ -551,7 +545,7 @@
         Given the sorted rotated array nums of unique elements, return the minimum element of this array.
         Example: Input: nums = [3,4,5,1,2], Output: 1
 
-        🐢 Solution: Brute Force  ⏰: O(N) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force  ⏰: O(N) 🪐: O(1)
         🐇 Solution:  Binary Search ⏰: O(logN) 🪐: O(1)
 
         var findMin = function(nums) {
@@ -575,7 +569,7 @@
         If target is found in the array return its index, otherwise, return -1.
         Example: Input: nums = [4,5,6,7,0,1,2], target = 0, Output: 4
 
-          🐢 Solution: Brute Force ⏰: O(N) 🪐: O(1)
+          🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
           🐇 Solution: Binary Search ⏰: O(logn) 🪐: O(1)   
           
         var search = function(nums, target) {
@@ -608,7 +602,7 @@
         Notice that the solution set must not contain duplicate triplets.
         Example: Input: nums = [-1,0,1,2,-1,-4], Output: [[-1,-1,2],[-1,0,1]]
 
-        🐢 Solution: Brute Force ⏰: O(N^3)   🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(N^3)   🪐: O(1)
         🐇 Solution:  Two Pointers  ⏰: O(N^2)   🪐: O(N)
 
         var threeSum = function(nums) {
@@ -637,12 +631,12 @@
         };
 ## [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) #11
 
-        Pattern: Two Pointers Pattern
+        Pattern: 👯 Two Pointers 
         Problem: Given n non-negative integers a1, a2, ..., an , where each represents a poat coordinate (i, ai). n vertical lines are drawn such that the two endpoints of the line i is at (i, ai) and (i, 0). Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
         Notice that you may not slant the container.
         Example: Input: height = [1,8,6,2,5,4,8,3,7], Output: 49
 
-        🐢 Solution: Brute Force ⏰: O(n^2) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(1)
         🐇 Solution:  Two Pointers ⏰: O(n) 🪐: O(1)
 
         var maxArea = function(height) {
@@ -671,8 +665,8 @@
       Problem: Given two integers a and b, return the sum of the two integers without using the operators + and -.
       🥚: #1 Input: a = 1, b = 2. Output: 3 #2 Input: a = 2, b = 3 Output: 5.
         
-        🐢 Solution: Brute Force ⏰:
-        🐇 Solution:  🐢 Solution: Brute Force ⏰: O(N) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰:
+        🐇 Solution:  🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
             🐇 Solution: Bit Manipulation ⏰: O(1)  🪐: O(1)
 
             var getSum = function(a, b) {
@@ -693,7 +687,7 @@
       Note: Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. For this problem, assume that your function returns 231 − 1 when the division result overflows.
       Example: Input: dividend = 10, divisor = 3, Output: 3
 
-          🐢 Solution: Brute Force ⏰: O(N) 🪐: O(1)
+          🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
           🐇 Solution: Bit Manipulation ⏰: O(logn)   🪐: O(logn)
 
           var divide = function(dividend, divisor) {
@@ -725,7 +719,7 @@
         Problem: Write a function that takes an unsigned integer and returns the number of '1' bits it has (aka Hamming weight).
         🥚: #1 Input: n = 00000000000000000000000000001011 Output: 3 . N as a total of three '1' bits.#2 Input: n = 00000000000000000000000010000000 Output: 1 #3 Input: n = 11111111111111111111111111111101 Output: 31
 
-            🐢 Solution: Brute Force ⏰: O(N) 🪐: O(1)
+            🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
             🐇 Solution: Bit Manipulation ⏰: O(1) 🪐: O(1)
 
             var hammingWeight = function(n) {
@@ -743,7 +737,7 @@
         Problem: Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
         🥚: #1 Input: n = 2 Output: [0,1,1]  Explain: 0 --> 0 1 --> 1 2 --> 10 #2 Input: n = 5 Output: [0,1,1,2,1,2]
 
-            🐢 Solution: Brute Force ⏰: O(N) 🪐: O(1)
+            🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
             🐇 Solution: Bit Manipulation ⏰: O(N) 🪐: O(1)
 
             var countBits = function(n) {
@@ -754,7 +748,7 @@
                 return result;
             };
             
-            🐢 Solution: Brute Force ⏰: O(N) 🪐: O(N)
+            🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(N)
             🐇 Solution: Bit Manipulation  ⏰: O(n)  🪐: O(n)
 
             const countBits = (n) => {
@@ -773,7 +767,7 @@
         Problem: Given an [] containing n distinct numbers in the range [0, n], return the only num in the range tht missing from the []
         🥚: #1 Input: nums = [3,0,1] Output: 2 Explain: n = 3 since there are 3 num, so all n are in range [0,3]. 2 is the missing num in the range it does not appear in nums. #2 Input: nums = [0,1] Output: 2 #3 Input: nums = [9,6,4,2,3,5,7,0,1] Output: 8
 
-            🐢 Solution: Brute Force ⏰: O(N) 🪐: O(N)
+            🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(N)
             🐇 Solution: Bit Manipulation  ⏰: O(n)  🪐: O(n)
 
             var missingNumber = function (nums) {
@@ -804,7 +798,7 @@
         Explanation: The input binary string 00000010100101000001111010011100 represents the unsigned integer 43261596, so return 964176192 which its binary representation is 00111001011110000010100101000000. #2 Input: n = 11111111111111111111111111111101
         Output:   3221225471 (10111111111111111111111111111111)
 
-            🐢 Solution: Brute Force ⏰: O(N) 🪐: O(1)
+            🐢 Solution: 🔨 Brute Force ⏰: O(N) 🪐: O(1)
             🐇 Solution: Bit Manipulation ⏰: O(1)  🪐: O(1)
 
             var reverseBits = function (n) {
@@ -829,7 +823,7 @@
         🥚: #1 Input: n = 2 Output: 2. Explanation: There are two ways to climb to the top. 1. 1 step + 1 step 2. 2 steps
         #2 Input: n = 3 Output: 3. Explanation: There are three ways to climb to the top. 1. 1 step + 1 step + 1 step 2. 1 step + 2 steps 3. 2 steps + 1 step
 
-        🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
             var climbStairs = function (n) {
@@ -851,7 +845,7 @@
         #2 Input: coins = [2], amount = 3 Output: -1
         #3 Input: coins = [1], amount = 0 Output: 0
         
-        🐢 Solution: Brute Force ⏰: O(n^amount) 🪐: O(amount)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^amount) 🪐: O(amount)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n^amount) 🪐: O(n^amount)   
 
             var coinChange = function (coins, amount) {
@@ -871,7 +865,7 @@
         Problem: Given an integer array nums, return the length of the longest strictly increasing subsequence.
         🥚: #1 Input: nums = [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. #2 Input: nums = [0,1,0,3,2,3] Output: 4 #3 Input: nums = [7,7,7,7,7,7,7] Output: 1
 
-        🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n^2) 🪐: O(n^2)        
 
             var lengthOfLIS = function (nums) {
@@ -894,7 +888,7 @@
         Problem: Given two strings text1 and text2, return the length of their longest common subsequence. If there is no common subsequence, return 0. A subsequence of a string is a new string generated from the original string with some characters(can be none) deleted without changing the relative order of the remaining characters. (eg, "ace" is a subsequence of "abcde" while "aec" is not). A common subsequence of two strings is a subsequence that is common to both strings.
         🥚: #1 Input: text1 = "abcde", text2 = "ace" Output: 3 Explanation: The longest common subsequence is "ace" and its length is 3. #2 Input: text1 = "abc", text2 = "abc" Output: 3 #3 Input: text1 = "abc", text2 = "def" Output: 0
 
-        🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(m*n) 🪐: O(m*n)
 
         Pattern Used: Memoization
@@ -919,7 +913,7 @@
         Problem: Given a string s and a dictionary of strings wordDict, return true if s can be segmented into a space-separated sequence of one or more dictionary words. Note that the same word in the dictionary may be reused multiple times in the segmentation.
         🥚: #1 Input: s = "leetcode", wordDict = ["leet","code"] Output: true Explanation: Return true because "leetcode" can be segmented as "leet code". #2 Input: s = "applepenapple", wordDict = ["apple","pen"] Output: true Explanation: Return true because "applepenapple" can be segmented as "apple pen apple". Note that you are allowed to reuse a dictionary word. #3 Input: s = "catsandog", wordDict = ["cats","dog","sand","and","cat"] Output: false
 
-        🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n^2) 🪐: O(n^2)
 
             var wordBreak = function (s, wordDict) {
@@ -939,8 +933,8 @@
 
         Problem: Given an integer array with all positive numbers and no duplicates, find the number of possible combinations that add up to a positive integer target. Example: Input: nums = [1, 2, 3] target = 4 Output: 7 Explanation: The possible combination ways are: (1, 1, 1, 1) (1, 1, 2) (1, 2, 1) (1, 3) (2, 1, 1) (2, 2) (3, 1) Note that different sequences are counted as different combinations. Therefore the output is 7.
         
-        🐢 Solution: Brute Force ⏰:
-        🐇 Solution: 🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰:
+        🐇 Solution: 🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n*target) 🪐:  O(n*target)
 
             var combinationSum4 = function (nums, target) {
@@ -962,8 +956,8 @@
         Problem: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constrastopping you from robbing each of them is that adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night. Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
         🥚: #1 Input: nums = [1,2,3,1] Output: 4 Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4. #2 Input: nums = [2,7,9,3,1] Output: 12 Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (money = 1). Total amount you can rob = 2 + 9 + 1 = 12.
         
-        🐢 Solution: Brute Force ⏰:
-        🐇 Solution: 🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰:
+        🐇 Solution: 🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
             var rob = function (nums) {
@@ -980,7 +974,7 @@
         Problem: You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed. All houses at this place are arranged in a circle. That means the first house is the neighbor of the last one. Meanwhile, adjacent houses have security system connected and it will automatically contact the police if two adjacent houses were broken into on the same night. Given an integer array nums representing the amount of money of each house, return the maximum amount of money you can rob tonight without alerting the police.
         🥚: #1 Input: nums = [2,3,2] Output: 3 Explanation: You cannot rob house 1 (money = 2) and then rob house 3 (money = 2), because they are adjacent houses. #2 Input: nums = [1,2,3,1] Output: 4 Explanation: Rob house 1 (money = 1) and then rob house 3 (money = 3). Total amount you can rob = 1 + 3 = 4. #3 Input: nums = [0] Output: 0
 
-        🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
         Pattern Used: Memoization
@@ -1006,7 +1000,7 @@
         Problem: A message containing letters from A-Z is being encoded to numbers using the following mapping: 'A' -> 1 'B' -> 2 ... 'Z' -> 26 Given a non-empty string s containing only digits, determine the total number of ways to decode it. The answer is guaranteed to fit in a 32-bit integer.
         🥚: #1 Input: s = "12" Output: 2 Explanation: It could be decoded as "AB" (1 2) or "L" (12). #2 Input: s = "226" Output: 3 Explanation: It could be decoded as "BZ" (2 26), "VF" (22 6), or "BBF" (2 2 6). #3 Input: s = "0" Output: 0 Explanation: There is no character that is mapped to a number starting with 0. The only valid mappings with 0 are 'J' -> "10" and 'T' -> "20", neither of which start with 0. Hence, there are no valid ways to decode this since all digits need to be mapped. #4 Input: s = "1" Output: 1
 
-        🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization  ⏰: O(n) 🪐: O(n)
 
             var numDecodings = function (s) {
@@ -1031,7 +1025,7 @@
         Problem: A robot is located at the top-left corner of a m x n grid (marked 'Start' in the diagram below). The robot can only move either down or right at any poin time. The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below). How many possible unique paths are there?
         🥚: #1 Input: m = 3, n = 7 Output: 28 #2 Input: m = 3, n = 2 Output: 3 Explanation: From the top-left corner, there are a total of 3 ways to reach the bottom-right corner: 1. Right -> Down -> Down 2. Down -> Down -> Right 3. Down -> Right -> Down #3 Input: m = 7, n = 3 Output: 28 #4 Input: m = 3, n = 3 Output: 6
 
-        🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Memoization ⏰: O(n) 🪐: O(n)
 
             var uniquePaths = function (m, n) {
@@ -1054,8 +1048,8 @@
         Problem: Given an array of non-negative integers nums, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index.
         🥚: #1 Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. #2 Input: nums = [3,2,1,0,4] Output: false Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
         
-        🐢 Solution: Brute Force ⏰:
-        🐇 Solution: 🐢 Solution: Brute Force ⏰: O(2^n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰:
+        🐇 Solution: 🐢 Solution: 🔨 Brute Force ⏰: O(2^n) 🪐: O(n)
         🐇 Solution:  Dynamic Programming Tabulation ⏰: O(n) 🪐: O(n)
 
             var canJump = function (nums) {
@@ -1082,7 +1076,7 @@
        Problem: Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Each node in the graph contains a val (int) and a list (List[Node]) of its neighbors.
        🥚: #1 Input: adjList = [[2,4],[1,3],[2,4],[1,3]] Output: [[2,4],[1,3],[2,4],[1,3]] Explanation: There are 4 nodes in the graph. #2 Input: adjList = [[]] Output: [[]] #3 Input: adjList = [] Output: [] #4 Input: adjList = [[2],[1]] Output: [[2],[1]]
 
-              🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+              🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
               🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
 
               var cloneGraph = function (node) {
@@ -1110,7 +1104,7 @@
         Problem: There are a total of numCourses courses you have to take, labeled from 0 to numCourses - 1. You are given an array prerequisites where prerequisites[i] = [ai, bi] indicates that you must take course bi first if you want to take course ai. For example, the pair [0, 1], indicates that to take course 0 you have to first take course 1. Return true if you can finish all courses. Otherwise, return false.
         🥚: #1 Input: numCourses = 2, prerequisites = [[1,0]] Output: true Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0. So it is possible. #2 Input: numCourses = 2, prerequisites = [[1,0],[0,1]] Output: false Explanation: There are a total of 2 courses to take. To take course 1 you should have finished course 0, and to take course 0 you should also have finished course 1. So it is impossible.
           
-          🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+          🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
           🐇 Solution: Topological Sort  ⏰: O(V+E)   🪐: O(V+E) 
 
             var canFinish = function (numCourses, prerequisites) {
@@ -1144,7 +1138,7 @@
         Problem: Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the "Pacific ocean" touches the left and top edges of the matrix and the "Atlantic ocean" touches the right and bottom edges. Water can only flow in four directions (up, down, left, or right) from a cell to another one with height equal or lower. Find the list of grid coordinates where water can flow to both the Pacific and Atlantic ocean.
         🥚: #1 Input: heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]] Output: [[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]] Explanation: Pacific ~ ~ ~ ~ ~ 1 2 2 3 (5) ~ 3 2 3 (4) (4) ~ 2 4 (5) 3 1 ~ (6) (7) 1 4 5 ~ (5) 1 1 2 4 ~ ~ ~ ~ ~ Atlantic #2 Input: heights = [[2,1],[1,2]] Output: [[0,0],[0,1],[1,0],[1,1]]
 
-            🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+            🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
             🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
 
             var pacificAtlantic = function (heights) {
@@ -1212,7 +1206,7 @@
         Problem: Given an m x n 2d grid map of '1's (land) and '0's (water), return the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
         🥚: #1 Input: grid = [ ["1","1","1","1","0"], ["1","1","0","1","0"], ["1","1","0","0","0"], ["0","0","0","0","0"] ] Output: 1 #2 Input: grid = [ ["1","1","0","0","0"], ["1","1","0","0","0"], ["0","0","1","0","0"], ["0","0","0","1","1"] ] Output: 3
        
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution:  BFS  ⏰: O(mn) 🪐: O(mn)
 
             var numIslands = function (grid) {
@@ -1253,7 +1247,7 @@
         Problem: Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence. You must write an algorithm that runs in O(n) time.
         🥚: #1 Input: nums = [100,4,200,1,3,2] Output: 4 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4. #2 Input: nums = [0,3,7,2,5,8,4,6,0,1] Output: 9
 
-         🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
          🐇 Solution: Union Find  ⏰: O(n) 🪐: O(n)
 
             var longestConsecutive = function (nums) {
@@ -1281,7 +1275,7 @@
         Problem: Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary). You may assume that the intervals were initially sorted according to their start times.
         🥚: #1 Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]] #2 Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8] Output: [[1,2],[3,10],[12,16]] Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
         
-          🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+          🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
           🐇 Solution: Merge Intervals  ⏰: O(n) 🪐: O(n)
   
               var insert = function (intervals, newInterval) {
@@ -1310,7 +1304,7 @@
         🥚: #1 Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. #2 Input: intervals = [[1,4],[4,5]] Output: [[1,5]] Explanation: Intervals [1,4] and [4,5] are considered overlapping.
         
 
-          🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+          🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
           🐇 Solution: Merge Intervals  ⏰: O(n) 🪐: O(n)
   
               var merge = function (intervals) {
@@ -1336,7 +1330,7 @@
         🥚: #1 Input: intervals = [[1,2],[2,3],[3,4],[1,3]] Output: 1 Explanation: [1,3] can be removed and the rest of the intervals are non-overlapping. #2 Input: intervals = [[1,2],[1,2],[1,2]] Output: 2 Explanation: You need to remove two [1,2] to make the rest of the intervals non-overlapping. #3 Input: intervals = [[1,2],[2,3]] Output: 0 Explanation: You don't need to remove any of the intervals since they're already non-overlapping.
         
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution:   Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
 
             var eraseOverlapIntervals = function (intervals) {
@@ -1364,7 +1358,7 @@
         Problem: Given the head of a singly linked list, reverse the list, and return the reversed list.
         🥚: #1 Input: head = [1,2,3,4,5] Output: [5,4,3,2,1] #2 Input: head = [1,2] Output: [2,1] #3 Input: head = [] Output: []
         
-        🐢 Solution: Brute Force ⏰: Brute Force ⏰:
+        🐢 Solution: 🔨 Brute Force ⏰: 🔨 Brute Force ⏰:
         🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var reverseList = function (head) {
@@ -1384,7 +1378,7 @@
         Problem: Given head, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter. Return true if there is a cycle in the linked list. Otherwise, return false.
         🥚: #1 Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed). #2 Input: head = [1,2], pos = 0 Output: true Explanation: There is a cycle in the linked list, where the tail connects to the 0th node. #3 Input: head = [1], pos = -1 Output: false Explanation: There is no cycle in the linked list.
         
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var hasCycle = function (head) {
@@ -1403,7 +1397,7 @@
         Problem: Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
         🥚: #1 Input: l1 = [1,2,4], l2 = [1,3,4] Output: [1,1,2,3,4,4] #2 Input: l1 = [], l2 = [] Output: [] #3 Input: l1 = [], l2 = [0] Output: [0]
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var mergeTwoLists = function (l1, l2) {
@@ -1429,7 +1423,7 @@
         Problem: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
         🥚: #1 Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] #2 Input: lists = [] Output: [] #3 Input: lists = [[]] Output: []
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
         
             var mergeKLists = function (lists) {
@@ -1454,7 +1448,7 @@
         Problem: Given the head of a linked list, remove the nth node from the end of the list and return its head.
         🥚: #1 Input: head = [1,2,3,4,5], n = 2 Output: [1,2,3,5] #2 Input: head = [1], n = 1 Output: [] #3 Input: head = [1,2], n = 1 Output: [1]
         
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution:  Fast & Slow Pointers  ⏰: O(n) 🪐: O(1)
 
             var removeNthFromEnd = function (head, n) {
@@ -1478,7 +1472,7 @@
         Problem: Given the head of a singly linked list, reorder the list to be: head -> node 2 -> node 3 -> node 4 -> ... -> node n -> null. You may not modify the values in the list's nodes. Only nodes themselves may be changed.
         🥚: #1 Input: head = [1,2,3,4] Output: [1,4,2,3] #2 Input: head = [1,2,3,4,5] Output: [1,5,2,4,3]
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: ⏰: O(n) 🪐: O(1)
 
             var reorderList = function (head) {
@@ -1518,7 +1512,7 @@
         Problem: Given an m x n matrix. If an element is 0, set its entire row and column to 0. Do it in-place.
         🥚: #1 Input: matrix = [[1,1,1],[1,0,1],[1,1,1]] Output: [[1,0,1],[0,0,0],[1,0,1]] #2 Input: matrix = [[0,1,2,0],[3,4,5,2],[1,3,1,5]] Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
-        🐢 Solution: Brute Force ⏰: O(mn) 🪐: O(m+n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(mn) 🪐: O(m+n)
         🐇 Solution: Matrix Pattern  ⏰: O(mn) 🪐: O(1)
 
             var setZeroes = function (matrix) {
@@ -1546,7 +1540,7 @@
         Problem: Given an m x n matrix, return all elements of the matrix in spiral order.
         🥚: #1 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [1,2,3,6,9,8,7,4,5] #2 Input: matrix = [[1,2,3,4],[5,6,7,8],[9,10,11,12]] Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 
-        🐢 Solution: Brute Force ⏰: O(mn) 🪐: O(mn)
+        🐢 Solution: 🔨 Brute Force ⏰: O(mn) 🪐: O(mn)
         🐇 Solution:  Matrix Pattern  ⏰: O(mn) 🪐: O(mn)
 
             var spiralOrder = function (matrix) {
@@ -1585,7 +1579,7 @@
         Problem: You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
         🥚: #1 Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] Output: [[7,4,1],[8,5,2],[9,6,3]] #2 Input: matrix = [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]] Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
         
-        🐢 Solution: Brute Force ⏰: Brute Force ⏰:
+        🐢 Solution: 🔨 Brute Force ⏰: 🔨 Brute Force ⏰:
         🐇 Solution:  MatrixPattern ⏰: O(n) 🪐: O(1)
 
             var rotate = function (matrix) {
@@ -1606,7 +1600,7 @@
         Problem: Given an m x n grid of characters board and a string word, return true if word exists in the grid.
         🥚: #1 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED" Output: true #2 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "SEE" Output: true #3 Input: board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCB" Output: false
 
-        🐢 Solution: Brute Force ⏰ O(mn * 4^L) 🪐: O(mn)
+        🐢 Solution: 🔨 Brute Force ⏰ O(mn * 4^L) 🪐: O(mn)
         🐇 Solution:  MatrixPattern ⏰: O(n) 🪐: O(n)
 
             var exist = function (board, word) {
@@ -1652,7 +1646,7 @@
         Problem: Given a string s, find the length of the longest substring without repeating characters.
         🥚: #1 Input: s = "abcabcbb" Output: 3 Explanation: The answer is "abc", with the length of 3. #2 Input: s = "bbbbb" Output: 1 Explanation: The answer is "b", with the length of 1. #3 Input: s = "pwwkew" Output: 3 Explanation: The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence and not a substring. #4 Input: s = "" Output: 0
         
-        🐢 Solution: Brute Force ⏰: O(n^3) 🪐: O(min(m, n))  
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(min(m, n))  
         🐇 Solution:  Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
             var lengthOfLongestSubstring = function (s) {
@@ -1679,7 +1673,7 @@
         Return the length of the longest substring containing the same letter you can get after performing the above operations.
         🥚: #1 Input: s = "ABAB", k = 2 Output: 4 Explanation: Replace the two 'A's with two 'B's or vice versa. #2 Input: s = "AABABBA", k = 1 Output: 4 Explanation: Replace the one 'A' in the middle with 'B' and form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
         
-        🐢 Solution: Brute Force ⏰: O(n^2) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(1)
         🐇 Solution: Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
             var characterReplacement = function (s, k) {
@@ -1706,7 +1700,7 @@
         A substring is a contiguous sequence of characters within the string.
         🥚: #1 Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC" Explanation: The minimum window substring "BANC" includes 'A', 'B', and 'C' from string t. #2 Input: s = "a", t = "a" Output: "a" #3 Input: s = "a", t = "aa" Output: "" Explanation: Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.
         
-        🐢 Solution: Brute Force ⏰: O(n^2) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(n)
         🐇 Solution: Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
             var minWindow = function (s, t) {
@@ -1751,7 +1745,7 @@
         Problem: Given two strings s and t , write a function to determine if t is an anagram of s.
         🥚: #1 Input: s = "anagram", t = "nagaram" Output: true #2 Input: s = "rat", t = "car" Output: false
 
-        🐢 Solution: Brute Force ⏰: O(nlogn) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(nlogn) 🪐: O(n)
         🐇 Solution:  Hash Table  ⏰: O(n) 🪐: O(n)
 
             var isAnagram = function (s, t) {
@@ -1780,7 +1774,7 @@
         An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
         🥚: #1 Input: strs = ["eat","tea","tan","ate","nat","bat"] Output: [["bat"],["nat","tan"],["ate","eat","tea"]] #2 Input: strs = [""] Output: [[""]] #3 Input: strs = ["a"] Output: [["a"]]
 
-        🐢 Solution: Brute Force ⏰: O(n^2)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^2)
         🐇 Solution:  Hash Table  ⏰: O(n) 🪐: O(n)
 
             var groupAnagrams = function (strs) {
@@ -1803,7 +1797,7 @@
         Open brackets must be closed in the correct order.
         🥚: #1 Input: s = "()" Output: true #2 Input: s = "()[]{}" Output: true #3 Input: s = "(]" Output: false #4 Input: s = "([)]" Output: false #5 Input: s = "{[]}" Output: true
         
-        🐢 Solution: Brute Force ⏰: O(n^2) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(n)
         🐇 Solution: Stack  ⏰: O(n) 🪐: O(n)
 
             var isValid = function (s) {
@@ -1829,7 +1823,7 @@
         Problem: Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.
         🥚: #1 Input: s = "A man, a plan, a canal: Panama" Output: true Explanation: "amanaplanacanalpanama" is a palindrome.
         
-        🐢 Solution: Brute Force ⏰: 
+        🐢 Solution: 🔨 Brute Force ⏰: 
         🐇 Solution: Two Pointers ⏰: 
 
         var isPalindrome = function(s) {
@@ -1862,7 +1856,7 @@
         Problem: Given a string s, return the longest palindromic substring in s.
         🥚: #1 Input: s = "babad" Output: "bab" Note: "aba" is also a valid answer. #2 Input: s = "cbbd" Output: "bb" #3 Input: s = "a" Output: "a" #4 Input: s = "ac" Output: "a"
 
-        🐢 Solution: Brute Force ⏰: O(n^3) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(1)
         🐇 Solution: Dynamic Programming ⏰: O(n^2) 🪐: O(n^2)
 
             var longestPalindrome = function (s) {
@@ -1892,7 +1886,7 @@
         A substring is a contiguous sequence of characters within the string.
         🥚: #1 Input: s = "abc" Output: 3 Explanation: Three palindromic strings: "a", "b", "c". #2 Input: s = "aaa" Output: 6 Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
-        🐢 Solution: Brute Force ⏰: O(n^3) 🪐: O(1)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(1)
         🐇 Solution:  Dynamic Programming ⏰: O(n^2) 🪐: O(n^2)
 
             var countSubstrings = function (s) {
@@ -1923,7 +1917,7 @@
         A binary tree's maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
         🥚: #1 Input: root = [3,9,20,null,null,15,7] Output: 3 #2 Input: root = [1,null,2] Output: 2 #3 Input: root = [] Output: 0 #4 Input: root = [0] Output: 1
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var maxDepth = function (root) {
@@ -1938,7 +1932,7 @@
         Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.
         🥚: #1 Input: p = [1,2,3], q = [1,2,3] Output: true #2 Input: p = [1,2], q = [1,null,2] Output: false #3 Input: p = [1,2,1], q = [1,1,2] Output: false
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var isSameTree = function (p, q) {
@@ -1954,7 +1948,7 @@
         Problem: Invert a binary tree.
         🥚: #1 Input: root = [4,2,7,1,3,6,9] Output: [4,7,2,9,6,3,1] #2 Input: root = [2,1,3] Output: [2,3,1] #3 Input: root = [] Output: []
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var invertTree = function (root) {
@@ -1973,7 +1967,7 @@
         A path is a collection of nodes that are connected by edges, where no node is connected to more than two other nodes. The path must contain at least one node and does not need to go through the root.
         🥚: #1 Input: root = [1,2,3] Output: 6 #2 Input: root = [-10,9,20,null,null,15,7] Output: 42
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var maxPathSum = function (root) {
@@ -1994,7 +1988,7 @@
         Problem: Given the root of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
         🥚: #1 Input: root = [3,9,20,null,null,15,7] Output: [[3],[9,20],[15,7]] #2 Input: root = [1] Output: [[1]] #3 Input: root = [] Output: []
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
 
             var levelOrder = function (root) {
@@ -2016,7 +2010,7 @@
         Design an algorithm to serialize and deserialize a binary tree. There is no restriction on how your serialization/deserialization algorithm should work. You just need to ensure that a binary tree can be serialized to a string and this string can be deserialized to the original tree structure.
         🥚: #1 Input: root = [1,2,3,null,null,4,5] Output: [1,2,3,null,null,4,5]
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: BFS ⏰: O(n) 🪐: O(n)
 
             var serialize = function (root) {
@@ -2055,7 +2049,7 @@
         A subtree of a binary tree tree is a tree that consists of a node in tree and all of this node's descendants. The tree tree could also be considered as a subtree of itself.
         🥚: #1 Input: root = [3,4,5,1,2], subRoot = [4,1,2] Output: true #2 Input: root = [3,4,5,1,2,null,null,null,null,0], subRoot = [4,1,2] Output: false
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var isSubtree = function (root, subRoot) {
@@ -2074,7 +2068,7 @@
         Problem: Given two integer arrays preorder and inorder where preorder is the preorder traversal of a binary tree and inorder is the inorder traversal of the same tree, construct and return the binary tree.
         🥚: #1 Input: preorder = [3,9,20,15,7], inorder = [9,3,15,20,7] Output: [3,9,20,null,null,15,7] #2 Input: preorder = [-1], inorder = [-1] Output: [-1]
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
             var buildTree = function (preorder, inorder) {
               if (!preorder.length || !inorder.length) return null;
@@ -2094,7 +2088,7 @@
         Both the left and right subtrees must also be binary search trees.
         🥚: #1 Input: root = [2,1,3] Output: true #2 Input: root = [5,1,4,null,null,3,6] Output: false
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var isValidBST = function (root) {
@@ -2110,7 +2104,7 @@
         Problem: Given the root of a binary search tree, and an integer k, return the kth (1-indexed) smallest element in the tree.
         🥚: #1 Input: root = [3,1,4,null,2], k = 1 Output: 1 #2 Input: root = [5,3,6,2,4,null,null,1], k = 3 Output: 3
         
-        🐢 Solution: Brute Force ⏰:
+        🐢 Solution: 🔨 Brute Force ⏰:
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var kthSmallest = function (root, k) {
@@ -2131,7 +2125,7 @@
         According to the definition of LCA on Wikipedia: "The lowest common ancestor of two nodes p and q in a binary tree T is the lowest node that has both p and q as descendants (where we allow a node to be a descendant of itself)."
         🥚: #1 Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8 Output: 6 #2 Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4 Output: 2
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: DFS ⏰: O(n) 🪐: O(n)
 
             var lowestCommonAncestor = function (root, p, q) {
@@ -2150,7 +2144,7 @@
         boolean startsWith(String prefix) Returns true if there is a previously inserted string word that has the prefix prefix, and false otherwise
         🥚: #1 Input: ["Trie","insert","search","search","startsWith","insert","search"] Output: [null,null,true,false,true,null,true] Explanation: Trie trie = new Trie(); trie.insert("apple"); trie.search("apple"); // return True trie.search("app"); // return False trie.startsWith("app"); // return True trie.insert("app"); trie.search("app"); // return True
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
 
             var Trie = function () {
@@ -2190,7 +2184,7 @@
         bool search(word) Returns true if there is any string in the data structure that matches word or false otherwise. word may contain dots '.' where dots can be matched with any letter.
         🥚: #1 Input: ["WordDictionary","addWord","addWord","addWord","search","search","search","search"] Output: [null,null,null,null,false,true,true,true] Explanation: WordDictionary wordDictionary = new WordDictionary(); wordDictionary.addWord("bad"); wordDictionary.addWord("dad"); wordDictionary.addWord("mad"); wordDictionary.search("pad"); // return False wordDictionary.search("bad"); // return True wordDictionary.search(".ad"); // return True wordDictionary.search("b.."); // return True
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
 
             var WordDictionary = function () {
@@ -2226,7 +2220,7 @@
         Problem: Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.
         🥚: #1 Input: board = [["o","a","a","n"],["e","t","a","e"],["i","h","k","r"],["i","f","l","v"]], words = ["oath","pea","eat","rain"] Output: ["eat","oath"] #2 Input: board = [["a","b"],["c","d"]], words = ["abcb"] Output: []
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Trie ⏰: O(n) 🪐: O(n)
 
             var findWords = function (board, words) {
@@ -2276,7 +2270,7 @@
         Problem: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.
         🥚: #1 Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] #2 Input: lists = [] Output: [] #3 Input: lists = [[]] Output: []
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
 
             var mergeKLists = function (lists) {
@@ -2367,7 +2361,7 @@
         Problem: Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.
         🥚: #1 Input: nums = [1,1,1,2,2,3], k = 2 Output: [1,2] #2 Input: nums = [1], k = 1 Output: [1]
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
 
             var topKFrequent = function (nums, k) {
@@ -2458,7 +2452,7 @@
         Problem: Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value and the median is the mean of the two middle values. For example, for arr = [2,3,4], the median is 3. For example, for arr = [2,3], the median is (2 + 3) / 2 = 2.5. Implement the MedianFinder class: MedianFinder() initializes the MedianFinder object. void addNum(num) adds the integer num from the data stream to the data structure. double findMedian() returns the median of all elements so far. Answers within 10-5 of the actual answer will be accepted.
         🥚: #1 Input: ["MedianFinder", "addNum", "addNum", "findMedian", "addNum", "findMedian"] [[], [1], [2], [], [3], []] Output: [null, null, null, 1.5, null, 2.0] #2 Input: ["MedianFinder", "addNum", "findMedian", "addNum", "findMedian"] [[], [2], [], [3], []] Output: [null, null, 2.0, null, 2.5
 
-        🐢 Solution: Brute Force ⏰: O(n) 🪐: O(n)
+        🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
 
             var MedianFinder = function () {
@@ -2692,11 +2686,11 @@
     2. What is the output?
     3. What is the constraint?
     4. What is the edge case?
-    5. What is the brute force solution?
+    5. What is the 🔨 Brute Force solution?
     6. What is the optimal solution?
-    7. What is the ⏰ of the brute force solution?
+    7. What is the ⏰ of the 🔨 Brute Force solution?
     8. What is the ⏰ of the optimal solution?
-    9. What is the 🪐 of the brute force solution?
+    9. What is the 🪐 of the 🔨 Brute Force solution?
     10. What is the 🪐 of the optimal solution?
     11. What is the data structure to use?
     12. What is the algorithm to use?
@@ -2720,7 +2714,7 @@
         12. [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
         13. [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/)
         14. [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
-    2. Two Pointers Pattern:
+    2. 👯 Two Pointers :
         1. [Two Sum](https://leetcode.com/problems/two-sum/)
         2. [3Sum](https://leetcode.com/problems/3sum/)
         3. [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/)
