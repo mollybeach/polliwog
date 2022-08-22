@@ -411,7 +411,7 @@
                 }
             }
             // the heap has the top 'K' numbers.
-
+![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
 ## 13. K-way Merge Pattern 🔝🚗🚙 ->
 
     ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
@@ -431,7 +431,7 @@
                           minHeap.add(node);
                       }
                   }
-
+![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
 ## 14.  📅  Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
     🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
@@ -451,7 +451,7 @@
                   if (inDegree[child] == 0) sources.add(child);
               }
           }
-
+![alt text](https://afteracademy.com/blog/topological-sorting)
     
 ## Other Patterns
 
@@ -2260,9 +2260,7 @@
               if (root.val < p.val && root.val < q.val) return lowestCommonAncestor(root.right, p, q);
               return root;
             };
-## [Implement 📘 Trie (Prefix Tree)](https://leetcode.com/problems/implement-📘 Trie-prefix-tree/) #208
-
-        Pattern Used: 📘 Trie
+## [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-Trie-prefix-tree/) #208
         ❓: Implement a 📘 Trie with insert, search, & startsWith methods. 
         A 📘 Trie (pronounced as "try") or prefix tree is a tree data structure used to efficiently store & re📘 Trieve keys in a dataset of strings. There are various applications of this data structure, such as autocomplete & spellchecker. 
         Implement the 📘 Trie class: 📘 Trie() Initializes the 📘 Trie object.
