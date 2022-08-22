@@ -486,7 +486,7 @@
                   }
               }
               return count;
-
+![alt text](https://www.quizzcreator.com/img/QUIZ/quiz/60b2236b8c9666.00493324.173.2077.jpg);
 ## Backtracking Pattern 🎲 ->
       ❓ FIND ALL PERMUTATIONS COMBINATIONS SUBSETS PARTIONING 
       🐣 N-Queens Problem, Sudoku Solver, Rat in a Maze, Knight's Tour Problem, Hamiltonian Cycle, Subset Sum Problem, Permutations, Combination Sum, Palindrome Partitioning, Word Break Problem, etc.
@@ -507,7 +507,7 @@
                       // backtrack
                       Collections.swap(nums, first, i);
                   }
-
+![alt text](https://ibpublicimages.s3-us-west-2.amazonaws.com/tutorial/backtracking1.png);
 ## Dynamic Programming Pattern 📈 ->
       ❓ FIND OPTIMAL SOLUTION TO COMPLEX PROBLEMS MIN MAX OR COUNT OF GIVEN CONSTRAINTS
       🐣 Fibonacci Numbers, House Thief, Minimum Coin Change, House Painters, Palindromic Subsequence, Longest Common Subsequence, Longest Increasing Subsequence, Longest Common Substring, Edit Distance, 0/1 Knapsack Problem, Subset Sum Problem, Unbounded Knapsack Problem, Rod Cutting, Word Break Problem, etc.
@@ -521,7 +521,7 @@
               for (i = 2; i <= n; i++)
                   dp[i] = dp[i - 1] + dp[i - 2];
               return dp[n];
-      
+![alt text](https://imgs.developpaper.com/imgs/51946-20190827144809463-5507841.png);
 ## 🧩 Bit Manipulation Pattern 🧩 ->
     1️⃣ Bitwise XOR
       ❓ FIND IF NUMBER IS POWER OF 2
@@ -548,13 +548,14 @@
        🎭 PsuendoCode Bitwise OR Pattern 🧩
         ⏰: O(1) 🪐: O(1)
               return (n > 0) && ((n & (n - 1)) == 0) && ((n & 0xAAAAAAAA) == 0);
-
+![alt text](https://miro.medium.com/max/620/1*CxPeaIX4QxILRzucksVCsw.png);
     4️⃣ Bitwise Left Shift
       ❓ FIND IF NUMBER IS POWER OF 2
       🐣 Power of 2, etc.
         🎭 PsuendoCode Bitwise Left Shift Pattern 🧩
           ⏰: O(1) 🪐: O(1)
                 return (n > 0) && ((n & (n - 1)) == 0);
+![alt text](https://cdn.educba.com/academy/wp-content/uploads/2020/05/Left-Shift-Operator-in-C-01.png);
         
     5️⃣ Bitwise Right Shift
       ❓ FIND IF NUMBER IS POWER OF 2
@@ -562,6 +563,7 @@
         🎭 PsuendoCode Bitwise Right Shift Pattern 🧩
           ⏰: O(1) 🪐: O(1)
                 return (n > 0) && ((n & (n - 1)) == 0);
+![alt text](https://he-s3.s3.amazonaws.com/media/uploads/5f05f51.jpg);
 ##  📐 Matrix Pattern 📐 ->
       ❓ FIND IF MATRIX IS SINGULAR
       🐣 Matrix Chain Multiplication, etc.
@@ -590,6 +592,7 @@
                   }
               }
               return false;
+![alt text](https://www.geeksforgeeks.org/wp-content/uploads/strassen_new.png);
 ## 📘 Trie Pattern 📘 ->
       ❓ FIND ALL WORDS WITH GIVEN PREFIX
       🐣 Word Search, Word Break Problem, etc.
@@ -607,7 +610,7 @@
                   node.word = word;
               }
               return root;
-
+![alt text](https://miro.medium.com/max/630/1*f89l46VKjKPgnecqOw4V_w.png);
 
 ## Array
 ## [Two Sum](https://leetcode.com/problems/two-sum/) #1 👯 
