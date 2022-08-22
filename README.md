@@ -206,7 +206,7 @@
                                 }
                                 max = max(max, end - start + 1);
                             }
-![alt text](https://miro.medium.com/max/272/0*o-PhzdP_jd_5L2iq.jpg)
+![alt text](https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg)
 
 ## 2. 👯 Two Pointers  👯 -> 
     ❓ FIND A PAIR, TRIPLET or a SUBARRAY
@@ -224,7 +224,7 @@
                                     left++;
                                 }
                             }
-
+![alt text](https://cdn.emre.me/2019-10-21-two-pointers.png)
 ## 3. 🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 ->
     ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
     🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
@@ -242,8 +242,7 @@
                                 // move fast pointer one step
                                 fast++;
                             }
-
-
+![alt text](http://1algo1week.warriorkitty.com/assets/floyds-cycle-finding-algorithm/algorithm.png)
 ## 4. 🚗🚙 Merge Intervals Pattern 🚗🚙 ->
     ❓  MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
     🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
@@ -281,7 +280,7 @@
                             else
                                 i++;
                         }
-
+![alt text](https://cdn.emre.me/2019-10-28-missing-number-example.png);
  ## 6. In-place Reversal of a LinkedList Pattern 🔄 ->
     ❓ REVERSE A SUBLIST, REVERSE EVERY K-ELEMENT IN SUBLIST
     🐣 Reverse a Sub-list, Reverse every K-element Sub-list, etc.
@@ -296,6 +295,7 @@
                   previous = current;
                   current = next;
               }
+![alt text]( https://cdn.emre.me/2019-11-04-in-place-reversal.gif);
 
 ## 7. Tree Breadth First Search Pattern 🌳 ->
     ❓  FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE
