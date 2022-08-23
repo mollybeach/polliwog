@@ -2671,7 +2671,7 @@
 
 
 ## 14 Patterns: 
-  1. 🪟 Sliding Window : \
+ ## 1. 🪟 Sliding Window : 
 [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) \
 [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) \
 [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
@@ -2687,7 +2687,7 @@
 [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/) \
 [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/) \
    
-  2. 👯 Two Pointers : \
+## 2. 👯 Two Pointers : 
 [Two Sum](https://leetcode.com/problems/two-sum/) \
 [3Sum](https://leetcode.com/problems/3sum/) \
 [3Sum Smaller](https://leetcode.com/problems/3sum-smaller/) \
@@ -2711,7 +2711,7 @@
  [Partition List](https://leetcode.com/problems/partition-list/) \
  [Sort List](https://leetcode.com/problems/sort-list/) \
 
-3. Fast & Slow Pointers Pattern: \
+## 3. Fast & Slow Pointers Pattern: 
 [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) \
 [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) \
 [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) \
@@ -2734,148 +2734,148 @@
 [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
 [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) \
 [Sort List](https://leetcode.com/problems/sort-list/) \
-    4. Merge Intervals Pattern:
-        1. [Merge Intervals](https://leetcode.com/problems/merge-intervals/) \
-        2. [Insert Interval](https://leetcode.com/problems/insert-interval/) \
-        3. [Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) \
-        4. [Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) \
-        5. [Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) \
-        6. [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) \
-        7. [Range Module](https://leetcode.com/problems/range-module/) \
-        8. [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) \
-        9. [Insert Delete GetR&om O(1)](https://leetcode.com/problems/insert-delete-getr&om-o1/) \
-        10. [Insert Delete GetR&om O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getr&om-o1-duplicates-allowed/) \
-        11. [Data Stream as DisjoIntervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) \
-        12. [Summary Ranges](https://leetcode.com/problems/summary-ranges/) \
-        13. [Summary Ranges II](https://leetcode.com/problems/summary-ranges-ii/) \
-        14. [Employee Free Time](https://leetcode.com/problems/employee-free-time/) \
-        15. [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) \
-        16. [Range Module](https://leetcode.com/problems/range-module/) \
-        17. [Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) \
-        18. [Insert Delete GetR&om O(1)](https://leetcode.com/problems/insert-delete-getr&om-o1/) \
-        19. [Insert Delete GetR&om O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getr&om-o1-duplicates-allowed/) \
-        20. [Data Stream as DisjoIntervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) \
-        21. [Summary Ranges](https://leetcode.com/problems/summary-ranges
-    5. 🌀 Cyclic Sort Pattern:
-        1. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) \
-        2. [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) \
-        3. [Find the Missing Number](https://leetcode.com/problems/find-the-missing-number/) \
-        4. [Find the Smallest Missing Positive Number](https://leetcode.com/problems/find-the-smallest-missing-positive-number/) \
-        5. [Find the Corrupt Pair](https://leetcode.com/problems/find-the-corrupt-pair/) \
-        6. [Find All Missing Numbers](https://leetcode.com/problems/find-all-missing-numbers/) \
-        7. [Find the First K Missing Positive Numbers](https://leetcode.com/problems/find-the-first-k-missing-positive-numbers/) \
-        8. [Find the First Missing Positive Number](https://leetcode.com/problems/find-the-first-missing-positive-number/) \
-        9. [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) \
-        10. [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) \
-        11. [Find the Missing Number](https://leetcode.com/problems/find-the-missing-number/) \
-        12. [Find the Smallest Missing Positive Number](https://leetcode.com/problems/find-the-smallest-missing-positive-number/) \
-        13. [Find the Corrupt Pair](https://leetcode.com/problems/find-the-corrupt-pair/) \
-        14. [Find All Missing Numbers](https://leetcode.com/problems/find-all-missing-numbers/) \
-        15. [Find the First K Missing Positive Numbers](https://leetcode.com/problems/find-the-first-k-missing-positive-numbers/) \
-        16. [Find the First Missing Positive Number](https://leetcode.com/problems/find-the-first-missing-positive-number/) \
-    6. In-place Reversal of a LinkedList Pattern:
-        1. [Reverse a Sub-list](https://leetcode.com/problems/reverse-linked-list-ii/) \
-        2. [Reverse every K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
-        3. [Reverse Alternating K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
-        4. [Reverse a Sub-list](https://leetcode.com/problems/reverse-linked-list-ii/) \
-        5. [Reverse every K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
-        6. [Reverse Alternating K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
-    7. Tree Breadth First Search Pattern:
-        1. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) \
-        2. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) \
-        3. [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) \
-        4. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) \
-        5. [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) \
-        6. [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) \
-    8. Tree Depth First Search Pattern:
-        1. [Binary Tree Path Sum](https://leetcode.com/problems/path-sum/) \
-        2. [All Paths for a Sum](https://leetcode.com/problems/path-sum-ii/) \
-        3. [Sum of Path Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) \
-        4. [Path With Given Sequence](https://leetcode.com/problems/path-sum-iii/) \
-        5. [Count Paths for a Sum](https://leetcode.com/problems/path-sum-iv/) \
-        6. [Binary Tree Path Sum](https://leetcode.com/problems/path-sum/) \
-        7. [All Paths for a Sum](https://leetcode.com/problems/path-sum-ii/) \
-        8. [Sum of Path Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) \
-        9. [Path With Given Sequence](https://leetcode.com/problems/path-sum-iii/) \
-        10. [Count Paths for a Sum](https://leetcode.com/problems/path-sum-iv/) \
-    9. Two Heaps Pattern:
-        1. [Find the Median of a Number Stream](https://leetcode.com/problems/find-median-from-data-stream/) \
-        2. [Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) \
-        3. [Find the Median of a Number Stream](https://leetcode.com/problems/find-median-from-data-stream/) \
-        4. [Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) \
-    10. Subsets Pattern:
-        1. [Subsets](https://leetcode.com/problems/subsets/) \
-        2. [Subsets With Duplicates](https://leetcode.com/problems/subsets-ii/) \
-        3. [Permutations](https://leetcode.com/problems/permutations/) \
-        4. [Permutations With Duplicates](https://leetcode.com/problems/permutations-ii/) \
-        5. [String Permutations by changing case](https://leetcode.com/problems/letter-case-permutation/) \
-        6. [Balanced Parentheses](https://leetcode.com/problems/generate-parentheses/) \
-        7. [Unique Generalized Abbreviations](https://leetcode.com/problems/generalized-abbreviation/) \
-        8. [Subsets](https://leetcode.com/problems/subsets/) \
-        9. [Subsets With Duplicates](https://leetcode.com/problems/subsets-ii/) \
-        10. [Permutations](https://leetcode.com/problems/permutations/) \
-        11. [Permutations With Duplicates](https://leetcode.com/problems/permutations-ii/) \
-        12. [String Permutations by changing case](https://leetcode.com/problems/letter-case-permutation/) \
-        13. [Balanced Parentheses](https://leetcode.com/problems/generate-parentheses/) \
-        14. [Unique Generalized Abbreviations](https://leetcode.com/problems/generalized-abbreviation/) \
-    11. Modified 🏁🔚  Modified Binary Search Pattern:
-        1. [Order-agnostic 🏁🔚  Modified Binary Search](https://leetcode.com/problems/binary-search/) \
-        2. [Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
-        3. [Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
-        4. [Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/) \
-        5. [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) \
-        6. [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/) \
-        7. [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/) \
-        8. [Order-agnostic 🏁🔚  Modified Binary Search](https://leetcode.com/problems/binary-search/) \
-        9. [Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
-        10. [Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
-        11. [Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/) \
-        12. [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) \
-        13. [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/) \
-        14. [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/) \
-    12. Top 'K' Elements Pattern:
-        1. [Kth Smallest Number](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
-        2. [Kth Largest Number](https://leetcode.com/problems/kth-largest-element-in-an-array/) \
-        3. [Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
-        4. [Top 'K' Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
-        5. [K Closest Points to the Origin](https://leetcode.com/problems/k-closest-points-to-origin/) \
-        6. [Kth Smallest Number](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
-        7. [Kth Largest Number](https://leetcode.com/problems/kth-largest-element-in-an-array/) \
-        8. [Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
-        9. [Top 'K' Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
-        10. [K Closest Points to the Origin](https://leetcode.com/problems/k-closest-points-to-origin/) \
-    13. K-way Merge Pattern:
-        1. [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) \
-        2. [Kth Smallest Number in M Sorted Lists](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) \
-        3. [Kth Smallest Number in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
-        4. [Smallest Number Range](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) \
-        5. [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) \
-        6. [Kth Smallest Number in M Sorted Lists](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) \
-        7. [Kth Smallest Number in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
-        8. [Smallest Number Range](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) \
-    14.  📅  Topological Sort Pattern:
-        1. [Tasks Scheduling](https://leetcode.com/problems/course-schedule/) \
-        2. [Tasks Scheduling Order](https://leetcode.com/problems/course-schedule-ii/) \
-        3. [All Tasks Scheduling Orders](https://leetcode.com/problems/course-schedule-ii/) \
-        4. [Tasks Scheduling](https://leetcode.com/problems/course-schedule/) \
-        5. [Tasks Scheduling Order](https://leetcode.com/problems/course-schedule-ii/) \
-        6. [All Tasks Scheduling Orders](https://leetcode.com/problems/course-schedule-ii/) \
-    15. 0/1 Knapsack Pattern:
-        1. [Equal Subset Sum Partition](https://leetcode.com/problems/partition-equal-subset-sum/) \
-        2. [Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) \
-        3. [Minimum Subset Sum Difference](https://leetcode.com/problems/partition-equal-subset-sum/) \
-        4. [Count of Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) \
-        5. [Minimum Subset Sum Difference](https://leetcode.com/problems/partition-equal-subset-sum/) \
-        6. [Count of Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) \
-    16. 🧩 Bit Manipulation Pattern:
-        1. [Single Number](https://leetcode.com/problems/single-number/) \
-        2. [Find the Corrupt Pair](https://leetcode.com/problems/set-mismatch/) \
-        3. [Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/) \
-        4. [Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/) \
-        5. [Single Number](https://leetcode.com/problems/single-number/) \
-        6. [Find the Corrupt Pair](https://leetcode.com/problems/set-mismatch/) \
-        7. [Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/) \
-        8. [Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/) \
+## 4. Merge Intervals Pattern:
+[Merge Intervals](https://leetcode.com/problems/merge-intervals/) \
+[Insert Interval](https://leetcode.com/problems/insert-interval/) \
+[Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/) \
+[Meeting Rooms](https://leetcode.com/problems/meeting-rooms/) \
+[Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii/) \
+[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) \
+[Range Module](https://leetcode.com/problems/range-module/) \
+[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) \
+[Insert Delete GetR&om O(1)](https://leetcode.com/problems/insert-delete-getr&om-o1/) \
+[Insert Delete GetR&om O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getr&om-o1-duplicates-allowed/) \
+[Data Stream as DisjoIntervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) \
+[Summary Ranges](https://leetcode.com/problems/summary-ranges/) \
+[Summary Ranges II](https://leetcode.com/problems/summary-ranges-ii/) \
+[Employee Free Time](https://leetcode.com/problems/employee-free-time/) \
+[Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) \
+[Range Module](https://leetcode.com/problems/range-module/) \
+[Add Bold Tag in String](https://leetcode.com/problems/add-bold-tag-in-string/) \
+[Insert Delete GetR&om O(1)](https://leetcode.com/problems/insert-delete-getr&om-o1/) \
+[Insert Delete GetR&om O(1) - Duplicates allowed](https://leetcode.com/problems/insert-delete-getr&om-o1-duplicates-allowed/) \
+[Data Stream as DisjoIntervals](https://leetcode.com/problems/data-stream-as-disjoint-intervals/) \
+[Summary Ranges](https://leetcode.com/problems/summary-ranges)\
+## 5. 🌀 Cyclic Sort Pattern:
+[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) \
+[Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) \
+[Find the Missing Number](https://leetcode.com/problems/find-the-missing-number/) \
+[Find the Smallest Missing Positive Number](https://leetcode.com/problems/find-the-smallest-missing-positive-number/) \
+[Find the Corrupt Pair](https://leetcode.com/problems/find-the-corrupt-pair/) \
+[Find All Missing Numbers](https://leetcode.com/problems/find-all-missing-numbers/) \
+[Find the First K Missing Positive Numbers](https://leetcode.com/problems/find-the-first-k-missing-positive-numbers/) \
+[Find the First Missing Positive Number](https://leetcode.com/problems/find-the-first-missing-positive-number/) \
+[Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/) \
+ [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) \
+ [Find the Missing Number](https://leetcode.com/problems/find-the-missing-number/) \
+ [Find the Smallest Missing Positive Number](https://leetcode.com/problems/find-the-smallest-missing-positive-number/) \
+ [Find the Corrupt Pair](https://leetcode.com/problems/find-the-corrupt-pair/) \
+ [Find All Missing Numbers](https://leetcode.com/problems/find-all-missing-numbers/) \
+ [Find the First K Missing Positive Numbers](https://leetcode.com/problems/find-the-first-k-missing-positive-numbers/) \
+ [Find the First Missing Positive Number](https://leetcode.com/problems/find-the-first-missing-positive-number/) \
+## 6. In-place Reversal of a LinkedList Pattern:
+[Reverse a Sub-list](https://leetcode.com/problems/reverse-linked-list-ii/) \
+[Reverse every K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
+[Reverse Alternating K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
+[Reverse a Sub-list](https://leetcode.com/problems/reverse-linked-list-ii/) \
+[Reverse every K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
+[Reverse Alternating K-element Sub-list](https://leetcode.com/problems/reverse-nodes-in-k-group/) \
+## 7. Tree Breadth First Search Pattern:
+[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) \
+[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) \
+[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) \
+[Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) \
+[Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) \
+[Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) \
+## 8. Tree Depth First Search Pattern:
+[Binary Tree Path Sum](https://leetcode.com/problems/path-sum/) \
+[All Paths for a Sum](https://leetcode.com/problems/path-sum-ii/) \
+[Sum of Path Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) \
+[Path With Given Sequence](https://leetcode.com/problems/path-sum-iii/) \
+[Count Paths for a Sum](https://leetcode.com/problems/path-sum-iv/) \
+[Binary Tree Path Sum](https://leetcode.com/problems/path-sum/) \
+[All Paths for a Sum](https://leetcode.com/problems/path-sum-ii/) \
+[Sum of Path Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/) \
+[Path With Given Sequence](https://leetcode.com/problems/path-sum-iii/) \
+[Count Paths for a Sum](https://leetcode.com/problems/path-sum-iv/) \
+## 9. Two Heaps Pattern:
+[Find the Median of a Number Stream](https://leetcode.com/problems/find-median-from-data-stream/) \
+[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) \
+[Find the Median of a Number Stream](https://leetcode.com/problems/find-median-from-data-stream/) \
+[Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) \
+## 10. Subsets Pattern:
+[Subsets](https://leetcode.com/problems/subsets/) \
+[Subsets With Duplicates](https://leetcode.com/problems/subsets-ii/) \
+[Permutations](https://leetcode.com/problems/permutations/) \
+[Permutations With Duplicates](https://leetcode.com/problems/permutations-ii/) \
+[String Permutations by changing case](https://leetcode.com/problems/letter-case-permutation/) \
+[Balanced Parentheses](https://leetcode.com/problems/generate-parentheses/) \
+[Unique Generalized Abbreviations](https://leetcode.com/problems/generalized-abbreviation/) \
+[Subsets](https://leetcode.com/problems/subsets/) \
+[Subsets With Duplicates](https://leetcode.com/problems/subsets-ii/) \
+ [Permutations](https://leetcode.com/problems/permutations/) \
+ [Permutations With Duplicates](https://leetcode.com/problems/permutations-ii/) \
+ [String Permutations by changing case](https://leetcode.com/problems/letter-case-permutation/) \
+ [Balanced Parentheses](https://leetcode.com/problems/generate-parentheses/) \
+ [Unique Generalized Abbreviations](https://leetcode.com/problems/generalized-abbreviation/) \
+## 11. Modified 🏁🔚  Modified Binary Search Pattern:
+[Order-agnostic 🏁🔚  Modified Binary Search](https://leetcode.com/problems/binary-search/) \
+[Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
+[Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
+[Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/) \
+[Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) \
+[Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/) \
+[Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/) \
+[Order-agnostic 🏁🔚  Modified Binary Search](https://leetcode.com/problems/binary-search/) \
+[Ceiling of a Number](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
+ [Next Letter](https://leetcode.com/problems/find-smallest-letter-greater-than-target/) \
+ [Number Range](https://leetcode.com/problems/find-first-&-last-position-of-element-in-sorted-array/) \
+ [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) \
+ [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/) \
+ [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/) \
+# 12. Top 'K' Elements Pattern:
+[Kth Smallest Number](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
+[Kth Largest Number](https://leetcode.com/problems/kth-largest-element-in-an-array/) \
+[Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
+[Top 'K' Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
+[K Closest Points to the Origin](https://leetcode.com/problems/k-closest-points-to-origin/) \
+[Kth Smallest Number](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
+[Kth Largest Number](https://leetcode.com/problems/kth-largest-element-in-an-array/) \
+[Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
+[Top 'K' Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
+ [K Closest Points to the Origin](https://leetcode.com/problems/k-closest-points-to-origin/) \
+## 13. K-way Merge Pattern:
+[Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) \
+[Kth Smallest Number in M Sorted Lists](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) \
+[Kth Smallest Number in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
+[Smallest Number Range](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) \
+[Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) \
+[Kth Smallest Number in M Sorted Lists](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) \
+[Kth Smallest Number in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
+[Smallest Number Range](https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/) \
+## 14.  📅  Topological Sort Pattern:
+[Tasks Scheduling](https://leetcode.com/problems/course-schedule/) \
+[Tasks Scheduling Order](https://leetcode.com/problems/course-schedule-ii/) \
+[All Tasks Scheduling Orders](https://leetcode.com/problems/course-schedule-ii/) \
+[Tasks Scheduling](https://leetcode.com/problems/course-schedule/) \
+[Tasks Scheduling Order](https://leetcode.com/problems/course-schedule-ii/) \
+[All Tasks Scheduling Orders](https://leetcode.com/problems/course-schedule-ii/) \
+##  15. 0/1 Knapsack Pattern:
+[Equal Subset Sum Partition](https://leetcode.com/problems/partition-equal-subset-sum/) \
+[Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) \
+[Minimum Subset Sum Difference](https://leetcode.com/problems/partition-equal-subset-sum/) \
+[Count of Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) \
+[Minimum Subset Sum Difference](https://leetcode.com/problems/partition-equal-subset-sum/) \
+[Count of Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) \
+## 16. 🧩 Bit Manipulation Pattern:
+[Single Number](https://leetcode.com/problems/single-number/) \
+[Find the Corrupt Pair](https://leetcode.com/problems/set-mismatch/) \
+[Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/) \
+[Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/) \
+[Single Number](https://leetcode.com/problems/single-number/) \
+[Find the Corrupt Pair](https://leetcode.com/problems/set-mismatch/) \
+[Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/) \
+[Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/) \
 
 
         
