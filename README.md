@@ -5,18 +5,22 @@
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
           🎭 PsuendoCode 🪟 Sliding Window Pattern 🪟
               ⏰: O(n) 🪐: O(n)
-                            start = 0;
-                            end = 0;
-                            max = 0;
-                            while (end < s.length()) {
-                                // add s[end] to window
-                                end++;
-                                while (window needs shrink) {
-                                    // remove s[start] from window
-                                    start++;
-                                }
-                                max = max(max, end - start + 1);
-                            }
+        function find_averages_of_subarrays(K, arr) {
+            const result = [];
+            let windowSum = 0,
+              windowStart = 0;
+            for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
+              windowSum += arr[windowEnd]; // add the next element
+              // slide the window, we don't need to slide if we've not hit the required window size of 'k'
+              if (windowEnd >= K - 1) {
+                result.push(windowSum / K); // calculate the average
+                // subtract the element going out
+                windowSum -= arr[windowStart];
+                windowStart += 1; // slide the window ahead
+              }
+            }
+            return result;
+          }
 ![alt text](https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg)
 
 ## 2. 👯 Two Pointers  👯 -> 
@@ -57,24 +61,31 @@
 ## 4. 🚗🚙 Merge Intervals Pattern 🚗🚙 ->
     ❓  MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
     🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
-          🎭 PsuendoCode 🚗🚙 Merge Intervals Pattern 🚗🚙
-            ⏰: O(n) 🪐: O(n)
-                      sort the intervals by start time
-                      start = intervals[0].start;
-                      end = intervals[0].end;
-                      for (i = 1; i < intervals.length; i++) {
-                          interval = intervals[i];
-                          if (interval.start <= end) { // overlapping intervals, adjust the 'end'
-                              end = Math.max(interval.end, end);
-                          } else { // non-overlapping interval, add the previous interval & reset
-                              result.add(new Interval(start, end));
-                              start = interval.start;
-                              end = interval.end;
-                          }
-                      }
-                      // add the last interval
-                      result.add(new Interval(start, end));
-                      return result;
+          🎭 PsuendoCode 🚗🚙 Merge Intervals Pattern 🚗🚙 in javascript:
+            ⏰: O(nlogn) 🪐: O(n)
+            function merge(intervals) {
+              if (intervals.length < 2) {
+                return intervals;
+              }
+              // sort the intervals on the start time
+              intervals.sort((a, b) => a[0] - b[0]);
+              const mergedIntervals = [];
+              let start = intervals[0][0],
+                end = intervals[0][1];
+              for (i = 1; i < intervals.length; i++) {
+                const interval = intervals[i];
+                if (interval[0] <= end) { // overlapping intervals, adjust the 'end'
+                  end = Math.max(interval[1], end);
+                } else { // non-overlapping interval, add the previous interval and reset
+                  mergedIntervals.push([start, end]);
+                  start = interval[0];
+                  end = interval[1];
+                }
+              }
+              // add the last interval
+              mergedIntervals.push([start, end]);
+              return mergedIntervals;
+            }
 
 ![alt text](https://cdn.emre.me/2019-10-27-merge-intervals.png)
  ## 5. 🌀 Cyclic Sort Pattern 🌀 ->
