@@ -283,21 +283,59 @@
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
     🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
 
-      🎭 PsuendoCode  📅  Topological Sort Pattern  📅
-        ⏰: O(V + E) 🪐: O(V + E)
+      🎭 PsuendoCode  📅  Topological Sort Pattern  📅 
+          ⏰: O(V+E) 🪐: O(V+E)
+          const Deque = require('collections/deque'); //http://www.collectionsjs.com
 
-          PriorityQueue<Integer> sources = new PriorityQu
-          for (i = 0; i < inDegree.length; i++)             
-          if (inDegree[i] == 0)  sources.add(i);
-          while (!sources.isEmpty()) {
-              vertex = sources.poll();
-              sortedOrder.add(vertex);
-              List<Integer> children = graph.get(vertex); // get the node's children to decrement their in-degrees
-              for (child : children) {
-                  inDegree[child]--;
-                  if (inDegree[child] == 0) sources.add(child);
+          function print_orders(tasks, prerequisites) {
+            sortedOrder = [];
+            if (tasks <= 0) {
+              return false;
+            }
+
+            // a. Initialize the graph
+            inDegree = Array(tasks).fill(0); // count of incoming edges
+            graph = Array(tasks).fill(0).map(() => Array()); // adjacency list graph
+
+            // b. Build the graph
+            prerequisites.forEach((prerequisite) => {
+              let parent = prerequisite[0],
+                child = prerequisite[1];
+              graph[parent].push(child); // put the child into it's parent's list
+              inDegree[child]++; // increment child's inDegree
+            });
+
+            // c. Find all sources i.e., all vertices with 0 in-degrees
+            sources = new Deque();
+            for (i = 0; i < inDegree.length; i++) {
+              if (inDegree[i] === 0) {
+                sources.push(i);
               }
+            }
+
+            print_all_topological_sorts(graph, inDegree, sources, sortedOrder);
+            return sortedOrder;
           }
+
+          function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
+            if (sources.length > 0) {
+              for (i = 0; i < sources.length; i++) {
+                vertex = sources.shift();
+                sortedOrder.push(vertex);
+                sourcesForNextCall = sources.slice(0); // make a copy of sources
+                // only remove the edges, if all of its children are not sources
+                graph[vertex].forEach((child) => { // get the node's children to decrement their in-degrees
+                  inDegree[child]--; // decrement inDegree of child
+                  if (inDegree[child] === 0) {
+                    sourcesForNextCall.push(child); // save the new source for the next call
+                  }
+                });
+                // recursive call to print other orderings from the remaining (and new) sources
+                print_all_topological_sorts(graph, inDegree, sourcesForNextCall, sortedOrder);
+                // backtrack, remove the vertex from the sorted order and put all of its children back to consider
+                // the next source instead of the current vertex
+                sortedOrder
+
 ![alt text](https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg)
     
 ## Other Patterns
