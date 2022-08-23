@@ -355,9 +355,14 @@
                 }
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png);
 ## 10. Subsets Pattern 🐛 ->
-    ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #
+    ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #PERMUTATIONS AND COMBINATIONS OF SUBSETS
     🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
-        
+        Given a set of [1, 5, 3]
+        Start with an empty set: [[]]
+          Add 1st # to all existing subsets to create new subsets: [[], [1]];
+          Add 2nd # to all existing subsets: [[], [1], [5], [1,5]];
+          Add 3rd # to all existing subsets: [[], [1], [5], [1,5], [3], [1,3], [5,3], [1,5,3]].
+          
         🎭 PsuendoCode Subsets Pattern 🐛
             ⏰: O(n) 🪐: O(n)
                 List<List<Integer>> subsets = new ArrayList<>();
@@ -372,6 +377,7 @@
                         subsets.add(set);
                     }
                 }
+![alt text](https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg);
 ## 11.🏁🔚  Modified Binary Search Pattern 🏁🔚 ->
     ❓  MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY
     🐣 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.
@@ -551,12 +557,12 @@
 
 ![alt text](https://miro.medium.com/max/620/1*CxPeaIX4QxILRzucksVCsw.png);
 
-    4️⃣ Bitwise Left Shift
-      ❓ FIND IF NUMBER IS POWER OF 2
-      🐣 Power of 2, etc.
-        🎭 PsuendoCode Bitwise Left Shift Pattern 🧩
-          ⏰: O(1) 🪐: O(1)
-                return (n > 0) && ((n & (n - 1)) == 0);
+      4️⃣ Bitwise Left Shift
+        ❓ FIND IF NUMBER IS POWER OF 2
+        🐣 Power of 2, etc.
+          🎭 PsuendoCode Bitwise Left Shift Pattern 🧩
+            ⏰: O(1) 🪐: O(1)
+                  return (n > 0) && ((n & (n - 1)) == 0);
 
 ![alt text](https://cdn.educba.com/academy/wp-content/uploads/2020/05/Left-Shift-Operator-in-C-01.png);
         
