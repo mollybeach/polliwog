@@ -2672,8 +2672,6 @@
 
 ## 14 Patterns: 
 
-      1. 🪟 Sliding Window Pattern:
-
 [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
 [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
@@ -2712,7 +2710,7 @@
  [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
  [Partition List](https://leetcode.com/problems/partition-list/)
  [Sort List](https://leetcode.com/problems/sort-list/)
- 
+
     3. Fast & Slow Pointers Pattern:
         1. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
         2. [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/)
