@@ -136,7 +136,7 @@
                 if (currentNode.left != null) stack.push(currentNode.left);
                 if (currentNode.right != null) stack.push(currentNode.right);
             }
-![alt text](https://cdn.emre.me/2019-11-04-tree-dfs.gif);
+![alt text](https://assets.leetcode.com/users/andvary/image_1556551007.png);
 ## 9. Two Heaps Pattern 📦📦 ->
     ❓  MEDIAN OF # STREAM FIND K SMALLEST #
     🐣  Sliding Window Median, Find the Median of a Number Stream, etc.
@@ -298,7 +298,7 @@
                   if (inDegree[child] == 0) sources.add(child);
               }
           }
-![alt text](https://afteracademy.com/blog/topological-sorting)
+![alt text](https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg)
     
 ## Other Patterns
 
