@@ -243,7 +243,7 @@
         🔝
         🎭 PsuendoCode K-way Merge Pattern in Javascript:
             ⏰: O(nlogk) 🪐: O(n)
-            
+
             const Heap = require('collections/heap'); //http://www.collectionsjs.com
 
             function merge_lists(lists) {
@@ -2674,20 +2674,20 @@
 
       1. 🪟 Sliding Window Pattern:
 
-        [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
-        [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
-        3. [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
-        4. [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
-        5. [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
-        6. [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
-        7. [Permutation in String](https://leetcode.com/problems/permutation-in-string/)
-        8. [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
-        9. [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
-        10. [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
-        11. [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
-        12. [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
-        13. [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/)
-        14. [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
+  [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+  [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+  [Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/)
+  [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
+  [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
+  [Longest Substring with At Least K Repeating Characters](https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/)
+  [Permutation in String](https://leetcode.com/problems/permutation-in-string/)
+  [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
+  [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+   [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+   [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/)
+   [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/)
+   [Replace the Substring for Balanced String](https://leetcode.com/problems/replace-the-substring-for-balanced-string/)
+   [Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/)
     2. 👯 Two Pointers :
         1. [Two Sum](https://leetcode.com/problems/two-sum/)
         2. [3Sum](https://leetcode.com/problems/3sum/)
