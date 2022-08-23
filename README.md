@@ -336,47 +336,45 @@
          🎭 PsuendoCode Two Heaps Pattern 📦📦
             ⏰: O(n) 🪐: O(n)
 
-              PriorityQueue<Integer> maxHeap = new PriorityQueue<>((n1, n2) -> n2 - n1);
-               PriorityQueue<Integer> minHeap = new PriorityQueue<>((n1, n2) -> n1 - n2);
-                for (num : nums) {
-                    if (maxHeap.isEmpty() || num <= maxHeap.peek()) {
-                        maxHeap.add(num);
-                    } else {
-                        minHeap.add(num);
-                    }
-                    // either both the heaps will have equal number of elements or
-                    // max-heap will have one
-                    // more element than the min-heap
-                    if (maxHeap.size() > minHeap.size() + 1) {
-                        minHeap.add(maxHeap.poll());
-                    } else if (maxHeap.size() < minHeap.size()) {
-                        maxHeap.add(minHeap.poll());
-                    }
+            let maxHeap = new MaxHeap();
+            let minHeap = new MinHeap();
+            for (num of nums) {
+                if (maxHeap.isEmpty() || num <= maxHeap.peek()) {
+                    maxHeap.push(num);
+                } else {
+                    minHeap.push(num);
                 }
+                // either both the heaps will have equal number of elements or
+                // max-heap will have one
+                // more element than the min-heap
+                if (maxHeap.size() > minHeap.size() + 1) {
+                    minHeap.push(maxHeap.pop());
+                } else if (maxHeap.size() < minHeap.size()) {
+                    maxHeap.push(minHeap.pop());
+                }
+            }
+        
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png);
 ## 10. Subsets Pattern 🐛 ->
     ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #PERMUTATIONS AND COMBINATIONS OF SUBSETS
     🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
         Given a set of [1, 5, 3]
         Start with an empty set: [[]]
-          Add 1st # to all existing subsets to create new subsets: [[], [1]];
-          Add 2nd # to all existing subsets: [[], [1], [5], [1,5]];
-          Add 3rd # to all existing subsets: [[], [1], [5], [1,5], [3], [1,3], [5,3], [1,5,3]].
-          
+          Insert 1st # to all existing subsets to create new subsets: [[], [1]];
+          Insert 2nd # to all existing subsets: [[], [1], [5], [1,5]];
+          Insert 3rd # to all existing subsets: [[], [1], [5], [1,5], [3], [1,3], [5,3], [1,5,3]].
+
         🎭 PsuendoCode Subsets Pattern 🐛
             ⏰: O(n) 🪐: O(n)
-                List<List<Integer>> subsets = new ArrayList<>();
-                subsets.add(new ArrayList<>());
-                for (int currentNumber : nums) {
-                    // we will take all existing subsets & insert the current number in them to create new subsets
-                    int n = subsets.size();
-                    for (int i = 0; i < n; i++) {
-                        // create a new subset from the existing subset & insert the current element to it
-                        List<Integer> set = new ArrayList<>(subsets.get(i));
-                        set.add(currentNumber);
-                        subsets.add(set);
-                    }
-                }
+              let subsets = [[]];
+              for (let i = 0; i < nums.length; i++) {
+                  let n = subsets.length;
+                  for (let j = 0; j < n; j++) {
+                      let set = subsets[j].slice(0);
+                      set.push(nums[i]);
+                      subsets.push(set);
+                  }
+              }
 ![alt text](https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg);
 ## 11.🏁🔚  Modified Binary Search Pattern 🏁🔚 ->
     ❓  MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY
