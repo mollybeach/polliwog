@@ -1,194 +1,5 @@
 # leet
-
-        
-## Sorting Algorithms: 
-        1. Bubble Sort
-            ❓: Array == AlmostSorted && Array < Small Size
-            ⏰: O(n^2) 🪐 O(1)
-            🎭 PsuendoCode:
-                for i = 0 to n-1
-                    for j = 0 to n-1
-                        if arr[j] > arr[j+1]
-                            swap(arr[j], arr[j+1])
-        2. Selection Sort
-            ❓: Array != Sorted && Array < Small Size
-            ⏰: O(n^2) 🪐: O(1)
-            🎭 PsuendoCode:
-                for i = 0 to n-1
-                    min = i
-                    for j = i+1 to n-1
-                        if arr[j] < arr[min]
-                            min = j
-                    swap(arr[i], arr[min])
-        3. Insertion Sort
-            ❓: Array  == AlmostSorted && Array < Small Size
-            ⏰: O(n^2) 🪐: O(1)
-            🎭 PsuendoCode:
-                for i = 1 to n-1
-                    key = arr[i]
-                    j = i-1
-                    while j >= 0 && arr[j] > key
-                        arr[j+1] = arr[j]
-                        j = j-1
-                    arr[j+1] = key
-        4. Merge Sort
-            ❓: Array != Sorted && Array < Small Size
-            ⏰: O(nlogn) 🪐: O(n)
-            🎭 PsuendoCode:
-                mergeSort(arr, l, r)
-                    if l < r
-                        m = l + (r-l)/2
-                        mergeSort(arr, l, m)
-                        mergeSort(arr, m+1, r)
-                        merge(arr, l, m, r)
-                merge(arr, l, m, r)
-                    n1 = m-l+1
-                    n2 = r-m
-                    L[] = new array of size n1
-                    R[] = new array of size n2
-                    for i = 0 to n1-1
-                        L[i] = arr[l+i]
-                    for j = 0 to n2-1
-                        R[j] = arr[m+1+j]
-                    i = 0
-                    j = 0
-                    k = l
-                    while i < n1 && j < n2
-                        if L[i] <= R[j]
-                            arr[k] = L[i]
-                            i++
-                        else
-                            arr[k] = R[j]
-                            j++
-                        k++
-                    while i < n1
-                        arr[k] = L[i]
-                        i++
-                        k++
-                    while j < n2
-                        arr[k] = R[j]
-                        j++
-                        k++
-        5. Quick Sort
-              ❓: Array != Sorted && Array > LargeSize
-              ⏰: O(nlogn) 🪐: O(logn)
-              🎭 PsuendoCode:
-                  quickSort(arr, low, high)
-                      if low < high
-                          pi = partition(arr, low, high)
-                          quickSort(arr, low, pi-1)
-                          quickSort(arr, pi+1, high)
-                  partition(arr, low, high)
-                      pivot = arr[high]
-                      i = low-1
-                      for j = low to high-1
-                          if arr[j] < pivot
-                              i++
-                              swap(arr[i], arr[j])
-                      swap(arr[i+1], arr[high])
-                      return i+1
-        6. Heap Sort
-                ❓: Array != Sorted && Array > LargeSize
-                ⏰: O(nlogn) 🪐: O(1)
-                🎭 PsuendoCode:
-                    heapSort(arr, n)
-                        for i = n/2-1 to 0
-                            heapify(arr, n, i)
-                        for i = n-1 to 0
-                            swap(arr[0], arr[i])
-                            heapify(arr, i, 0)
-                    heapify(arr, n, i)
-                        largest = i
-                        l = 2*i+1
-                        r = 2*i+2
-                        if l < n && arr[l] > arr[largest]
-                            largest = l
-                        if r < n && arr[r] > arr[largest]
-                            largest = r
-                        if largest != i
-                            swap(arr[i], arr[largest])
-                            heapify(arr, n, largest)
-        7. Counting Sort
-              ❓:Array == Integers && Array < Small Size
-              ⏰: O(n+k) 🪐: O(k)
-              🎭 PsuendoCode:
-                  countingSort(arr, n)
-                      max = getMax(arr, n)
-                      count[] = new array of size max+1
-                      output[] = new array of size n
-                      for i = 0 to max
-                          count[i] = 0
-                      for i = 0 to n-1
-                          count[arr[i]]++
-                      for i = 1 to max
-                          count[i] += count[i-1]
-                      for i = n-1 to 0
-                          output[count[arr[i]]-1] = arr[i]
-                          count[arr[i]]--
-                      for i = 0 to n-1
-                          arr[i] = output[i]
-                  getMax(arr, n)
-                      max = arr[0]
-                      for i = 1 to n-1
-                          if arr[i] > max
-                              max = arr[i]
-                      return max
-        8. Radix Sort
-            ❓:Array == Integers && Array < Small Size
-            ⏰: O(nk) 🪐: O(n+k)
-            🎭 PsuendoCode:
-                radixSort(arr, n)
-                    m = getMax(arr, n)
-                    for exp = 1 to m
-                        countSort(arr, n, exp)
-                countSort(arr, n, exp)
-                    output[] = new array of size n
-                    count[] = new array of size 10
-                    for i = 0 to 9
-                        count[i] = 0
-                    for i = 0 to n-1
-                        count[(arr[i]/exp)%10]++
-                    for i = 1 to 9
-                        count[i] += count[i-1]
-                    for i = n-1 to 0
-                        output[count[(arr[i]/exp)%10]-1] = arr[i]
-                        count[(arr[i]/exp)%10]--
-                    for i = 0 to n-1
-                        arr[i] = output[i]
-                getMax(arr, n)
-                    max = arr[0]
-                    for i = 1 to n-1
-                        if arr[i] > max
-                            max = arr[i]
-                    return max
-        9. Bucket Sort
-              ❓:Array == Integers && Array < Small Size
-              ⏰: O(n+k) 🪐: O(n+k)
-              🎭 PsuendoCode:
-                  bucketSort(arr, n)
-                      buckets[] = new array of size n
-                      for i = 0 to n-1
-                          buckets[i] = new array of size 0
-                      for i = 0 to n-1
-                          index = arr[i]*n
-                          buckets[index].add(arr[i])
-                      for i = 0 to n-1
-                          insertionSort(buckets[i])
-                      index = 0
-                      for i = 0 to n-1
-                          for j = 0 to buckets[i].size()
-                              arr[index++] = buckets[i].get(j)
-                  insertionSort(arr, n)
-                      for i = 1 to n-1
-                          key = arr[i]
-                          j = i-1
-                          while j >= 0 && arr[j] > key
-                              arr[j+1] = arr[j]
-                              j = j-1
-                          arr[j+1] = key
-
 ## 14 Patterns Algorithims
-
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
@@ -301,15 +112,13 @@
     ❓  FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE
     🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?
 
-        🎭 PsuendoCode Tree Breadth First Search Pattern
+        🎭 PsuendoCode Tree Breadth First Search Pattern 🌳
           ⏰: O(n) 🪐: O(n)
-              Queue<TreeNode> queue = new LinkedList<>();
-              queue.offer(root);
-              while (!queue.isEmpty()) {
-                  TreeNode currentNode = queue.poll(); // add the node to the result list
-                  // insert the children of current node in the queue
-                  if (currentNode.left != null) queue.offer(currentNode.left);
-                  if (currentNode.right != null) queue.offer(currentNode.right);
+              const queue = [root];
+              while (queue.length) {
+                  const currentNode = queue.shift();
+                  if (currentNode.left) queue.push(currentNode.left);
+                  if (currentNode.right) queue.push(currentNode.right);
               }
 ![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
 ## 8. Tree Depth First Search Pattern 🌲 ->
@@ -327,7 +136,6 @@
                 if (currentNode.left != null) stack.push(currentNode.left);
                 if (currentNode.right != null) stack.push(currentNode.right);
             }
-
 ![alt text](https://cdn.emre.me/2019-11-04-tree-dfs.gif);
 ## 9. Two Heaps Pattern 📦📦 ->
     ❓  MEDIAN OF # STREAM FIND K SMALLEST #
@@ -344,15 +152,17 @@
                 } else {
                     minHeap.push(num);
                 }
-                // either both the heaps will have equal number of elements or
-                // max-heap will have one
-                // more element than the min-heap
                 if (maxHeap.size() > minHeap.size() + 1) {
                     minHeap.push(maxHeap.pop());
                 } else if (maxHeap.size() < minHeap.size()) {
                     maxHeap.push(minHeap.pop());
                 }
             }
+
+
+            /* either both the heaps will have equal number of elements or
+               max-heap will have one
+               more element than the min-heap*/
         
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png);
 ## 10. Subsets Pattern 🐛 ->
@@ -403,38 +213,71 @@
     ❓ TOP K #s OR FREQUENCY OF TOP K #s
     🐣 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
         
-        🎭 PsuendoCode Top 'K' Elements 
-          ⏰: O(nlogk) 🪐: O(k)
+        🎭 PsuendoCode Top 'K' Elements in Javascript:
+            ⏰: O(n) 🪐: O(n)
+            const Heap = require('collections/heap'); //http://www.collectionsjs.com
 
-            minHeap = new PriorityQueue<>((n1, n2) -> n1 - n2);
-            for (i = 0; i < k; i++)             minHeap.add(nums[i]);
-            for (i = k; i < nums.length; i++) {
-                if (nums[i] > minHeap.peek()) {
-                    minHeap.poll();
-                    minHeap.add(nums[i]);
+            function find_k_largest_numbers(nums, k) {
+                const minHeap = new Heap([], null, ((a, b) => b - a));
+             
+                for (i = 0; i < k; i++) {
+                    minHeap.push(nums[i]);
                 }
+                for (i = k; i < nums.length; i++) {
+                    if (nums[i] > minHeap.peek()) {
+                        minHeap.pop();
+                        minHeap.push(nums[i]);
+                    }
+                }
+
+                return minHeap.toArray();
             }
-            // the heap has the top 'K' numbers.
+            /*    put first 'K' numbers in the min heap go through the remaining numbers of the array, if the number from the array is bigger than the
+              top(smallest) number of the min-heap, remove the top number from heap and add the number from array  the heap has the top 'K' numbers, return them in a list*/
+
 ![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
 ## 13. K-way Merge Pattern 🔝🚗🚙 ->
 
     ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
     🐣 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.
         🔝
-        🎭 PsuendoCode K-way Merge Pattern
-          ⏰: O(nlogk) 🪐: O(k)
-         PriorityQueue<Node> minHeap = new PriorityQueue<>((n1, n2) -> n1.element - n2.element));
-                  for (List<Integer> list : lists)             
-                  minHeap.add(new Node(list.get(0), 0, list));
-                  while (!minHeap.isEmpty()) {
-                      Node node = minHeap.poll();
-                      result.add(node.element);
-                      if (node.index < node.list.size() - 1) {
-                          node.index++;
-                          node.element = node.list.get(node.index);
-                          minHeap.add(node);
-                      }
-                  }
+        🎭 PsuendoCode K-way Merge Pattern in Javascript:
+            ⏰: O(nlogk) 🪐: O(n)
+            
+            const Heap = require('collections/heap'); //http://www.collectionsjs.com
+
+            function merge_lists(lists) {
+                const minHeap = new Heap([], null, ((a, b) => b[0] - a[0]));
+                for (i = 0; i < lists.length; i++) {
+                    if (lists[i] !== null) {
+                        minHeap.push([lists[i].value, i]);
+                        lists[i] = lists[i].next;
+                    }
+                }
+                resultHead = null, resultTail = null;
+                while (minHeap.length > 0) {
+                    node = minHeap.pop();
+                    if (resultHead === null) {
+                        resultHead = resultTail = new ListNode(node[0]);
+                    } else {
+                        resultTail.next = new ListNode(node[0]);
+                        resultTail = resultTail.next;
+                    }
+                 
+                    if (lists[node[1]] !== null) {
+                        minHeap.push([lists[node[1]].value, node[1]]);
+                        lists[node[1]] = lists[node[1]].next;
+                    }
+                }
+                return resultHead;
+            } 
+            /* 
+              put the root of each list in the min heap
+              take the smallest(top) element form the min-heap, if the running list
+              is not empty, add the next element to the heap
+              if the top element has a next element add it to the heap
+            */
+            
 ![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
 ## 14.  📅  Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
@@ -3034,6 +2877,193 @@
         7. [Complement of Base 10 Number](https://leetcode.com/problems/complement-of-base-10-integer/)
         8. [Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/)
 
+
+        
+## Sorting Algorithms: 
+        1. Bubble Sort
+            ❓: Array == AlmostSorted && Array < Small Size
+            ⏰: O(n^2) 🪐 O(1)
+            🎭 PsuendoCode:
+                for i = 0 to n-1
+                    for j = 0 to n-1
+                        if arr[j] > arr[j+1]
+                            swap(arr[j], arr[j+1])
+        2. Selection Sort
+            ❓: Array != Sorted && Array < Small Size
+            ⏰: O(n^2) 🪐: O(1)
+            🎭 PsuendoCode:
+                for i = 0 to n-1
+                    min = i
+                    for j = i+1 to n-1
+                        if arr[j] < arr[min]
+                            min = j
+                    swap(arr[i], arr[min])
+        3. Insertion Sort
+            ❓: Array  == AlmostSorted && Array < Small Size
+            ⏰: O(n^2) 🪐: O(1)
+            🎭 PsuendoCode:
+                for i = 1 to n-1
+                    key = arr[i]
+                    j = i-1
+                    while j >= 0 && arr[j] > key
+                        arr[j+1] = arr[j]
+                        j = j-1
+                    arr[j+1] = key
+        4. Merge Sort
+            ❓: Array != Sorted && Array < Small Size
+            ⏰: O(nlogn) 🪐: O(n)
+            🎭 PsuendoCode:
+                mergeSort(arr, l, r)
+                    if l < r
+                        m = l + (r-l)/2
+                        mergeSort(arr, l, m)
+                        mergeSort(arr, m+1, r)
+                        merge(arr, l, m, r)
+                merge(arr, l, m, r)
+                    n1 = m-l+1
+                    n2 = r-m
+                    L[] = new array of size n1
+                    R[] = new array of size n2
+                    for i = 0 to n1-1
+                        L[i] = arr[l+i]
+                    for j = 0 to n2-1
+                        R[j] = arr[m+1+j]
+                    i = 0
+                    j = 0
+                    k = l
+                    while i < n1 && j < n2
+                        if L[i] <= R[j]
+                            arr[k] = L[i]
+                            i++
+                        else
+                            arr[k] = R[j]
+                            j++
+                        k++
+                    while i < n1
+                        arr[k] = L[i]
+                        i++
+                        k++
+                    while j < n2
+                        arr[k] = R[j]
+                        j++
+                        k++
+        5. Quick Sort
+              ❓: Array != Sorted && Array > LargeSize
+              ⏰: O(nlogn) 🪐: O(logn)
+              🎭 PsuendoCode:
+                  quickSort(arr, low, high)
+                      if low < high
+                          pi = partition(arr, low, high)
+                          quickSort(arr, low, pi-1)
+                          quickSort(arr, pi+1, high)
+                  partition(arr, low, high)
+                      pivot = arr[high]
+                      i = low-1
+                      for j = low to high-1
+                          if arr[j] < pivot
+                              i++
+                              swap(arr[i], arr[j])
+                      swap(arr[i+1], arr[high])
+                      return i+1
+        6. Heap Sort
+                ❓: Array != Sorted && Array > LargeSize
+                ⏰: O(nlogn) 🪐: O(1)
+                🎭 PsuendoCode:
+                    heapSort(arr, n)
+                        for i = n/2-1 to 0
+                            heapify(arr, n, i)
+                        for i = n-1 to 0
+                            swap(arr[0], arr[i])
+                            heapify(arr, i, 0)
+                    heapify(arr, n, i)
+                        largest = i
+                        l = 2*i+1
+                        r = 2*i+2
+                        if l < n && arr[l] > arr[largest]
+                            largest = l
+                        if r < n && arr[r] > arr[largest]
+                            largest = r
+                        if largest != i
+                            swap(arr[i], arr[largest])
+                            heapify(arr, n, largest)
+        7. Counting Sort
+              ❓:Array == Integers && Array < Small Size
+              ⏰: O(n+k) 🪐: O(k)
+              🎭 PsuendoCode:
+                  countingSort(arr, n)
+                      max = getMax(arr, n)
+                      count[] = new array of size max+1
+                      output[] = new array of size n
+                      for i = 0 to max
+                          count[i] = 0
+                      for i = 0 to n-1
+                          count[arr[i]]++
+                      for i = 1 to max
+                          count[i] += count[i-1]
+                      for i = n-1 to 0
+                          output[count[arr[i]]-1] = arr[i]
+                          count[arr[i]]--
+                      for i = 0 to n-1
+                          arr[i] = output[i]
+                  getMax(arr, n)
+                      max = arr[0]
+                      for i = 1 to n-1
+                          if arr[i] > max
+                              max = arr[i]
+                      return max
+        8. Radix Sort
+            ❓:Array == Integers && Array < Small Size
+            ⏰: O(nk) 🪐: O(n+k)
+            🎭 PsuendoCode:
+                radixSort(arr, n)
+                    m = getMax(arr, n)
+                    for exp = 1 to m
+                        countSort(arr, n, exp)
+                countSort(arr, n, exp)
+                    output[] = new array of size n
+                    count[] = new array of size 10
+                    for i = 0 to 9
+                        count[i] = 0
+                    for i = 0 to n-1
+                        count[(arr[i]/exp)%10]++
+                    for i = 1 to 9
+                        count[i] += count[i-1]
+                    for i = n-1 to 0
+                        output[count[(arr[i]/exp)%10]-1] = arr[i]
+                        count[(arr[i]/exp)%10]--
+                    for i = 0 to n-1
+                        arr[i] = output[i]
+                getMax(arr, n)
+                    max = arr[0]
+                    for i = 1 to n-1
+                        if arr[i] > max
+                            max = arr[i]
+                    return max
+        9. Bucket Sort
+              ❓:Array == Integers && Array < Small Size
+              ⏰: O(n+k) 🪐: O(n+k)
+              🎭 PsuendoCode:
+                  bucketSort(arr, n)
+                      buckets[] = new array of size n
+                      for i = 0 to n-1
+                          buckets[i] = new array of size 0
+                      for i = 0 to n-1
+                          index = arr[i]*n
+                          buckets[index].add(arr[i])
+                      for i = 0 to n-1
+                          insertionSort(buckets[i])
+                      index = 0
+                      for i = 0 to n-1
+                          for j = 0 to buckets[i].size()
+                              arr[index++] = buckets[i].get(j)
+                  insertionSort(arr, n)
+                      for i = 1 to n-1
+                          key = arr[i]
+                          j = i-1
+                          while j >= 0 && arr[j] > key
+                              arr[j+1] = arr[j]
+                              j = j-1
+                          arr[j+1] = key
 
 
 
