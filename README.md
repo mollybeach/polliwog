@@ -257,6 +257,55 @@
 
             const Heap = require('collections/heap'); //http://www.collectionsjs.com
 
+            class Heap {
+                constructor(array, compare, type) {
+                    this.heap = array;
+                    this.compare = compare;
+                    this.type = type;
+                }
+                peek() {
+                    return this.heap[0];
+                }
+                push(element) {
+                    this.heap.push(element);
+                    this.heapifyUp(this.heap.length - 1);
+                }
+                pop() {
+                    const top = this.heap[0];
+                    const bottom = this.heap.pop();
+                    if (this.heap.length > 0) {
+                        this.heap[0] = bottom;
+                        this.heapifyDown(0);
+                    }
+                    return top;
+                }
+                heapifyUp(index) {
+                    let parent = Math.floor((index - 1) / 2);
+                    while (parent >= 0 && this.compare(this.heap[parent], this.heap[index]) === this.type) {
+                        const temp = this.heap[parent];
+                        this.heap[parent] = this.heap[index];
+                        this.heap[index] = temp;
+                        index = parent;
+                        parent = Math.floor((index - 1) / 2);
+                    }
+                }
+                heapifyDown(index) {
+                    let left = (2 * index) + 1;
+                    let right = (2 * index) + 2;
+                    let smallest = index;
+                    if (left < this.heap.length && this.compare(this.heap[left], this.heap[smallest]) === this.type) {
+                        smallest = left;
+                    }
+                    if (right < this.heap.length && this.compare(this.heap[right], this.heap[smallest]) === this.type) {
+                        smallest = right;
+                    }
+                    if (smallest !== index) {
+                        const temp = this.heap[index];
+                        this.heap[index] = this.heap[smallest];
+                        this.heap[smallest] = temp;
+                        this.heapifyDown
+            }
+
             function merge_lists(lists) {
                 const minHeap = new Heap([], null, ((a, b) => b[0] - a[0]));
                 for (i = 0; i < lists.length; i++) {
@@ -288,6 +337,8 @@
               is not empty, add the next element to the heap
               if the top element has a next element add it to the heap
             */
+     
+      
             
 ![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
 ## 14.  📅  Topological Sort Pattern 📅 ->
@@ -348,7 +399,7 @@
                 sortedOrder
 
 ![alt text](https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg)
-    
+ 
 ## Other Patterns
 
 ## Union Find Algorithm Pattern ♾ ->
@@ -510,6 +561,7 @@
               }
               return root;
 ![alt text](https://miro.medium.com/max/630/1*f89l46VKjKPgnecqOw4V_w.png);
+
 
 # 75 BLIND CURATED LEETCODE QUESTIONS: 
 ## Array
@@ -3114,7 +3166,5 @@
                               arr[j+1] = arr[j]
                               j = j-1
                           arr[j+1] = key
-
-
 
 
