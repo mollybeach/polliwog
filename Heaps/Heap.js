@@ -5,7 +5,7 @@
     }
     this.compare = compare;
     this.nodes = Array.isArray(values) ? values : [];
-    this.leaf = leaf || null;
+    this.leaf = leaf || null;                           // leaf is the last node in the heap lowest priority
   }
 
   hasLeftChild(parentIndex) {
@@ -26,6 +26,7 @@
     this.nodes[j] = temp;
   }                                                     //swaps two nodes
   shouldSwap(parentIndex, childIndex) {
+
     if (parentIndex < 0 || parentIndex >= this.size()) {
       return false;
     }
@@ -33,7 +34,8 @@
     if (childIndex < 0 || childIndex >= this.size()) {
       return false;
     }
-
+    // if max swap if parent is NOT greater than child
+    // if min swap if child is NOT greater than parent
     return this.compareAt(parentIndex, childIndex) > 0;
   }                                                     //checks if the parent and child should be swapped  
   compareChildrenOf(parentIndex) {
@@ -62,7 +64,6 @@
     }
     return leftChildIndex;
   }                                                     //compares two children before a position
-
   heapifyUp(startIndex) {
     let childIndex = startIndex;
     let parentIndex = Math.floor((childIndex - 1) / 2);
@@ -73,7 +74,6 @@
       parentIndex = Math.floor((childIndex - 1) / 2);
     }
   }                                                     //bubbles up a node if it's in a wrong position
-
   heapifyDown(startIndex) {
     let parentIndex = startIndex;
     let childIndex = this.compareChildrenOf(parentIndex);
@@ -110,6 +110,8 @@
 
   insert(value) {
     this.nodes.push(value);
+    // min heap pushes the leaf node to the end of the array
+
     this.heapifyUp(this.size() - 1);
     if (this.leaf === null || this.compare(value, this.leaf) > 0) {
       this.leaf = value;
@@ -202,7 +204,24 @@
   clear() {
     this.nodes = [];
     this.leaf = null;
-  }                                                         //clears the heap
+  }                                                         //clears the heap                           
+  draw() {
+    let str = '';
+    let count = 0;
+    let max = 1;
+    let level = 0;
+    for (let i = 0; i < this.size(); i += 1) {
+      if (count === max) {
+        str += '\n';
+        level += 1;
+        count = 0;
+        max *= 2;
+      }
+      str += `${this.nodes[i]} `;
+      count += 1;
+    }
+    return str;
+  }                                                         //draws the heap for debugging purposes
   static heapify(values, compare) {
     if (!Array.isArray(values)) {
       throw new Error('Heap.heapify expects an array of values');
@@ -216,7 +235,16 @@
   }                                                         //builds a heap from an array of values
   static isHeapified(values, compare) {
     return new Heap(compare, values).isValid();
-  }                                                         //checks if a list of values is a valid heap
+  }                                                          //checks if an array of values is a valid heap       
+  
+  
 }
+
+// make a max heap by extending the Heap class
+
+
+
+
+
 const _Heap = Heap;
 export { _Heap as Heap };

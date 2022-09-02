@@ -4,6 +4,9 @@ import { Heap } from './Heap.js';
    const aVal = typeof getCompareValue === 'function' ? getCompareValue(a) : a;
    const bVal = typeof getCompareValue === 'function' ? getCompareValue(b) : b;
    return aVal < bVal ? 1 : -1;
+   // another way to write this is:
+    // return bVal - aVal;
+    
  };                                                    
  
  class MaxHeap {                                        //Max Heap extends Heap

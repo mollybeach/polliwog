@@ -48,3 +48,6 @@ import { Heap } from '../Heaps/Heap.js';
  
 const _PriorityQueue = PriorityQueue;
 export { _PriorityQueue as PriorityQueue };
+
+
+// make a priority queue by extending the heap class and modiying the enqueue

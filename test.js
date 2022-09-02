@@ -1,38 +1,47 @@
-
-
 import { Heap } from './Heaps/Heap.js';
-import { MinHeap} from './Heaps/MinHeap.js';
-/*
 
-import { MaxHeap } from './Heaps/MaxHeap.js';
-import { PriorityQueue } from './Queues/PriorityQueue.js';
-import { MinPriorityQueue } from './Queues/MinPriorityQueue.js';
-import { MaxPriorityQueue } from './Queues/MaxPriorityQueue.js';
-*/
-const getMinCompare = (getCompareValue) => (a, b) => {
-    const aVal = typeof getCompareValue === 'function' ? getCompareValue(a) : a;
-    const bVal = typeof getCompareValue === 'function' ? getCompareValue(b) : b;
-    return aVal < bVal ? -1 : 1;
-};
-
-const heap = new Heap(getMinCompare());
-
-// insert values into heap
-heap.insert(1);
-heap.insert(2);
-heap.insert(3);
-
-console.log(heap.hasLeftChild(2)); // true
-console.log(heap.root()); // 1
-console.log(heap.extractRoot()); // 1
-console.log(heap.nodes); // [2, 3]
-
-// create a min heap
-const minHeap = new MinHeap();
-minHeap.insert(4);
+let minCompare = (parent, child) => child > parent ? -1 : 1; // return negative value to indicate that a change does not need to be made 
+let maxCompare = (parent, child) => parent > child ? -1 : 1; // return negative value to indicate that a change does not need to be made 
+const minHeap = new Heap(minCompare);
 minHeap.insert(5);
 minHeap.insert(6);
+minHeap.insert(7);
+minHeap.insert(8);
+minHeap.insert(4);
+minHeap.insert(3);
 
-console.log(minHeap.root()); // 1
+
+// console all of the methods to check if they work
+console.log(minHeap.compare) // [Function: minCompare]
+console.log(minHeap.nodes); //  nodes: [ 3, 4, 5, 8, 6, 7 ]
+console.log(minHeap.draw()); // draw a picture of the minHeap
+/* 
+3 
+5 4 
+8 6 7 */
+/*
+console.log(minHeap.leaf); // leaf: 8
+console.log(minHeap.root()); // 5
+console.log(minHeap.draw());
+console.log(minHeap.hasLeftChild(1)); // true index 1 has a left child
+console.log(minHeap.hasRightChild(1)); // true index 1 has a right child
+console.log(minHeap.compareAt(1, 2)); // 1 is the parent index and 2 is the child index
+//console.log(minHeap.swap(1, 2)); // swap doesn't return anything shouldnt be called except for within the heapifyUp and heapifyDown methods
+//console.log(minHeap.shouldSwap(1, 2)); // used in heapifyUp and heapifyDown*/
+console.log(minHeap.insert(9)); // insert a new node
+console.log(minHeap.nodes) // [ 5, 6, 7, 8, 9 ]
+console.log(minHeap.insert(10)); // push a new node why use push instead of insert? because push is a method of the array class and insert is a method of the heap class
+console.log(minHeap.nodes)
+console.log(minHeap.extractRoot()); // removed 5 from the min heap
+console.log(minHeap.pop()); // removed 6 from the min heap
+console.log(minHeap.nodes); // [ 6, 7, 8, 9 ] 5 was removed
+
+
+// create a max heap
+
+const maxHeap = new Heap(maxCompare);
+maxHeap.insert(2);
+
+
 
 

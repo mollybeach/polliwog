@@ -52,7 +52,7 @@ import { Heap } from "./Heap.js";
     }                                                    //clears the heap
     clone() {
       return new MaxHeap(this._getCompareValue, this._heap.clone());
-    }
+    }                                                   //returns a shallow copy of the MinHeap
    static heapify(values, getCompareValue) {
      if (!Array.isArray(values)) {
        throw new Error('MinHeap.heapify expects an array');
