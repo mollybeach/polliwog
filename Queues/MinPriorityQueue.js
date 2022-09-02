@@ -1,6 +1,6 @@
 
-import { Heap } from './Heap.js';
-import { MinHeap} from './MinHeap.js';
+import { Heap } from '../Heaps/Heap.js';
+import { MinHeap} from '../Heaps/MinHeap.js';
 
 const getMinCompare = (getCompareValue) => (a, b) => {
    const aVal = typeof getCompareValue === 'function' ? getCompareValue(a) : a;

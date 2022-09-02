@@ -1,4 +1,4 @@
-import { Heap } from './Heap';
+import { Heap } from '../Heaps/Heap.js';
 
  class PriorityQueue {
 
@@ -46,4 +46,5 @@ import { Heap } from './Heap';
    }                                                                // creates a priority queue from an existing array
  }
  
- exports.PriorityQueue = PriorityQueue;
+const _PriorityQueue = PriorityQueue;
+export { _PriorityQueue as PriorityQueue };

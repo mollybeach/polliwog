@@ -1,5 +1,5 @@
-import { Heap } from './Heap.js';
-import {  MaxHeap } from './MaxHeap.js';
+import { Heap } from '../Heaps/Heap.js';
+import {  MaxHeap } from '../Heaps/MaxHeap.js';
 
  const getMaxCompare = (getCompareValue) => (a, b) => {
    const aVal = typeof getCompareValue === 'function' ? getCompareValue(a) : a;
