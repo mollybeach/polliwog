@@ -1,74 +1,31 @@
-import { Heap } from './Heap.js';
-
- const getMaxCompare = (getCompareValue) => (a, b) => {
-   const aVal = typeof getCompareValue === 'function' ? getCompareValue(a) : a;
-   const bVal = typeof getCompareValue === 'function' ? getCompareValue(b) : b;
-   return aVal < bVal ? 1 : -1;
-   // another way to write this is:
-    // return bVal - aVal;
-    
- };                                                    
- 
- class MaxHeap {                                        //Max Heap extends Heap
-
-   constructor(getCompareValue, _heap) {
-     this._getCompareValue = getCompareValue;
-     this._heap = _heap || new Heap(getMaxCompare(getCompareValue));
-   }
-   insert(value) {
-     return this._heap.insert(value);
-   }                                                    //inserts a new value into the heap
-   push(value) {
-     return this.insert(value);
-   }                                                    //inserts a new value into the heap
-   extractRoot() {
-     return this._heap.extractRoot();
-   }                                                    //removes and returns the root node in the heap
-   pop() {
-     return this.extractRoot();
-   }                                                    //removes and returns the root node in the heap
-   sort() {
-     return this._heap.sort();
-   }                                                    //applies heap sort and return the values sorted by priority
-   fix() {
-     return this._heap.fix();
-   }                                                    //fixes node positions in the heap
-   isValid() {
-     return this._heap.isValid();
-   }                                                    //verifies that all heap nodes are in the right position
-   root() {
-     return this._heap.root();
-   }                                                    //returns the root node in the heap
-   top() {
-     return this.root();
-   }                                                    //returns the root node in the heap
-   leaf() {
-     return this._heap.leaf();
-   }                                                    //returns a leaf node in the heap
-   size() {
-     return this._heap.size();
-   }                                                    //returns the number of nodes in the heap
-   isEmpty() {
-     return this._heap.isEmpty();
-   }                                                    //checks if the heap is empty
-   clear() {
-     this._heap.clear();
-   }                                                    //clears the heap
-   clone() {
-     return new MaxHeap(this._getCompareValue, this._heap.clone());
-   }                                                    //returns a shallow copy of the MaxHeap
-   static heapify(values, getCompareValue) {
-     if (!Array.isArray(values)) {
-       throw new Error('MaxHeap.heapify expects an array');
-     }
-     const heap = new Heap(getMaxCompare(getCompareValue), values);
-     return new MaxHeap(getCompareValue, heap).fix();
-   }                                                    //builds a MaxHeap from an array
-   static isHeapified(values, getCompareValue) {
-     const heap = new Heap(getMaxCompare(getCompareValue), values);
-     return new MaxHeap(getCompareValue, heap).isValid();
-   }                                                    //checks if a list of values is a valid max heap
- }
- 
-const _MaxHeap = MaxHeap;
-export { _MaxHeap as MaxHeap };
+import { Heap } from "./Heap.js";
+let maxCompare = (parent, child) => parent > child ? -1 : 1; // return negative value to indicate that a change does not need to be made 
+const maxHeap = new Heap(maxCompare);
+/*
+maxHeap.insert(5);
+maxHeap.insert(6);
+maxHeap.insert(7);
+maxHeap.insert(8);
+maxHeap.insert(4);
+maxHeap.insert(3);
+console.log(maxHeap.leaf); 
+console.log(maxHeap.root());
+console.log(maxHeap.draw());
+console.log(maxHeap.hasLeftChild(1)); 
+console.log(maxHeap.hasRightChild(1));
+console.log(maxHeap.compareAt(1, 2)); // 1 is the parent index and 2 is the child index
+//console.log(maxHeap.swap(1, 2)); // swap doesn't return anything shouldnt be called except for within the heapifyUp and heapifyDown methods
+//console.log(maxHeap.shouldSwap(1, 2)); // used in heapifyUp and heapifyDown*
+console.log(maxHeap.insert(9)); // insert a new node
+console.log(maxHeap.nodes) 
+console.log(maxHeap.insert(10)); 
+console.log(maxHeap.nodes)
+console.log(maxHeap.extractRoot()); 
+console.log(maxHeap.pop()); 
+console.log(maxHeap.nodes); 
+console.log(maxHeap.compare) 
+console.log(maxHeap.nodes); 
+console.log(maxHeap.draw()); // draw a picture of the maxHeap
+*/
+const _maxHeap = maxHeap;
+export { _maxHeap as maxHeap };

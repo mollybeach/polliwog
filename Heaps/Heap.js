@@ -1,10 +1,10 @@
  class Heap {
-  constructor(compare, values, leaf) {
+  constructor(compare, nodes, leaf) {
     if (typeof compare !== 'function') {
       throw new Error('Heap constructor expects a compare function');
     }
     this.compare = compare;
-    this.nodes = Array.isArray(values) ? values : [];
+    this.nodes = Array.isArray(nodes) ? nodes : [];
     this.leaf = leaf || null;                           // leaf is the last node in the heap lowest priority
   }
 
@@ -46,13 +46,8 @@
     const leftChildIndex = (parentIndex * 2) + 1;
     const rightChildIndex = (parentIndex * 2) + 2;
 
-    if (!this.hasLeftChild(parentIndex)) {
-      return rightChildIndex;
-    }
-
-    if (!this.hasRightChild(parentIndex)) {
-      return leftChildIndex;
-    }
+    if (!this.hasLeftChild(parentIndex)) return rightChildIndex;
+    if (!this.hasRightChild(parentIndex)) return leftChildIndex;
 
     const compare = this.compareAt(leftChildIndex, rightChildIndex);
     return compare > 0 ? rightChildIndex : leftChildIndex;
@@ -108,19 +103,17 @@
     }
   }                                                         //bubbles down a node before a given index
 
-  insert(value) {
-    this.nodes.push(value);
-    // min heap pushes the leaf node to the end of the array
-
+  insert(node) {
+    this.nodes.push(node);
     this.heapifyUp(this.size() - 1);
-    if (this.leaf === null || this.compare(value, this.leaf) > 0) {
-      this.leaf = value;
+    if (this.leaf === null || this.compare(node, this.leaf) > 0) {
+      this.leaf = node;
     }
     return this;
-  }                                                         //inserts a new value into the heap
-  push(value) {
-    return this.insert(value);
-  }                                                         //inserts a new value into the heap
+  }                                                         //inserts a new node into the heap
+  push(node) {
+    return this.insert(node);
+  }                                                         //inserts a new node into the heap
   extractRoot() {
     if (this.isEmpty()) {
       return null;
@@ -146,7 +139,7 @@
       this.heapifyDownUntil(i);
     }
     return this.nodes;
-  }                                                         // applies heap sort and return the values sorted by priority
+  }                                                         // applies heap sort and return the nodes sorted by priority
   fix() {
     for (let i = 0; i < this.size(); i += 1) {
       this.heapifyUp(i);
@@ -222,29 +215,20 @@
     }
     return str;
   }                                                         //draws the heap for debugging purposes
-  static heapify(values, compare) {
-    if (!Array.isArray(values)) {
-      throw new Error('Heap.heapify expects an array of values');
+  static heapify(nodes, compare) {
+    if (!Array.isArray(nodes)) {
+      throw new Error('Heap.heapify expects an array of nodes');
     }
 
     if (typeof compare !== 'function') {
       throw new Error('Heap.heapify expects a compare function');
     }
 
-    return new Heap(compare, values).fix();
-  }                                                         //builds a heap from an array of values
-  static isHeapified(values, compare) {
-    return new Heap(compare, values).isValid();
-  }                                                          //checks if an array of values is a valid heap       
-  
-  
+    return new Heap(compare, nodes).fix();
+  }                                                         //builds a heap from an array of nodes
+  static isHeapified(nodes, compare) {
+    return new Heap(compare, nodes).isValid();
+  }                                                          //checks if an array of nodes is a valid heap       
 }
-
-// make a max heap by extending the Heap class
-
-
-
-
-
 const _Heap = Heap;
 export { _Heap as Heap };
