@@ -13,6 +13,7 @@
         Merge Intervals: when you want to merge overlapping intervals
         
 ##when to use which data structure
+
         Stack: when you want to store a list of elements and access them in a LIFO order
         Queue: when you want to store a list of elements and access them in a FIFO order
         Set: when you want to store a list of unique elements
@@ -25,6 +26,7 @@
         Hash Table: when you want to store a list of key-value pairs and access them in a constant time
         
 ##when to use which sorting algorithm
+
         Bubble Sort: when you want to sort a list of elements in ascending order
         Selection Sort: when you want to sort a list of elements in ascending order
         Insertion Sort: when you want to sort a list of elements in ascending order
@@ -35,6 +37,7 @@
         Radix Sort: when you want to sort a list of elements in ascending order
         
 ##when to use which searching algorithm
+
         Linear Search: when you want to search for an element in a list of elements
         Binary Search: when you want to search for an element in a sorted list of elements
         Breadth First Search: when you want to search for an element in a graph
@@ -42,6 +45,7 @@
         Hash Table: when you want to search for an element in a list of key-value pairs
         
 ##when to use which pattern
+
         Singleton: when you want to restrict the instantiation of a class to one object
         Factory: when you want to create objects without exposing the instantiation logic to the client
         Observer: when you want to create a subscription model to notify multiple objects about any events that happen to the object they are observing
@@ -49,6 +53,7 @@
         Decorator: when you want to add new functionality to an existing object without altering its structure
         
 ##when to use which design principle
+
         Single Responsibility Principle: when you want to make sure that a class has only one reason to change
         Open-Closed Principle: when you want to make sure that a class is open for extension but closed for modification
         Liskov Substitution Principle: when you want to make sure that a subclass can be used in place of its parent class without breaking the application
@@ -56,6 +61,7 @@
         Dependency Inversion Principle: when you want to make sure that a class depends on abstraction and not on concretion
         
 ##when to use which design pattern
+
         Factory: when you want to create objects without exposing the instantiation logic to the client
         Abstract Factory: when you want to create families of related objects without exposing the instantiation logic to the client
         Builder: when you want to separate the construction of a complex object from its representation so that the same construction process can create different representations
