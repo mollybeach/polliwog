@@ -1,5 +1,5 @@
 
-//import { PriorityQueue } from "../Queues/PriorityQueue";
+//import { PriorityQueue } from "../DataStructures/Queues/PriorityQueue.js";
 
 class Queue {
     constructor(items){
@@ -63,8 +63,11 @@ function Dijkstra(graph, source) {
     let dist = {};
     let previous = {};
     let Q = new PriorityQueue();
+    console.log(graph)
     for (let v in graph) {
+        console.log(v)
         if (v === source) {
+            console.log('source')
             dist[v] = 0;
             Q.enqueue(0, v);
         }
@@ -74,10 +77,15 @@ function Dijkstra(graph, source) {
         }
         previous[v] = null;
     }
+    console.log(Q)
+    console.log(dist)
     while (!Q.isEmpty()) {
+        console.log('hi')
+        console.log(Q.isEmpty())
         let u = Q.dequeue();
         let neighbors = graph[u];
         for (let v in neighbors) {
+
             let alt = dist[u] + neighbors[v];
             if (alt < dist[v]) {
                 dist[v] = alt;
@@ -86,6 +94,7 @@ function Dijkstra(graph, source) {
             }
         }
     }
+    console.log(Q.items)
     return {
         dist: dist,
         previous: previous
@@ -105,9 +114,9 @@ let graph = {
     };
     // what kind of graph is this?
     // it's a weighted graph
-// find the shortest path from a to h
+// find the shortest path from a to h expected output: 6
 let result = Dijkstra(graph, 'a');
-console.log(result.dist);
+console.log(result.dist.h);
 
     // difference between a weighted graph and an unweighted graph
     // in an unweighted graph, the edges are all the same weight

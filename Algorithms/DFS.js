@@ -22,3 +22,6 @@ class DFS {
         }
     }
 }
+// when you want to traverse a graph in a depth-first manner
+// why do you traverse pre-order? because you want to visit the root node first
+// why do you traverse post-order? because you want to visit the leaf nodes first

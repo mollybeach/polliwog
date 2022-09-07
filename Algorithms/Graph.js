@@ -1,6 +1,6 @@
 import { Stack } from './Stack.js';
-import { Queue } from '../Queues/Queue.js';
-import { PriorityQueue } from '../Queues/PriorityQueue.js';
+import { Queue } from '../DataStructures/Queues/Queue.js';
+import { PriorityQueue } from '../DataStructures/Queues/PriorityQueue.js';
 
 // make a graph class
 class Graph {
