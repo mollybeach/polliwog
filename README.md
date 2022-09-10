@@ -223,6 +223,7 @@
  ## 12. Top 'K' Elements Pattern 🔝->
     ❓ TOP K #s OR FREQUENCY OF TOP K #s
     🐣 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
+    // is top 'K' numbers a greedy problem? No, it is a heap problem.
         
         🎭 PsuendoCode Top 'K' Elements in Javascript:
             ⏰: O(n) 🪐: O(n)

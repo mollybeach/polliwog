@@ -28,6 +28,9 @@ class Stack {
         console.log(this.items.toString());
     }                                                           // print the stack
 }
-//
+//in js 1 + "1"
 const _Stack = Stack;
 export { _Stack as Stack };
+
+
+

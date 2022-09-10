@@ -1,3 +1,4 @@
+import { Node } from '../Nodes/Node.js';
 // make a BinarySearchTree class
 class BinarySearchTree {
     constructor() {
@@ -96,4 +97,5 @@ class BinarySearchTree {
         }
     }
 }
-                
+const _BinarySearchTree = BinarySearchTree;
+export { _BinarySearchTree as BinarySearchTree };               

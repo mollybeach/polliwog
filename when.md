@@ -24,10 +24,6 @@
         Combinatorics: when you want to find the number of ways to do something
 
 
-
-
-
-        
 ##when to use which data structure
 
         Stack: when you want to store a list of elements and access them in a LIFO order
@@ -255,3 +251,5 @@ Full stack question 2: What is the difference between a SQL database and a NoSQL
 Answer: SQL databases store data in tables, where each table has a fixed number of columns and each row is a record. NoSQL databases store data in collections, where each collection has a variable number of fields and each document is a record.
 
 Full stack question 
+
+li
