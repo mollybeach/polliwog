@@ -31,6 +31,7 @@ import {WeightedGraph} from '../DataStructures/Graphs/WeightedGraph.js';
           if (smallest === finish) {
             //WE ARE DONE
             //BUILD UP PATH TO RETURN AT END
+            // as long as there is a previous node
             while (previous[smallest]) {
               path.push(smallest);
               smallest = previous[smallest];
