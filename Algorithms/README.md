@@ -7,6 +7,16 @@ Groups of ALGORITHMS:
     Binary Search.
     Depth First Search.
     Breadth First Search.
+    Jump Search.
+    Exponential Search.
+    Interpolation Search.
+    Sublist Search (Search a linked list in another list).
+    Fibonacci Search.
+    The Ubiquitous Binary Search.
+    Recursive program to linearly search an element in a given array.
+    Recursive function to do substring search.
+    Iterative Program to linearly search an element in a given array.
+    Recursive program to do exponential search.
 
 #2 SORTING
     Insertion Sort
@@ -33,7 +43,7 @@ Groups of ALGORITHMS:
     Tree Sort
     Cube Sort
     Odd Even Sort
-    
+
 
 #3 GRAPHS
 
@@ -42,8 +52,9 @@ Groups of ALGORITHMS:
     Bellman Ford 
     Floyd Warshall 
     Topological Sort 
-    Flood Fill Algo
-    Lee Algo
+    Flood Fill 
+    Lee 
+
 
 #4 ARRAYS
 
@@ -70,21 +81,11 @@ Kruskal is a graph algorithm.
 Floyd Warshall is a graph algorithm.
 Flood Fill is a graph algorithm.
 Sliding Window is a basic algorithm.
-Greed
-Lee is a graph algorithm.
-Prim is a graph algorithm.
-Topological Sort is a graph algorithm.
-what makes a graph algorithm a graph algorithm? 
-we know its a graph algorithm because it uses a graph data structure.
-what makes a basic algorithm a basic algorithm?
-we know its a basic algorithm because it uses a basic data structure like an array or a linked list.
-what makes a sorting algorithm a sorting algorithm?
-we know its a sorting algorithm because it uses a sorting data structure like a heap or a tree.
-what makes a searching algorithm a searching algorithm?
-we know its a searching algorithm because it uses a searching data structure like a hash table or a tree.
-what makes a dynamic programming algorithm a dynamic programming algorithm?
-we know its a dynamic programming algorithm because it uses a dynamic programming data structure like a matrix or a tree.
-what makes a greedy algorithm a greedy algorithm?
+Dijkstra is a graph algorithm.
+Combininatorics is a basic algorithm. why is it in the basic group? because it is a basic concept. types of combinatorics: Permutation, Combination, and Variation.
+Prim is a graph algorithm. what kind of graph algorithm? a minimum spanning tree algorithm.
+
+
 
 
 */

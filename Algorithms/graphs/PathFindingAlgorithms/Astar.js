@@ -1,5 +1,9 @@
 
 //A*: when you want to find the shortest path between two vertices in a graph with negative weights
+//Dijkstra: when you want to find the shortest path between two vertices in a graph with positive weights
+//Bellman-Ford: when you want to find the shortest path between two vertices in a graph with negative weights
+//Floyd-Warshall: when you want to find the shortest path between all pairs of vertices in a graph with positive weights
+//Lee: when you want to find the shortest path between two vertices in a grid with positive weights
 class AStar {
     constructor(graph, start, end) {
         this.graph = graph;

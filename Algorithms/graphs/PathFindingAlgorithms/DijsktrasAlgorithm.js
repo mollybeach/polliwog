@@ -1,5 +1,17 @@
 import {PriorityQueue} from '../DataStructures/Queues/PriorityQueue.js';
 import {WeightedGraph} from '../DataStructures/Graphs/WeightedGraph.js';
+// Dijkstra's Algorithm
+// Dijkstra's algorithm is a graph search algorithm that solves the single-source shortest path problem for a graph with non-negative edge path costs, producing a shortest path tree.
+// It is a Greedy algorithm
+// It is a non-recursive algorithm
+// It is a non-branching algorithm
+// It is a non-parallel algorithm
+// It is a single source shortest path algorithm
+// It is a negative edge weight algorithm
+// It is a directed graph algorithm
+// It is a weighted graph algorithm
+// usefull for finding the shortest path between two nodes in a graph
+
   class Dijkstra {
     constructor(start, finish, adjacencyList){
         this.start = start;

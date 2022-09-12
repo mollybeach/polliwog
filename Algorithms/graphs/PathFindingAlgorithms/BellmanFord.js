@@ -1,4 +1,11 @@
-// make a BellmanFord class
+// Bellman Ford Algorithm in JavaScript
+// Used to find the shortest path from a source vertex to all other vertices in a weighted graph
+// It is a dynamic programming algorithm
+// It is a single source shortest path algorithm
+// It is a Greedy algorithm
+// It is a negative edge weight algorithm
+// It is a directed graph algorithm
+
 class BellmanFord {
     constructor(graph, source) {
         this.graph = graph;
