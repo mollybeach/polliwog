@@ -9,6 +9,7 @@ Path finding algorithms are algorithms that find the shortest path between two v
 1. Dijkstra's Algorithm
 2. A* Search Algorithm
 3. Bellman-Ford Algorithm
+![bellmanford](../../../files/bellmanford.gif)
 4. Floyd-Warshall Algorithm
 5. Lee Algorithm
 
