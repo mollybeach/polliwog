@@ -21,7 +21,7 @@
             }
             return result;
           }
-![alt text](./files/prim.png)
+
 ![alt text](https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg)
 
 ## 2. 👯 Two Pointers  👯 -> 
@@ -1505,8 +1505,6 @@
               }
               return prev;
             };
-            which algorithm from ./algorithms.md is used in this solution?
-           the 
 ## [Detect Cycle in a Linked List](https://leetcode.com/problems/linked-list-cycle/) #141 🐰&🐢 
         ❓: Given head, the head of a linked list, determine if the linked list has a cycle in it. There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the next pointer. Internally, pos is used to denote the index of the node that tail's next pointer is connected to. Note that pos is not passed as a parameter. Return true if there is a cycle in the linked list. Otherwise, return false.
         🐣: 1️⃣ Input: head = [3,2,0,-4], pos = 1 Output: true Explain: There is a cycle in the linked list, where the tail connects to the 1st node (0-indexed). 2️⃣ Input: head = [1,2], pos = 0 Output: true Explain: There is a cycle in the linked list, where the tail connects to the 0th node. 3️⃣ Input: head = [1], pos = -1 Output: false Explain: There is no cycle in the linked list.
@@ -1657,7 +1655,6 @@
                 }
               }
             };
-
 ## [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) #54  📐
         Pattern Used:  📐 Matrix Pattern
         ❓: Given an m x n matrix, return all elements of the matrix in spiral order.
@@ -3178,19 +3175,3 @@
 Application to run and visualize binary trees sorting algorithms using recursion iteration ray marching animations 
 
  biTree Public 
-
-
-
-
- write a program to determine which algorithm to use given an input and an output
- using the algorithms found in ./algorithms inner files 
-if its an array 
-then use one of the algorithms in ./algorithms/array
-if its a tree 
-then use one of the algorithms in ./algorithms/tree
-if its a graph 
-then use one of the algorithms in ./algorithms/graph
-if its a linked list 
-then use one of the algorithms in ./algorithms/linkedlist
-
-

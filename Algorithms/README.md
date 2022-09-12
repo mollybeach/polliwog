@@ -99,10 +99,5 @@ nVr = n! / (n-r)! * r! * r!
     
 
 
+types of matrix algorithms: 
 
-*/
-
-
-
-
-*/
