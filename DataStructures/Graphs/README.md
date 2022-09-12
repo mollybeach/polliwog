@@ -15,3 +15,5 @@
 11. Connected Graph
 12. Disconnected Graph
 13. Tree
+
+![graphs](../../files/graphtypes.gif)
