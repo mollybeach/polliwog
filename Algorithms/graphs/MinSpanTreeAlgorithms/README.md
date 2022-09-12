@@ -4,7 +4,7 @@
 
 
 ## Kruskal's Algorithm
-
+![alt text](../../../files/kruskal.gif)
 ## Prim's Algorithm
 
-![alt text](../../../files/pix.gif)
+![alt text](../../../files/prim.gif)
