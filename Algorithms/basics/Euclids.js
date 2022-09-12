@@ -7,49 +7,18 @@
 //     If b = 0, then the answer is a
 //     Otherwise, gcd(a, b) is the same as gcd(b, a mod b)
 //     */
+// 
 class Euclids {
-    constructor() {
-        this.root = null;
+    constructor(a, b) {
+        this.a = a;
+        this.b = b;
+        this.gca(a, b);
     }
-    gcd(a, b) {
+    gcd(a, b) { // greatest common divisor
         if (b == 0) {
             return a;
         }
         return this.gcd(b, a % b);
-    }
-    buildCodes(node, currentCode, codes) {
-        if (node == null) {
-            return;
-        }
-        if (node.data != "#") {
-            codes[node.data] = currentCode;
-        }
-        this.buildCodes(node.left, currentCode + "0", codes);
-        this.buildCodes(node.right, currentCode + "1", codes);
-    }
-    encodeString(string, codes) {
-        let encodedString = "";
-        for (let i = 0; i < string.length; i++) {
-            encodedString += codes[string[i]];
-        }
-        return encodedString;
-    }
-    decodeString(root, encodedString) {
-        let decodedString = "";
-        let current = root;
-        for (let i = 0; i < encodedString.length; i++) {
-            if (encodedString[i] == "0") {
-                current = current.left;
-            }
-            else {
-                current = current.right;
-            }
-            if (current.left == null && current.right == null) {
-                decodedString += current.data;
-                current = root;
-            }
-        }
-        return decodedString;
     }
 }
 

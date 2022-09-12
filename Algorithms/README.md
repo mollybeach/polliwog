@@ -86,6 +86,18 @@ Combininatorics is a basic algorithm. why is it in the basic group? because it i
 Prim is a graph algorithm. what kind of graph algorithm? a minimum spanning tree algorithm.
 
 
+combinatorics is a basic algorithm. why is it in the basic group? because it is a basic concept. types of combinatorics: Permutation, Combination, and Variation.
+
+input for combinatorics: n, r
+
+output for combinatorics: nPr, nCr, nVr
+
+nPr = n! / (n-r)!
+nCr = n! / (n-r)! * r!
+nVr = n! / (n-r)! * r! * r!
+
+    
+
 
 
 */

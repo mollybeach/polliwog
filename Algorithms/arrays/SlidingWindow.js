@@ -18,4 +18,18 @@ class SlidingWindow {
         }
         return max;
     }
+    min() {
+        let min = Infinity;
+        for (let i = 0; i < this.array.length - this.windowSize + 1; i++) {
+            let sum = 0;
+            for (let j = i; j < i + this.windowSize; j++) {
+                sum += this.array[j];
+            }
+            if (sum < min) {
+                min = sum;
+            }
+        }
+        return min;
+    }
+    
 }

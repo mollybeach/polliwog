@@ -1,4 +1,4 @@
-# Polliwog
+# 
 ## 14 Patterns Algorithims
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
@@ -21,6 +21,7 @@
             }
             return result;
           }
+
 ![alt text](https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg)
 
 ## 2. 👯 Two Pointers  👯 -> 
@@ -43,7 +44,9 @@
 ## 3. 🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 ->
     ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
     🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
-        
+
+
+
         🎭 PsuendoCode Fast & Slow Pointers Pattern 🐰&🐢
          ⏰: O(n) 🪐: O(n)
                             slow = 0;
