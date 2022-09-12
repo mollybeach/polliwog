@@ -21,7 +21,6 @@
             }
             return result;
           }
-![alt text](./files/prim.gif)
 ![alt text](https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg)
 
 ## 2. 👯 Two Pointers  👯 -> 
