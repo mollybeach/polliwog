@@ -5,16 +5,14 @@ import {WeightedGraph} from '../DataStructures/Graphs/WeightedGraph.js';
         this.start = start;
         this.finish = finish;
         this.adjacencyList = adjacencyList;
+        // what can you put in a constructor 
     }
     findShortestPath(start, finish) {
         const nodes = new PriorityQueue();
-        const distances = {};
-        const previous = {};
-        let path = []; //to return at end
+        const distances = {}, previous = {}, path = []; //to return at end
         let smallest;
         //build up initial state
-        console.log(this.adjacencyList);
-        for (let vertex in this.adjacencyList) {
+        for (let vertex in this.adjacencyList) { 
           if (vertex === start) {
             distances[vertex] = 0;
             nodes.enqueue(vertex, 0);
@@ -24,37 +22,32 @@ import {WeightedGraph} from '../DataStructures/Graphs/WeightedGraph.js';
           }
           previous[vertex] = null;
         }
-        console.log(nodes.items.length)
+        // turn line 14 through
         // as long as there is something to visit
         while (nodes.items.length) {
           smallest = nodes.dequeue().item;
-          if (smallest === finish) {
-            //WE ARE DONE
-            //BUILD UP PATH TO RETURN AT END
-            // as long as there is a previous node
-            while (previous[smallest]) {
+          if (smallest === finish) {    //WE ARE DONE BUILD UP PATH TO RETURN AT END
+            while (previous[smallest]) {       // as long as there is a previous node
               path.push(smallest);
               smallest = previous[smallest];
             }
             break;
           }
-          if (smallest || distances[smallest] !== Infinity) {
+          if (smallest || distances[smallest] !== Infinity) { // what does this if statement do? it checks if the smallest is not null and if the distance of the smallest is not infinity which means it is not the start
+
             for (let neighbor in this.adjacencyList[smallest]) {
-              //find neighboring node
-              let nextNode = this.adjacencyList[smallest][neighbor];
-              //calculate new distance to neighboring node
-              let candidate = distances[smallest] + nextNode.weight;
+              let nextNode = this.adjacencyList[smallest][neighbor];   //find neighboring node
+              let candidate = distances[smallest] + nextNode.weight; // //calculate new distance to neighboring node
               let nextNeighbor = nextNode.node;
-              if (candidate < distances[nextNeighbor]) {
-                //updating new smallest distance to neighbor
-                distances[nextNeighbor] = candidate;
-                //updating previous - How we got to neighbor
-                previous[nextNeighbor] = smallest;
-                //enqueue in priority queue with new priority
-                nodes.enqueue(nextNeighbor, candidate);
+
+              if (candidate < distances[nextNeighbor]) { // what does this if statement do? it checks if the candidate is less than the distance of the next neighbor
+                distances[nextNeighbor] = candidate; //updating new smallest distance to neighbor   
+                previous[nextNeighbor] = smallest;       //updating previous - How we got to neighbor
+                nodes.enqueue(nextNeighbor, candidate);     //enqueue in priority queue with new priority
               }
             }
-          }
+          } 
+          // what does it do
         }
         return path.concat(smallest).reverse();
       }

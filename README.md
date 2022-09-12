@@ -1,4 +1,4 @@
-# leet
+# Polliwog
 ## 14 Patterns Algorithims
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER

@@ -81,9 +81,7 @@
   }                                                         //bubbles down a node if it's in a wrong position
 
   heapifyDownUntil(index) {
-    let parentIndex = 0;
-    let leftChildIndex = 1;
-    let rightChildIndex = 2;
+    let parentIndex = 0, leftChildIndex = 1, rightChildIndex = 2;
     let childIndex;
 
     while (leftChildIndex < index) {
@@ -102,6 +100,8 @@
       rightChildIndex = (parentIndex * 2) + 2;
     }
   }                                                         //bubbles down a node before a given index
+// difference between heapifyDown and heapifyDownUntil is that heapifyDownUntil
+// stops when it reaches the index given as a parameter and heapifyDown 
 
   insert(node) {
     this.nodes.push(node);
@@ -230,5 +230,7 @@
     return new Heap(compare, nodes).isValid();
   }                                                          //checks if an array of nodes is a valid heap       
 }
+
+
 const _Heap = Heap;
 export { _Heap as Heap };
