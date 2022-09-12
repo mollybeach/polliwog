@@ -6,4 +6,5 @@
 ## Kruskal's Algorithm
 
 ## Prim's Algorithm
-![alt text](./files/prim.gif)
+![alt text](files/prim.GIF)
+//![GitHub Logo](client/src/assets/images/chogif.GIF)
