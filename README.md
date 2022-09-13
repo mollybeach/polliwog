@@ -231,13 +231,11 @@ while (fast < s.length()) {
 <br>
 </details>
 </details>
-
- <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1> </th>
+    <summary>🪟  <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1> </th> </summary>
+    <br>
+     <details>
 <table>
     <tr>
-        <summary>🪟  <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1> </th> </summary>
-        <details>
-<br>
         <td>
             <h3> ❓ MERGE INTERVALS OR FIND OVERLAPPING INTERVALS <h3>
            <h3>  ⏰: O(nlogn) 🪐: O(n) </h3>
