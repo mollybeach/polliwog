@@ -249,6 +249,39 @@ function merge(intervals) {
                   if (currentNode.right) queue.push(currentNode.right);
               }
 ![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
+
+<table style="width:100%">
+  <tr>
+    <th> <h1 align="center">
+      🌳 Tree Breadth First Search Pattern 🌳
+    </h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE</h3>
+       <h3>⏰: O(n) 🪐: O(n)</h3>
+    </td>
+    <td>
+    <h3>🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode Tree Breadth First Search Pattern 🌳</h3>
+<pre>
+<code>
+  const queue = [root];
+  while (queue.length) {
+      const currentNode = queue.shift();
+      if (currentNode.left) queue.push(currentNode.left);
+      if (currentNode.right) queue.push(currentNode.right);
+  }
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png"> </td>
+  </tr>
+</table>
 ##  8. 🌲 Tree Depth First Search Pattern 🌲 ->
     ❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE
     🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.
@@ -263,8 +296,44 @@ function merge(intervals) {
                 // insert the children of current node in the stack
                 if (currentNode.left != null) stack.push(currentNode.left);
                 if (currentNode.right != null) stack.push(currentNode.right);
+        
             }
 ![alt text](https://assets.leetcode.com/users/andvary/image_1556551007.png);
+
+<table style="width:100%">
+  <tr>
+    <th> <h1 align="center">
+      🌲 Tree Depth First Search Pattern 🌲
+    </h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE</h3>
+       <h3>⏰: O(n) 🪐: O(n)</h3>
+    </td>
+    <td>
+    <h3>🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode Tree Depth First Search Pattern 🌲</h3>
+<pre>
+<code>
+  Stack< Tree Node stack = new Stack<>();
+  stack.push(root);
+  while (!stack.isEmpty()) {
+      TreeNode currentNode = stack.pop(); // add the node to the result list
+      // insert the children of current node in the stack
+      if (currentNode.left != null) stack.push(currentNode.left);
+      if (currentNode.right != null) stack.push(currentNode.right);
+  }
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://assets.leetcode.com/users/andvary/image_1556551007.png"> </td>
+  </tr>
+</table>
 ## 9. 📦📦 Two Heaps Pattern 📦📦 ->
     ❓  MEDIAN OF # STREAM FIND K SMALLEST #
     🐣  Sliding Window Median, Find the Median of a Number Stream, etc.
@@ -529,112 +598,16 @@ function merge(intervals) {
       </tr>
 </table>
 
-<table style="width:100%">
-  <tr>
-    <th> <h1 align="center">🌲 Tree Depth First Search Pattern 🌲</h1> </th>
-  </tr>
-  <tr>
-    <td>
-      <h3>❓ FIND THE MAXIMUM VALUE IN A TREE</h3>
-    </td>
-    <td>
-      <h3>🐣 Find the Maximum Value in a Tree, Find the Maximum Path Sum, Find the Minimum Depth of a Tree, Find if a Path with Given Sequence exists, etc.</h3>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>🎭 PsuendoCode</h3>
-<pre>
-<code>
-  function traverse(root) {
-    result = [];
-    if (root === null) {
-      return result;
-    }
-
-    queue = new Deque();
-    queue.push(root);
-    while (queue.length > 0) {
-      levelSize = queue.length;
-      currentLevel = [];
-      for (i = 0; i < levelSize; i++) {
-        currentNode = queue.shift();
-        // add the node to the current level
-        currentLevel.push(currentNode.val);
-        // insert the children of current node to the queue
-        if (currentNode.left !== null) {
-          queue.push(currentNode.left);
-        }
-        if (currentNode.right !== null) {
-          queue.push(currentNode.right);
-        }
-      }
-      result.push(currentLevel);
-    }
-
-    return result;
-  }
-</code>
-</pre>
-    </td>
-    <td colspan="3"> <img src="https://assets.leetcode.com/users/andvary/image_1556551007.png"> </td>
-  </tr>
-</table>
-
-<table style="width:100%">
-  <tr>
-    <th> <h1 align="center">🌲 Tree Breadth First Search Pattern 🌲</h1> </th>
-  </tr>
-  <tr>
-    <td>
-      <h3>❓ FIND THE MAXIMUM VALUE IN A TREE</h3>
-    </td>
-    <td>
-      <h3>🐣 Find the Maximum Value in a Tree, Find the Maximum Path Sum, Find the Minimum Depth of a Tree, Find if a Path with Given Sequence exists, etc.</h3>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>🎭 PsuendoCode</h3>
-<pre>
-<code>
-  function traverse(root) {
-    result = [];
-    if (root === null) {
-      return result;
-    }
-
-    queue = new Deque();
-    queue.push(root);
-    while (queue.length > 0) {
-      levelSize = queue.length;
-      currentLevel = [];
-      for (i = 0; i < levelSize; i++) {
-        currentNode = queue.shift();
-        // add the node to the current level
-        currentLevel.push(currentNode.val);
-        // insert the children of current node to the queue
-        if (currentNode.left !== null) {
-          queue.push(currentNode.left);
-        }
-        if (currentNode.right !== null) {
-          queue.push(currentNode.right);
-        }
-      }
-      result.push(currentLevel);
-    }
-
-    return result;
-  }
-</code>
-</pre>
-    </td>
-    <td colspan="3"> <img src="https://assets.leetcode.com/users/andvary/image_1556551007.png"> </td>
-  </tr>
-</table>
+                  if (currentNode.right) queue.push(currentNode.right);
+              }
 
 
- 
+
+
+
+
+
+
 
 ## Other Patterns
 
