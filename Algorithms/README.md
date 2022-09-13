@@ -1,5 +1,5 @@
 ## GROUPS OF ALGORITHMS
-
+<code>
 function find_averages_of_subarrays(K, arr) {
     const result = [];
     let windowSum = 0, windowStart = 0;
@@ -13,6 +13,7 @@ function find_averages_of_subarrays(K, arr) {
     }
     return result;
   }
+  </code>
 /*
 Groups of ALGORITHMS: 
 #1 SEARCHING
