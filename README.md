@@ -16,15 +16,13 @@
         </td>
         <td>⏰: O(n) 🪐: O(n)</td>
            <td colspan="2">
-               🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
-       String Anagrams, No-repeat Substring, etc.
+               🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersString Anagrams, No-repeat Substring, etc.
         </td>
     </tr>
     <tr>
-    🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
-       String Anagrams, No-repeat Substring, etc.
+    🐣
         <td>
-            <pre class="notranslate">
+<pre class="notranslate">
 <code>
 function find_averages_of_subarrays(K, arr) {
   const result = [];
