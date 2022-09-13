@@ -190,21 +190,41 @@ function merge(intervals) {
                                 i++;
                         }
 ![alt text](https://cdn.emre.me/2019-10-28-missing-number-example.png);
- ## 6.🔄  In-place Reversal of a LinkedList Pattern 🔄 ->
-    ❓ REVERSE A SUBLIST, REVERSE EVERY K-ELEMENT IN SUBLIST
-    🐣 Reverse a Sub-list, Reverse every K-element Sub-list, etc.
-        
-        🎭 PsuendoCode In-place Reversal of a LinkedList Pattern 🔄
-          ⏰: O(n) 🪐: O(1)
-              ListNode previous = null;
-              ListNode current = head;
-              while (current != null) {
-                  next = current.next;
-                  current.next = previous;
-                  previous = current;
-                  current = next;
-              }
-![alt text]( https://cdn.emre.me/2019-11-04-in-place-reversal.gif);
+
+ <table>
+      <th> <h1 align="center">🔄 In-place Reversal of a LinkedList 🔄</h1> </th>
+      </tr>
+      <tr>
+        <td>
+          <h3>❓ REVERSE A LINKEDLIST</h3>
+          <h3>⏰: O(n) 🪐: O(1)</h3>
+        </td>
+        <td>
+           <h3>🐣 Reverse a LinkedList, Reverse a Sub-list, Reverse every K-element Sub-list (medium), etc.</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>🎭 PsuendoCode</h3>
+<pre>
+<code>
+  function reverse(head) {
+    let prev = null;
+    while (head !== null) {
+      next = head.next;
+      head.next = prev;
+      prev = head;
+      head = next;
+    }
+    return prev;
+  }
+</code>
+</pre>
+        </td>
+         <td colspan="3"> <img src="https://cdn.emre.me/2019-11-04-in-place-reversal.gif"> </td>
+      </tr>
+</table>
+
 
 
 ![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
@@ -505,88 +525,9 @@ function merge(intervals) {
 
 ![alt text](https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg)
  
- // rewrite the pattern 5 - 14 as tables like in sliding window , two pointer, fast slow pointer, etc.
-// 5. Cyclic Sort Pattern
- <table>
-        <th> <h1 align="center">🔁 Cyclic Sort Pattern 🔁</h1> </th>
-      </tr>
-      <tr>
-        <td>
-          <h3>❓ FIND THE MISSING NUMBER OR FIND THE DUPLICATE NUMBER</h3>
-          <h3>🐣 Find the Missing Number, Find the Duplicate Number, Find all Missing Numbers, Find the Corrupt Pair, etc.</h3>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h3>🎭 PsuendoCode Cyclic Sort Pattern in Javascript:</h3>
-          <h3>⏰: O(n) 🪐: O(1)</h3>
-<pre>
-<code>
-            function find_missing_number(nums) {
-              let i = 0;
-              const n = nums.length;
-              while (i < n) {
-                j = nums[i];
-                if (nums[i] < n && nums[i] !== nums[j]) {
-                  [nums[i], nums[j]] = [nums[j], nums[i]]; // swap
-                } else {
-                  i++;
-                }
-              }
-
-              // find the first number missing from its index, that will be our required number
-              for (i = 0; i < n; i++) {
-                if (nums[i] !== i) {
-                  return i;
-                }
-              }
-
-              return n;
-            }
-</code>
-</pre>
-        </td>
-      </tr>
-    </table>
-    <table>
-      <th> <h1 align="center">🔄 In-place Reversal of a LinkedList 🔄</h1> </th>
-      </tr>
-      <tr>
-        <td>
-          <h3>❓ REVERSE A LINKEDLIST</h3>
-          <h3>⏰: O(n) 🪐: O(1)</h3>
-        </td>
-        <td>
-           <h3>🐣 Reverse a LinkedList, Reverse a Sub-list, Reverse every K-element Sub-list (medium), etc.</h3>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <h3>🎭 PsuendoCode</h3>
-<pre>
-<code>
-  function reverse(head) {
-    let prev = null;
-    while (head !== null) {
-      next = head.next;
-      head.next = prev;
-      prev = head;
-      head = next;
-    }
-    return prev;
-  }
-</code>
-</pre>
-        </td>
-         <td colspan="3"> <img src="https://cdn.emre.me/2019-11-04-in-place-reversal.gif"> </td>
-      </tr>
-</table>
-
-                  if (currentNode.right) queue.push(currentNode.right);
-              }
 
 
-
+   
 
 
 
