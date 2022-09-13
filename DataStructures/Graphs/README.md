@@ -35,31 +35,15 @@ A graph can be represented in mainly two ways. They are:
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Let us consider a graph to understand the adjacency list and adjacency matrix representation. Let the undirected graph be: 
-
-![undirected graph](https://media.geeksforgeeks.org/wp-content/uploads/20200609203724/graph.png)
-
-Shown in: 
-
-Adjacency Matrix: In the adjacency matrix representation, a graph is represented in the form of a two-dimensional array. The size of the array is V x V, where V is the set of vertices. The following image represents the adjacency matrix representation: 
- 
-
-![adjacency matrix](https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png)
-
-let myAdjMatrix = [ <br/>
-    [0, 1, 0, 0, 1], <br/>
-    [1, 0, 1, 0, 0], <br/>
-    [0, 1, 0, 1, 0], <br/>
-    [0, 0, 1, 0, 1], <br/>
-    [1, 0, 0, 1, 0] <br/>
-] <br/>
-
-
-Adjacency List: In the adjacency list representation, a graph is represented as an array of linked list. The index of the array represents a vertex and each element in its linked list represents the  vertices that form an edge with the vertex. The following image represents the adjacency list representation:
-
-![adjacency list](https://media.geeksforgeeks.org/wp-content/uploads/20200609204414/linklist.png)
-// write myAdjMatrix as an adjacency list
-
+<table>
+    <tr>
+        <td>Let us consider a graph to understand the adjacency list and adjacency matrix representation    <br/>
+        Let the undirected graph be --->
+        </td>
+        <td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609203724/graph.png"    alt="drawing" width="300"/> 
+        </td>
+    </tr>
+</table>
 
 
 <table>
