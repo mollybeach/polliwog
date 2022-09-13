@@ -82,27 +82,6 @@ while (right < s.length()) {
 
 </table>
 
-## 3. 🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 ->
-    ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
-    🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
-
-
-
-        🎭 PsuendoCode Fast & Slow Pointers Pattern 🐰&🐢
-         ⏰: O(n) 🪐: O(n)
-                            slow = 0;
-                            fast = 0;
-                            while (fast < s.length()) {
-                                if (s[fast] is not a duplicate) {
-                                    // move slow pointer one step
-                                    // add s[fast] to window
-                                    slow++;
-                                }
-                                // move fast pointer one step
-                                fast++;
-                            }
-![alt text](http://1algo1week.warriorkitty.com/assets/floyds-cycle-finding-algorithm/algorithm.png)
-// rewrite fast and slow pointer to be a table
 <table>
     <tr>
         <th> <h1>🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 </h1> </th>
@@ -172,6 +151,60 @@ while (fast < s.length()) {
             }
 
 ![alt text](https://cdn.emre.me/2019-10-27-merge-intervals.png)
+
+//rewrite merge intervals to be a table
+<table>
+    <tr>
+        <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙 </h1> </th>
+        <td>
+            ❓ MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
+        </td>
+            <td colspan="2">
+                🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
+              </td>
+    </tr>
+        <tr>
+         <td  colspan="3">⏰: O(nlogn) 🪐: O(n)</td>
+    </tr>
+    <tr>
+        <td>
+<pre class="notranslate">
+<code>
+function merge(intervals) {
+  if (intervals.length < 2) {
+    return intervals;
+  }
+  // sort the intervals on the start time
+  intervals.sort((a, b) => a[0] - b[0]);
+  const mergedIntervals = [];
+  let start = intervals[0][0],
+    end = intervals[0][1];
+  for (i = 1; i < intervals.length; i++) {
+    const interval = intervals[i];
+    if (interval[0] <= end) { // overlapping intervals, adjust the 'end'
+      end = Math.max(interval[1], end);
+    } else { // non-overlapping interval, add the previous interval and reset
+      mergedIntervals.push([start, end]);
+      start = interval[0];
+      end = interval[1];
+    }
+  }
+  // add the last interval
+  mergedIntervals.push([start, end]);               
+  return mergedIntervals;
+}
+</code>
+</pre>
+        </td>
+         <td colspan="3">
+            <img
+                src="https://cdn.emre.me/2019-10-27-merge-intervals.png"
+                alt="Merge Intervals Pattern"
+            />
+        </td>
+    </tr>
+</table>
+
  ## 5. 🌀 Cyclic Sort Pattern 🌀 ->
     ❓ FIND MISSING # OR  SORT #s IN PLACE 
     🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
