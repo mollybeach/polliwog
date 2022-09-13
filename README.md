@@ -533,6 +533,51 @@ while (i < nums.length) {
 
 ![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
 
+<table>
+  <tr>
+    <th> <h1 align="center">
+      🆗🚕🚓 K MERGE Pattern 🆗🚕🚓
+    </h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS</h3>
+    </td>
+    <td>
+    <h3>🐣 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCodeK MERGE Pattern in Javascript:</h3>
+<pre>
+<code>
+  import ListNode from "DataStructures/LinkedList/ListNode.js";
+  import MinHeap from "DataStructures/Heaps/MinHeap.js";
+
+  const mergeKLists = function (lists) {
+    if (lists.length === 0) return null;
+    let dummy = new ListNode();
+    let curr = dummy;
+    let minHeap = new MinHeap();
+    for (let i = 0; i < lists.length; i++) {
+      if (lists[i]) minHeap.insert(lists[i]);
+    }
+    while (minHeap.size() > 0) {
+      let node = minHeap.remove();
+      curr.next = node;
+      curr = curr.next;
+      if (node.next) minHeap.insert(node.next);
+    }
+    return dummy.next;
+  };
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
+  </tr>
+</table>
+
 ## 14.  📅  Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
     🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
