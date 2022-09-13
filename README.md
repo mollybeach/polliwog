@@ -652,12 +652,13 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
     </td>
   </tr>
   <tr>
+      <td>
+     <img src="https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg" alt="Topological Sort: Definition" width="500" height="500">
+    </td>
        <td>
       <h3>❓ FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID</h3>
     </td>
-    <td>
-     <img src="https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg" alt="Topological Sort: Definition" width="500" height="500">
-    </td>
+
   </tr>
 </table>
 
