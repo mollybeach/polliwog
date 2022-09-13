@@ -1,4 +1,5 @@
 ## GROUPS OF ALGORITHMS
+<pre class="notranslate">
 <code>
 function find_averages_of_subarrays(K, arr) {
     const result = [];
@@ -12,8 +13,9 @@ function find_averages_of_subarrays(K, arr) {
       }
     }
     return result;
-  }
-  </code>
+  }</pre>
+
+
 /*
 Groups of ALGORITHMS: 
 #1 SEARCHING
