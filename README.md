@@ -7,15 +7,16 @@
  <table>
   <th> 14 Patterns Algorithims </th>
   <tr>
-
+    <table>
     <th> 🪟 Sliding Window Pattern 🪟 </th>
     <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td>
     <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-    </table>
-    <table>
-     <th> example </th>
-      <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
+          <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
       <td> 🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
+    </table>
+   
+   
+
  
 
 </tr>
