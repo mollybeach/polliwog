@@ -76,7 +76,11 @@ let myAdjList = [ <br/>
 </tr>
 <tr>
 <tr>
-<td>Adjacency List: In the adjacency list representation, a graph is represented as an array of linked list. The index of the array represents a vertex and each element in its linked list represents the  vertices that form an edge with the vertex. The following image represents the adjacency list representation:</td>
+<td>Adjacency List: In the adjacency list representation, <br/> 
+a graph is represented as an array of linked list.  <br/> 
+The index of the array represents a vertex and each element <br/> 
+in its linked list represents the  vertices that form an edge with the vertex. 
+</td>
 <td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204414/linklist.png" alt="drawing" width="200"/> </td>
 </tr>
 </table>
