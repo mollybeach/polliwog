@@ -20,7 +20,6 @@
         <td>⏰: O(n) 🪐: O(n)</td>
     </tr>
         <tr>
-         <td  colspan="3">⏰: O(n) 🪐: O(n)</td>
     </tr>
     <tr>
         <td>
