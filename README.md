@@ -226,6 +226,7 @@ while (fast < s.length()) {
         </td>
     </tr>
 </table>
+</details>
 <details>
 <summary>👯 Two Pointers Problems  👯  </summary>
 <br>
