@@ -29,14 +29,31 @@
         <td>⏰: O(n) 🪐: O(n)</td>
     <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
     </table>
-  </tr>
+
       <table>
     <th> 🪟 Sliding Window Pattern 🪟 </th>
           <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
       <td> 🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
       </table>
+     </tr>
 </table>
    
+
+   <table>
+    <th> 🪟 Sliding Window Pattern 🪟 </th>
+    <tr>
+        <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td>
+        <td>⏰: O(n) 🪐: O(n)</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="2">&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="3">&nbsp;</td>
+    </tr>
+</table>
    
 
  
