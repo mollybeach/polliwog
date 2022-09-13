@@ -10,7 +10,8 @@
     <table>
     <th> 🪟 Sliding Window Pattern 🪟 </th>
     <tr>
-    <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td>
+    <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td> 
+        <td>⏰: O(n) 🪐: O(n)</td>
     <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
     </tr>
           <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
