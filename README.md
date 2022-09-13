@@ -44,6 +44,12 @@ function find_averages_of_subarrays(K, arr) {
 </code>
             </pre>
         </td>
+         <td colspan="2">
+            <img
+                src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg"
+                alt="Sliding Window Pattern"
+            />
+        </td>
     </tr>
     <tr>
         <td colspan="3">&nbsp;</td>
