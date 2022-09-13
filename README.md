@@ -47,7 +47,9 @@
         <td>&nbsp;</td>
     </tr>
     <tr>
-        <td colspan="2">&nbsp;</td>
+        <td colspan="2">
+          <img src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg" alt="Sliding Window Pattern" />
+        </td>
         <td>&nbsp;</td>
     </tr>
     <tr>
