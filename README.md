@@ -11,7 +11,7 @@
   <table>
     <th>🪟 Sliding Window Pattern 🪟</th>
     <tr>
-        <td  colspan="2">
+        <td>
             ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
         </td>
         <td>⏰: O(n) 🪐: O(n)</td>
@@ -20,7 +20,8 @@
         </td>
     </tr>
     <tr>
-    🐣
+    🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
+       String Anagrams, No-repeat Substring, etc.
         <td>
 <pre class="notranslate">
 <code>
