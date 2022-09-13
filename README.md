@@ -591,9 +591,9 @@ while (i < nums.length) {
 
 <table> 
   <tr align="center" colspan="2">
-    <th> <h1 align="center">
+    <th> 
      📅  Topological Sort Pattern 📅 
-    </h1> </th>
+    </th>
   </tr>
   <tr>
          <td>
