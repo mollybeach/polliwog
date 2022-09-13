@@ -75,37 +75,6 @@ let myAdjList = [ <br/>
 </table>
 
 ![adjListvsMatrix](../../files/adjListVsMatrix.png)
-
-<!-- none are perfect but may be useful in certain situations -->
-<h1>Animated hide and show with css only</h1>
-<h2>Method 1 - max-height animation</h2>
-<div class="ex1">
-  <label for="item-1">Toggle Div</label>
-  <input type="checkbox" name="one" id="item-1">
-  <div class="hide">
-    <p>Equation billions upon billions! Courage of our questions decipherment, take root and flourish, cosmic ocean paroxysm of global death. Light years inconspicuous motes of rock and gas from which we spring something incredible is waiting to be known,
-      muse about!</p>
-    <p>Equation billions upon billions! Courage of our questions decipherment, take root and flourish, cosmic ocean paroxysm of global death. Light years inconspicuous motes of rock and gas from which we spring something incredible is waiting to be known,
-      muse about!</p>
-  </div>
-  <p class="follow">Following content</p>
-</div>
-
-<h2>Method 2 - using float and transform and negative margin</h2>
-
-<div class="ex2">
-  <label for="item-2">Toggle Div</label>
-  <input type="checkbox" name="rwo" id="item-2">
-  <div class="inner">
-    <div class="hide2">
-      <p>Equation billions upon billions! Courage of our questions decipherment, take root and flourish, cosmic ocean paroxysm of global death. Light years inconspicuous motes of rock and gas from which we spring something incredible is waiting to be known,
-        muse about!</p>
-      <p>Equation billions upon billions! Courage of our questions decipherment, take root and flourish, cosmic ocean paroxysm of global death. Light years inconspicuous motes of rock and gas from which we spring something incredible is waiting to be known,
-        muse about!</p>
-    </div>
-  </div>
-  <p class="follow">Following content</p>
-</div>
 label {
   display: block;
   margin: 20px 0 0;
@@ -195,9 +164,11 @@ input {
 }
 // inner css
 
+<!-- none are perfect but may be useful in certain situations -->
 
 
-<h2>Method 3 - using display:table and height for animation</h2>
+
+<h2 style="color: red">Method 3 - using display:table and height for animation</h2>
 <div class="ex3">
   <label for="item-3">Toggle Div</label>
   <input type="checkbox" name="one" id="item-3">
