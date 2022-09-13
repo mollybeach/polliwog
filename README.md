@@ -291,7 +291,9 @@ while (i < nums.length) {
        <h3>⏰: O(n) 🪐: O(n)</h3>
     </td>
     <td>
-    <h3>🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.</h3>
+    <h3>🐣 Reverse Level Order Traversal, Zigzag Traversal, <br/>
+    Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, <br/>
+    Level Order Successor, Connect Level Order Siblings, etc.</h3>
     </td>
   </tr>
   <tr>
@@ -302,8 +304,7 @@ while (i < nums.length) {
   Stack< Tree Node stack = new Stack<>();
   stack.push(root);
   while (!stack.isEmpty()) {
-      TreeNode currentNode = stack.pop(); // add the node to the result list
-      // insert the children of current node in the stack
+      TreeNode currentNode = stack.pop(); 
       if (currentNode.left != null) stack.push(currentNode.left);
       if (currentNode.right != null) stack.push(currentNode.right);
   }
