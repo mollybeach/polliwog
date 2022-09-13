@@ -277,13 +277,7 @@
               }
               return dummy.next;
             };
-
-
-            
-![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
-     
-      
-            
+                 
 ![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
 ## 14.  📅  Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
