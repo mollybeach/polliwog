@@ -47,6 +47,10 @@ function findAvgSubArrays(K, arr) {
     </tr>
 
 </table>
+<details>
+<summary>🪟 Sliding Window Pattern 🪟 </summary>
+<br>
+hiii
 </details>
 <table>
     <tr>
