@@ -535,13 +535,15 @@ while (i < nums.length) {
 
             // a. Initialize the graph
             inDegree = Array(tasks).fill(0); // count of incoming edges
-            graph = Array(tasks).fill(0).map(() => Array()); // adjacency list graph
+            graph = Array(tasks).fill(0).map(() => Array()); 
+            // adjacency list graph
 
             // b. Build the graph
             prerequisites.forEach((prerequisite) => {
               let parent = prerequisite[0],
                 child = prerequisite[1];
-              graph[parent].push(child); // put the child into it's parent's list
+              graph[parent].push(child); 
+              // put the child into it's parent's list
               inDegree[child]++; // increment child's inDegree
             });
 
@@ -562,17 +564,21 @@ while (i < nums.length) {
               for (i = 0; i < sources.length; i++) {
                 vertex = sources.shift();
                 sortedOrder.push(vertex);
-                sourcesForNextCall = sources.slice(0); // make a copy of sources
+                sourcesForNextCall = sources.slice(0);
+                 // make a copy of sources
                 // only remove the edges, if all of its children are not sources
-                graph[vertex].forEach((child) => { // get the node's children to decrement their in-degrees
+                graph[vertex].forEach((child) => { 
+                // get the node's children to decrement their in-degrees
                   inDegree[child]--; // decrement inDegree of child
                   if (inDegree[child] === 0) {
                     sourcesForNextCall.push(child); // save the new source for the next call
                   }
                 });
-                // recursive call to print other orderings from the remaining (and new) sources
+                // recursive call to print other orderings
+                // from the remaining (and new) sources
                 print_all_topological_sorts(graph, inDegree, sourcesForNextCall, sortedOrder);
-                // backtrack, remove the vertex from the sorted order and put all of its children back to consider
+                // backtrack, remove the vertex from the sorted 
+                //order and put all of its children back to consider
                 // the next source instead of the current vertex
                 sortedOrder
 
