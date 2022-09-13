@@ -124,8 +124,8 @@ while (fast < s.length()) {
     <tr>
         <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙 </h1> </th>
         <td>
-            ❓ MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
-            ⏰: O(nlogn) 🪐: O(n)
+            <h3> ❓ MERGE INTERVALS OR FIND OVERLAPPING INTERVALS <h3>
+           <h3>  ⏰: O(nlogn) 🪐: O(n) </h3>
         </td>
             <td colspan="2">
                 🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
