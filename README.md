@@ -23,12 +23,8 @@
         </td>
     </tr>
     <tr>
-        <td colspan="2">
-            <img
-                src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg"
-                alt="Sliding Window Pattern"
-            />
-        </td>
+    🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
+       String Anagrams, No-repeat Substring, etc.
         <td>
             <pre class="notranslate">
 <code>
