@@ -48,9 +48,101 @@ function findAvgSubArrays(K, arr) {
 
 </table>
 <details>
-<summary>🪟 Sliding Window Pattern 🪟 </summary>
+<summary>🪟 Problems </summary>
 <br>
-hiii
+## [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) #3 🪟 
+        ❓: Given a string s, find the length of the longest substring without repeating characters.
+        🐣: 1️⃣ Input: s = "abcabcbb" Output: 3 Explain: The answer is "abc", with the length of 3. 2️⃣ Input: s = "bbbbb" Output: 1 Explain: The answer is "b", with the length of 1. 3️⃣ Input: s = "pwwkew" Output: 3 Explain: The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence & not a substring. #4 Input: s = "" Output: 0
+        
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(min(m, n))  
+        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
+
+            var lengthOfLongestSubstring = function (s) {
+              let result = 0;
+              let left = 0;
+              let right = 0;
+              let set = new Set();
+              while (right < s.length) {
+                if (!set.has(s[right])) {
+                  set.add(s[right]);
+                  right++;
+                  result = Math.max(result, set.size);
+                } else {
+                  set.delete(s[left]);
+                  left++;
+                }
+              }
+              return result;
+            };
+## [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) #424 🪟 
+        ❓: You are given a string s & an integer k. You can choose any character of the string & change it to any other uppercase English character. You can perform this operation at most k times.
+        Return the length of the longest substring containing the same letter you can get after performing the above operations.
+        🐣: 1️⃣ Input: s = "ABAB", k = 2 Output: 4 Explain: Replace the two 'A's with two 'B's or vice versa. 2️⃣ Input: s = "AABABBA", k = 1 Output: 4 Explain: Replace the one 'A' in the middle with 'B' & form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
+        
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(1)
+        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
+
+            var characterReplacement = function (s, k) {
+              let left = 0;
+              let right = 0;
+              let maxCount = 0;
+              let map = new Map();
+              while (right < s.length) {
+                map.set(s[right], (map.get(s[right]) || 0) + 1);
+                maxCount = Math.max(maxCount, map.get(s[right]));
+                if (right - left + 1 - maxCount > k) {
+                  map.set(s[left], map.get(s[left]) - 1);
+                  left++;
+                }
+                right++;
+              }
+              return right - left;
+            };
+## [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) #76 🪟 
+        ❓: Given two strings s & t of lengths m & n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
+        The testcases will be generated such that the answer is unique.
+        A substring is a contiguous sequence of characters within the string.
+        🐣: 1️⃣ Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC" Explain: The minimum window substring "BANC" includes 'A', 'B', & 'C' from string t. 2️⃣ Input: s = "a", t = "a" Output: "a" 3️⃣ Input: s = "a", t = "aa" Output: "" Explain: Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.
+        
+        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(n)
+        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
+
+            var minWindow = function (s, t) {
+              let left = 0;
+              let right = 0;
+              let map = new Map();
+              let min = Infinity;
+              let result = "";
+              for (let i = 0; i < t.length; i++) {
+                map.set(t[i], (map.get(t[i]) || 0) + 1);
+              }
+              let count = map.size;
+              while (right < s.length) {
+                let char = s[right];
+                if (map.has(char)) {
+                  map.set(char, map.get(char) - 1);
+                  if (map.get(char) === 0) {
+                    count--;
+                  }
+                }
+                right++;
+                while (count === 0) {
+                  if (right - left < min) {
+                    min = right - left;
+                    result = s.substring(left, right);
+                  }
+                  let char = s[left];
+                  if (map.has(char)) {
+                    map.set(char, map.get(char) + 1);
+                    if (map.get(char) > 0) {
+                      count++;
+                    }
+                  }
+                  left++;
+                }
+              }
+              return result;
+            };
 </details>
 <table>
     <tr>
@@ -1979,99 +2071,7 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
 
 ## String
 
-## [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) #3 🪟 
-        ❓: Given a string s, find the length of the longest substring without repeating characters.
-        🐣: 1️⃣ Input: s = "abcabcbb" Output: 3 Explain: The answer is "abc", with the length of 3. 2️⃣ Input: s = "bbbbb" Output: 1 Explain: The answer is "b", with the length of 1. 3️⃣ Input: s = "pwwkew" Output: 3 Explain: The answer is "wke", with the length of 3. Notice that the answer must be a substring, "pwke" is a subsequence & not a substring. #4 Input: s = "" Output: 0
-        
-        🐢 Solution: 🔨 Brute Force ⏰: O(n^3) 🪐: O(min(m, n))  
-        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
 
-            var lengthOfLongestSubstring = function (s) {
-              let result = 0;
-              let left = 0;
-              let right = 0;
-              let set = new Set();
-              while (right < s.length) {
-                if (!set.has(s[right])) {
-                  set.add(s[right]);
-                  right++;
-                  result = Math.max(result, set.size);
-                } else {
-                  set.delete(s[left]);
-                  left++;
-                }
-              }
-              return result;
-            };
-## [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) #424 🪟 
-        ❓: You are given a string s & an integer k. You can choose any character of the string & change it to any other uppercase English character. You can perform this operation at most k times.
-        Return the length of the longest substring containing the same letter you can get after performing the above operations.
-        🐣: 1️⃣ Input: s = "ABAB", k = 2 Output: 4 Explain: Replace the two 'A's with two 'B's or vice versa. 2️⃣ Input: s = "AABABBA", k = 1 Output: 4 Explain: Replace the one 'A' in the middle with 'B' & form "AABBBBA". The substring "BBBB" has the longest repeating letters, which is 4.
-        
-        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(1)
-        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
-
-            var characterReplacement = function (s, k) {
-              let left = 0;
-              let right = 0;
-              let maxCount = 0;
-              let map = new Map();
-              while (right < s.length) {
-                map.set(s[right], (map.get(s[right]) || 0) + 1);
-                maxCount = Math.max(maxCount, map.get(s[right]));
-                if (right - left + 1 - maxCount > k) {
-                  map.set(s[left], map.get(s[left]) - 1);
-                  left++;
-                }
-                right++;
-              }
-              return right - left;
-            };
-## [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/) #76 🪟 
-        ❓: Given two strings s & t of lengths m & n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string "".
-        The testcases will be generated such that the answer is unique.
-        A substring is a contiguous sequence of characters within the string.
-        🐣: 1️⃣ Input: s = "ADOBECODEBANC", t = "ABC" Output: "BANC" Explain: The minimum window substring "BANC" includes 'A', 'B', & 'C' from string t. 2️⃣ Input: s = "a", t = "a" Output: "a" 3️⃣ Input: s = "a", t = "aa" Output: "" Explain: Both 'a's from t must be included in the window. Since the largest window of s only has one 'a', return empty string.
-        
-        🐢 Solution: 🔨 Brute Force ⏰: O(n^2) 🪐: O(n)
-        🐇 Solution: 🪟 Sliding Window Pattern ⏰: O(n) 🪐: O(n)
-
-            var minWindow = function (s, t) {
-              let left = 0;
-              let right = 0;
-              let map = new Map();
-              let min = Infinity;
-              let result = "";
-              for (let i = 0; i < t.length; i++) {
-                map.set(t[i], (map.get(t[i]) || 0) + 1);
-              }
-              let count = map.size;
-              while (right < s.length) {
-                let char = s[right];
-                if (map.has(char)) {
-                  map.set(char, map.get(char) - 1);
-                  if (map.get(char) === 0) {
-                    count--;
-                  }
-                }
-                right++;
-                while (count === 0) {
-                  if (right - left < min) {
-                    min = right - left;
-                    result = s.substring(left, right);
-                  }
-                  let char = s[left];
-                  if (map.has(char)) {
-                    map.set(char, map.get(char) + 1);
-                    if (map.get(char) > 0) {
-                      count++;
-                    }
-                  }
-                  left++;
-                }
-              }
-              return result;
-            };
 ## [Valid Anagram](https://leetcode.com/problems/valid-anagram/) #242  
         ❓: Given two strings s & t , write a function to determine if t is an anagram of s.
         🐣: 1️⃣ Input: s = "anagram", t = "nagaram" Output: true 2️⃣ Input: s = "rat", t = "car" Output: false
