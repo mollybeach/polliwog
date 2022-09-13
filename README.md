@@ -1,5 +1,12 @@
 # 
 ## 14 Patterns Algorithims
+
+<details>
+<summary>How do I dropdown?</summary>
+<br>
+This is how you dropdown.
+</details>
+
   <table>
     <tr>
      <th> <h1>🪟 Sliding Window Pattern 🪟 </h1> </th>
