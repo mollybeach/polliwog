@@ -106,7 +106,7 @@
                                 i++;
                         }
 ![alt text](https://cdn.emre.me/2019-10-28-missing-number-example.png);
- ## 6. In-place Reversal of a LinkedList Pattern 🔄 ->
+ ## 6. 🔄 In-place Reversal of a LinkedList Pattern 🔄 ->
     ❓ REVERSE A SUBLIST, REVERSE EVERY K-ELEMENT IN SUBLIST
     🐣 Reverse a Sub-list, Reverse every K-element Sub-list, etc.
         
@@ -122,7 +122,7 @@
               }
 ![alt text]( https://cdn.emre.me/2019-11-04-in-place-reversal.gif);
 
-## 7. Tree Breadth First Search Pattern 🌳 ->
+## 7.🌳 Tree Breadth First Search Pattern 🌳 ->
     ❓  FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE
     🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?
 
@@ -135,7 +135,7 @@
                   if (currentNode.right) queue.push(currentNode.right);
               }
 ![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
-## 8. Tree Depth First Search Pattern 🌲 ->
+##  8. 🌲 Tree Depth First Search Pattern 🌲 ->
     ❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE
     🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.
         
@@ -151,7 +151,7 @@
                 if (currentNode.right != null) stack.push(currentNode.right);
             }
 ![alt text](https://assets.leetcode.com/users/andvary/image_1556551007.png);
-## 9. Two Heaps Pattern 📦📦 ->
+## 9. 📦📦 Two Heaps Pattern 📦📦 ->
     ❓  MEDIAN OF # STREAM FIND K SMALLEST #
     🐣  Sliding Window Median, Find the Median of a Number Stream, etc.
         
@@ -179,7 +179,7 @@
                more element than the min-heap*/
         
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png);
-## 10. Subsets Pattern 🐛 ->
+## 10. 🐛 Subsets Pattern 🐛 ->
     ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #PERMUTATIONS AND COMBINATIONS OF SUBSETS
     🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
         Given a set of [1, 5, 3]
@@ -223,7 +223,7 @@
             return -1;
 
 
- ## 12. K TOP Elements Pattern 👑->
+ ## 12. 👑 K TOP Elements Pattern 👑->
     ❓ TOP K #s OR FREQUENCY OF TOP K #s
     🐣 K TOP Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
     // is K TOP numbers a greedy problem? No, it is a heap problem.
@@ -249,7 +249,7 @@
             }
 
 ![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
-## 13. K MERGE Pattern 🆗🚕🚓 ->
+## 13. 🆗🚕🚓 K MERGE Pattern 🆗🚕🚓 ->
 
     ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
     🐣 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.
