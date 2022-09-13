@@ -545,7 +545,6 @@ while (i < nums.length) {
       👑 K TOP Pattern 👑
     </h1>  </summary>
     <br>
-
 <table>
   <tr>
     <td>
@@ -582,14 +581,13 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg"> </td>
   </tr>
 </table>
-
-
-<table>
-  <tr>
-    <th> <h1 align="center">
+</details>
+<details>
+<summary> <h1 align="center">
       🆗🚕🚓 K MERGE Pattern 🆗🚕🚓
-    </h1> </th>
-  </tr>
+    </h1>  </summary>
+    <br>
+<table>
   <tr>
     <td>
       <h3>❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS</h3>
