@@ -1,13 +1,5 @@
 # 
 ## 14 Patterns Algorithims
-
-// write a table 
-
-
-
-
-   
-
   <table>
     <tr>
      <th> <h1>🪟 Sliding Window Pattern 🪟 </h1> </th>
@@ -51,14 +43,6 @@ function find_averages_of_subarrays(K, arr) {
 
 </table>
 
-
-
-   
-
- 
-
-</tr>
-</table>
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
