@@ -1,5 +1,8 @@
 # 
 ## 14 Patterns Algorithims
+<table>
+  <tr>
+    <td>
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
@@ -21,7 +24,13 @@
             }
             return result;
           }
-![alt text](https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg)
+          </td>
+          <td>
+          <img src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg" alt="drawing" width="300"/>
+          </td>
+  </tr>
+  <tr>
+  <td>
 
 ## 2. 👯 Two Pointers  👯 -> 
     ❓ FIND A PAIR, TRIPLET or a SUBARRAY
@@ -39,7 +48,14 @@
                                     left++;
                                 }
                             }
-![alt text](https://cdn.emre.me/2019-10-21-two-pointers.png)
+          </td>
+          <td>
+          <img src="https://cdn.emre.me/2019-10-21-two-pointers.png" alt="drawing" width="300"/>
+          </td>
+  </tr>
+  
+
+</table>
 ## 3. 🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 ->
     ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
     🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.

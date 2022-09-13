@@ -38,7 +38,7 @@ A graph can be represented in mainly two ways. They are:
 <table>
     <tr>
         <td>Let us consider a graph to understand the adjacency list and adjacency matrix representation    <br/>
-        Represenations of the graph are as follows: <br/>
+        Representations of the graph are as follows: <br/>
         Let the undirected graph be ----------------------------------->
         </td>
         <td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609203724/graph.png"    alt="drawing" width="300"/> 
