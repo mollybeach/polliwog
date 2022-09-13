@@ -69,12 +69,12 @@ Adjacency List: In the adjacency list representation, a graph is represented as 
          The size of the array is V x V, where V is the set of vertices. 
         </td>
         <td>
-        let myAdjList = [ <br/>
-            [1, 4], <br/>
-            [0, 2], <br/>
-            [1, 3], <br/>
-            [2, 4], <br/>
-            [0, 3] <br/>
+        let myAdjMatrix = [ <br/>
+            [0, 1, 0, 0, 1], <br/>
+            [1, 0, 1, 0, 0], <br/>
+            [0, 1, 0, 1, 0], <br/>
+            [0, 0, 1, 0, 1], <br/>
+            [1, 0, 0, 1, 0] <br/>
         ] <br/>
         </td>
         <td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png"    alt="drawing" width="300"/> 
