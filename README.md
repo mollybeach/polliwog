@@ -314,34 +314,6 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://assets.leetcode.com/users/andvary/image_1556551007.png"> </td>
   </tr>
 </table>
-## 9. 📦📦 Two Heaps Pattern 📦📦 ->
-    ❓  MEDIAN OF # STREAM FIND K SMALLEST #
-    🐣  Sliding Window Median, Find the Median of a Number Stream, etc.
-        
-         🎭 PsuendoCode Two Heaps Pattern 📦📦
-            ⏰: O(n) 🪐: O(n)
-
-            let maxHeap = new MaxHeap();
-            let minHeap = new MinHeap();
-            for (num of nums) {
-                if (maxHeap.isEmpty() || num <= maxHeap.peek()) {
-                    maxHeap.push(num);
-                } else {
-                    minHeap.push(num);
-                }
-                if (maxHeap.size() > minHeap.size() + 1) {
-                    minHeap.push(maxHeap.pop());
-                } else if (maxHeap.size() < minHeap.size()) {
-                    maxHeap.push(minHeap.pop());
-                }
-            }
-
-
-            /* either both the heaps will have equal number of elements or
-               max-heap will have one
-               more element than the min-heap*/
-        
-![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png);
 
 <table>
   <tr>
