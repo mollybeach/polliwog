@@ -465,14 +465,12 @@ while (i < nums.length) {
   </tr>
 </table>
 </details>
-
-
+<details>
+<summary> <h1 align="center">
+     🐛 Subsets Pattern 🐛
+    </h1>  </summary>
+    <br>
 <table> 
-  <tr>
-    <th> <h1 align="center">
-      🐛 Subsets Pattern 🐛
-    </h1> </th>
-  </tr>
   <tr>
     <td>
       <h3>❓ FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #PERMUTATIONS AND COMBINATIONS OF SUBSETS</h3>
@@ -483,7 +481,7 @@ while (i < nums.length) {
   </tr>
   <tr>
     <td>
-      <h3>🎭 PsuendoCode Subsets Pattern 🐛</h3>
+      <h3>🎭 PsuendoCode </h3>
 <pre>
 <code>
   let subsets = [[]];
