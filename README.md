@@ -121,36 +121,6 @@ while (fast < s.length()) {
         </td>
     </tr>
 </table>
-## 4. 🚗🚙 Merge Intervals Pattern 🚗🚙 ->
-    ❓  MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
-    🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
-          🎭 PsuendoCode 🚗🚙 Merge Intervals Pattern 🚗🚙 in javascript:
-            ⏰: O(nlogn) 🪐: O(n)
-            function merge(intervals) {
-              if (intervals.length < 2) {
-                return intervals;
-              }
-              // sort the intervals on the start time
-              intervals.sort((a, b) => a[0] - b[0]);
-              const mergedIntervals = [];
-              let start = intervals[0][0],
-                end = intervals[0][1];
-              for (i = 1; i < intervals.length; i++) {
-                const interval = intervals[i];
-                if (interval[0] <= end) { // overlapping intervals, adjust the 'end'
-                  end = Math.max(interval[1], end);
-                } else { // non-overlapping interval, add the previous interval and reset
-                  mergedIntervals.push([start, end]);
-                  start = interval[0];
-                  end = interval[1];
-                }
-              }
-              // add the last interval
-              mergedIntervals.push([start, end]);
-              return mergedIntervals;
-            }
-
-![alt text](https://cdn.emre.me/2019-10-27-merge-intervals.png)
 
 //rewrite merge intervals to be a table
 <table>
