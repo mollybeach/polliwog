@@ -144,8 +144,6 @@ function findAvgSubArrays(K, arr) {
   <details>
     <summary>  <h1>👯 Two Pointers Problems  👯 </h1> </summary>
     <br>
-    temp
-
 <table>
     <tr>
         <td>
@@ -224,10 +222,6 @@ while (fast < s.length()) {
         </td>
     </tr>
 </table>
-</details>
-<details>
-<summary>👯 Two Pointers Problems  👯  </summary>
-<br>
 </details>
 </details>
   <details>
