@@ -71,7 +71,7 @@ let myAdjList = [ <br/>
 <table>
 <tr>
 <td>Adjacency Matrix: In the adjacency matrix representation, a graph is represented in the form of a two-dimensional array. The size of the array is V x V, where V is the set of vertices. The following image represents the adjacency matrix representation: </td>
-<td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609203724/graph.png" alt="drawing" width="200"/> </td>
+
 <td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png" alt="drawing" width="200"/> </td>
 </tr>
 <tr>
