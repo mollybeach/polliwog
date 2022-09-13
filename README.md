@@ -469,7 +469,7 @@ while (i < nums.length) {
 </code>
 </pre>
     </td>
-    <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
+    <td colspan="3"> <img src="https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg"> </td>
   </tr>
 </table>
 
