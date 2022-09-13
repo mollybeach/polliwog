@@ -503,6 +503,9 @@ function merge(intervals) {
           <h3>❓ REVERSE A LINKEDLIST</h3>
           <h3>🐣 Reverse a LinkedList, Reverse a Sub-list, Reverse every K-element Sub-list (medium), etc.</h3>
         </td>
+        <td>
+           <h3>🐣 Reverse a LinkedList, Reverse a Sub-list, Reverse every K-element Sub-list (medium), etc.</h3>
+        </td>
       </tr>
       <tr>
         <td>
