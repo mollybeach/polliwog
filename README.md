@@ -17,9 +17,9 @@
            <td colspan="2">
                🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersString Anagrams, No-repeat Substring, etc.
             </td>
-        <td>⏰: O(n) 🪐: O(n)</td>
     </tr>
         <tr>
+         <td  colspan="3">⏰: O(n) 🪐: O(n)</td>
     </tr>
     <tr>
         <td>
