@@ -626,15 +626,13 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg"> </td>
   </tr>
 </table>
+</details>
+<details>
+<summary> <h1 align="center">
+     Topological Sort Pattern 📅 
+    </h1>  </summary>
+    <br>
 <table> 
-  <tr>
-    <th> <h1 align="center">
-     📅 
-    </h1> </th>
-      <th> <h1 align="center">
-      Topological Sort Pattern 📅 
-    </h1> </th>
-  </tr>
   <tr>
          <td>
       <h3>❓ FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID</h3>
@@ -700,6 +698,7 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
     </td>
   </tr>
 </table>
+</details>
 
 
 
