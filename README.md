@@ -82,14 +82,14 @@ while (right < s.length()) {
     <tr>
         <th> <h1>🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 </h1> </th>
         <td>
-            ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
+            <h3> ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST </h3>
+            <h3>⏰:⏰: O(n) 🪐: O(n)</h3>
         </td>
             <td colspan="2">
                 🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
               </td>
     </tr>
         <tr>
-         <td  colspan="3">⏰: O(n) 🪐: O(n)</td>
     </tr>
     <tr>
         <td>
