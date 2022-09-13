@@ -66,6 +66,13 @@ let myAdjList = [ <br/>
     [0, 3] <br/>
 ] <br/>
 
+<table>
+<tr>
+<td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609203724/graph.png" alt="drawing" width="200"/> </td>
+<td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png" alt="drawing" width="200"/> </td>
+<td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204414/linklist.png" alt="drawing" width="200"/> </td>
+</tr>
+</table>
 
 ![adjListvsMatrix](../../files/adjListVsMatrix.png)
 
