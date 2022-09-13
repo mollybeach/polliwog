@@ -596,7 +596,6 @@ while (i < nums.length) {
     </h1> </th>
   </tr>
   <tr>
-
      <td>
       <h3>🎭 PsuendoCode  📅  Topological Sort Pattern  📅  in Javascript:</h3>
 <pre>
