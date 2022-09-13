@@ -15,7 +15,12 @@
             ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
         </td>
         <td>⏰: O(n) 🪐: O(n)</td>
-        <td>&nbsp;</td>
+           <td colspan="2">
+            <img
+                src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg"
+                alt="Sliding Window Pattern"
+            />
+        </td>
     </tr>
     <tr>
         <td colspan="2">
