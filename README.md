@@ -596,15 +596,8 @@ while (i < nums.length) {
     </h1> </th>
   </tr>
   <tr>
-    <td>
-      <h3>❓ FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID</h3>
-    </td>
-    <td>
-    <h3>🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.</h3>
-    </td>
-  </tr>
-  <tr>
-    <td>
+
+     <td>
       <h3>🎭 PsuendoCode  📅  Topological Sort Pattern  📅  in Javascript:</h3>
 <pre>
 <code>
@@ -654,6 +647,14 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
       sortedOrder
 </code>
 </pre>
+    </td>
+    <td>
+    <h3>🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+       <td>
+      <h3>❓ FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID</h3>
     </td>
     <td>
      <img src="https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg" alt="Topological Sort: Definition" width="500" height="500">
