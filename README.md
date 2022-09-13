@@ -11,7 +11,7 @@
   <table>
     <th>🪟 Sliding Window Pattern 🪟</th>
     <tr>
-        <td>
+        <td  colspan="2">
             ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
         </td>
         <td>⏰: O(n) 🪐: O(n)</td>
