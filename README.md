@@ -14,14 +14,12 @@
         <td>
             ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
         </td>
-        <td>⏰: O(n) 🪐: O(n)</td>
            <td colspan="2">
                🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersString Anagrams, No-repeat Substring, etc.
         </td>
+        <td>⏰: O(n) 🪐: O(n)</td>
     </tr>
     <tr>
-    🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
-       String Anagrams, No-repeat Substring, etc.
         <td>
 <pre class="notranslate">
 <code>
