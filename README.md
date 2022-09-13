@@ -523,6 +523,7 @@ function merge(intervals) {
 </code>
 </pre>
         </td>
+        <td> <img src="https://i.ytimg.com/vi/9Yp2AxQa7Zc/maxresdefault.jpg" width="400" height="300"> </td>
       </tr>
     </table>
 
