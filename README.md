@@ -13,16 +13,12 @@
     <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
     </table>
     <table>
-       <th> example </th>
+     <th> example </th>
       <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-
-
-    </table>
-
-
-  
-   
-  </tr>
+      <td> 🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
+ 
+</table>
+</tr>
 </table>
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
