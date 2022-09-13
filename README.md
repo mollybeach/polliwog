@@ -19,6 +19,9 @@
             </td>
         <td>⏰: O(n) 🪐: O(n)</td>
     </tr>
+        <tr>
+         <td  colspan="3">⏰: O(n) 🪐: O(n)</td>
+    </tr>
     <tr>
         <td>
 <pre class="notranslate">
@@ -46,9 +49,7 @@ function find_averages_of_subarrays(K, arr) {
             />
         </td>
     </tr>
-    <tr>
-        <td colspan="3">&nbsp;</td>
-    </tr>
+
 </table>
 
 
