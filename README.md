@@ -3,7 +3,9 @@
 
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
-    🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
+    🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
+       String Anagrams, No-repeat Substring, etc.
+       
           🎭 PsuendoCode 🪟 Sliding Window Pattern 🪟
               ⏰: O(n) 🪐: O(n)
         function find_averages_of_subarrays(K, arr) {
@@ -12,10 +14,8 @@
               windowStart = 0;
             for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
               windowSum += arr[windowEnd]; // add the next element
-              // slide the window, we don't need to slide if we've not hit the required window size of 'k'
               if (windowEnd >= K - 1) {
                 result.push(windowSum / K); // calculate the average
-                // subtract the element going out
                 windowSum -= arr[windowStart];
                 windowStart += 1; // slide the window ahead
               }
