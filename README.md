@@ -501,7 +501,7 @@ function merge(intervals) {
       <tr>
         <td>
           <h3>❓ REVERSE A LINKEDLIST</h3>
-          <h3>🐣 Reverse a LinkedList, Reverse a Sub-list, Reverse every K-element Sub-list (medium), etc.</h3>
+          <h3>⏰: O(n) 🪐: O(1)</h3>
         </td>
         <td>
            <h3>🐣 Reverse a LinkedList, Reverse a Sub-list, Reverse every K-element Sub-list (medium), etc.</h3>
@@ -509,7 +509,7 @@ function merge(intervals) {
       </tr>
       <tr>
         <td>
-          <h3>🎭 PsuendoCode In-place Reversal of a LinkedList Pattern in Javascript:</h3>
+          <h3>🎭 PsuendoCode</h3>
           <h3>⏰: O(n) 🪐: O(1)</h3>
 <pre>
 <code>
