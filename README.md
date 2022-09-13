@@ -231,9 +231,10 @@ while (fast < s.length()) {
 <br>
 </details>
 </details>
+  <details>
     <summary>🪟  <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1> </th> </summary>
     <br>
-     <details>
+   
 <table>
     <tr>
         <td>
