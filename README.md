@@ -119,19 +119,17 @@ while (fast < s.length()) {
     </tr>
 </table>
 
-//rewrite merge intervals to be a table
+
 <table>
     <tr>
         <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙 </h1> </th>
         <td>
             ❓ MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
+            ⏰: O(nlogn) 🪐: O(n)
         </td>
             <td colspan="2">
                 🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
               </td>
-    </tr>
-        <tr>
-         <td  colspan="3">⏰: O(nlogn) 🪐: O(n)</td>
     </tr>
     <tr>
         <td>
