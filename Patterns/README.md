@@ -223,18 +223,18 @@
             return -1;
 
 
- ## 12. Top 'K' Elements Pattern 🔝->
+ ## 12. K TOP Elements Pattern 👑->
     ❓ TOP K #s OR FREQUENCY OF TOP K #s
-    🐣 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
-    // is top 'K' numbers a greedy problem? No, it is a heap problem.
+    🐣 K TOP Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
+    // is K TOP numbers a greedy problem? No, it is a heap problem.
         
-        🎭 PsuendoCode Top 'K' Elements in Javascript:
+        🎭 PsuendoCode K TOP Elements in Javascript:
             ⏰: O(n) 🪐: O(n)
-            const Heap = require('collections/heap'); //http://www.collectionsjs.com
 
-            function find_k_largest_numbers(nums, k) {
-                const minHeap = new Heap([], null, ((a, b) => b - a));
-             
+            import MinHeap from './DataStructures/Heap/MinHeap.js';
+
+            function findLargestKNum(nums, k) {
+                const minHeap = new MinHeap();
                 for (i = 0; i < k; i++) {
                     minHeap.push(nums[i]);
                 }
@@ -247,100 +247,35 @@
 
                 return minHeap.toArray();
             }
-            /*    put first 'K' numbers in the min heap go through the remaining numbers of the array, if the number from the array is bigger than the
-              top(smallest) number of the min-heap, remove the top number from heap and add the number from array  the heap has the top 'K' numbers, return them in a list*/
 
 ![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
-## 13. K-way Merge Pattern 🔝🚗🚙 ->
+## 13. K MERGE Pattern 🆗🚕🚓 ->
 
     ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
     🐣 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.
-        🔝
-        🎭 PsuendoCode K-way Merge Pattern in Javascript:
+  
+        🎭 PsuendoCode K MERGE Pattern in Javascript:
             ⏰: O(nlogk) 🪐: O(n)
 
-            const Heap = require('collections/heap'); //http://www.collectionsjs.com
+        import ListNode from "DataStructures/LinkedList/ListNode.js";
+        import MinHeap from "DataStructures/Heaps/MinHeap.js";
 
-            class Heap {
-                constructor(array, compare, type) {
-                    this.heap = array;
-                    this.compare = compare;
-                    this.type = type;
-                }
-                peek() {
-                    return this.heap[0];
-                }
-                push(element) {
-                    this.heap.push(element);
-                    this.heapifyUp(this.heap.length - 1);
-                }
-                pop() {
-                    const top = this.heap[0];
-                    const bottom = this.heap.pop();
-                    if (this.heap.length > 0) {
-                        this.heap[0] = bottom;
-                        this.heapifyDown(0);
-                    }
-                    return top;
-                }
-                heapifyUp(index) {
-                    let parent = Math.floor((index - 1) / 2);
-                    while (parent >= 0 && this.compare(this.heap[parent], this.heap[index]) === this.type) {
-                        const temp = this.heap[parent];
-                        this.heap[parent] = this.heap[index];
-                        this.heap[index] = temp;
-                        index = parent;
-                        parent = Math.floor((index - 1) / 2);
-                    }
-                }
-                heapifyDown(index) {
-                    let left = (2 * index) + 1;
-                    let right = (2 * index) + 2;
-                    let smallest = index;
-                    if (left < this.heap.length && this.compare(this.heap[left], this.heap[smallest]) === this.type) {
-                        smallest = left;
-                    }
-                    if (right < this.heap.length && this.compare(this.heap[right], this.heap[smallest]) === this.type) {
-                        smallest = right;
-                    }
-                    if (smallest !== index) {
-                        const temp = this.heap[index];
-                        this.heap[index] = this.heap[smallest];
-                        this.heap[smallest] = temp;
-                        this.heapifyDown
-            }
-
-            function merge_lists(lists) {
-                const minHeap = new Heap([], null, ((a, b) => b[0] - a[0]));
-                for (i = 0; i < lists.length; i++) {
-                    if (lists[i] !== null) {
-                        minHeap.push([lists[i].value, i]);
-                        lists[i] = lists[i].next;
-                    }
-                }
-                resultHead = null, resultTail = null;
-                while (minHeap.length > 0) {
-                    node = minHeap.pop();
-                    if (resultHead === null) {
-                        resultHead = resultTail = new ListNode(node[0]);
-                    } else {
-                        resultTail.next = new ListNode(node[0]);
-                        resultTail = resultTail.next;
-                    }
-                 
-                    if (lists[node[1]] !== null) {
-                        minHeap.push([lists[node[1]].value, node[1]]);
-                        lists[node[1]] = lists[node[1]].next;
-                    }
-                }
-                return resultHead;
-            } 
-            /* 
-              put the root of each list in the min heap
-              take the smallest(top) element form the min-heap, if the running list
-              is not empty, add the next element to the heap
-              if the top element has a next element add it to the heap
-            */
+            const mergeKLists = function (lists) {
+              if (lists.length === 0) return null;
+              let dummy = new ListNode();
+              let curr = dummy;
+              let minHeap = new MinHeap();
+              for (let i = 0; i < lists.length; i++) {
+                if (lists[i]) minHeap.insert(lists[i]);
+              }
+              while (minHeap.size() > 0) {
+                let node = minHeap.remove();
+                curr.next = node;
+                curr = curr.next;
+                if (node.next) minHeap.insert(node.next);
+              }
+              return dummy.next;
+            };
      
       
             
@@ -1551,9 +1486,12 @@
         🐣: 1️⃣ Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] 2️⃣ Input: lists = [] Output: [] 3️⃣ Input: lists = [[]] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: 🚗🚙 Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
-        
-            var mergeKLists = function (lists) {
+        🐇 Solution:  🆗🚕🚓 K MERGE ⏰: O(nlogk) 🪐: O(1)
+
+        import ListNode from "DataStructures/LinkedList/ListNode.js";
+        import MinHeap from "DataStructures/Heaps/MinHeap.js";
+
+            const mergeKLists = function (lists) {
               if (lists.length === 0) return null;
               let dummy = new ListNode();
               let curr = dummy;
@@ -2346,94 +2284,32 @@
 
 ## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #213
 
-        Pattern Used: Heap
+        Pattern Used: K MERGE 
         ❓: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list & return it.
         🐣: 1️⃣ Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] 2️⃣ Input: lists = [] Output: [] 3️⃣ Input: lists = [[]] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
 
-            var mergeKLists = function (lists) {
-              let heap = new MinHeap();
-              for (let list of lists) {
-                while (list) {
-                  heap.insert(list.val);
-                  list = list.next;
-                }
-              }
+        import ListNode from "DataStructures/LinkedList/ListNode.js";
+        import MinHeap from "DataStructures/Heaps/MinHeap.js";
+
+            const mergeKLists = function (lists) {
+              if (lists.length === 0) return null;
               let dummy = new ListNode();
-              let node = dummy;
-              while (heap.size() > 0) {
-                node.next = new ListNode(heap.extract());
-                node = node.next;
+              let curr = dummy;
+              let minHeap = new MinHeap();
+              for (let i = 0; i < lists.length; i++) {
+                if (lists[i]) minHeap.insert(lists[i]);
+              }
+              while (minHeap.size() > 0) {
+                let node = minHeap.remove();
+                curr.next = node;
+                curr = curr.next;
+                if (node.next) minHeap.insert(node.next);
               }
               return dummy.next;
             };
-            class MinHeap {
-              constructor() {
-                this.heap = [];
-              }
-              size() {
-                return this.heap.length;
-              }
-              insert(val) {
-                this.heap.push(val);
-                this.bubbleUp();
-              }
-              bubbleUp() {
-                let idx = this.heap.length - 1;
-                while (idx > 0) {
-                  let parentIdx = Math.floor((idx - 1) / 2);
-                  if (this.heap[parentIdx] > this.heap[idx]) {
-                    [this.heap[parentIdx], this.heap[idx]] = [
-                      this.heap[idx],
-                      this.heap[parentIdx],
-                    ];
-                    idx = parentIdx;
-                  } else {
-                    break;
-                  }
-                }
-              }
-              extract() {
-                let min = this.heap[0];
-                let end = this.heap.pop();
-                if (this.heap.length > 0) {
-                  this.heap[0] = end;
-                  this.sinkDown();
-                }
-                return min;
-              }
-              sinkDown() {
-                let idx = 0;
-                let length = this.heap.length;
-                let element = this.heap[0];
-                while (true) {
-                  let leftChildIdx = 2 * idx + 1;
-                  let rightChildIdx = 2 * idx + 2;
-                  let leftChild, rightChild;
-                  let swap = null;
-                  if (leftChildIdx < length) {
-                    leftChild = this.heap[leftChildIdx];
-                    if (leftChild < element) {
-                      swap = leftChildIdx;
-                    }
-                  }
-                    if (rightChildIdx < length) {
-                        rightChild = this.heap[rightChildIdx];
-                        if (
-                        (swap === null && rightChild < element) ||
-                        (swap !== null && rightChild < leftChild)     ) {
-                        swap = rightChildIdx;
-                        }
-                    }
-                    if (swap === null) break;
-                    this.heap[idx] = this.heap[swap];
-                    this.heap[swap] = element;
-                    idx = swap;
-                }
-                }
-            }
 
 ## [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) #347
 
@@ -2939,18 +2815,18 @@
  [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) \
  [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/) \
  [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/) \
-# 12. Top 'K' Elements Pattern:
+# 12. K TOP Elements Pattern:
 [Kth Smallest Number](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
 [Kth Largest Number](https://leetcode.com/problems/kth-largest-element-in-an-array/) \
 [Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
-[Top 'K' Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
+[K TOP Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
 [K Closest Points to the Origin](https://leetcode.com/problems/k-closest-points-to-origin/) \
 [Kth Smallest Number](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
 [Kth Largest Number](https://leetcode.com/problems/kth-largest-element-in-an-array/) \
 [Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
-[Top 'K' Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
+[K TOP Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
  [K Closest Points to the Origin](https://leetcode.com/problems/k-closest-points-to-origin/) \
-## 13. K-way Merge Pattern:
+## 13. K MERGE Pattern:
 [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) \
 [Kth Smallest Number in M Sorted Lists](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) \
 [Kth Smallest Number in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \

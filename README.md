@@ -223,18 +223,17 @@
             return -1;
 
 
- ## 12. Top 'K' Elements Pattern 🔝->
+ ## 12. K TOP Pattern 👑->
     ❓ TOP K #s OR FREQUENCY OF TOP K #s
     🐣 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
-    // is top 'K' numbers a greedy problem? No, it is a heap problem.
-        
-        🎭 PsuendoCode Top 'K' Elements in Javascript:
-            ⏰: O(n) 🪐: O(n)
-            const Heap = require('collections/heap'); //http://www.collectionsjs.com
 
-            function find_k_largest_numbers(nums, k) {
-                const minHeap = new Heap([], null, ((a, b) => b - a));
-             
+        🎭 PsuendoCode K TOP in Javascript:
+            ⏰: O(n) 🪐: O(n)
+
+            import MinHeap from './DataStructures/Heap/MinHeap.js';
+
+            function findLargestKNum(nums, k) {
+                const minHeap = new MinHeap();
                 for (i = 0; i < k; i++) {
                     minHeap.push(nums[i]);
                 }
@@ -247,46 +246,39 @@
 
                 return minHeap.toArray();
             }
-            /*    put first 'K' numbers in the min heap go through the remaining numbers of the array, if the number from the array is bigger than the
-              top(smallest) number of the min-heap, remove the top number from heap and add the number from array  the heap has the top 'K' numbers, return them in a list*/
-
+           
 ![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
-## 13. K-way Merge Pattern 🔝🚗🚙 ->
+## 13. K MERGE Pattern 🆗🚕🚓->
 
     ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
     🐣 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.
-        🔝
-        🎭 PsuendoCode K-way Merge Pattern in Javascript:
+      IDENTIFY: 
+         INPUT: Multiple sorted arrays/lists
+        👑
+        🎭 PsuendoCodeK MERGE Pattern in Javascript:
             ⏰: O(nlogk) 🪐: O(n)
 
-            import { ListNode } from "/DataStructures/LinkedList/ListNode.js";
+            import ListNode from "DataStructures/LinkedList/ListNode.js";
+            import MinHeap from "DataStructures/Heaps/MinHeap.js";
 
-            const Merge = (a,b) => {
-              let dummy = new ListNode(0), curr = dummy;
-
-              while (a && b) {
-                  if (a.val < b.val) {   curr.next = a; a = a.next; } 
-                  else               {   curr.next = b; b = b.next; }
-                curr = curr.next;
+            const mergeKLists = function (lists) {
+              if (lists.length === 0) return null;
+              let dummy = new ListNode();
+              let curr = dummy;
+              let minHeap = new MinHeap();
+              for (let i = 0; i < lists.length; i++) {
+                if (lists[i]) minHeap.insert(lists[i]);
               }
-              curr.next = a || b;
+              while (minHeap.size() > 0) {
+                let node = minHeap.remove();
+                curr.next = node;
+                curr = curr.next;
+                if (node.next) minHeap.insert(node.next);
+              }
               return dummy.next;
             };
 
-            const MergeKLists = (lists) => {
-              if (lists.length === 0) return null;
 
-              while (lists.length > 1) {
-                let a = lists.shift(), b = lists.shift(), ab = Merge(a, b);
-                lists.push(ab);
-              }
-                return lists[0];
-            };
-
-            // explain 
-            // 1. merge two lists at a time
-            // 2. push the merged list back to the lists
-            // 3. repeat until there is only one list left in the lists
             
 ![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
      
@@ -1496,14 +1488,19 @@
               if (l2) curr.next = l2;
               return dummy.next;
             };
-## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #23 🚗🚙
+  ## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #23
+
+        Pattern Used: K MERGE 
         ❓: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list & return it.
         🐣: 1️⃣ Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] 2️⃣ Input: lists = [] Output: [] 3️⃣ Input: lists = [[]] Output: []
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
-        🐇 Solution: 🚗🚙 Merge Intervals  ⏰: O(nlogn) 🪐: O(1)
-        
-            var mergeKLists = function (lists) {
+        🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
+
+        import ListNode from "DataStructures/LinkedList/ListNode.js";
+        import MinHeap from "DataStructures/Heaps/MinHeap.js";
+
+            const mergeKLists = function (lists) {
               if (lists.length === 0) return null;
               let dummy = new ListNode();
               let curr = dummy;
@@ -1802,13 +1799,13 @@
               }
               return result;
             };
-## [Valid Anagram](https://leetcode.com/problems/valid-anagram/) #242 
+## [Valid Anagram](https://leetcode.com/problems/valid-anagram/) #242  
         ❓: Given two strings s & t , write a function to determine if t is an anagram of s.
         🐣: 1️⃣ Input: s = "anagram", t = "nagaram" Output: true 2️⃣ Input: s = "rat", t = "car" Output: false
 
         🐢 Solution: 🔨 Brute Force ⏰: O(nlogn) 🪐: O(n)
         🐇 Solution:  Hash Table  ⏰: O(n) 🪐: O(n)
-
+ 
             var isAnagram = function (s, t) {
               if (s.length !== t.length) {
                 return false;
@@ -2295,7 +2292,7 @@
 
 ## Heap
 
-## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #213
+## [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) #23
 
         Pattern Used: Heap
         ❓: You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list & return it.
@@ -2304,177 +2301,51 @@
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
 
+
+            import ListNode from "DataStructures/LinkedList/ListNode.js";
+            import MinHeap from "DataStructures/Heaps/MinHeap.js";
+
             var mergeKLists = function (lists) {
-              let heap = new MinHeap();
-              for (let list of lists) {
-                while (list) {
-                  heap.insert(list.val);
-                  list = list.next;
-                }
-              }
+              if (lists.length === 0) return null;
               let dummy = new ListNode();
-              let node = dummy;
-              while (heap.size() > 0) {
-                node.next = new ListNode(heap.extract());
-                node = node.next;
+              let curr = dummy;
+              let minHeap = new MinHeap();
+              for (let i = 0; i < lists.length; i++) {
+                if (lists[i]) minHeap.insert(lists[i]);
+              }
+              while (minHeap.size() > 0) {
+                let node = minHeap.remove();
+                curr.next = node;
+                curr = curr.next;
+                if (node.next) minHeap.insert(node.next);
               }
               return dummy.next;
             };
-            class MinHeap {
-              constructor() {
-                this.heap = [];
-              }
-              size() {
-                return this.heap.length;
-              }
-              insert(val) {
-                this.heap.push(val);
-                this.bubbleUp();
-              }
-              bubbleUp() {
-                let idx = this.heap.length - 1;
-                while (idx > 0) {
-                  let parentIdx = Math.floor((idx - 1) / 2);
-                  if (this.heap[parentIdx] > this.heap[idx]) {
-                    [this.heap[parentIdx], this.heap[idx]] = [
-                      this.heap[idx],
-                      this.heap[parentIdx],
-                    ];
-                    idx = parentIdx;
-                  } else {
-                    break;
-                  }
-                }
-              }
-              extract() {
-                let min = this.heap[0];
-                let end = this.heap.pop();
-                if (this.heap.length > 0) {
-                  this.heap[0] = end;
-                  this.sinkDown();
-                }
-                return min;
-              }
-              sinkDown() {
-                let idx = 0;
-                let length = this.heap.length;
-                let element = this.heap[0];
-                while (true) {
-                  let leftChildIdx = 2 * idx + 1;
-                  let rightChildIdx = 2 * idx + 2;
-                  let leftChild, rightChild;
-                  let swap = null;
-                  if (leftChildIdx < length) {
-                    leftChild = this.heap[leftChildIdx];
-                    if (leftChild < element) {
-                      swap = leftChildIdx;
-                    }
-                  }
-                    if (rightChildIdx < length) {
-                        rightChild = this.heap[rightChildIdx];
-                        if (
-                        (swap === null && rightChild < element) ||
-                        (swap !== null && rightChild < leftChild)     ) {
-                        swap = rightChildIdx;
-                        }
-                    }
-                    if (swap === null) break;
-                    this.heap[idx] = this.heap[swap];
-                    this.heap[swap] = element;
-                    idx = swap;
-                }
-                }
-            }
 
-## [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) #347
+## [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) #347 👑
 
-        Pattern Used: Heap
+        Pattern Used: K TOP 👑
         ❓: Given an integer array nums & an integer k, return the k most frequent elements. You may return the answer in any order.
         🐣: 1️⃣ Input: nums = [1,1,1,2,2,3], k = 2 Output: [1,2] 2️⃣ Input: nums = [1], k = 1 Output: [1]
 
         🐢 Solution: 🔨 Brute Force ⏰: O(n) 🪐: O(n)
         🐇 Solution: Heap ⏰: O(n) 🪐: O(n)
 
-            var topKFrequent = function (nums, k) {
-            let map = new Map();
-            for (let num of nums) {
-                map.set(num, map.get(num) + 1 || 1);
-            }
-            let heap = new MaxHeap();
-            for (let [key, value] of map) {
-                heap.insert([key, value]);
-                if (heap.size() > k) heap.extract();
-            }
-            let result = [];
-            while (heap.size() > 0) {
-                result.push(heap.extract()[0]);
-            }
-            return result;
-            };
-            class MaxHeap {
-            constructor() {
-                this.heap = [];
-            }
-            size() {
-                return this.heap.length;
-            }
-            insert(val) {
-                this.heap.push(val);
-                this.bubbleUp();
-            }
-            bubbleUp() {
-                let idx = this.heap.length - 1;
-                while (idx > 0) {
-                let parentIdx = Math.floor((idx - 1) / 2);
-                if (this.heap[parentIdx][1] < this.heap[idx][1]) {
-                    [this.heap[parentIdx], this.heap[idx]] = [
-                    this.heap[idx],
-                    this.heap[parentIdx],
-                    ];
-                    idx = parentIdx;
-                } else {
-                    break;
+            import MinHeap from './DataStructures/Heap/MinHeap.js';
+
+            function findLargestKNum(nums, k) {
+                const minHeap = new MinHeap();
+                for (i = 0; i < k; i++) {
+                    minHeap.push(nums[i]);
                 }
-                }
-            }
-            extract() {
-                let max = this.heap[0];
-                let end = this.heap.pop();
-                if (this.heap.length > 0) {
-                this.heap[0] = end;
-                this.sinkDown();
-                }
-                return max;
-            }
-            sinkDown() {
-                let idx = 0;
-                let length = this.heap.length;
-                let element = this.heap[0];
-                while (true) {
-                let leftChildIdx = 2 * idx + 1;
-                let rightChildIdx = 2 * idx + 2;
-                let leftChild, rightChild;
-                let swap = null;
-                if (leftChildIdx < length) {
-                    leftChild = this.heap[leftChildIdx];
-                    if (leftChild[1] > element[1]) {
-                    swap = leftChildIdx;
+                for (i = k; i < nums.length; i++) {
+                    if (nums[i] > minHeap.peek()) {
+                        minHeap.pop();
+                        minHeap.push(nums[i]);
                     }
                 }
-                if (rightChildIdx < length) {
-                    rightChild = this.heap[rightChildIdx];
-                    if (
-                    (swap === null && rightChild[1] > element[1]) ||
-                    (swap !== null && rightChild[1] > leftChild[1]) ) {
-                    swap = rightChildIdx;
-                    }
-                }
-                if (swap === null) break;
-                this.heap[idx] = this.heap[swap];
-                this.heap[swap] = element;
-                idx = swap;
-                }
-            }
+
+                return minHeap.toArray();
             }
 
 ## [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) #295
@@ -2683,33 +2554,6 @@
         1921. Eliminate Maximum Number of Monsters
 
 
-## Types of Data Structures
-
-    1. Array
-    2. Linked List
-    3. Stack
-    4. Queue
-    5. Hash Table
-    6. Binary Tree
-    7. 🏁🔚  Modified Binary Search Tree
-    8. Heap
-    9. 📘 Trie
-    10. Graph
-    11. Matrix
-    12. Set
-    13. Map
-    14. String
-    15. Bitwise
-    16. Segment Tree
-    17. Fenwick Tree
-    18. DisjoSet
-    19. Suffix Array
-    20. Suffix Tree
-    21. Sparse Table
-    22. Sparse Matrix
-    23. Bloom Filter
-    24. LRU Cache
-
 
 ## FLOW CHART❓
 
@@ -2890,7 +2734,7 @@
  [Search in a Sorted Infinite Array](https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/) \
  [Minimum Difference Element](https://leetcode.com/problems/find-k-closest-elements/) \
  [Bitonic Array Maximum](https://leetcode.com/problems/find-peak-element/) \
-# 12. Top 'K' Elements Pattern:
+# 12. K TOP Pattern:
 [Kth Smallest Number](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
 [Kth Largest Number](https://leetcode.com/problems/kth-largest-element-in-an-array/) \
 [Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
@@ -2901,7 +2745,7 @@
 [Connect Ropes](https://leetcode.com/problems/minimum-cost-to-connect-sticks/) \
 [Top 'K' Frequent Numbers](https://leetcode.com/problems/top-k-frequent-elements/) \
  [K Closest Points to the Origin](https://leetcode.com/problems/k-closest-points-to-origin/) \
-## 13. K-way Merge Pattern:
+## 13.K MERGE Pattern:
 [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) \
 [Kth Smallest Number in M Sorted Lists](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/) \
 [Kth Smallest Number in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/) \
@@ -2936,191 +2780,6 @@
 
 
         
-## Sorting Algorithms: 
-        1. Bubble Sort
-            ❓: Array == AlmostSorted && Array < Small Size
-            ⏰: O(n^2) 🪐 O(1)
-            🎭 PsuendoCode:
-                for i = 0 to n-1
-                    for j = 0 to n-1
-                        if arr[j] > arr[j+1]
-                            swap(arr[j], arr[j+1])
-        2. Selection Sort
-            ❓: Array != Sorted && Array < Small Size
-            ⏰: O(n^2) 🪐: O(1)
-            🎭 PsuendoCode:
-                for i = 0 to n-1
-                    min = i
-                    for j = i+1 to n-1
-                        if arr[j] < arr[min]
-                            min = j
-                    swap(arr[i], arr[min])
-        3. Insertion Sort
-            ❓: Array  == AlmostSorted && Array < Small Size
-            ⏰: O(n^2) 🪐: O(1)
-            🎭 PsuendoCode:
-                for i = 1 to n-1
-                    key = arr[i]
-                    j = i-1
-                    while j >= 0 && arr[j] > key
-                        arr[j+1] = arr[j]
-                        j = j-1
-                    arr[j+1] = key
-        4. Merge Sort
-            ❓: Array != Sorted && Array < Small Size
-            ⏰: O(nlogn) 🪐: O(n)
-            🎭 PsuendoCode:
-                mergeSort(arr, l, r)
-                    if l < r
-                        m = l + (r-l)/2
-                        mergeSort(arr, l, m)
-                        mergeSort(arr, m+1, r)
-                        merge(arr, l, m, r)
-                merge(arr, l, m, r)
-                    n1 = m-l+1
-                    n2 = r-m
-                    L[] = new array of size n1
-                    R[] = new array of size n2
-                    for i = 0 to n1-1
-                        L[i] = arr[l+i]
-                    for j = 0 to n2-1
-                        R[j] = arr[m+1+j]
-                    i = 0
-                    j = 0
-                    k = l
-                    while i < n1 && j < n2
-                        if L[i] <= R[j]
-                            arr[k] = L[i]
-                            i++
-                        else
-                            arr[k] = R[j]
-                            j++
-                        k++
-                    while i < n1
-                        arr[k] = L[i]
-                        i++
-                        k++
-                    while j < n2
-                        arr[k] = R[j]
-                        j++
-                        k++
-        5. Quick Sort
-              ❓: Array != Sorted && Array > LargeSize
-              ⏰: O(nlogn) 🪐: O(logn)
-              🎭 PsuendoCode:
-                  quickSort(arr, low, high)
-                      if low < high
-                          pi = partition(arr, low, high)
-                          quickSort(arr, low, pi-1)
-                          quickSort(arr, pi+1, high)
-                  partition(arr, low, high)
-                      pivot = arr[high]
-                      i = low-1
-                      for j = low to high-1
-                          if arr[j] < pivot
-                              i++
-                              swap(arr[i], arr[j])
-                      swap(arr[i+1], arr[high])
-                      return i+1
-        6. Heap Sort
-                ❓: Array != Sorted && Array > LargeSize
-                ⏰: O(nlogn) 🪐: O(1)
-                🎭 PsuendoCode:
-                    heapSort(arr, n)
-                        for i = n/2-1 to 0
-                            heapify(arr, n, i)
-                        for i = n-1 to 0
-                            swap(arr[0], arr[i])
-                            heapify(arr, i, 0)
-                    heapify(arr, n, i)
-                        largest = i
-                        l = 2*i+1
-                        r = 2*i+2
-                        if l < n && arr[l] > arr[largest]
-                            largest = l
-                        if r < n && arr[r] > arr[largest]
-                            largest = r
-                        if largest != i
-                            swap(arr[i], arr[largest])
-                            heapify(arr, n, largest)
-        7. Counting Sort
-              ❓:Array == Integers && Array < Small Size
-              ⏰: O(n+k) 🪐: O(k)
-              🎭 PsuendoCode:
-                  countingSort(arr, n)
-                      max = getMax(arr, n)
-                      count[] = new array of size max+1
-                      output[] = new array of size n
-                      for i = 0 to max
-                          count[i] = 0
-                      for i = 0 to n-1
-                          count[arr[i]]++
-                      for i = 1 to max
-                          count[i] += count[i-1]
-                      for i = n-1 to 0
-                          output[count[arr[i]]-1] = arr[i]
-                          count[arr[i]]--
-                      for i = 0 to n-1
-                          arr[i] = output[i]
-                  getMax(arr, n)
-                      max = arr[0]
-                      for i = 1 to n-1
-                          if arr[i] > max
-                              max = arr[i]
-                      return max
-        8. Radix Sort
-            ❓:Array == Integers && Array < Small Size
-            ⏰: O(nk) 🪐: O(n+k)
-            🎭 PsuendoCode:
-                radixSort(arr, n)
-                    m = getMax(arr, n)
-                    for exp = 1 to m
-                        countSort(arr, n, exp)
-                countSort(arr, n, exp)
-                    output[] = new array of size n
-                    count[] = new array of size 10
-                    for i = 0 to 9
-                        count[i] = 0
-                    for i = 0 to n-1
-                        count[(arr[i]/exp)%10]++
-                    for i = 1 to 9
-                        count[i] += count[i-1]
-                    for i = n-1 to 0
-                        output[count[(arr[i]/exp)%10]-1] = arr[i]
-                        count[(arr[i]/exp)%10]--
-                    for i = 0 to n-1
-                        arr[i] = output[i]
-                getMax(arr, n)
-                    max = arr[0]
-                    for i = 1 to n-1
-                        if arr[i] > max
-                            max = arr[i]
-                    return max
-        9. Bucket Sort
-              ❓:Array == Integers && Array < Small Size
-              ⏰: O(n+k) 🪐: O(n+k)
-              🎭 PsuendoCode:
-                  bucketSort(arr, n)
-                      buckets[] = new array of size n
-                      for i = 0 to n-1
-                          buckets[i] = new array of size 0
-                      for i = 0 to n-1
-                          index = arr[i]*n
-                          buckets[index].add(arr[i])
-                      for i = 0 to n-1
-                          insertionSort(buckets[i])
-                      index = 0
-                      for i = 0 to n-1
-                          for j = 0 to buckets[i].size()
-                              arr[index++] = buckets[i].get(j)
-                  insertionSort(arr, n)
-                      for i = 1 to n-1
-                          key = arr[i]
-                          j = i-1
-                          while j >= 0 && arr[j] > key
-                              arr[j+1] = arr[j]
-                              j = j-1
-                          arr[j+1] = key
 
  biTreemulator Public
 Application to run and visualize binary trees sorting algorithms using recursion iteration ray marching animations 
