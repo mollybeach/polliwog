@@ -183,7 +183,6 @@ while (right < s.length()) {
             />
         </td>
     </tr>
-
 </table>
 
 <table>
@@ -232,9 +231,8 @@ while (fast < s.length()) {
 </details>
 </details>
   <details>
-    <summary>🪟  <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1> </th> </summary>
+    <summary>  <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1>  </summary>
     <br>
-   
 <table>
     <tr>
         <td>
