@@ -425,13 +425,12 @@ while (i < nums.length) {
   </tr>
 </table>
 </details>
-
+<details>
+<summary> <h1 align="center">
+     📦📦 Two Heaps Pattern 📦📦
+    </h1>  </summary>
+    <br>
 <table>
-  <tr>
-    <th> <h1 align="center">
-      📦📦 Two Heaps Pattern 📦📦
-    </h1> </th>
-  </tr>
   <tr>
     <td>
       <h3>❓ MEDIAN OF # STREAM FIND K SMALLEST #</h3>
@@ -465,6 +464,7 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png"> </td>
   </tr>
 </table>
+</details>
 
 
 <table> 
