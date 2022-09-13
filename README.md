@@ -384,75 +384,123 @@ while (i < nums.length) {
   </tr>
 </table>
 
-## 10. 🐛 Subsets Pattern 🐛 ->
-    ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #PERMUTATIONS AND COMBINATIONS OF SUBSETS
-    🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
-        Given a set of [1, 5, 3]
-        Start with an empty set: [[]]
-          Insert 1st # to all existing subsets to create new subsets: [[], [1]];
-          Insert 2nd # to all existing subsets: [[], [1], [5], [1,5]];
-          Insert 3rd # to all existing subsets: [[], [1], [5], [1,5], [3], [1,3], [5,3], [1,5,3]].
 
-        🎭 PsuendoCode Subsets Pattern 🐛
-            ⏰: O(n) 🪐: O(n)
-              let subsets = [[]];
-              for (let i = 0; i < nums.length; i++) {
-                  let n = subsets.length;
-                  for (let j = 0; j < n; j++) {
-                      let set = subsets[j].slice(0);
-                      set.push(nums[i]);
-                      subsets.push(set);
-                  }
-              }
-![alt text](https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg);
-## 11.🏁🔚  Modified Binary Search Pattern 🏁🔚 ->
-    ❓  MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY
-    🐣 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.
+<table> 
+  <tr>
+    <th> <h1 align="center">
+      🐛 Subsets Pattern 🐛
+    </h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #PERMUTATIONS AND COMBINATIONS OF SUBSETS</h3>
+    </td>
+    <td>
+    <h3>🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode Subsets Pattern 🐛</h3>
+<pre>
+<code>
+  let subsets = [[]];
+  for (let i = 0; i < nums.length; i++) {
+      let n = subsets.length;
+      for (let j = 0; j < n; j++) {
+          let set = subsets[j].slice(0);
+          set.push(nums[i]);
+          subsets.push(set);
+      }
+  }
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
+  </tr>
+</table>
 
-        🎭 PsuendoCode 🏁🔚  Modified Binary Search Pattern 🏁🔚
-          ⏰: O(logn) 🪐: O(1)
+<table>
+  <tr>
+    <th> <h1 align="center">
+      🏁🔚  Modified Binary Search Pattern 🏁🔚
+    </h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY</h3>
+    </td>
+    <td>
+    <h3>🐣 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode 🏁🔚  Modified Binary Search Pattern 🏁🔚</h3>
+<pre>
+<code>
+  start = 0, end = arr.length - 1;
+  while (start <= end) {
+      // calculate the middle of the current range
+      mid = start + (end - star
+      if (key < arr[mid]) {
+          end = mid - 1; // the 'key' can be in the first half
+      } else if (key > arr[mid]) {
+          start = mid + 1; // the 'key' can be in the second half
+      } else { // found the key
+          return mid;
+      }
+  }
+  // element is not found
+  return -1;
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
+  </tr>
 
-            start = 0, end = arr.length - 1;
-            while (start <= end) {
-                // calculate the middle of the current range
-                mid = start + (end - star
-                if (key < arr[mid]) {
-                    end = mid - 1; // the 'key' can be in the first half
-                } else if (key > arr[mid]) {
-                    start = mid + 1; // the 'key' can be in the second half
-                } else { // found the key
-                    return mid;
-                }
-            }
-            // element is not found
-            return -1;
 
+<table>
+  <tr>
+    <th> <h1 align="center">
+      👑 K TOP Pattern 👑
+    </h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ TOP K #s OR FREQUENCY OF TOP K #s</h3>
+    </td>
+    <td>
+    <h3>🐣 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode K TOP in Javascript:</h3>
+<pre>
+<code>
+  import MinHeap from './DataStructures/Heap/MinHeap.js';
 
- ## 12.👑 K TOP Pattern 👑->
-    ❓ TOP K #s OR FREQUENCY OF TOP K #s
-    🐣 Top 'K' Numbers, Kth Largest Number in a Stream, K Closest Points to the Origin, etc.
+  function findLargestKNum(nums, k) {
+      const minHeap = new MinHeap();
+      for (i = 0; i < k; i++) {
+          minHeap.push(nums[i]);
+      }
+      for (i = k; i < nums.length; i++) {
+          if (nums[i] > minHeap.peek()) {
+              minHeap.pop();
+              minHeap.push(nums[i]);
+          }
+      }
 
-        🎭 PsuendoCode K TOP in Javascript:
-            ⏰: O(n) 🪐: O(n)
-
-            import MinHeap from './DataStructures/Heap/MinHeap.js';
-
-            function findLargestKNum(nums, k) {
-                const minHeap = new MinHeap();
-                for (i = 0; i < k; i++) {
-                    minHeap.push(nums[i]);
-                }
-                for (i = k; i < nums.length; i++) {
-                    if (nums[i] > minHeap.peek()) {
-                        minHeap.pop();
-                        minHeap.push(nums[i]);
-                    }
-                }
-
-                return minHeap.toArray();
-            }
-           
-![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
+      return minHeap.toArray();
+  }
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
+  </tr>
+</table>
 ## 13 🆗🚕🚓 K MERGE Pattern 🆗🚕🚓->
 
     ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
@@ -484,6 +532,7 @@ while (i < nums.length) {
             };
 
 ![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
+
 ## 14.  📅  Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
     🐣 Tasks Scheduling, Tasks Scheduling Order, All Tasks Scheduling Orders, etc.
