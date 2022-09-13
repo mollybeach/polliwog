@@ -9,14 +9,14 @@
    
 
   <table>
-    <th>🪟 Sliding Window Pattern 🪟</th>
+    <th> <h1>🪟 Sliding Window Pattern 🪟 </h1> </th>
     <tr>
         <td>
             ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
         </td>
            <td colspan="2">
                🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersString Anagrams, No-repeat Substring, etc.
-        </td>
+            </td>
         <td>⏰: O(n) 🪐: O(n)</td>
     </tr>
     <tr>
