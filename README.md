@@ -11,7 +11,6 @@
                🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersString Anagrams, No-repeat Substring, etc.
             </td>
     </tr>
-
     <tr>
         <td>
 <pre class="notranslate">
@@ -46,7 +45,7 @@ function findAvgSubArrays(K, arr) {
         <th> <h1>👯 Two Pointers  👯 </h1> </th>
         <td>
            <h3> ❓ FIND A PAIR, TRIPLET or a SUBARRAY <h3>
-            <h3>colspan="3">⏰: O(n) 🪐: O(n)</h3>
+            <h3>⏰: O(n) 🪐: O(n)</h3>
         </td>
             <td colspan="2">
                 🐣 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
