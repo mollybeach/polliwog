@@ -496,7 +496,7 @@ function merge(intervals) {
       </tr>
     </table>
     <table>
-      <th> <h1 align="center">🔄 In-place Reversal of a LinkedList Pattern 🔄</h1> </th>
+      <th> <h1 align="center">🔄 In-place Reversal of a LinkedList 🔄</h1> </th>
       </tr>
       <tr>
         <td>
@@ -527,7 +527,56 @@ function merge(intervals) {
         </td>
          <td colspan="3"> <img src="https://cdn.emre.me/2019-11-04-in-place-reversal.gif"> </td>
       </tr>
-    </table>
+</table>
+
+<table style="width:100%">
+  <tr>
+    <th> <h1 align="center">7. Tree Breadth First Search Pattern</h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ FIND THE MAXIMUM VALUE IN A TREE</h3>
+      <h3>🐣 Maximum Value in a Binary Tree, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, Zigzag Traversal, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode</h3>
+<pre>
+<code>
+  function traverse(root) {
+    result = [];
+    if (root === null) {
+      return result;
+    }
+
+    queue = new Deque();
+    queue.push(root);
+    while (queue.length > 0) {
+      levelSize = queue.length;
+      currentLevel = [];
+      for (i = 0; i < levelSize; i++) {
+        currentNode = queue.shift();
+        // add the node to the current level
+        currentLevel.push(currentNode.val);
+        // insert the children of current node to the queue
+        if (currentNode.left !== null) {
+          queue.push(currentNode.left);
+        }
+        if (currentNode.right !== null) {
+          queue.push(currentNode.right);
+        }
+      }
+      result.push(currentLevel);
+    }
+
+    return result;
+  }
+</code>
+</pre>
+    </td>
+  </tr>
+</table>
 
 
  
