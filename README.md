@@ -283,9 +283,10 @@ function merge(intervals) {
     </tr>
 </table>
 </details>
-
+<details>
+<summary>  <h1><align="center"> 🌀 Cyclic Sort Pattern 🌀 </h1>   </summary>
+    <br>
  <table>
-      <th> <h1 align="center"> 🌀 Cyclic Sort Pattern 🌀 </h1> </th>
     <tr>
         <td>
                    <h3> ❓ FIND MISSING # OR  SORT #s IN PLACE  </h3>
@@ -316,6 +317,7 @@ while (i < nums.length) {
         </td>
     </tr>
 </table>
+</details>
 
 
  <table>
