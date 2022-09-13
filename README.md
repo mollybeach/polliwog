@@ -141,8 +141,16 @@ function findAvgSubArrays(K, arr) {
             };
 </details>
 </details>
+  <details>
+    <summary>  <h1>👯 Two Pointers Problems  👯 </h1> </summary>
+    <br>
+
+
+
+
 <table>
     <tr>
+
         <td>
            <h3> ❓ FIND A PAIR, TRIPLET or a SUBARRAY <h3>
             <h3>⏰: O(n) 🪐: O(n)</h3>
