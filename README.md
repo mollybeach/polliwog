@@ -1,15 +1,11 @@
 # 
 ## 14 Patterns Algorithims
 
-<details>
-<summary>🪟 Sliding Window Pattern 🪟 </summary>
-<br>
-
-
-
+  <details>
+    <summary>  <h1>🪟 Sliding Window Pattern 🪟 </h1> </summary>
+    <br>
   <table>
     <tr>
-     <th> <h1>🪟 Sliding Window Pattern 🪟 </h1> </th>
         <td>
             <h3>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER <h3>
             <h3>⏰: O(n) 🪐: O(n) </h3>
@@ -226,7 +222,7 @@ while (fast < s.length()) {
     </tr>
 </table>
 <details>
-<summary>👯 Two Pointers Problems  👯 </summary>
+<summary>👯 Two Pointers Problems  👯  </summary>
 <br>
 </details>
 </details>
@@ -629,7 +625,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-     Topological Sort Pattern 📅 
+     📅 Topological Sort Pattern 📅 
     </h1>  </summary>
     <br>
 <table> 
