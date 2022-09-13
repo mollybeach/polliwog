@@ -64,13 +64,13 @@ function findAvgSubArrays(K, arr) {
 
 <table>
     <tr>
-        <th> <h1>🪟 Sliding Window Pattern 🪟 </h1> </th>
+        <th> <h1>👯 Two Pointers  👯 </h1> </th>
         <td>
-            ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
+            ❓ FIND A PAIR, TRIPLET or a SUBARRAY
         </td>
-           <td colspan="2">
-               🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersString Anagrams, No-repeat Substring, etc.
-            </td>
+            <td colspan="2">
+                🐣 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
+              </td>
     </tr>
         <tr>
          <td  colspan="3">⏰: O(n) 🪐: O(n)</td>
@@ -79,31 +79,29 @@ function findAvgSubArrays(K, arr) {
         <td>
 <pre class="notranslate">
 <code>
-function findAvgSubArrays(K, arr) {
-  const result = [];
-  let windowSum = 0, windowStart = 0;
-  for (let winEnd = 0; winEnd < arr.length; winEnd++) {
-    windowSum += arr[winEnd];   
-    if (winEnd >= K - 1) {
-      result.push(windowSum / K);             
-      windowSum -= arr[windowStart];
-      windowStart += 1;                     
+left = 0;
+right = 0;
+while (right < s.length()) {
+    // add s[right] to window
+    right++;
+    while (window needs shrink) {
+        // remove s[left] from window
+        left++;
     }
-  }
-  return result;
 }
 </code>
 </pre>
         </td>
          <td colspan="3">
             <img
-                src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg"
-                alt="Sliding Window Pattern"
+                src="https://cdn.emre.me/2019-10-21-two-pointers.png"
+                alt="Two Pointers"
             />
         </td>
     </tr>
 
 </table>
+
 ## 3. 🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 ->
     ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
     🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
