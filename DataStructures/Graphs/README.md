@@ -193,13 +193,16 @@ input {
   opacity: 0;
   display: block;
 }
+// inner css
+
+
 
 <h2>Method 3 - using display:table and height for animation</h2>
 <div class="ex3">
   <label for="item-3">Toggle Div</label>
   <input type="checkbox" name="one" id="item-3">
-  <div class="hide3">
-    <div class="inner3">
+  <div class="hide3" style=" width: 50%; display: table; height: 150px; overflow: hidden; background: red;transition: all 0.5s ease; border-left: 1px solid #000;  border-right: 1px solid #000">
+    <div class="inner3" style="padding 10px">
       <p>Equation billions upon billions! Courage of our questions decipherment, take root and flourish, cosmic ocean paroxysm of global death. Light years inconspicuous motes of rock and gas from which we spring something incredible is waiting to be known,
         muse about!</p>
       <p>Equation billions upon billions! Courage of our questions decipherment, take root and flourish, cosmic ocean paroxysm of global death. Light years inconspicuous motes of rock and gas from which we spring something incredible is waiting to be known,
