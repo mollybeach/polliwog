@@ -4,68 +4,45 @@
 // write a table 
 
 
- <table>
-  <th> 14 Patterns Algorithims </th>
-  <tr>
-    <table>
-    <th> 🪟 Sliding Window Pattern 🪟 </th>
-    <tr>
-    <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td> 
-        <td>⏰: O(n) 🪐: O(n)</td>
-    <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-    </tr>
-          <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-      <td> 🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-    </table>
 
 
- <table>
-  <th> 14 Patterns Algorithims </th>
-  <tr>
-    <table>
-    <th> 🪟 Sliding Window Pattern 🪟 </th>
-    <tr>
-    <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td> 
-        <td>⏰: O(n) 🪐: O(n)</td>
-    <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-    </table>
-
-      <table>
-    <th> 🪟 Sliding Window Pattern 🪟 </th>
-          <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-      <td> 🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
-      </table>
-     </tr>
-</table>
    
 
-   <table>
-    <th> 🪟 Sliding Window Pattern 🪟 </th>
+  <table>
+    <th>🪟 Sliding Window Pattern 🪟</th>
     <tr>
-        <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td>
+        <td>
+            ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
+        </td>
         <td>⏰: O(n) 🪐: O(n)</td>
         <td>&nbsp;</td>
     </tr>
     <tr>
         <td colspan="2">
-          <img src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg" alt="Sliding Window Pattern" />
+            <img
+                src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg"
+                alt="Sliding Window Pattern"
+            />
         </td>
-        <td><pre class="notranslate">
-<code>
-function find_averages_of_subarrays(K, arr) {
-    const result = [];
-    let windowSum = 0, windowStart = 0;
-    for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-      windowSum += arr[windowEnd];               // add the next element
-      if (windowEnd >= K - 1) {
-        result.push(windowSum / K);              // calculate the average
-        windowSum -= arr[windowStart];
-        windowStart += 1;                       // slide the window ahead
-      }
-    }
-    return result;
-  }
-  </pre></td>
+        <td>
+            <pre class="notranslate">
+              <code>
+              function find_averages_of_subarrays(K, arr) {
+                const result = [];
+                let windowSum = 0, windowStart = 0;
+                for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
+                  windowSum += arr[windowEnd];               // add the next element
+                  if (windowEnd >= K - 1) {
+                    result.push(windowSum / K);              // calculate the average
+                    windowSum -= arr[windowStart];
+                    windowStart += 1;                       // slide the window ahead
+                  }
+                }
+                return result;
+              }
+              </code>
+            </pre>
+        </td>
     </tr>
     <tr>
         <td colspan="3">&nbsp;</td>
@@ -73,20 +50,7 @@ function find_averages_of_subarrays(K, arr) {
 </table>
 
 
-<table>
-    <tr>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td colspan="2">&nbsp;</td>
-        <td>&nbsp;</td>
-    </tr>
-    <tr>
-        <td colspan="3">&nbsp;</td>
-    </tr>
-</table>
+
    
 
  
