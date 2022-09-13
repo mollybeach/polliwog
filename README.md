@@ -255,7 +255,9 @@ while (i < nums.length) {
        <h3>⏰: O(n) 🪐: O(n)</h3>
     </td>
     <td>
-    <h3>🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?</h3>
+    <h3>🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, <br/> 
+    Minimum Depth of a Binary Tree, Level Order Successor, <br/>
+    Connect Level Order Siblings, etc. Tree Breadth First Search?</h3>
     </td>
   </tr>
   <tr>
