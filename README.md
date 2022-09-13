@@ -31,12 +31,12 @@
 function find_averages_of_subarrays(K, arr) {
   const result = [];
   let windowSum = 0, windowStart = 0;
-  for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-    windowSum += arr[windowEnd];               // add the next element
-    if (windowEnd >= K - 1) {
-      result.push(windowSum / K);              // calculate the average
+  for (let winEnd = 0; winEnd < arr.length; winEnd++) {
+    windowSum += arr[winEnd];   
+    if (winEnd >= K - 1) {
+      result.push(windowSum / K);             
       windowSum -= arr[windowStart];
-      windowStart += 1;                       // slide the window ahead
+      windowStart += 1;                     
     }
   }
   return result;
