@@ -175,21 +175,6 @@ function merge(intervals) {
     </tr>
 </table>
 
- ## 5. 🌀 Cyclic Sort Pattern 🌀 ->
-    ❓ FIND MISSING # OR  SORT #s IN PLACE 
-    🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
-        
-         🎭 PsuendoCode 🌀 Cyclic Sort Pattern 🌀
-            ⏰: O(n) 🪐: O(1)
-                        i = 0;
-                        while (i < nums.length) {
-                            j = nums[i] - 1;
-                            if (nums[i] != nums[j])
-                                swap(nums, i, j); // put the number in its correct place
-                            else
-                                i++;
-                        }
-![alt text](https://cdn.emre.me/2019-10-28-missing-number-example.png);
 
  <table>
       <th> <h1 align="center"> 🌀 Cyclic Sort Pattern 🌀 </h1> </th>
