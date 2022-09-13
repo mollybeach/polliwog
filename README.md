@@ -30,8 +30,11 @@
     <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
     </table>
   </tr>
+      <table>
+    <th> 🪟 Sliding Window Pattern 🪟 </th>
           <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
       <td> 🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
+      </table>
 </table>
    
    
