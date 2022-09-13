@@ -144,6 +144,7 @@ function findAvgSubArrays(K, arr) {
               return result;
             };
 </details>
+</details>
 <table>
     <tr>
         <th> <h1>👯 Two Pointers  👯 </h1> </th>
