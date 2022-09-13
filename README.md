@@ -246,7 +246,6 @@ while (i < nums.length) {
 
 
 
-![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
 
 <table style="width:100%">
   <tr>
