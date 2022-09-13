@@ -5,19 +5,19 @@
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
        String Anagrams, No-repeat Substring, etc.
-       
+
           🎭 PsuendoCode 🪟 Sliding Window Pattern 🪟
               ⏰: O(n) 🪐: O(n)
+
         function find_averages_of_subarrays(K, arr) {
             const result = [];
-            let windowSum = 0,
-              windowStart = 0;
+            let windowSum = 0, windowStart = 0;
             for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
-              windowSum += arr[windowEnd]; // add the next element
+              windowSum += arr[windowEnd];               // add the next element
               if (windowEnd >= K - 1) {
-                result.push(windowSum / K); // calculate the average
+                result.push(windowSum / K);              // calculate the average
                 windowSum -= arr[windowStart];
-                windowStart += 1; // slide the window ahead
+                windowStart += 1;                       // slide the window ahead
               }
             }
             return result;
@@ -259,88 +259,36 @@
         🎭 PsuendoCode K-way Merge Pattern in Javascript:
             ⏰: O(nlogk) 🪐: O(n)
 
-            const Heap = require('collections/heap'); //http://www.collectionsjs.com
+            import { ListNode } from "/DataStructures/LinkedList/ListNode.js";
 
-            class Heap {
-                constructor(array, compare, type) {
-                    this.heap = array;
-                    this.compare = compare;
-                    this.type = type;
-                }
-                peek() {
-                    return this.heap[0];
-                }
-                push(element) {
-                    this.heap.push(element);
-                    this.heapifyUp(this.heap.length - 1);
-                }
-                pop() {
-                    const top = this.heap[0];
-                    const bottom = this.heap.pop();
-                    if (this.heap.length > 0) {
-                        this.heap[0] = bottom;
-                        this.heapifyDown(0);
-                    }
-                    return top;
-                }
-                heapifyUp(index) {
-                    let parent = Math.floor((index - 1) / 2);
-                    while (parent >= 0 && this.compare(this.heap[parent], this.heap[index]) === this.type) {
-                        const temp = this.heap[parent];
-                        this.heap[parent] = this.heap[index];
-                        this.heap[index] = temp;
-                        index = parent;
-                        parent = Math.floor((index - 1) / 2);
-                    }
-                }
-                heapifyDown(index) {
-                    let left = (2 * index) + 1;
-                    let right = (2 * index) + 2;
-                    let smallest = index;
-                    if (left < this.heap.length && this.compare(this.heap[left], this.heap[smallest]) === this.type) {
-                        smallest = left;
-                    }
-                    if (right < this.heap.length && this.compare(this.heap[right], this.heap[smallest]) === this.type) {
-                        smallest = right;
-                    }
-                    if (smallest !== index) {
-                        const temp = this.heap[index];
-                        this.heap[index] = this.heap[smallest];
-                        this.heap[smallest] = temp;
-                        this.heapifyDown
-            }
+            const Merge = (a,b) => {
+              let dummy = new ListNode(0), curr = dummy;
 
-            function merge_lists(lists) {
-                const minHeap = new Heap([], null, ((a, b) => b[0] - a[0]));
-                for (i = 0; i < lists.length; i++) {
-                    if (lists[i] !== null) {
-                        minHeap.push([lists[i].value, i]);
-                        lists[i] = lists[i].next;
-                    }
-                }
-                resultHead = null, resultTail = null;
-                while (minHeap.length > 0) {
-                    node = minHeap.pop();
-                    if (resultHead === null) {
-                        resultHead = resultTail = new ListNode(node[0]);
-                    } else {
-                        resultTail.next = new ListNode(node[0]);
-                        resultTail = resultTail.next;
-                    }
-                 
-                    if (lists[node[1]] !== null) {
-                        minHeap.push([lists[node[1]].value, node[1]]);
-                        lists[node[1]] = lists[node[1]].next;
-                    }
-                }
-                return resultHead;
-            } 
-            /* 
-              put the root of each list in the min heap
-              take the smallest(top) element form the min-heap, if the running list
-              is not empty, add the next element to the heap
-              if the top element has a next element add it to the heap
-            */
+              while (a && b) {
+                  if (a.val < b.val) {   curr.next = a; a = a.next; } 
+                  else               {   curr.next = b; b = b.next; }
+                curr = curr.next;
+              }
+              curr.next = a || b;
+              return dummy.next;
+            };
+
+            const MergeKLists = (lists) => {
+              if (lists.length === 0) return null;
+
+              while (lists.length > 1) {
+                let a = lists.shift(), b = lists.shift(), ab = Merge(a, b);
+                lists.push(ab);
+              }
+                return lists[0];
+            };
+
+            // explain 
+            // 1. merge two lists at a time
+            // 2. push the merged list back to the lists
+            // 3. repeat until there is only one list left in the lists
+            
+![alt text](https://i.ytimg.com/vi/Wh3A29psE_Y/maxresdefault.jpg);
      
       
             
