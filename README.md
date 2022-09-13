@@ -559,7 +559,8 @@ while (i < nums.length) {
             return sortedOrder;
           }
 
-          function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
+          function print_all_topological_sorts(graph, i
+          nDegree, sources, sortedOrder) {
             if (sources.length > 0) {
               for (i = 0; i < sources.length; i++) {
                 vertex = sources.shift();
@@ -571,13 +572,16 @@ while (i < nums.length) {
                 // get the node's children to decrement their in-degrees
                   inDegree[child]--; // decrement inDegree of child
                   if (inDegree[child] === 0) {
-                    sourcesForNextCall.push(child); // save the new source for the next call
+                    sourcesForNextCall.push(child);
+                     // save the new source for the next call
                   }
                 });
                 // recursive call to print other orderings
                 // from the remaining (and new) sources
-                print_all_topological_sorts(graph, inDegree, sourcesForNextCall, sortedOrder);
-                // backtrack, remove the vertex from the sorted 
+                print_all_topological_sorts(graph, inDegree, 
+                sourcesForNextCall, sortedOrder);
+                // backtrack, remove the vertex  
+                from the sorted 
                 //order and put all of its children back to consider
                 // the next source instead of the current vertex
                 sortedOrder
