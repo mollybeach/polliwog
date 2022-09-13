@@ -1,4 +1,6 @@
 // make a Prim class
+import Queue from '../../DataStructures/Queue/Queue';
+import AdjacencyList from '../../DataStructures/Graphs/AdjacencyList';
 class Prim {
     constructor(graph) {
         this.graph = graph;
