@@ -9,8 +9,8 @@
    
 
   <table>
-    <th> <h1>🪟 Sliding Window Pattern 🪟 </h1> </th>
     <tr>
+     <th> <h1>🪟 Sliding Window Pattern 🪟 </h1> </th>
         <td>
             ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
         </td>
