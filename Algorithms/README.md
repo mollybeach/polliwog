@@ -13,7 +13,8 @@ function find_averages_of_subarrays(K, arr) {
       }
     }
     return result;
-  }</pre>
+  }
+  </pre>
 
 
 /*

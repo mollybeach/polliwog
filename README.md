@@ -1,6 +1,31 @@
 # 
 ## 14 Patterns Algorithims
 
+// write a table 
+
+
+ <table>
+  <th> 14 Patterns Algorithims </th>
+  <tr>
+    <table>
+    <th> 🪟 Sliding Window Pattern 🪟 </th>
+    <td>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER</td>
+    <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
+    </table>
+    <table>
+       <th> example </th>
+      <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
+
+    <td> 
+      <img src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg" alt="drawing" width="200"/>
+    </td>
+    </table>
+
+
+  
+   
+  </tr>
+</table>
 ## 1. 🪟 Sliding Window Pattern 🪟 ->
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters
@@ -277,7 +302,7 @@
               }
               return dummy.next;
             };
-                 
+
 ![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
 ## 14.  📅  Topological Sort Pattern 📅 ->
     ❓  FIND ORDER OF TASKS OR IF GIVEN SEQUENCE IS VALID
