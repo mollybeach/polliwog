@@ -25,11 +25,19 @@ A Graph is a non-linear data structure consisting of nodes and edges. The nodes 
 A graph can be represented in mainly two ways. They are: 
  
 
-Adjacency List: An Adjacency list is an array consisting of the address of all the linked lists. The first node of the linked list represents the vertex and the remaining lists connected to this node represents the vertices to which this node is connected. This representation can also be used to represent a weighted graph. The linked list can slightly be changed to even store the weight of the edge.
-Adjacency Matrix: Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph. Let the 2D array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j. Adjacency matrix for undirected graph is always symmetric. Adjacency Matrix is also used to represent weighted graphs. If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.
+1. Adjacency List: An Adjacency list is an array consisting of the address of all the linked lists. The first node of the linked list represents the vertex and the remaining lists connected to this node represents the vertices to which this node is connected. This representation can also be used to represent a weighted graph. The linked list can slightly be changed to even store the weight of the edge.
+ 
+
+2. Adjacency Matrix is a 2D array of size V x V where V is the number of vertices in a graph. Let the 2D array be adj[][], a slot adj[i][j] = 1 indicates that there is an edge from vertex i to vertex j. Adjacency matrix for undirected graph is always symmetric. Adjacency Matrix is also used to represent weighted graphs. If adj[i][j] = w, then there is an edge from vertex i to vertex j with weight w.
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Let us consider a graph to understand the adjacency list and adjacency matrix representation. Let the undirected graph be: 
 
 ![undirected graph](https://media.geeksforgeeks.org/wp-content/uploads/20200609203724/graph.png)
+
+Shown in: 
 
 Adjacency Matrix: In the adjacency matrix representation, a graph is represented in the form of a two-dimensional array. The size of the array is V x V, where V is the set of vertices. The following image represents the adjacency matrix representation: 
  
@@ -42,3 +50,18 @@ Adjacency List: In the adjacency list representation, a graph is represented as 
 
 
 ![adjListvsMatrix](../../files/adjListVsMatrix.png)
+
+
+let adjList = [
+    [1, 2, 3],
+    [0, 2],
+    [0, 1, 3],
+    [0, 2]
+]
+
+let adjMatrix = [
+    [0, 1, 1, 1],
+    [1, 0, 1, 0],
+    [1, 1, 0, 1],
+    [1, 0, 1, 0]
+]
