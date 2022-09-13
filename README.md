@@ -456,7 +456,7 @@ while (i < nums.length) {
 </code>
 </pre>
     </td>
-    <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
+    <td colspan="3"> <img src="https://cdn.emre.me/2019-08-08-binary-search.png"> </td>
   </tr>
 
 
@@ -501,37 +501,7 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
   </tr>
 </table>
-## 13 🆗🚕🚓 K MERGE Pattern 🆗🚕🚓->
 
-    ❓ MERGE K SORTED ARRAYS OR MERGE K SORTED LISTS
-    🐣 Merge K Sorted Lists, Kth Smallest Number in M Sorted Lists, Kth Smallest Number in a Sorted Matrix, etc.
-      IDENTIFY: 
-         INPUT: Multiple sorted arrays/lists
-        👑
-        🎭 PsuendoCodeK MERGE Pattern in Javascript:
-            ⏰: O(nlogk) 🪐: O(n)
-
-            import ListNode from "DataStructures/LinkedList/ListNode.js";
-            import MinHeap from "DataStructures/Heaps/MinHeap.js";
-
-            const mergeKLists = function (lists) {
-              if (lists.length === 0) return null;
-              let dummy = new ListNode();
-              let curr = dummy;
-              let minHeap = new MinHeap();
-              for (let i = 0; i < lists.length; i++) {
-                if (lists[i]) minHeap.insert(lists[i]);
-              }
-              while (minHeap.size() > 0) {
-                let node = minHeap.remove();
-                curr.next = node;
-                curr = curr.next;
-                if (node.next) minHeap.insert(node.next);
-              }
-              return dummy.next;
-            };
-
-![alt text](https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg);
 
 <table>
   <tr>
@@ -574,7 +544,7 @@ while (i < nums.length) {
 </code>
 </pre>
     </td>
-    <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
+    <td colspan="3"> <img src="https://i.ytimg.com/vi/Xo54nlPHSpg/maxresdefault.jpg"> </td>
   </tr>
 </table>
 
