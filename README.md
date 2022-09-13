@@ -147,9 +147,9 @@ function merge(intervals) {
     end = intervals[0][1];
   for (i = 1; i < intervals.length; i++) {
     const interval = intervals[i];
-    if (interval[0] <= end) { // overlapping intervals, adjust the 'end'
+    if (interval[0] <= end) {
       end = Math.max(interval[1], end);
-    } else { // non-overlapping interval, add the previous interval and reset
+    } else {
       mergedIntervals.push([start, end]);
       start = interval[0];
       end = interval[1];
