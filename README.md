@@ -16,9 +16,7 @@
        <th> example </th>
       <td>🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters</td>
 
-    <td> 
-      <img src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg" alt="drawing" width="200"/>
-    </td>
+
     </table>
 
 
