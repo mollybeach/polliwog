@@ -35,6 +35,7 @@ function findAvgSubArrays(K, arr) {
             <img
                 src="https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg"
                 alt="Sliding Window Pattern"
+                width="300px"
             />
         </td>
     </tr>
