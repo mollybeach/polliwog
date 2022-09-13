@@ -510,7 +510,6 @@ function merge(intervals) {
       <tr>
         <td>
           <h3>🎭 PsuendoCode</h3>
-          <h3>⏰: O(n) 🪐: O(1)</h3>
 <pre>
 <code>
   function reverse(head) {
