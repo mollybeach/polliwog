@@ -582,7 +582,8 @@ while (i < nums.length) {
                 sourcesForNextCall, sortedOrder);
                 // backtrack, remove the vertex  
                 from the sorted 
-                //order and put all of its children back to consider
+                //order and put all of its 
+                //children back to consider
                 // the next source instead of the current vertex
                 sortedOrder
 
