@@ -356,16 +356,12 @@ while (i < nums.length) {
       </tr>
 </table>
 </details>
-
-
-
-
-<table style="width:100%">
-  <tr>
-    <th> <h1 align="center">
+<details>
+<summary> <h1 align="center">
       🌳 Tree Breadth First Search Pattern 🌳
-    </h1> </th>
-  </tr>
+    </h1>  </summary>
+    <br>
+<table style="width:100%">
   <tr>
     <td>
       <h3>❓ FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE</h3>
@@ -394,6 +390,7 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png"> </td>
   </tr>
 </table>
+</details>
 
 
 <table style="width:100%">
