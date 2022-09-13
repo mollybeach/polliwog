@@ -2,10 +2,10 @@
 ## 14 Patterns Algorithims
 
 <details>
-<summary>How do I dropdown?</summary>
+<summary>🪟 Sliding Window Pattern 🪟 </summary>
 <br>
-This is how you dropdown.
-</details>
+
+
 
   <table>
     <tr>
@@ -47,6 +47,7 @@ function findAvgSubArrays(K, arr) {
     </tr>
 
 </table>
+</details>
 <table>
     <tr>
         <th> <h1>👯 Two Pointers  👯 </h1> </th>
