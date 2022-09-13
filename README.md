@@ -531,12 +531,14 @@ function merge(intervals) {
 
 <table style="width:100%">
   <tr>
-    <th> <h1 align="center">7. Tree Breadth First Search Pattern</h1> </th>
+    <th> <h1 align="center">🌲 Tree Depth First Search Pattern 🌲</h1> </th>
   </tr>
   <tr>
     <td>
       <h3>❓ FIND THE MAXIMUM VALUE IN A TREE</h3>
-      <h3>🐣 Maximum Value in a Binary Tree, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, Zigzag Traversal, etc.</h3>
+    </td>
+    <td>
+      <h3>🐣 Find the Maximum Value in a Tree, Find the Maximum Path Sum, Find the Minimum Depth of a Tree, Find if a Path with Given Sequence exists, etc.</h3>
     </td>
   </tr>
   <tr>
@@ -575,6 +577,7 @@ function merge(intervals) {
 </code>
 </pre>
     </td>
+    <td colspan="3"> <img src="https://cdn.emre.me/2019-11-04-tree-bfs.gif"> </td>
   </tr>
 </table>
 
