@@ -236,18 +236,7 @@ function merge(intervals) {
               }
 ![alt text]( https://cdn.emre.me/2019-11-04-in-place-reversal.gif);
 
-## 7.🌳 Tree Breadth First Search Pattern 🌳 ->
-    ❓  FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE
-    🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?
 
-        🎭 PsuendoCode Tree Breadth First Search Pattern 🌳
-          ⏰: O(n) 🪐: O(n)
-              const queue = [root];
-              while (queue.length) {
-                  const currentNode = queue.shift();
-                  if (currentNode.left) queue.push(currentNode.left);
-                  if (currentNode.right) queue.push(currentNode.right);
-              }
 ![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
 
 <table style="width:100%">
@@ -282,23 +271,7 @@ function merge(intervals) {
     <td colspan="3"> <img src="https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png"> </td>
   </tr>
 </table>
-##  8. 🌲 Tree Depth First Search Pattern 🌲 ->
-    ❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE
-    🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.
-        
-       🎭 PsuendoCode Tree Depth First Search Pattern
-        ⏰: O(n) 🪐: O(n)  
 
-            Stack<TreeNode> stack = new Stack<>();
-            stack.push(root);
-            while (!stack.isEmpty()) {
-                TreeNode currentNode = stack.pop(); // add the node to the result list
-                // insert the children of current node in the stack
-                if (currentNode.left != null) stack.push(currentNode.left);
-                if (currentNode.right != null) stack.push(currentNode.right);
-        
-            }
-![alt text](https://assets.leetcode.com/users/andvary/image_1556551007.png);
 
 <table style="width:100%">
   <tr>
@@ -362,6 +335,47 @@ function merge(intervals) {
                more element than the min-heap*/
         
 ![alt text](https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png);
+
+<table>
+  <tr>
+    <th> <h1 align="center">
+      📦📦 Two Heaps Pattern 📦📦
+    </h1> </th>
+  </tr>
+  <tr>
+    <td>
+      <h3>❓ MEDIAN OF # STREAM FIND K SMALLEST #</h3>
+    </td>
+    <td>
+    <h3>🐣 Sliding Window Median, Find the Median of a Number Stream, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode Two Heaps Pattern 📦📦</h3>
+<pre>
+<code>
+  let maxHeap = new MaxHeap();
+  let minHeap = new MinHeap();
+  for (num of nums) {
+      if (maxHeap.isEmpty() || num <= maxHeap.peek()) {
+          maxHeap.push(num);
+      } else {
+          minHeap.push(num);
+      }
+      if (maxHeap.size() > minHeap.size() + 1) {
+          minHeap.push(maxHeap.pop());
+      } else if (maxHeap.size() < minHeap.size()) {
+          maxHeap.push(minHeap.pop());
+      }
+  }
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/MinHeapAndMaxHeap.png"> </td>
+  </tr>
+</table>
+
 ## 10. 🐛 Subsets Pattern 🐛 ->
     ❓  FIND ALL SUBSETS OF A SET OR FIND ALL SUBSETS ADD UP TO GIVEN #PERMUTATIONS AND COMBINATIONS OF SUBSETS
     🐣 Find all subsets of a set, Find all subsets of a set with duplicates, Find all subsets with a given sum, etc.
