@@ -195,19 +195,20 @@ function merge(intervals) {
       <th> <h1 align="center"> 🌀 Cyclic Sort Pattern 🌀 </h1> </th>
     <tr>
         <td>
-            ❓ FIND MISSING # OR  SORT #s IN PLACE 
+           <h3> ❓ FIND MISSING # OR  SORT #s IN PLACE  </h3>
+           <h3> ⏰: O(n) 🪐: O(1) </h3>
         </td>
-            <td colspan="2">
-                🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
-              </td>
-    </tr>
-        <tr>
-         <td  colspan="3">⏰: O(n) 🪐: O(1)</td>
+        <td>
+           <h3> 🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
+            </h3>
+        </td>
     </tr>
     <tr>
         <td>
+         <h3>🎭 PsuendoCode</h3>
 <pre class="notranslate">
 <code>
+
 i = 0;
 while (i < nums.length) {
     j = nums[i] - 1;
