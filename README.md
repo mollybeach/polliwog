@@ -391,7 +391,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🌳 Tree Depth First Search Pattern 🌳
+      🌲 Tree Depth First Search Pattern 🌲
     </h1>  </summary>
     <br>
 <table style="width:100%">
