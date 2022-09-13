@@ -318,10 +318,12 @@ while (i < nums.length) {
     </tr>
 </table>
 </details>
+<details>
+<summary>  <h1>🔀 In-place Reversal of a LinkedList 🔀 </h1>   </summary>
+    <br>
 
 
  <table>
-      <th> <h1 align="center">🔄 In-place Reversal of a LinkedList 🔄</h1> </th>
       </tr>
       <tr>
         <td>
@@ -353,6 +355,7 @@ while (i < nums.length) {
          <td colspan="3"> <img src="https://cdn.emre.me/2019-11-04-in-place-reversal.gif"> </td>
       </tr>
 </table>
+</details>
 
 
 
