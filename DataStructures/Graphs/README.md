@@ -42,13 +42,13 @@ Adjacency Matrix: In the adjacency matrix representation, a graph is represented
 
 ![adjacency matrix](https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png)
 
-let myAdjMatrix = [
-    [0, 1, 0, 0, 1],
-    [1, 0, 1, 0, 0],
-    [0, 1, 0, 1, 0],
-    [0, 0, 1, 0, 1],
-    [1, 0, 0, 1, 0]
-]
+let myAdjMatrix = [ <br/>
+    [0, 1, 0, 0, 1], <br/>
+    [1, 0, 1, 0, 0], <br/>
+    [0, 1, 0, 1, 0], <br/>
+    [0, 0, 1, 0, 1], <br/>
+    [1, 0, 0, 1, 0] <br/>
+] <br/>
 
 
 
@@ -63,10 +63,10 @@ Adjacency List: In the adjacency list representation, a graph is represented as 
 
 // write myAdjMatrix as an adjacency list
 
-let myAdjList = [
-    [1, 4],
-    [0, 2],
-    [1, 3],
-    [2, 4],
-    [0, 3]
-]
+let myAdjList = [ <br/>
+    [1, 4], <br/>
+    [0, 2], <br/>
+    [1, 3], <br/>
+    [2, 4], <br/>
+    [0, 3] <br/>
+] <br/>
