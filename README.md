@@ -192,6 +192,44 @@ function merge(intervals) {
 ![alt text](https://cdn.emre.me/2019-10-28-missing-number-example.png);
 
  <table>
+      <th> <h1 align="center"> 🌀 Cyclic Sort Pattern 🌀 </h1> </th>
+    <tr>
+        <td>
+            ❓ FIND MISSING # OR  SORT #s IN PLACE 
+        </td>
+            <td colspan="2">
+                🐣 Cyclic Sort, Find the Missing Number, Find all Missing Numbers, Find the Duplicate Number, Find all Duplicate Numbers, Find the Corrupt Pair, etc.
+              </td>
+    </tr>
+        <tr>
+         <td  colspan="3">⏰: O(n) 🪐: O(1)</td>
+    </tr>
+    <tr>
+        <td>
+<pre class="notranslate">
+<code>
+i = 0;
+while (i < nums.length) {
+    j = nums[i] - 1;
+    if (nums[i] != nums[j])
+        swap(nums, i, j); // put the number in its correct place
+    else
+        i++;
+}
+</code>
+</pre>
+        </td>
+         <td colspan="3">
+            <img
+                src="https://cdn.emre.me/2019-10-28-missing-number-example.png"
+                alt="Cyclic Sort Pattern"
+            />
+        </td>
+    </tr>
+</table>
+
+
+ <table>
       <th> <h1 align="center">🔄 In-place Reversal of a LinkedList 🔄</h1> </th>
       </tr>
       <tr>
