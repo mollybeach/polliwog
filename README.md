@@ -499,13 +499,13 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://hackernoon.com/images/G9YRlqC9joZNTWsi1ul7tRkO6tv1-hemg3w8d.jpg"> </td>
   </tr>
 </table>
-
-<table>
-  <tr>
-    <th> <h1 align="center">
+</details>
+<details>
+<summary> <h1 align="center">
       🏁🔚  Modified Binary Search Pattern 🏁🔚
-    </h1> </th>
-  </tr>
+    </h1>  </summary>
+    <br>
+<table>
   <tr>
     <td>
       <h3>❓ MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY</h3>
@@ -538,14 +538,15 @@ while (i < nums.length) {
     </td>
     <td colspan="3"> <img src="https://cdn.emre.me/2019-08-08-binary-search.png"> </td>
   </tr>
-
+</table>
+</details>
+<details>
+<summary> <h1 align="center">
+      👑 K TOP Pattern 👑
+    </h1>  </summary>
+    <br>
 
 <table>
-  <tr>
-    <th> <h1 align="center">
-      👑 K TOP Pattern 👑
-    </h1> </th>
-  </tr>
   <tr>
     <td>
       <h3>❓ TOP K #s OR FREQUENCY OF TOP K #s</h3>
