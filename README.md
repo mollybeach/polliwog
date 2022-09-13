@@ -526,7 +526,7 @@ function merge(intervals) {
 </code>
 </pre>
         </td>
-         <td colspan="3"> <img src="https://i.ytimg.com/vi/9Yp2AxQa7Zc/maxresdefault.jpg" width="400" height="300"> </td>
+         <td colspan="3"> <img src="https://cdn.emre.me/2019-11-04-in-place-reversal.gif)" width="400" height="300"> </td>
       </tr>
     </table>
 
