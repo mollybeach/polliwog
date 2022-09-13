@@ -60,31 +60,44 @@ Adjacency List: In the adjacency list representation, a graph is represented as 
 ![adjacency list](https://media.geeksforgeeks.org/wp-content/uploads/20200609204414/linklist.png)
 // write myAdjMatrix as an adjacency list
 
-let myAdjList = [ <br/>
-    [1, 4], <br/>
-    [0, 2], <br/>
-    [1, 3], <br/>
-    [2, 4], <br/>
-    [0, 3] <br/>
-] <br/>
+
 
 <table>
-<tr>
-<td>Adjacency Matrix: In the adjacency matrix representation, <br/>
-a graph is represented in the form of a two-dimensional array. <br/>
- The size of the array is V x V, where V is the set of vertices. </td>
-
-<td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png" alt="drawing" width="400"/> </td>
-</tr>
-<tr>
-<tr>
-<td>Adjacency List: In the adjacency list representation, <br/> 
-a graph is represented as an array of linked list.  <br/> 
-The index of the array represents a vertex and each element <br/> 
-in its linked list represents the  vertices that form an edge with the vertex. 
-</td>
-<td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204414/linklist.png" alt="drawing" width="400"/> </td>
-</tr>
+    <tr>
+        <td>Adjacency Matrix: In the adjacency matrix representation, <br/>
+        a graph is represented in the form of a two-dimensional array. <br/>
+         The size of the array is V x V, where V is the set of vertices. 
+        </td>
+        <td>
+        let myAdjList = [ <br/>
+            [1, 4], <br/>
+            [0, 2], <br/>
+            [1, 3], <br/>
+            [2, 4], <br/>
+            [0, 3] <br/>
+        ] <br/>
+        </td>
+        <td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204115/matrix.png"    alt="drawing" width="300"/> 
+        </td>
+    </tr>
+    <tr>
+        <td>Adjacency List: In the adjacency list representation, <br/> 
+        a graph is represented as an array of linked list.  <br/> 
+        The index of the array represents a vertex and each element <br/> 
+        in its linked list represents the  vertices that form an edge with the vertex. 
+        </td>
+        <td>
+        let myAdjList = [ <br/>
+            [1, 4], <br/>
+            [0, 2], <br/>
+            [1, 3], <br/>
+            [2, 4], <br/>
+            [0, 3] <br/>
+        ] <br/>
+        </td>
+        <td> <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200609204414/linklist.png" alt="drawing" width="300"/> 
+        </td>
+    </tr>
 </table>
 
 
