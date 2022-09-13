@@ -590,7 +590,7 @@ while (i < nums.length) {
 ![alt text](https://slideplayer.com/slide/12886082/78/images/5/Topological+Sort%3A+Definition.jpg)
 
 <table> 
-  <tr>
+  <tr align="center" colspan="2">
     <th> <h1 align="center">
      📅  Topological Sort Pattern 📅 
     </h1> </th>
