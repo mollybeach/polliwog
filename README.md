@@ -42,26 +42,6 @@ function findAvgSubArrays(K, arr) {
     </tr>
 
 </table>
-## 2. 👯 Two Pointers  👯 -> 
-    ❓ FIND A PAIR, TRIPLET or a SUBARRAY
-    🐣 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
-      
-        🎭 PsuendoCode Two Pointers  👯
-          ⏰: O(n) 🪐: O(n)
-                            left = 0;
-                            right = 0;
-                            while (right < s.length()) {
-                                // add s[right] to window
-                                right++;
-                                while (window needs shrink) {
-                                    // remove s[left] from window
-                                    left++;
-                                }
-                            }
-![alt text](https://cdn.emre.me/2019-10-21-two-pointers.png)
-
-// rewrite two pointers to be a table like in sliding window
-
 <table>
     <tr>
         <th> <h1>👯 Two Pointers  👯 </h1> </th>
@@ -122,6 +102,46 @@ while (right < s.length()) {
                                 fast++;
                             }
 ![alt text](http://1algo1week.warriorkitty.com/assets/floyds-cycle-finding-algorithm/algorithm.png)
+// rewrite fast and slow pointer to be a table
+<table>
+    <tr>
+        <th> <h1>🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 </h1> </th>
+        <td>
+            ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
+        </td>
+            <td colspan="2">
+                🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
+              </td>
+    </tr>
+        <tr>
+         <td  colspan="3">⏰: O(n) 🪐: O(n)</td>
+    </tr>
+    <tr>
+        <td>
+<pre class="notranslate">
+<code>
+slow = 0;
+fast = 0;
+while (fast < s.length()) {
+    if (s[fast] is not a duplicate) {
+        // move slow pointer one step
+        // add s[fast] to window
+        slow++;
+    }
+    // move fast pointer one step
+    fast++;
+}
+</code>
+</pre>
+        </td>
+         <td colspan="3">
+            <img
+                src="http://1algo1week.warriorkitty.com/assets/floyds-cycle-finding-algorithm/algorithm.png"
+                alt="Fast & Slow Pointers Pattern"
+            />
+        </td>
+    </tr>
+</table>
 ## 4. 🚗🚙 Merge Intervals Pattern 🚗🚙 ->
     ❓  MERGE INTERVALS OR FIND OVERLAPPING INTERVALS
     🐣 Insert Interval, Intervals Intersection, Conflicting Appointments, Minimum Meeting Rooms, etc.
