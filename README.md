@@ -321,8 +321,6 @@ while (i < nums.length) {
 <details>
 <summary>  <h1>🔀 In-place Reversal of a LinkedList 🔀 </h1>   </summary>
     <br>
-
-
  <table>
       </tr>
       <tr>
@@ -391,14 +389,12 @@ while (i < nums.length) {
   </tr>
 </table>
 </details>
-
-
+<details>
+<summary> <h1 align="center">
+      🌳 Tree Depth First Search Pattern 🌳
+    </h1>  </summary>
+    <br>
 <table style="width:100%">
-  <tr>
-    <th> <h1 align="center">
-      🌲 Tree Depth First Search Pattern 🌲
-    </h1> </th>
-  </tr>
   <tr>
     <td>
       <h3>❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE</h3>
@@ -428,6 +424,7 @@ while (i < nums.length) {
     <td colspan="3"> <img src="https://assets.leetcode.com/users/andvary/image_1556551007.png"> </td>
   </tr>
 </table>
+</details>
 
 <table>
   <tr>
