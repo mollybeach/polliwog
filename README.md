@@ -235,7 +235,11 @@ while (fast < s.length()) {
 
 <table>
     <tr>
-        <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙 </h1> </th>
+        <th> <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1> </th>
+        <summary>🪟 Sliding Window Pattern 🪟 </summary>
+        <details>
+
+<br>
         <td>
             <h3> ❓ MERGE INTERVALS OR FIND OVERLAPPING INTERVALS <h3>
            <h3>  ⏰: O(nlogn) 🪐: O(n) </h3>
@@ -283,7 +287,7 @@ function merge(intervals) {
         </td>
     </tr>
 </table>
-
+</details>
 
  <table>
       <th> <h1 align="center"> 🌀 Cyclic Sort Pattern 🌀 </h1> </th>
