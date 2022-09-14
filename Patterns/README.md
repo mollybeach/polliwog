@@ -1,6 +1,6 @@
 # 
 ## 14 Patterns Algorithims
-## 1. 🪟 Sliding Window Pattern 🪟 ->
+## 1. 📌🪟 Sliding Window Pattern 📌🪟 -> 
     ❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER
     🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct Characters, String Anagrams, No-repeat Substring, etc.
           🎭 PsuendoCode 🪟 Sliding Window Pattern 🪟
@@ -24,7 +24,7 @@
 
 ![alt text](https://miro.medium.com/max/372/0*o-PhzdP_jd_5L2iq.jpg)
 
-## 2. 👯 Two Pointers  👯 -> 
+## 2. 📌📌👯 Two Pointers  👯📌📌 -> 
     ❓ FIND A PAIR, TRIPLET or a SUBARRAY
     🐣 Squaring a Sorted Array, Triplets that Sum to Zero, Triplet Sum Close to Target, Triplets with Smaller Sum, Subarrays with Product Less than a Target, Comparing Strings containing Backspaces, etc.
       
@@ -41,7 +41,7 @@
                                 }
                             }
 ![alt text](https://cdn.emre.me/2019-10-21-two-pointers.png)
-## 3. 🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 ->
+## 3. 📌📌🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢📌📌 ->
     ❓ FIND CYCLE IN A LINKED LIST OR FIND THE MIDDLE OF A LINKED LIST
     🐣 Linked List Cycle, Palindrome LinkedList, Cycle in a Circular Array, etc.
 
@@ -122,7 +122,7 @@
               }
 ![alt text]( https://cdn.emre.me/2019-11-04-in-place-reversal.gif);
 
-## 7.🌳 Tree Breadth First Search Pattern 🌳 ->
+## 7.🌳 BFS 🌳 ->
     ❓  FIND MIN DEPTH, MAX DEPTH, LEVEL AVERAGE OF BINARY TREE
     🐣 Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc. Tree Breadth First Search?
 
@@ -135,7 +135,7 @@
                   if (currentNode.right) queue.push(currentNode.right);
               }
 ![alt text](https://www.guru99.com/images/1/020820_0543_BreadthFirs1.png);
-##  8. 🌲 Tree Depth First Search Pattern 🌲 ->
+##  8. 🌲 DFS 🌲 ->
     ❓ FIND PATH WITH MAX SUM OR PATH WITH GIVEN SEQUENCE
     🐣 Reverse Level Order Traversal, Zigzag Traversal, Level Averages in a Binary Tree, Minimum Depth of a Binary Tree, Level Order Successor, Connect Level Order Siblings, etc.
         

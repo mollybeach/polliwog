@@ -350,7 +350,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🌳 Tree Breadth First Search Pattern 🌳
+      🌳 BFS🌳
     </h1>  </summary>
     <br>
 <table style="width:100%">
@@ -367,7 +367,7 @@ while (i < nums.length) {
   </tr>
   <tr>
     <td>
-      <h3>🎭 PsuendoCode Tree Breadth First Search Pattern 🌳</h3>
+      <h3>🎭 PsuendoCode 🌳</h3>
 <pre>
 <code>
   const queue = [root];
@@ -385,7 +385,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🌲 Tree Depth First Search Pattern 🌲
+      🌲 DFS 🌲
     </h1>  </summary>
     <br>
 <table style="width:100%">
