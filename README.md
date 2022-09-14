@@ -11,11 +11,19 @@
 <td>
 <h4>📦 = 1 Heap <h4> 
 </td>
+
+<td>
+<h4>🚥 = 1 Array <h4> 
+</td>
+
+<td>
+<h4>🎡 = 1 Loop </h4>
+</td>
 </tr>
 <table>
 
   <details>
-    <summary>  <h1>🪟 Sliding Window Pattern : 📌 </h1> </summary>
+    <summary>  <h1>🪟 Sliding Window Pattern : 📌🚥  </h1> </summary>
     <br>
   <table>
     <tr>
