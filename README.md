@@ -247,7 +247,7 @@ while (fast < s.length()) {
 </details>
 </details>
   <details>
-    <summary>  <h1>🚗🚙 Merge Intervals Pattern 🚗🚙  </h1>  </summary>
+    <summary>  <h1>🚗🚙 Merge Intervals : 📌📌🚥  </h1>  </summary>
     <br>
 <table>
     <tr>
