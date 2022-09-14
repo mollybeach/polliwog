@@ -203,7 +203,7 @@ while (right < s.length()) {
 </table>
 </details>
  <details>
-    <summary>  <h1>🐰&🐢 Fast & Slow Pointers: 📌📌 🎡</h1> </summary>
+    <summary>  <h1>🐰🐢 Fast & Slow Pointers: 📌📌 🎡</h1> </summary>
     <br>
 <table>
     <tr>
