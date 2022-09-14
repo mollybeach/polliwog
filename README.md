@@ -23,6 +23,13 @@
 <td>
 <h4>🔗 = 1 Linked List </h4>
 </td>
+<td>
+<h4>🗂 = 1 Hash </h4>
+</td>
+
+<td>
+<h4>➕ = 1 Counter </h4>
+</td>
 
 </tr>
 </table>
