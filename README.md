@@ -4,7 +4,7 @@
 <h2>📦 Heap </h2>
 
   <details>
-    <summary>  <h1>🪟 Sliding Window Pattern 🪟 </h1> </summary>
+    <summary>  <h1>🪟 Sliding Window Pattern : 📌 </h1> </summary>
     <br>
   <table>
     <tr>
@@ -144,7 +144,7 @@ function findAvgSubArrays(K, arr) {
 </details>
 </details>
   <details>
-    <summary>  <h1>👯 Two Pointers Problems  👯 </h1> </summary>
+    <summary>  <h1>👯 Two Pointers Problems:  📌📌</h1> </summary>
     <br>
 <table>
     <tr>
