@@ -20,6 +20,10 @@
 <h4>🎡 = 1 Loop </h4>
 </td>
 
+<td>
+<h4>🔗 = 1 Linked List </h4>
+</td>
+
 </tr>
 </table>
 
@@ -300,7 +304,7 @@ function merge(intervals) {
 </table>
 </details>
 <details>
-<summary>  <h1><align="center"> 🌀 Cyclic Sort Pattern 🌀 </h1>   </summary>
+<summary>  <h1><align="center"> 🌀 Cyclic Sort Pattern:  🎡 </h1>   </summary>
     <br>
  <table>
     <tr>
@@ -335,7 +339,7 @@ while (i < nums.length) {
 </table>
 </details>
 <details>
-<summary>  <h1>🔀 In-place Reversal of a LinkedList 🔀 </h1>   </summary>
+<summary>  <h1>🔀 In-place Reversal of a LinkedList: 🔗 </h1>   </summary>
     <br>
  <table>
       </tr>
