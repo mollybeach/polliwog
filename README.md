@@ -3049,25 +3049,4 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
 [Bitwise & of Numbers Range](https://leetcode.com/problems/bitwise-&-of-numbers-range/) \
 
 
-        
-
- biTreemulator Public
-Application to run and visualize binary trees sorting algorithms using recursion iteration ray marching animations 
-
- biTree Public 
-
-
-
-
- write a program to determine which algorithm to use given an input and an output
- using the algorithms found in ./algorithms inner files 
-if its an array 
-then use one of the algorithms in ./algorithms/array
-if its a tree 
-then use one of the algorithms in ./algorithms/tree
-if its a graph 
-then use one of the algorithms in ./algorithms/graph
-if its a linked list 
-then use one of the algorithms in ./algorithms/linkedlist
-
-
+     
