@@ -6,10 +6,10 @@
 <th><h3>Uses: Symbol in Pattern</h3></th>
 <tr>
 <td>
-<h4>📌 Pointer <h4> 
+<h4>📌 = 1 Pointer <h4> 
 </td>
 <td>
-<h4>📦 Heap <h4> 
+<h4>📦 = 1 Heap <h4> 
 </td>
 </tr>
 <table>
