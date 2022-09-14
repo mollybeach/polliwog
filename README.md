@@ -1,7 +1,18 @@
 # 
 ## 14 Patterns Algorithims
-<h2>📌 Pointer </h2>
-<h2>📦 Heap </h2>
+
+
+<table>
+<th><h3>Uses: Symbol in Pattern</h3></th>
+<tr>
+<td>
+<h4>📌 Pointer <h4> 
+</td>
+<td>
+<h4>📦 Heap <h4> 
+</td>
+</tr>
+<table>
 
   <details>
     <summary>  <h1>🪟 Sliding Window Pattern : 📌 </h1> </summary>
