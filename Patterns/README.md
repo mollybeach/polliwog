@@ -11,7 +11,7 @@
               windowStart = 0;
             for (let windowEnd = 0; windowEnd < arr.length; windowEnd++) {
               windowSum += arr[windowEnd]; // add the next element
-              // slide the window, we don't need to slide if we've not hit the required window size of 'k'
+              // slide the window, we don't need to slide if we've not hit the required window size of 'k
               if (windowEnd >= K - 1) {
                 result.push(windowSum / K); // calculate the average
                 // subtract the element going out
