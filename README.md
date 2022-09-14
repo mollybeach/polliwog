@@ -21,7 +21,7 @@
 </td>
 
 </tr>
-<table>
+</table>
 
   <details>
     <summary>  <h1>🪟 Sliding Window Pattern : 📌🚥🎡 </h1> </summary>
