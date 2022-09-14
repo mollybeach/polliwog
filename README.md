@@ -19,11 +19,12 @@
 <td>
 <h4>🎡 = 1 Loop </h4>
 </td>
+
 </tr>
 <table>
 
   <details>
-    <summary>  <h1>🪟 Sliding Window Pattern : 📌🚥  </h1> </summary>
+    <summary>  <h1>🪟 Sliding Window Pattern : 📌🚥🎡 </h1> </summary>
     <br>
   <table>
     <tr>
@@ -163,7 +164,7 @@ function findAvgSubArrays(K, arr) {
 </details>
 </details>
   <details>
-    <summary>  <h1>👯 Two Pointers Problems:  📌📌</h1> </summary>
+    <summary>  <h1>👯 Two Pointers:  📌📌🎡</h1> </summary>
     <br>
 <table>
     <tr>
@@ -202,7 +203,7 @@ while (right < s.length()) {
 </table>
 </details>
  <details>
-    <summary>  <h1>🐰&🐢 Fast & Slow Pointers Pattern 🐰&🐢 </h1> </summary>
+    <summary>  <h1>🐰&🐢 Fast & Slow Pointers: 📌📌 🎡</h1> </summary>
     <br>
 <table>
     <tr>
