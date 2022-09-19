@@ -417,7 +417,7 @@ while (i < nums.length) {
 </table>
 </details>
 <details>
-<summary>  <h1>🔀🔗 InPlace Reverse LinkedList: 🤹‍♀️🎡 </h1>   </summary>
+<summary>  <h1>🔀🔗 Reverse LinkList: 🤹‍♀️🎡 </h1>   </summary>
     <br>
  <table>
       </tr>
@@ -601,7 +601,7 @@ while (i < nums.length) {
 
 <details>
 <summary> <h1 align="center">
-      👑 📦 K TOP Pattern  📦 🎡🎡
+      👑 📦 K TOP :  📦 🎡🎡
     </h1>  </summary>
     <br>
 <table>
@@ -643,7 +643,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🆗🚕🚓 📦 K MERGE Pattern 🌱📦🎡🎡
+      🆗🚕🚓 📦 K MERGE : 🌱📦🎡🎡
     </h1>  </summary>
     <br>
 <table>
@@ -688,7 +688,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-     📅 Topological Sort Pattern📦📱🎡
+     📅 Topological Sort : 📦📱🎡
     </h1>  </summary>
     <br>
 <table> 
