@@ -17,15 +17,14 @@
 </td>
 
 <td>
-<h4>🎡 = 1 Loop </h4>
+<h4>🍽 = 1 Stack</h4>
 </td>
 
 <td>
-<h4> 🪞 = 1 Recursion </h4>
+<h4>🦜 = 1 Queue</h4>
 </td>
-<td>
-<h4>🔗 = 1 Linked List </h4>
-</td>
+
+
 <td>
 <h4>🗂 = 1 Hash </h4>
 </td>
@@ -34,24 +33,33 @@
 <h4>➕ = 1 Counter </h4>
 </td>
 
-<td>
-<h4>🤹‍♀️ = 1 Swap </h4>
-</td>
+</tr>
+<tr>
 
 <td>
 <h4>🌱 = 1 Node </h4>
 </td>
 
-<td>
-<h4>🍽 = 1 Stack</h4>
-</td>
+
+
 
 <td>
-<h4>🦜 = 1 Queue</h4>
+<h4>🎡 = 1 Loop </h4>
 </td>
 
 <td>
 <h4>📱 = 1 Graph</h4>
+</td>
+
+<td>
+<h4>🔗 = 1 Linked List </h4>
+</td>
+<td>
+<h4> 🪞 = 1 Recursion </h4>
+</td>
+
+<td>
+<h4>🤹‍♀️ = 1 Swap </h4>
 </td>
 </tr>
 </table>
