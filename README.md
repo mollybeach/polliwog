@@ -31,6 +31,14 @@
 <h4>➕ = 1 Counter </h4>
 </td>
 
+<td>
+<h4>➕ = 1 Counter </h4>
+</td>
+
+<td>
+<h4>🤹‍♀️ = 1 Swap </h4>
+</td>
+
 </tr>
 </table>
 
@@ -311,7 +319,7 @@ function merge(intervals) {
 </table>
 </details>
 <details>
-<summary>  <h1><align="center"> 🌀 Cyclic Sort Pattern:  🎡 </h1>   </summary>
+<summary>  <h1><align="center"> 🌀 Cyclic Sort Pattern:  🎡🤹‍♀️ </h1>   </summary>
     <br>
  <table>
     <tr>
@@ -346,7 +354,7 @@ while (i < nums.length) {
 </table>
 </details>
 <details>
-<summary>  <h1>🔀 In-place Reversal of a LinkedList: 🔗 </h1>   </summary>
+<summary>  <h1>🔀🔗 InPlace Reverse LinkedList: 🤹‍♀️🎡 </h1>   </summary>
     <br>
  <table>
       </tr>
@@ -494,7 +502,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-     🐛 Subsets Pattern 🐛
+     🐛 Subsets Pattern 🚥🎡
     </h1>  </summary>
     <br>
 <table> 
@@ -529,7 +537,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🏁🔚  Modified Binary Search Pattern 🏁🔚
+      🏁🔚  Modified Binary Search Pattern 📌📌📌
     </h1>  </summary>
     <br>
 <table>
@@ -569,7 +577,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      👑 📦 K TOP Pattern  📦 👑
+      👑 📦 K TOP Pattern  📦 🎡🎡
     </h1>  </summary>
     <br>
 <table>
@@ -611,7 +619,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🆗🚕🚓 📦 K MERGE Pattern 📦 🚕🚓🆗
+      🆗🚕🚓 📦 K MERGE Pattern 🌱📦🎡🎡
     </h1>  </summary>
     <br>
 <table>
@@ -656,7 +664,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-     📅 Topological Sort Pattern 📅 
+     📅 Topological Sort Pattern📦
     </h1>  </summary>
     <br>
 <table> 
