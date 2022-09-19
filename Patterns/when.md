@@ -24,6 +24,11 @@
         Combinatorics: when you want to find the number of ways to do something
 
 
+        when should i use prim vs krusal ? 
+        i should use prim when i want to find the minimum spanning tree of a graph 
+        
+
+
 ##when to use which data structure
 
         Stack: when you want to store a list of elements and access them in a LIFO order

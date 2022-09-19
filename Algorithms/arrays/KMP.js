@@ -5,6 +5,7 @@
 // it is based on the idea that whenever we detect a mismatch (after some matches), we already know some of the characters in the text of the next window.
 // we take advantage of this information to avoid matching the characters that we know will anyway match.
 // what kind of algorithm is this? (sorting, searching, graph, math, etc)
+// KMP stands for Knuth Morris Pratt
 class KMP { 
     constructor() {
         this.lps = []; // lp stands for longest prefix suffix

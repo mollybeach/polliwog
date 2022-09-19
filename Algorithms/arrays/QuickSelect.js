@@ -51,3 +51,7 @@ class QuickSelect {
 
 const _QuickSelect = QuickSelect;
 export { _QuickSelect as QuickSelect };
+
+// examples of leetcode problems that use this algorithm
+
+// https://leetcode.com/problems/kth-largest-element-in-an-array/
