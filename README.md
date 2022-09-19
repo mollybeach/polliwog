@@ -417,7 +417,7 @@ while (i < nums.length) {
 </table>
 </details>
 <details>
-<summary>  <h1>🔀🔗 Reverse LinkList: 🤹‍♀️🎡 </h1>   </summary>
+<summary>  <h1>🔀🔗 Reverse LinkList: 🌱🤹‍♀️🎡 </h1>   </summary>
     <br>
  <table>
       </tr>
