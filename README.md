@@ -65,7 +65,7 @@
 </table>
 
   <details>
-    <summary>  <h1>🪟 Sliding Window Pattern : 📌🚥🎡 </h1> </summary>
+    <summary>  <h1>🪟 Sliding Window : 📌🚥🎡 </h1> </summary>
     <br>
   <table>
     <tr>
@@ -287,6 +287,46 @@ while (fast < s.length()) {
 </table>
 </details>
 </details>
+<details>
+<summary> <h1 align="center">
+      🏁🔚  Mod Binary Search 📌📌📌
+    </h1>  </summary>
+    <br>
+<table>
+  <tr>
+    <td>
+      <h3>❓ MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY</h3>
+    </td>
+    <td>
+    <h3>🐣 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.</h3>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>🎭 PsuendoCode 🏁🔚  Modified Binary Search Pattern 🏁🔚</h3>
+<pre>
+<code>
+  start = 0, end = arr.length - 1;
+  while (start <= end) {
+      // calculate the middle of the current range
+      mid = start + (end - star
+      if (key < arr[mid]) {
+          end = mid - 1; // the 'key' can be in the first half
+      } else if (key > arr[mid]) {
+          start = mid + 1; // the 'key' can be in the second half
+      } else { // found the key
+          return mid;
+      }
+  }
+  // element is not found
+  return -1;
+</code>
+</pre>
+    </td>
+    <td colspan="3"> <img src="https://cdn.emre.me/2019-08-08-binary-search.png"> </td>
+  </tr>
+</table>
+</details>
   <details>
     <summary>  <h1>🚗🚙 Merge Intervals : 📌📌🚥  </h1>  </summary>
     <br>
@@ -341,7 +381,7 @@ function merge(intervals) {
 </table>
 </details>
 <details>
-<summary>  <h1><align="center"> 🌀 Cyclic Sort Pattern:  🎡🤹‍♀️ </h1>   </summary>
+<summary>  <h1><align="center"> 🌀 Cyclic Sort :  🎡🤹‍♀️ </h1>   </summary>
     <br>
  <table>
     <tr>
@@ -484,7 +524,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-     📦📦 Two Heaps Pattern 📦📦 🎡
+     📦📦 Two Heaps  📦📦 🎡
     </h1>  </summary>
     <br>
 <table>
@@ -557,46 +597,7 @@ while (i < nums.length) {
   </tr>
 </table>
 </details>
-<details>
-<summary> <h1 align="center">
-      🏁🔚  Modified Binary Search Pattern 📌📌📌
-    </h1>  </summary>
-    <br>
-<table>
-  <tr>
-    <td>
-      <h3>❓ MINIMUM DIFFERENCE  OR FIND ELEMENT IN INFINITE SORTED ARRAY</h3>
-    </td>
-    <td>
-    <h3>🐣 Order-agnostic Binary Search, Ceiling of a Number, Floor of a Number, Next Letter, Number Range, etc.</h3>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>🎭 PsuendoCode 🏁🔚  Modified Binary Search Pattern 🏁🔚</h3>
-<pre>
-<code>
-  start = 0, end = arr.length - 1;
-  while (start <= end) {
-      // calculate the middle of the current range
-      mid = start + (end - star
-      if (key < arr[mid]) {
-          end = mid - 1; // the 'key' can be in the first half
-      } else if (key > arr[mid]) {
-          start = mid + 1; // the 'key' can be in the second half
-      } else { // found the key
-          return mid;
-      }
-  }
-  // element is not found
-  return -1;
-</code>
-</pre>
-    </td>
-    <td colspan="3"> <img src="https://cdn.emre.me/2019-08-08-binary-search.png"> </td>
-  </tr>
-</table>
-</details>
+
 <details>
 <summary> <h1 align="center">
       👑 📦 K TOP Pattern  📦 🎡🎡
