@@ -39,6 +39,10 @@
 <h4>🤹‍♀️ = 1 Swap </h4>
 </td>
 
+<td>
+<h4>🌱 = 1 Node </h4>
+</td>
+
 </tr>
 </table>
 
@@ -462,7 +466,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-     📦📦 Two Heaps Pattern 📦📦
+     📦📦 Two Heaps Pattern 📦📦 🎡
     </h1>  </summary>
     <br>
 <table>
