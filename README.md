@@ -640,7 +640,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      #️⃣🚕🚓 📦 # MERGE : 🌱📦🎡🎡
+      #️⃣🚕🚓 # MERGE : 🌱📦🎡🎡
     </h1>  </summary>
     <br>
 <table>
