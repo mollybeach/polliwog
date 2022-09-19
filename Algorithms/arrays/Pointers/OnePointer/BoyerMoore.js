@@ -2,6 +2,7 @@
 // BoyerMoore algorithm is based on the fact that if the majority element exists in the array, then it will be the last element left after cancelling out each occurrence of an element with all the other elements that are different from it.
 // what kind of algorithm is this? (sorting, searching, graph, math, etc)
 
+
 class BoyerMoore {
     constructor() {
         this.count = 0;
