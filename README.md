@@ -598,7 +598,7 @@ while (i < nums.length) {
 
 <details>
 <summary> <h1 align="center">
-      👑 📦 K TOP :  📦 🎡🎡
+     #️⃣ 👑  # TOP :  📦 🎡🎡
     </h1>  </summary>
     <br>
 <table>
@@ -640,7 +640,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🆗🚕🚓 📦 K MERGE : 🌱📦🎡🎡
+      #️⃣🚕🚓 📦 # MERGE : 🌱📦🎡🎡
     </h1>  </summary>
     <br>
 <table>
