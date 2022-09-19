@@ -21,14 +21,13 @@
 </td>
 
 <td>
+<h4> 🪞 = 1 Recursion </h4>
+</td>
+<td>
 <h4>🔗 = 1 Linked List </h4>
 </td>
 <td>
 <h4>🗂 = 1 Hash </h4>
-</td>
-
-<td>
-<h4>➕ = 1 Counter </h4>
 </td>
 
 <td>
@@ -43,6 +42,17 @@
 <h4>🌱 = 1 Node </h4>
 </td>
 
+<td>
+<h4>🍽 = 1 Stack</h4>
+</td>
+
+<td>
+<h4>🦜 = 1 Queue</h4>
+</td>
+
+<td>
+<h4>📱 = 1 Graph</h4>
+</td>
 </tr>
 </table>
 
@@ -395,7 +405,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🌳 BFS🌳
+      🌳 BFS🦜 🪞
     </h1>  </summary>
     <br>
 <table style="width:100%">
@@ -430,7 +440,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-      🌲 DFS 🌲
+      🌲 DFS 🍽🪞
     </h1>  </summary>
     <br>
 <table style="width:100%">
@@ -668,7 +678,7 @@ while (i < nums.length) {
 </details>
 <details>
 <summary> <h1 align="center">
-     📅 Topological Sort Pattern📦
+     📅 Topological Sort Pattern📦📱🎡
     </h1>  </summary>
     <br>
 <table> 
