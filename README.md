@@ -60,19 +60,18 @@
 </td>
 </tr>
 </table>
-
   <details>
     <summary>  <h1>🪟 Sliding Window : 📌🚥🎡 </h1> </summary>
     <br>
   <table>
     <tr>
         <td>
-            <h3>❓ SUBSTRING OR SUBARRAY FIND LONGER SMALLEST CONTsdadaddasdasdasdasdasdasadadasdasdsdsadasdaddsasdsdaddsdasdsadassaddsadadasdaasd
-            wqdww <h3>dasdsa
+            <h3>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN CHARACTER <h3>
             <h3>⏰: O(n) 🪐: O(n) </h3>
         </td>
            <td colspan="2">
-               🐣 upqpqpsdjdlkajdklsajdkl djsklajdl wqop
+               🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersString Anagrams, No-repeat Substring, etc.
+            </td>
     </tr>
     <tr>
         <td>
