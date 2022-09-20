@@ -3,7 +3,7 @@
 
 
 <table>
-<th><h3>Uses: Symbol in Pattern</h3></th>
+<th><h3>Uses: Symbol in Patternn</h3></th>
 <tr>
 <td>
 <h4>📌 = 1 Pointer <h4> 
@@ -41,7 +41,7 @@
 </td>
 
 <td>
-<h4>🎡 = 1 Loop </h4>
+<h4>🎡 = 1 Loop p</h4>
 </td>
 
 <td>
