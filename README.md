@@ -72,7 +72,7 @@
             <h3>⏰: O(n) 🪐: O(n) </h3>
         </td>
            <td colspan="2">
-               🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersStsdkladkklasdklasdjklasjdklasring Anagrams, POREOPKEOPEFOPEQOPDKOPNo-repesdopajsdp'ajp'aFJdaKPS"jFPEWNDat Substring, sadkpasdjpasdjaetc.DASJD'JF"QJf'JDF"SDJOJPWQ92I890132
+               🐣 Maximum Sum Subarray of Size K, Longest Substring with K Distinct CharactersStsdkladkklasdklasdjklasjdklasring Anagrams, POREOPKEOPEFOPEQOPDKOPNo-repesdopajsdp'ajp'aFJdaKPS"jFPEWNDat Substring, sadkpasdjpasdjaetc.DASJD'JF"QJf'JDF"SDJOJPWQ92I890132EIOQPWEIOPQIEOPQ
             </td>
     </tr>
     <tr>
