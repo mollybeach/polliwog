@@ -6,7 +6,7 @@
 <th><h3>Uses: Symbol in Patternn</h3></th>
 <tr>
 <td>
-<h4>📌 = 1 Pointerh4> 
+<h4>📌 = 1 Pointer</h4> 
 </td>
 <td>
 <h4>📦 = 1 Heap <h4> 
