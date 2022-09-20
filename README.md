@@ -73,7 +73,7 @@
         </td>
            <td colspan="2">
                🐣 Maximumfhfhfhfhjdidsaqpqpqpqdasdasdsaoajquququququqdajsdioa
-            </td>quwioquwiouqiowduqiqiqiqiq
+            </td>quwioquwiouqiowduqiqiqiqiq   pqpqpqp
     </tr>
     <tr>
         <td>
