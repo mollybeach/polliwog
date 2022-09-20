@@ -61,7 +61,7 @@
 </tr>
 </table>
   <details>
-    <summary>  <h1>🪟 Sliding Window :e eeeeregrredfggfdddd📌🚥🎡 </h1> </summary>
+    <summary>  <h1>🪟 Sliding Window :e eeeeregrreddgdgfggfdddd📌🚥🎡 </h1> </summary>
     <br>
   <table>
     <tr>
