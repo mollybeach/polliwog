@@ -67,7 +67,7 @@
   <table>
     <tr>
         <td>
-            <h3>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SMALLEST CONTAIN dfsffddfdsffCHARACTvEvvdsfdsfsfvdfsfdmfsfmsdfsdsdfvx <h3>
+            <h3>❓ SUBSTRING OR SUBARRAY FIND LONGEST OR SlsdlsadlMALLEST CONTAIN dfsffddfdsffCHARACTvEvvdsfdsfsfvdfsfdmfsfmsdfsadadassdsdfvx <h3>
             <h3>⏰: O(n) 🪐: O(n) </h3>
         </td>
            <td colspan="2">
