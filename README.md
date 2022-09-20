@@ -3,7 +3,7 @@
 
 
 <table>
-<th><h3>Uses: Symbol in Patternn</h3></th>
+<th><h3>Uses: Symbol in Pattern</h3></th>
 <tr>
 <td>
 <h4>📌 = 1 Pointer <h4> 
