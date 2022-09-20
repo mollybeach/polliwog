@@ -67,7 +67,7 @@
   <table>
     <tr>
         <td>
-            <h3>❓ SUBSTRING OR SUBARRAY FIND LONGER SMALLEST CONTsdadadsaddsasd
+            <h3>❓ SUBSTRING OR SUBARRAY FIND LONGER SMALLEST CONTsdadaddadadasdasdsaddsasd
             wqdww <h3>
             <h3>⏰: O(n) 🪐: O(n) </h3>
         </td>
