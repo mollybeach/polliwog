@@ -72,7 +72,7 @@
             <h3>⏰: O(n) 🪐: O(n) </h3>
         </td>
            <td colspan="2">
-               🐣 Maximum Sulll;asdkl;sadk;wqoepeopwqy
+               🐣 Maximumfhfhfhfh
             </td>quwioquwiouqiowdu
     </tr>
     <tr>
