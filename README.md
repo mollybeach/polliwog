@@ -1,5 +1,5 @@
 # 
-## 14 Patterns Algorithims
+## 14 Patterns Algorithim
 
 
 <table>
