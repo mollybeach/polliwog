@@ -1,5 +1,5 @@
 # 
-## 14 Patterns Algorithims
+## 14 Patterns Algorithim
 
 <table>
 <th><h3>Uses: Symbol in Patterns</h3></th>
