@@ -1,0 +1,19 @@
+name: Daily push
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Push to repository
+      uses: EndBug/push-to-repo-action@v1
+      with:
+        branch: master
+        message: Automatic push $(date +'%Y-%m-%d %H:%M:%S')
