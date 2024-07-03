@@ -979,22 +979,17 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
          
         🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
         🐇 Solution:  👯 Two Pointers   ⏰: O(N) 🪐: O(1)
-
-        var containsDuplicate = function(nums) {
-            let checkSum = new Map();
-            for(let i=0; i<nums.length; i++){
-                if(checkSum.get(nums[i])){
-                    return true;
-                } else {
-                    checkSum.set(nums[i], 1);
-                }
-            }
-            return false;
+ 
+        containsDuplicate = function(nums) {
+          let set = new Set();
+          for (let num of nums) {
+          if (set.has(num)) {
+            return true; // Found a duplicate
+          }
+          set.add(num);
+          }
+        return false; // No duplicates found
         };
-
-        var containsDuplicate = function(nums) {
-            return [...new Set(nums)].length !== nums.length;
-        };  
 
 ## [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) #238 👯 
         ❓: Given an integer array nums, return an array answer such that answer[i] is equal to the product of all the elements of nums except nums[i].
