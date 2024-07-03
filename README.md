@@ -936,7 +936,7 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
         
         🐢 Solution: 🔨 Brute Force ⏰: O(N^2) 🪐: O(1)
         🐇 Solution: 👯 Two Pointers  ⏰: O(NlogN) 🪐: O(1)
-
+```
   const twoSum = function(nums, target) {
     const seen = new Map(); // This map helps us remember which toys we've seen and where.
 
@@ -953,6 +953,7 @@ function print_all_topological_sorts(graph, inDegree, sources, sortedOrder) {
 
     return []; // If we couldn't find two toys (numbers) that add up to the target, return nothing.
   };
+```
 
 ## [Best Time to Buy & Sell Stock](https://leetcode.com/problems/best-time-to-buy-&-sell-stock/) #121 📈
         ❓: You are given an array prices where prices[i] is the price of a given stock on the ith day.
